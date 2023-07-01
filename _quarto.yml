@@ -3,12 +3,11 @@ project:
 
 book:
   title: "Zbiór zadań - Java"
+  author: Piotr Jastrzębski
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
     - references.qmd
-  downloads: pdf
+  downloads: [ pdf, epub ]
 
 bibliography: references.bib
 
@@ -19,6 +18,8 @@ format:
   pdf:
     lang: pl
     documentclass: scrreprt
+  epub:
+    lang: pl
 
 editor: visual
 
