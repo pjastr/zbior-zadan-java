@@ -1,0 +1,7 @@
+# Klasy abstrakcyjne
+
+1.  Zdefiniuj abstrakcyjną klasę `NarzedziePracy` z polami `nazwa` typu `String` oraz `rokProdukcji` typu `java.time.LocalDate`. Dodaj metodę abstrakcyjną `uzyj()`, która będzie symulować użycie narzędzia. Następnie zdefiniuj klasy `Mlotek`, `Srubokret` i `Pila`, które dziedziczą po klasie `NarzedziePracy` i implementują metodę `uzyj()`. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.
+
+2.  Zdefiniuj abstrakcyjną klasę `GrafikaKomputerowa` z polami `szerokosc`, `wysokosc` typu `int` oraz `nazwaPliku` typu `String`. Dodaj abstrakcyjne metody `wczytajPlik()` i `zapiszPlik()`. Następnie zdefiniuj klasy `Bitmapa` i `Wektor`, które dziedziczą po klasie `GrafikaKomputerowa` i implementują metody `wczytajPlik()` oraz `zapiszPlik()`. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.
+
+3. Zdefiniuj abstrakcyjną klasę `UrządzenieElektroniczne` z polami `producent` typu `String`, `model` typu `String` oraz `rokProdukcji` typu `java.time.LocalDate`. Dodaj abstrakcyjne metody `włącz()` i `wyłącz()`. Następnie zdefiniuj klasy `Smartfon`, `Telewizor` i `Laptop`, które dziedziczą po klasie `UrządzenieElektroniczne` i implementują metody `włącz()` oraz `wyłącz()`. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.

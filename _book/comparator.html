@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - Bibliografia i inne zbiory zadań</title>
+<title>Zbiór zadań - Java - 7&nbsp; Interfejs Comparator</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./kopiowanie.html" rel="prev">
+<link href="./kopiowanie.html" rel="next">
+<link href="./comparable.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,7 +73,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">Bibliografia i inne zbiory zadań</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./konstruktor.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./comparator.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Interfejs `Comparator`</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -184,7 +166,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./comparator.html" class="sidebar-item-text sidebar-link">
+  <a href="./comparator.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparator</code></span></span></a>
   </div>
 </li>
@@ -206,7 +188,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografia i inne zbiory zadań</span></a>
   </div>
 </li>
@@ -223,7 +205,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bibliografia i inne zbiory zadań</h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparator</code></span></h1>
 </div>
 
 
@@ -238,15 +220,23 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-jkozak" class="csl-entry" role="listitem">
-Jan, Kozak. n.d. <em>Materiały Do Ćwiczeń</em>. <a href="http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/">http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/</a>.
-</div>
-<div id="ref-Rychlicki_2012" class="csl-entry" role="listitem">
-Rychlicki, Wiesław. 2012. <em>Programowanie w Języku Java. Zbiór Zadań z
-(p)odpowiedziami</em>. Helion.
-</div>
-</div>
+<ol type="1">
+<li><p>Napisz klasę Osoba z polami imię (String), wiek (int) i wzrost (double). Napisz klasę implementującą interfejs Comparator, która porównuje osoby na podstawie wieku. Stwórz tablicę 5 osób i posortuj ją według wieku.</p></li>
+<li><p>Napisz klasę Produkt z polami nazwa (String), cena (double) i dataWaznosci (LocalDate). Napisz klasę implementującą interfejs Comparator, która porównuje produkty na podstawie daty ważności. Stwórz listę 5 produktów i posortuj ją według daty ważności.</p></li>
+<li><p>Napisz klasę Samochód z polami marka (String), rokProdukcji (int) i cena (double). Napisz klasę implementującą interfejs Comparator, która porównuje samochody na podstawie roku produkcji. Stwórz tablicę 5 samochodów i posortuj ją według roku produkcji.</p></li>
+<li><p>Napisz klasę Pracownik z polami imię (String), pensja (double) i dataZatrudnienia (LocalDate). Napisz klasę implementującą interfejs Comparator, która porównuje pracowników na podstawie pensji. Stwórz tablicę 5 pracowników i posortuj ją według pensji.</p></li>
+<li><p>Napisz klasę Książka z polami tytuł (String), cena (double) i dataWydania (Date). Napisz klasę implementującą interfejs Comparator, która porównuje książki na podstawie daty wydania. Stwórz listę 5 książek i posortuj ją według daty wydania.</p></li>
+<li><p>Napisz klasę “Product” z polami “id” (typu int), “name” (typu String) oraz “price” (typu double). Zaimplementuj generyczny interfejs “Comparator” do porównywania obiektów po polu “price” (od najniższej do najwyższej ceny), a w przypadku równości po polu “id”. Stwórz listę 5 obiektów klasy “Product” i posortuj ją zgodnie z opisanym kryterium.</p></li>
+<li><p>Napisz klasę “Person” z polami “firstName” (typu String), “lastName” (typu String) oraz “birthDate” (typu LocalDate). Zaimplementuj generyczny interfejs “Comparator” do porównywania obiektów po polu “lastName” (alfabetycznie od A do Z), a w przypadku równości po polu “firstName”. Stwórz tablicę 5 obiektów klasy “Person” i posortuj ją zgodnie z opisanym kryterium.</p></li>
+<li><p>Napisz klasę “Order” z polami “id” (typu int), “customerName” (typu String) oraz “orderDate” (typu LocalDate). Zaimplementuj generyczny interfejs “Comparator” do porównywania obiektów po polu “orderDate” (od najwcześniejszej do najpóźniejszej daty), a w przypadku równości po polu “id”. Stwórz listę 5 obiektów klasy “Order” i posortuj ją zgodnie z opisanym kryterium.</p></li>
+<li><p>Napisz klasę “Song” z polami “title” (typu String), “artist” (typu String) oraz “duration” (typu int). Zaimplementuj generyczny interfejs “Comparator” do porównywania obiektów po polu “duration” (od najkrótszej do najdłuższej piosenki), a w przypadku równości po polu “title”. Stwórz tablicę 5 obiektów klasy “Song” i posortuj ją zgodnie z opisanym kryterium.</p></li>
+<li><p>Napisz klasę “Student” z polami “id” (typu int), “name” (typu String) oraz “averageGrade” (typu double). Zaimplementuj generyczny interfejs “Comparator” do porównywania obiektów po polu “averageGrade” (od najwyższej do najniższej średniej ocen), a w przypadku równości po polu “name”. Stwórz listę 5 obiektów klasy “Student” i posortuj ją zgodnie z opisanym kryterium.</p></li>
+<li><p>Napisz klasę “Product” z polami “id” (typu int), “name” (typu String) oraz “price” (typu double). Zaimplementuj dwie klasy implementujące generyczny interfejs “Comparator”: “PriceComparator” do porównywania obiektów po polu “price” (od najniższej do najwyższej ceny) oraz “NameComparator” do porównywania obiektów po polu “name” (alfabetycznie od A do Z). Stwórz listę 5 obiektów klasy “Product” i posortuj ją zgodnie z oboma kryteriami (najpierw po cenie, a następnie po nazwie).</p></li>
+<li><p>Napisz klasę “Person” z polami “firstName” (typu String), “lastName” (typu String) oraz “birthDate” (typu LocalDate). Zaimplementuj dwie klasy implementujące generyczny interfejs “Comparator”: “LastNameComparator” do porównywania obiektów po polu “lastName” (alfabetycznie od A do Z) oraz “BirthDateComparator” do porównywania obiektów po polu “birthDate” (od najstarszej do najmłodszej osoby). Stwórz tablicę 5 obiektów klasy “Person” i posortuj ją zgodnie z oboma kryteriami (najpierw po nazwisku, a następnie po dacie urodzenia).</p></li>
+<li><p>Napisz klasę “Order” z polami “id” (typu int), “customerName” (typu String) oraz “orderDate” (typu LocalDate). Zaimplementuj dwie klasy implementujące generyczny interfejs “Comparator”: “OrderDateComparator” do porównywania obiektów po polu “orderDate” (od najwcześniejszej do najpóźniejszej daty) oraz “CustomerNameComparator” do porównywania obiektów po polu “customerName” (alfabetycznie od A do Z). Stwórz listę 5 obiektów klasy “Order” i posortuj ją zgodnie z oboma kryteriami (najpierw po dacie zamówienia, a następnie po nazwie klienta).</p></li>
+<li><p>Napisz klasę “Song” z polami “title” (typu String), “artist” (typu String) oraz “duration” (typu int). Zaimplementuj dwie klasy implementujące generyczny interfejs “Comparator”: “DurationComparator” do porównywania obiektów po polu “duration” (od najkrótszej do najdłuższej piosenki) oraz “ArtistTitleComparator” do porównywania obiektów po polu “artist” (alfabetycznie od A do Z) i w przypadku równości po polu “title”. Stwórz tablicę 5 obiektów klasy “Song” i posortuj ją zgodnie z oboma kryteriami (najpierw po długości utworu,a następnie po artyście i tytule).</p></li>
+<li><p>Napisz klasę “Student” z polami “id” (typu int), “name” (typu String) oraz “averageGrade” (typu double). Zaimplementuj dwie klasy implementujące generyczny interfejs “Comparator”: “AverageGradeComparator” do porównywania obiektów po polu “averageGrade” (od najwyższej do najniższej średniej ocen) oraz “IdComparator” do porównywania obiektów po polu “id” (od najniższego do najwyższego identyfikatora). Stwórz listę 5 obiektów klasy “Student” i posortuj ją zgodnie z oboma kryteriami (najpierw po średniej ocen, a następnie po identyfikatorze).</p></li>
+</ol>
 
 
 
@@ -486,11 +476,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./kopiowanie.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span>
+      <a href="./comparable.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparable</code></span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./kopiowanie.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

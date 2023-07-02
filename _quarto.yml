@@ -13,7 +13,14 @@ book:
     - part: "Programowanie obiektowe"
       chapters:
         - konstruktor.qmd
+        - zlozonepolawklasie.qmd
         - dziedziczenie.qmd
+        - klasyabstrakcyjne.qmd
+        - comparable.qmd
+        - comparator.qmd
+        - kopiowanie.qmd
+    - part: "Zadania różne"
+    - part: "Wzorce projektowe"
     - references.qmd
   downloads: pdf
   repo-url: https://github.com/pjastr/zbior-zadan-java
@@ -28,7 +35,6 @@ format:
     lang: pl
   pdf:
     lang: pl
-    documentclass: scrbook
 
 editor: visual
 

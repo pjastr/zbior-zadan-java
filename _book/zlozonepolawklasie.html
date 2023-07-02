@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - Bibliografia i inne zbiory zadań</title>
+<title>Zbiór zadań - Java - 3&nbsp; Złożone pola w klasie</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./kopiowanie.html" rel="prev">
+<link href="./dziedziczenie.html" rel="next">
+<link href="./konstruktor.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,7 +73,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">Bibliografia i inne zbiory zadań</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./konstruktor.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./zlozonepolawklasie.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -160,7 +142,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./zlozonepolawklasie.html" class="sidebar-item-text sidebar-link">
+  <a href="./zlozonepolawklasie.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></span></a>
   </div>
 </li>
@@ -206,7 +188,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografia i inne zbiory zadań</span></a>
   </div>
 </li>
@@ -223,7 +205,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bibliografia i inne zbiory zadań</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></h1>
 </div>
 
 
@@ -238,15 +220,14 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-jkozak" class="csl-entry" role="listitem">
-Jan, Kozak. n.d. <em>Materiały Do Ćwiczeń</em>. <a href="http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/">http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/</a>.
-</div>
-<div id="ref-Rychlicki_2012" class="csl-entry" role="listitem">
-Rychlicki, Wiesław. 2012. <em>Programowanie w Języku Java. Zbiór Zadań z
-(p)odpowiedziami</em>. Helion.
-</div>
-</div>
+<ol type="1">
+<li><p>Utwórz klasę <code>AlbumMuzyczny</code> z polami <code>tytul</code>, <code>artysta</code> oraz <code>oceny</code> (jako tablica z elementami typu double). Dodaj metodę pozwalającą na dodawanie i usuwanie ocen. Utwórz klasę <code>AlbumRockowy</code>, która dziedziczy po klasie <code>AlbumMuzyczny</code>.Klasa <code>AlbumRockowy</code> powinna mieć dodatkowe pole <code>gatunekRocka</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>Ksiazka</code> z polami <code>tytul</code>, <code>autor</code> oraz <code>recenzje</code> (jako tablica z elementami typu double). Dodaj metody pozwalające na dodawanie i usuwanie recenzji. Utwórz klasę <code>KsiazkaFantasy</code>, która dziedziczy po klasie <code>Ksiazka</code>. Klasa <code>KsiazkaFantasy</code> powinna mieć dodatkowe pole <code>podgatunekFantasy</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>GraKomputerowa</code> z polami <code>tytul</code>, <code>producent</code> oraz <code>oceny</code> (jako tablica z elementami typu double). Dodaj metody pozwalające na dodawanie i usuwanie ocen. Utwórz klasę <code>GraRPG</code>, która dziedziczy po klasie <code>GraKomputerowa</code>. Klasa <code>GraRPG</code> powinna mieć dodatkowe pole <code>światGry</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>Uniwersytet</code> z polami <code>nazwa</code>, <code>lokalizacja</code> oraz <code>kierunkiStudiow</code> (jako tablica z elementami typu <code>String</code>). Dodaj metody pozwalające na dodawanie i usuwanie kierunków studiów. Utwórz klasę <code>UniwersytetTechniczny</code>, która dziedziczy po klasie <code>Uniwersytet</code>. Klasa <code>UniwersytetTechniczny</code> powinna mieć dodatkowe pole <code>liczbaLaboratoriow</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>GaleriaSztuki</code> z polami <code>nazwa</code>, <code>miasto</code> oraz <code>obrazy</code> (jako tablica z elementami typu <code>String</code>). Dodaj metody pozwalające na dodawanie i usuwanie obrazów. Utwórz klasę <code>GaleriaWspolczesna</code>, która dziedziczy po klasie <code>GaleriaSztuki</code>. Klasa <code>GaleriaWspolczesna</code> powinna mieć dodatkowe pole <code>liczbaInstalacji</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>Samochod</code> z polami <code>marka</code>, <code>model</code> oraz <code>wariantySilnikow</code> (jako tablica z elementami typu <code>String</code>). Dodaj metody pozwalające na dodawanie i usuwanie wariantów silników. Utwórz klasę <code>SamochodElektryczny</code>, która dziedziczy po klasie <code>Samochod</code>. Klasa <code>SamochodElektryczny</code> powinna mieć dodatkowe pole <code>zasieg</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+</ol>
 
 
 
@@ -486,11 +467,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./kopiowanie.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span>
+      <a href="./konstruktor.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Konstruktor</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./dziedziczenie.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

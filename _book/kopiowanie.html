@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - Bibliografia i inne zbiory zadań</title>
+<title>Zbiór zadań - Java - 8&nbsp; Kopiowanie obiektów</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./kopiowanie.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./comparator.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,7 +73,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">Bibliografia i inne zbiory zadań</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./konstruktor.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./kopiowanie.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -190,7 +172,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./kopiowanie.html" class="sidebar-item-text sidebar-link">
+  <a href="./kopiowanie.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span></a>
   </div>
 </li>
@@ -206,7 +188,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografia i inne zbiory zadań</span></a>
   </div>
 </li>
@@ -223,7 +205,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bibliografia i inne zbiory zadań</h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></h1>
 </div>
 
 
@@ -238,15 +220,26 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-jkozak" class="csl-entry" role="listitem">
-Jan, Kozak. n.d. <em>Materiały Do Ćwiczeń</em>. <a href="http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/">http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/</a>.
-</div>
-<div id="ref-Rychlicki_2012" class="csl-entry" role="listitem">
-Rychlicki, Wiesław. 2012. <em>Programowanie w Języku Java. Zbiór Zadań z
-(p)odpowiedziami</em>. Helion.
-</div>
-</div>
+<ol type="1">
+<li><p>Napisz klasę <code>Student</code> z trzema polami: <code>name</code> (String), <code>age</code> (int) i <code>grade</code> (double). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Student</code>, sklonuj go, a następnie zmień ocenę (<code>grade</code>) oryginalnego studenta. Wyświetl oceny obu studentów, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Teacher</code> z trzema polami: <code>name</code> (String), <code>subject</code> (String) i <code>experience</code> (int). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Teacher</code>, sklonuj go, a następnie zmień doświadczenie (<code>experience</code>) oryginalnego nauczyciela. Wyświetl doświadczenie obu nauczycieli, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Car</code> z trzema polami: <code>make</code> (String), <code>model</code> (String) i <code>mileage</code> (double). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Car</code>, sklonuj go, a następnie zmień przebieg (<code>mileage</code>) oryginalnego samochodu. Wyświetl przebieg obu samochodów, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Smartphone</code> z trzema polami: <code>brand</code> (String), <code>model</code> (String) i <code>productionDate</code> (typu <code>Date</code>). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Smartphone</code>, sklonuj go, a następnie zmień datę produkcji oryginalnego smartfona. Wyświetl datę produkcji obu smartfonów, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Laptop</code> z trzema polami: <code>brand</code> (String), <code>model</code> (String) i <code>purchaseDate</code> (typu <code>Date</code>). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Laptop</code>, sklonuj go, a następnie zmień datę zakupu (<code>purchaseDate</code>) oryginalnego laptopa. Wyświetl datę zakupu obu laptopów, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>VideoGame</code> z trzema polami: <code>title</code> (String), <code>genre</code> (String) i <code>releaseDate</code> (typu <code>Date</code>). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>VideoGame</code>, sklonuj go, a następnie zmień datę wydania (<code>releaseDate</code>) oryginalnej gry. Wyświetl datę wydania obu gier, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>CreditCard</code> z trzema polami: <code>cardNumber</code> (String), <code>holderName</code> (String) i <code>expiryDate</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>CreditCard</code>, sklonuj go, a następnie zmień datę wygaśnięcia (<code>expiryDate</code>) oryginalnej karty kredytowej. Wyświetl datę wygaśnięcia obu kart, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>BankAccount</code> z trzema polami: <code>accountNumber</code> (String), <code>accountHolder</code> (String) i <code>openingDate</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>BankAccount</code>, sklonuj go, a następnie zmień datę otwarcia (<code>openingDate</code>) oryginalnego konta bankowego. Wyświetl datę otwarcia obu kont, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>DrivingLicense</code> z trzema polami: <code>licenseNumber</code> (String), <code>holderName</code> (String) i <code>issueDate</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>DrivingLicense</code>, sklonuj go, a następnie zmień datę wydania (<code>issueDate</code>) oryginalnego prawa jazdy. Wyświetl datę wydania obu praw jazdy, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Employee</code> z dwoma polami: <code>name</code> (String) i <code>salaries</code> (tablica 12 zmiennych typu double, reprezentująca zarobki za każdy miesiąc). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Employee</code>, sklonuj go, a następnie zmień zarobki na pozycji 5 (czerwiec) oryginalnego pracownika. Wyświetl zarobki obu pracowników, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Athlete</code> z dwoma polami: <code>name</code> (String) i <code>times</code> (tablica 5 zmiennych typu double, reprezentująca czas w sekundach potrzebny na przebiegnięcie 100 metrów podczas różnych prób). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Athlete</code>, sklonuj go, a następnie zmień czas na pozycji 3 oryginalnego sportowca. Wyświetl czasy obu sportowców, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Teacher</code> z dwoma polami: <code>name</code> (String) i <code>studentsGrades</code> (tablica 10 zmiennych typu double, reprezentująca oceny każdego z 10 uczniów). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Teacher</code>, sklonuj go, a następnie zmień ocenę na pozycji 10 oryginalnego nauczyciela. Wyświetl oceny obu nauczycieli, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Employee</code> z dwoma polami: <code>name</code> (String) i <code>monthlyHours</code> (lista tablicowa zmiennych typu int, reprezentująca liczbę przepracowanych godzin w każdym miesiącu). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Employee</code>, sklonuj go, a następnie zmień liczbę godzin na pozycji 5 (czerwiec) oryginalnego pracownika. Wyświetl liczbę godzin obu pracowników, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Athlete</code> z dwoma polami: <code>name</code> (String) i <code>lapTimes</code> (lista tablicowa zmiennych typu int, reprezentująca czas w sekundach potrzebny na przebiegnięcie okrążenia podczas różnych prób). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Athlete</code>, sklonuj go, a następnie zmień czas na pozycji 3 oryginalnego sportowca. Wyświetl czasy obu sportowców, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Teacher</code> z dwoma polami: <code>name</code> (String) i <code>studentsGrades</code> (lista tablicowa zmiennych typu int, reprezentująca oceny każdego z uczniów). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code>, aby móc klonować obiekty tej klasy. W metodzie <code>main()</code> utwórz obiekt <code>Teacher</code>, sklonuj go, a następnie zmień ocenę na pozycji 10 oryginalnego nauczyciela. Wyświetl oceny obu nauczycieli, aby zobaczyć, czy są niezależne.</p></li>
+<li><p>Napisz klasę <code>Teacher</code> z polami <code>name</code> (String), <code>age</code> (int) i <code>salary</code> (double). Następnie napisz klasę <code>HeadTeacher</code>, która dziedziczy po klasie <code>Teacher</code> i dodaje pole <code>bonus</code> (double). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code> w obu klasach. W metodzie <code>main()</code> pokaż przykład prezentujący poprawność klonowania obiektów tych klas.</p></li>
+<li><p>Napisz klasę <code>Developer</code> z polami <code>name</code> (String), <code>age</code> (int) i <code>salary</code> (double). Następnie napisz klasę <code>SeniorDeveloper</code>, która dziedziczy po klasie <code>Developer</code> i dodaje pole <code>bonus</code> (double). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code> w obu klasach. W metodzie <code>main()</code> pokaż przykład prezentujący poprawność klonowania obiektów tych klas.</p></li>
+<li><p>Napisz klasę <code>Nurse</code> z polami <code>name</code> (String), <code>age</code> (int) i <code>salary</code> (double). Następnie napisz klasę <code>HeadNurse</code>, która dziedziczy po klasie <code>Nurse</code> i dodaje pole <code>bonus</code> (double). Zaimplementuj interfejs <code>Cloneable</code> i nadpisz metodę <code>clone()</code> w obu klasach. W metodzie <code>main()</code> pokaż przykład prezentujący poprawność klonowania obiektów tych klas.</p></li>
+</ol>
 
 
 
@@ -486,11 +479,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./kopiowanie.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span>
+      <a href="./comparator.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparator</code></span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">Bibliografia i inne zbiory zadań</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

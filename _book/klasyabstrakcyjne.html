@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - Bibliografia i inne zbiory zadań</title>
+<title>Zbiór zadań - Java - 5&nbsp; Klasy abstrakcyjne</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./kopiowanie.html" rel="prev">
+<link href="./comparable.html" rel="next">
+<link href="./dziedziczenie.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,7 +73,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">Bibliografia i inne zbiory zadań</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./konstruktor.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./klasyabstrakcyjne.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Klasy abstrakcyjne</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -172,7 +154,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./klasyabstrakcyjne.html" class="sidebar-item-text sidebar-link">
+  <a href="./klasyabstrakcyjne.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Klasy abstrakcyjne</span></span></a>
   </div>
 </li>
@@ -206,7 +188,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografia i inne zbiory zadań</span></a>
   </div>
 </li>
@@ -223,7 +205,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bibliografia i inne zbiory zadań</h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Klasy abstrakcyjne</span></h1>
 </div>
 
 
@@ -238,15 +220,11 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-jkozak" class="csl-entry" role="listitem">
-Jan, Kozak. n.d. <em>Materiały Do Ćwiczeń</em>. <a href="http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/">http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/</a>.
-</div>
-<div id="ref-Rychlicki_2012" class="csl-entry" role="listitem">
-Rychlicki, Wiesław. 2012. <em>Programowanie w Języku Java. Zbiór Zadań z
-(p)odpowiedziami</em>. Helion.
-</div>
-</div>
+<ol type="1">
+<li><p>Zdefiniuj abstrakcyjną klasę <code>NarzedziePracy</code> z polami <code>nazwa</code> typu <code>String</code> oraz <code>rokProdukcji</code> typu <code>java.time.LocalDate</code>. Dodaj metodę abstrakcyjną <code>uzyj()</code>, która będzie symulować użycie narzędzia. Następnie zdefiniuj klasy <code>Mlotek</code>, <code>Srubokret</code> i <code>Pila</code>, które dziedziczą po klasie <code>NarzedziePracy</code> i implementują metodę <code>uzyj()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
+<li><p>Zdefiniuj abstrakcyjną klasę <code>GrafikaKomputerowa</code> z polami <code>szerokosc</code>, <code>wysokosc</code> typu <code>int</code> oraz <code>nazwaPliku</code> typu <code>String</code>. Dodaj abstrakcyjne metody <code>wczytajPlik()</code> i <code>zapiszPlik()</code>. Następnie zdefiniuj klasy <code>Bitmapa</code> i <code>Wektor</code>, które dziedziczą po klasie <code>GrafikaKomputerowa</code> i implementują metody <code>wczytajPlik()</code> oraz <code>zapiszPlik()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
+<li><p>Zdefiniuj abstrakcyjną klasę <code>UrządzenieElektroniczne</code> z polami <code>producent</code> typu <code>String</code>, <code>model</code> typu <code>String</code> oraz <code>rokProdukcji</code> typu <code>java.time.LocalDate</code>. Dodaj abstrakcyjne metody <code>włącz()</code> i <code>wyłącz()</code>. Następnie zdefiniuj klasy <code>Smartfon</code>, <code>Telewizor</code> i <code>Laptop</code>, które dziedziczą po klasie <code>UrządzenieElektroniczne</code> i implementują metody <code>włącz()</code> oraz <code>wyłącz()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
+</ol>
 
 
 
@@ -486,11 +464,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./kopiowanie.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span>
+      <a href="./dziedziczenie.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./comparable.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparable</code></span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

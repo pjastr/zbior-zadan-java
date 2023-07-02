@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - Bibliografia i inne zbiory zadań</title>
+<title>Zbiór zadań - Java - 6&nbsp; Interfejs Comparable</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./kopiowanie.html" rel="prev">
+<link href="./comparator.html" rel="next">
+<link href="./klasyabstrakcyjne.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,7 +73,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">Bibliografia i inne zbiory zadań</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./konstruktor.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./comparable.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Interfejs `Comparable`</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -178,7 +160,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./comparable.html" class="sidebar-item-text sidebar-link">
+  <a href="./comparable.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparable</code></span></span></a>
   </div>
 </li>
@@ -206,7 +188,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografia i inne zbiory zadań</span></a>
   </div>
 </li>
@@ -223,7 +205,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bibliografia i inne zbiory zadań</h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparable</code></span></h1>
 </div>
 
 
@@ -238,15 +220,30 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-jkozak" class="csl-entry" role="listitem">
-Jan, Kozak. n.d. <em>Materiały Do Ćwiczeń</em>. <a href="http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/">http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/</a>.
-</div>
-<div id="ref-Rychlicki_2012" class="csl-entry" role="listitem">
-Rychlicki, Wiesław. 2012. <em>Programowanie w Języku Java. Zbiór Zadań z
-(p)odpowiedziami</em>. Helion.
-</div>
-</div>
+<ol type="1">
+<li><p>Napisz klasę <code>Student</code>, która zawiera pola: <code>imie</code> (typu <code>String</code>), <code>sredniaOcen</code> (typu <code>double</code>) i <code>rokUrodzenia</code> (typu <code>int</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Student</code> były sortowane malejąco według średniej ocen. Stwórz listę 5 obiektów klasy <code>Student</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Pracownik</code>, która zawiera pola: <code>imie</code> (typu <code>String</code>), <code>pensja</code> (typu <code>double</code>) i <code>dataZatrudnienia</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Pracownik</code> były sortowane rosnąco według pensji. Stwórz listę 5 obiektów klasy <code>Pracownik</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Klient</code>, która zawiera pola: <code>imie</code> (typu <code>String</code>), <code>nrKlienta</code> (typu <code>int</code>) i <code>ostatnieLogowanie</code> (typu <code>Date</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Klient</code> były sortowane malejąco według daty ostatniego logowania. Stwórz listę 5 obiektów klasy <code>Klient</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Produkt</code>, która zawiera pola: <code>nazwa</code> (typu <code>String</code>), <code>cena</code> (typu <code>double</code>) i <code>dataProdukcji</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Produkt</code> były sortowane rosnąco według daty produkcji. Stwórz listę 5 obiektów klasy <code>Produkt</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Osoba</code>, która zawiera pola: <code>imie</code> (typu <code>String</code>), <code>wzrost</code> (typu <code>int</code>) i <code>dataUrodzenia</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Osoba</code> były sortowane malejąco według wzrostu. Stwórz listę 5 obiektów klasy <code>Osoba</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Ksiazka</code>, która zawiera pola: <code>tytul</code> (typu <code>String</code>), <code>liczbaStron</code> (typu <code>int</code>) i <code>dataWydania</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Ksiazka</code> były sortowane malejąco według liczby stron. Stwórz tablicę 4 obiektów klasy <code>Ksiazka</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Samochod</code>, która zawiera pola: <code>marka</code> (typu <code>String</code>), <code>przebieg</code> (typu <code>int</code>) i <code>rokProdukcji</code> (typu <code>int</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Samochod</code> były sortowane rosnąco według przebiegu. Stwórz tablicę 4 obiektów klasy <code>Samochod</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>ProduktSpozywczy</code>, która zawiera pola: <code>nazwa</code> (typu <code>String</code>), <code>cena</code> (typu <code>double</code>) i <code>dataWaznosci</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>ProduktSpozywczy</code> były sortowane rosnąco według daty ważności. Stwórz tablicę 4 obiektów klasy <code>ProduktSpozywczy</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Muzyka</code>, która zawiera pola: <code>tytul</code> (typu <code>String</code>), <code>artysta</code> (typu <code>String</code>) i <code>rokWydania</code> (typu <code>int</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Muzyka</code> były sortowane malejąco według roku wydania. Stwórz tablicę 4 obiektów klasy <code>Muzyka</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Przedmiot</code>, która zawiera pola: <code>nazwa</code> (typu <code>String</code>), <code>waga</code> (typu <code>double</code>) i <code>cena</code> (typu <code>double</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Przedmiot</code> były sortowane rosnąco według wagi. Stwórz tablicę 4 obiektów klasy <code>Przedmiot</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Student</code>, która zawiera pola: <code>imie</code> (typu <code>String</code>), <code>sredniaOcen</code> (typu <code>double</code>) i <code>rokStudiow</code> (typu <code>int</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Student</code> były sortowane według jednego kryterium: malejąco według średniej ocen, a przy równości sortowane były rosnąco według roku studiów. Stwórz tablicę 4 obiektów klasy <code>Student</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Zamowienie</code>, która zawiera pola: <code>nazwaProduktu</code> (typu <code>String</code>), <code>ilosc</code> (typu <code>int</code>) i <code>cenaJednostkowa</code> (typu <code>double</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Zamowienie</code> były sortowane według jednego kryterium: malejąco według ceny jednostkowej, a przy równości sortowane były rosnąco według ilości. Stwórz listę tablicową 4 obiektów klasy <code>Zamowienie</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Klient</code>, która zawiera pola: <code>imie</code> (typu <code>String</code>), <code>saldo</code> (typu <code>double</code>) i <code>ostatnieZakupy</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Klient</code> były sortowane według jednego kryterium: malejąco według salda, a przy równości sortowane były rosnąco według daty ostatnich zakupów. Stwórz listę tablicową 4 obiektów klasy <code>Klient</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Kurs</code>, która zawiera pola: <code>nazwa</code> (typu <code>String</code>), <code>liczbaGodzin</code> (typu <code>int</code>) i <code>cena</code> (typu <code>double</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Kurs</code> były sortowane według jednego kryterium: rosnąco według liczby godzin, a przy równości sortowane były malejąco według ceny. Stwórz tablicę 4 obiektów klasy <code>Kurs</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Produkt</code>, która zawiera pola: <code>nazwa</code> (typu <code>String</code>), <code>cena</code> (typu <code>double</code>) i <code>dataWaznosci</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Produkt</code> były sortowane według jednego kryterium: malejąco według daty ważności, a przy równości sortowane były rosnąco według ceny. Stwórz listę obiektów klasy <code>Produkt</code> i posortuj ją według sprecyzowanego kryterium. Następnie wyświetl posortowaną listę na ekranie.</p></li>
+<li><p>Napisz klasę <code>Samochód</code>, która zawiera pola: <code>marka</code> (typu <code>String</code>), <code>model</code> (typu <code>String</code>) i <code>numerRejestracyjny</code> (typu <code>String</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Samochód</code> były sortowane według jednego kryterium: rosnąco według długości numeru rejestracyjnego. Stwórz tablicę 4 obiektów klasy <code>Samochód</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Pracownik</code>, która zawiera pola: <code>imie</code> (typu <code>String</code>), <code>nazwisko</code> (typu <code>String</code>) i <code>stanowisko</code> (typu <code>String</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Pracownik</code> były sortowane według jednego kryterium: rosnąco według długości nazwiska. Stwórz listę tablicową 4 obiektów klasy <code>Pracownik</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Film</code>, która zawiera pola: <code>tytuł</code> (typu <code>String</code>), <code>reżyser</code> (typu <code>String</code>) i <code>gatunek</code> (typu <code>String</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Film</code> były sortowane według jednego kryterium: rosnąco według długości tytułu. Stwórz listę tablicową 4 obiektów klasy <code>Film</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Książka</code>, która zawiera pola: <code>tytuł</code> (typu <code>String</code>), <code>autor</code> (typu <code>String</code>) i <code>dataWydania</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Książka</code> były sortowane według jednego niestandardowego kryterium: rosnąco według roku wydania. Stwórz tablicę 4 obiektów klasy <code>Książka</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Napisz klasę <code>Produkt</code>, która zawiera pola: <code>nazwa</code> (typu <code>String</code>), <code>cena</code> (typu <code>double</code>) i <code>dataProdukcji</code> (typu <code>LocalDate</code>). Zaimplementuj interfejs <code>Comparable</code> w taki sposób, aby obiekty klasy <code>Produkt</code> były sortowane według jednego niestandardowego kryterium: malejąco według roku produkcji. Stwórz listę tablicową 4 obiektów klasy <code>Produkt</code> i posortuj ją według sprecyzowanego kryterium.</p></li>
+<li><p>Zdefiniuj klasę Klient, która będzie implementować generyczny interfejs Comparable. W klasie tej zadeklaruj prywatne pola nazwisko typu String oraz saldo typu double. Implementując metodę compareTo interfejsu Comparable, porównuj klientów na podstawie ich salda, a w przypadku takiego samego salda - na podstawie nazwiska. Następnie zdefiniuj klasę Firma dziedziczącą po klasie Klient. Klasa Firma ma dodatkowo posiadać prywatne pole liczbaPracowników typu int. Implementując metodę compareTo interfejsu Comparable w klasie Firma, skorzystaj z metody compareTo zdefiniowanej w klasie Klient oraz, w razie potrzeby, uwzględnij pole liczbaPracowników. Napisz program TestKlient, w którym utwórz listę 5 klientów i firm o nazwie listaKlientów posługując się klasą ArrayList. W składzie listy powinny wystąpić przynajmniej dwóch klientów o takim samym saldzie i różnym nazwisku oraz dwie firmy o takiej samej liczbie pracowników i różnym saldzie. Wyświetl zawartość listy listaKlientów, posortuj ją za pomocą instancyjnej metody sort z klasy ArrayList i ponownie wyświetl zawartość tej listy.</p></li>
+<li><p>Zdefiniuj klasę Zwierzę, która będzie implementować generyczny interfejs Comparable. W klasie tej zadeklaruj prywatne pola gatunek typu String oraz wiek typu int. Implementując metodę compareTo interfejsu Comparable, porównuj zwierzęta na podstawie ich wieku, a w przypadku takiego samego wieku - na podstawie gatunku. Następnie zdefiniuj klasę Pies dziedziczącą po klasie Zwierzę. Klasa Pies ma dodatkowo posiadać prywatne pole rasa typu String. Implementując metodę compareTo interfejsu Comparable w klasie Pies, skorzystaj z metody compareTo zdefiniowanej w klasie Zwierzę oraz, w razie potrzeby, uwzględnij pole rasa. Napisz program TestZwierzę, w którym utwórz listę 5 zwierząt i psów o nazwie listaZwierząt posługując się klasą ArrayList. W składzie listy powinny wystąpić przynajmniej</p></li>
+</ol>
 
 
 
@@ -486,11 +483,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./kopiowanie.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span>
+      <a href="./klasyabstrakcyjne.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Klasy abstrakcyjne</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./comparator.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparator</code></span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

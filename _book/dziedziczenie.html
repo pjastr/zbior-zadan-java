@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - 3&nbsp; Dziedziczenie</title>
+<title>Zbiór zadań - Java - 4&nbsp; Dziedziczenie</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./konstruktor.html" rel="prev">
+<link href="./klasyabstrakcyjne.html" rel="next">
+<link href="./zlozonepolawklasie.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./konstruktor.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./dziedziczenie.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./konstruktor.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./dziedziczenie.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -142,11 +142,49 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./zlozonepolawklasie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./dziedziczenie.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./klasyabstrakcyjne.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Klasy abstrakcyjne</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./comparable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparable</code></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./comparator.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparator</code></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kopiowanie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span></a>
   </div>
 </li>
       </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Zadania różne</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Wzorce projektowe</span></span>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -167,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></h1>
 </div>
 
 
@@ -190,9 +228,6 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Utwórz klasę <code>Druzyna</code> z polami <code>nazwa</code>, <code>miasto</code> oraz <code>punkty</code> (jako ArrayList typu <code>Integer</code>). Utwórz klasy <code>DruzynaPilkarska</code> i <code>DruzynaSiatkarska</code>, które dziedziczą po klasie <code>Druzyna</code>. Klasa <code>DruzynaPilkarska</code> powinna mieć dodatkowe pole <code>pozycjaWRankingu</code>, a klasa <code>DruzynaSiatkarska</code> pole <code>liczbaZwyciestw</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
 <li><p>Utwórz klasę <code>Komputer</code> z polami <code>producent</code>, <code>model</code> oraz <code>cenyCzesci</code> (jako ArrayList typu <code>Double</code>). Utwórz klasy <code>Laptop</code> i <code>Stacjonarny</code>, które dziedziczą po klasie <code>Komputer</code>. Klasa <code>Laptop</code> powinna mieć dodatkowe pole <code>waga</code>, a klasa <code>Stacjonarny</code> pole <code>obudowa</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
 <li><p>Utwórz klasę <code>AlbumMuzyczny</code> z polami <code>tytul</code>, <code>artysta</code> oraz <code>oceny</code> (jako ArrayList typu <code>Integer</code>). Utwórz klasy <code>AlbumRockowy</code> i <code>AlbumJazzowy</code>, które dziedziczą po klasie <code>AlbumMuzyczny</code>. Klasa <code>AlbumRockowy</code> powinna mieć dodatkowe pole <code>gatunekRocka</code>, a klasa <code>AlbumJazzowy</code> pole <code>gatunekJazzu</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
-<li><p>Zdefiniuj abstrakcyjną klasę <code>NarzedziePracy</code> z polami <code>nazwa</code> typu <code>String</code> oraz <code>rokProdukcji</code> typu <code>java.time.LocalDate</code>. Dodaj metodę abstrakcyjną <code>uzyj()</code>, która będzie symulować użycie narzędzia. Następnie zdefiniuj klasy <code>Mlotek</code>, <code>Srubokret</code> i <code>Pila</code>, które dziedziczą po klasie <code>NarzedziePracy</code> i implementują metodę <code>uzyj()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
-<li><p>Zdefiniuj abstrakcyjną klasę <code>GrafikaKomputerowa</code> z polami <code>szerokosc</code>, <code>wysokosc</code> typu <code>int</code> oraz <code>nazwaPliku</code> typu <code>String</code>. Dodaj abstrakcyjne metody <code>wczytajPlik()</code> i <code>zapiszPlik()</code>. Następnie zdefiniuj klasy <code>Bitmapa</code> i <code>Wektor</code>, które dziedziczą po klasie <code>GrafikaKomputerowa</code> i implementują metody <code>wczytajPlik()</code> oraz <code>zapiszPlik()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
-<li><p>Zdefiniuj abstrakcyjną klasę <code>UrządzenieElektroniczne</code> z polami <code>producent</code> typu <code>String</code>, <code>model</code> typu <code>String</code> oraz <code>rokProdukcji</code> typu <code>java.time.LocalDate</code>. Dodaj abstrakcyjne metody <code>włącz()</code> i <code>wyłącz()</code>. Następnie zdefiniuj klasy <code>Smartfon</code>, <code>Telewizor</code> i <code>Laptop</code>, które dziedziczą po klasie <code>UrządzenieElektroniczne</code> i implementują metody <code>włącz()</code> oraz <code>wyłącz()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
 </ol>
 
 
@@ -433,13 +468,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./konstruktor.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Konstruktor</span></span>
+      <a href="./zlozonepolawklasie.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">Bibliografia i inne zbiory zadań</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./klasyabstrakcyjne.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Klasy abstrakcyjne</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
