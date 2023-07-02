@@ -4,10 +4,21 @@ project:
 book:
   title: "Zbiór zadań - Java"
   author: Piotr Jastrzębski
+  date: today
   chapters:
     - index.qmd
+    - part: "Wprowadzenie do języka Java"
+      chapters: 
+        - wejsciewyjscie.qmd
+    - part: "Programowanie obiektowe"
+      chapters:
+        - konstruktor.qmd
+        - dziedziczenie.qmd
     - references.qmd
-  downloads: [ pdf, epub ]
+  downloads: pdf
+  repo-url: https://github.com/pjastr/zbior-zadan-java
+  repo-actions: [issue]
+
 
 bibliography: references.bib
 
@@ -17,9 +28,7 @@ format:
     lang: pl
   pdf:
     lang: pl
-    documentclass: scrreprt
-  epub:
-    lang: pl
+    documentclass: scrbook
 
 editor: visual
 

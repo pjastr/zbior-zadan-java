@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - Bibliografia i inne zbiory zadań</title>
+<title>Zbiór zadań - Java - 2&nbsp; Konstruktor</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./dziedziczenie.html" rel="prev">
+<link href="./dziedziczenie.html" rel="next">
+<link href="./wejsciewyjscie.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,7 +73,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">Bibliografia i inne zbiory zadań</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./konstruktor.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./konstruktor.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Konstruktor</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -154,7 +136,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./konstruktor.html" class="sidebar-item-text sidebar-link">
+  <a href="./konstruktor.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Konstruktor</span></span></a>
   </div>
 </li>
@@ -168,7 +150,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografia i inne zbiory zadań</span></a>
   </div>
 </li>
@@ -185,7 +167,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bibliografia i inne zbiory zadań</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Konstruktor</span></h1>
 </div>
 
 
@@ -200,15 +182,23 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-jkozak" class="csl-entry" role="listitem">
-Jan, Kozak. n.d. <em>Materiały Do Ćwiczeń</em>. <a href="http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/">http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/</a>.
-</div>
-<div id="ref-Rychlicki_2012" class="csl-entry" role="listitem">
-Rychlicki, Wiesław. 2012. <em>Programowanie w Języku Java. Zbiór Zadań z
-(p)odpowiedziami</em>. Helion.
-</div>
-</div>
+<ol type="1">
+<li><p>Stwórz klasę <code>Samochod</code> zawierającą prywatne pola: <code>marka</code>, <code>model</code>, <code>rokProdukcji</code>, <code>przebieg</code> oraz <code>kolor</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) dla wszystkich pól. Następnie dodaj metodę <code>wyswietlInformacje()</code>, która wyświetla wszystkie informacje o samochodzie.</p></li>
+<li><p>Stwórz klasę <code>Osoba</code> z prywatnymi polami: <code>imie</code>, <code>nazwisko</code>, <code>wiek</code>, <code>adres</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>przedstawSie()</code>, która zwraca łańcuch znaków z informacjami o osobie.</p></li>
+<li><p>Stwórz klasę <code>Ksiazka</code> z prywatnymi polami: <code>tytul</code>, <code>autor</code>, <code>rokWydania</code>, <code>wydawnictwo</code> oraz <code>liczbaStron</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>pokazInformacje()</code>, która wyświetla informacje o książce.</p></li>
+<li><p>Stwórz klasę <code>Punkt2D</code> z prywatnymi polami <code>x</code> i <code>y</code>, reprezentującymi współrzędne punktu na płaszczyźnie. Dodaj konstruktor, który przyjmuje współrzędne jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>odleglosc(Punkt2D innyPunkt)</code>, która oblicza odległość między dwoma punktami na płaszczyźnie.</p></li>
+<li><p>Stwórz klasę <code>Prostokat</code> z prywatnymi polami <code>szerokosc</code> i <code>wysokosc</code>. Dodaj konstruktor, który przyjmuje długości boków jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody <code>pole()</code> i <code>obwod()</code>, które obliczają pole powierzchni i obwód prostokąta.</p></li>
+<li><p>Stwórz klasę <code>Kolo</code> z prywatnym polem <code>promien</code>. Dodaj konstruktor, który przyjmuje promień jako argument. Dodaj metody dostępowe (gettery i settery) oraz metody <code>pole()</code> i <code>obwod()</code>, które obliczają pole powierzchni i obwód koła.</p></li>
+<li><p>Stwórz klasę <code>Student</code> z prywatnymi polami: <code>imie</code>, <code>nazwisko</code>, <code>numerIndeksu</code>, <code>rokStudiow</code> oraz <code>sredniaOcen</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>pokazInformacje()</code>, która wyświetla informacje o studencie.</p></li>
+<li><p>Stwórz klasę <code>Pracownik</code> z prywatnymi polami: <code>imie</code>, <code>nazwisko</code>, <code>stanowisko</code>, <code>wiek</code> oraz <code>placa</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>pokazInformacje()</code>, która wyświetla informacje o pracowniku.</p></li>
+<li><p>Stwórz klasę <code>KontoBankowe</code> z prywatnymi polami: <code>numerKonta</code>, <code>wlasciciel</code>, <code>saldo</code> oraz <code>typKonta</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody <code>wplac(double kwota)</code> i <code>wyplac(double kwota)</code>, które odpowiednio dodają lub odejmują kwotę od salda konta.</p></li>
+<li><p>Stwórz klasę <code>Telewizor</code> z prywatnymi polami: <code>marka</code>, <code>przekatnaEkranu</code>, <code>rozdzielczosc</code>, <code>czySmartTV</code> oraz <code>cena</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>pokazInformacje()</code>, która wyświetla informacje o telewizorze.</p></li>
+<li><p>Stwórz klasę <code>DziennikOcen</code> z prywatnymi polami: <code>imie</code>, <code>nazwisko</code> oraz <code>oceny</code> (jako <code>ArrayList</code> typu <code>int</code>). Dodaj konstruktor, który przyjmuje imię i nazwisko jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody <code>dodajOcene(int ocena)</code> i <code>usunOcene(int indeks)</code>, które odpowiednio dodają lub usuwają ocenę z listy ocen. Dodaj również metodę <code>sredniaOcen()</code> do obliczania średniej ocen.</p></li>
+<li><p>Stwórz klasę <code>HistoriaTemperatur</code> z prywatnym polem temperatury (jako <code>ArrayList</code> typu <code>double</code>). Dodaj konstruktor domyślny. Dodaj metody dostępowe (gettery i settery) oraz metody <code>dodajTemperature(double temperatura)</code> i <code>usunTemperature(int indeks)</code>, które odpowiednio dodają lub usuwają temperaturę z listy temperatur. Dodaj również metodę <code>sredniaTemperatur()</code> do obliczania średniej temperatur.</p></li>
+<li><p>Stwórz klasę <code>WynikiTestow</code> z prywatnymi polami: <code>imie</code>, <code>nazwisko</code> oraz <code>wyniki</code> (jako tablica typu <code>int</code>). Dodaj konstruktor, który przyjmuje imię, nazwisko oraz rozmiar tablicy jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>dodajWynik(int indeks, int wynik)</code>, która dodaje wynik testu na podanym indeksie. Dodaj również metodę <code>sredniWynik()</code> do obliczania średniego wyniku.</p></li>
+<li><p>Stwórz klasę <code>ZarzadcaZadan</code> z prywatnym polem <code>priorytetyZadan</code> (jako <code>ArrayList</code> typu <code>int</code>). Dodaj konstruktor domyślny. Dodaj metody dostępowe (gettery i settery) oraz metody <code>dodajPriorytet(int priorytet)</code> i <code>usunPriorytet(int indeks)</code>, które odpowiednio dodają lub usuwają priorytet z listy priorytetów. Dodaj również metodę <code>najwyzszyPriorytet()</code> do znajdowania najwyższego priorytetu.</p></li>
+<li><p>Stwórz klasę <code>Magazyn</code> z prywatnym polem <code>iloscProduktow</code> (jako tablica typu <code>int</code>). Dodaj konstruktor, który przyjmuje rozmiar tablicy jako argument. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>dodajProdukty(int indeks, int ilosc)</code>, która dodaje określoną ilość produktów na podanym indeksie. Dodaj również metodę <code>sumaProduktow()</code> do obliczania sumy wszystkich produktów w magazynie.</p></li>
+</ol>
 
 
 
@@ -448,11 +438,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./dziedziczenie.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span>
+      <a href="./wejsciewyjscie.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Instrukcje wejścia/wyjścia</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./dziedziczenie.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

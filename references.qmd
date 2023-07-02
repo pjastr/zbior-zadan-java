@@ -1,9 +1,4 @@
-# Bibliografia {.unnumbered}
-
----
-nocite: |
-  @*
----
+# Bibliografia i inne zbiory zadań {.unnumbered}
 
 ::: {#refs}
 :::

@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./wejsciewyjscie.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -73,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Wprowadzenie</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Zbiór zadań - Java</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -90,23 +109,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Zbiór zadań - Java</a> 
         <div class="sidebar-tools-main">
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./Zbiór-zadań---Java.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./Zbiór-zadań---Java.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
+    <a href="https://github.com/pjastr/zbior-zadan-java" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./Zbiór-zadań---Java.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
 </div>
     </div>
       </div>
@@ -120,13 +124,53 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Wprowadzenie</span></a>
+ <span class="menu-text">Zbiór zadań - Java</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Wprowadzenie do języka Java</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Przełącz sekcję">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wejsciewyjscie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Instrukcje wejścia/wyjścia</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Programowanie obiektowe</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Przełącz sekcję">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./konstruktor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Konstruktor</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dziedziczenie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bibliografia</span></a>
+ <span class="menu-text">Bibliografia i inne zbiory zadań</span></a>
   </div>
 </li>
     </ul>
@@ -139,9 +183,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Spis treści</h2>
    
   <ul>
-  <li><a href="#wprowadzenie" id="toc-wprowadzenie" class="nav-link active" data-scroll-target="#wprowadzenie">Wprowadzenie</a></li>
+  <li><a href="#zbiór-zadań---java" id="toc-zbiór-zadań---java" class="nav-link active" data-scroll-target="#zbiór-zadań---java">Zbiór zadań - Java</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/pjastr/zbior-zadan-java/issues/new" class="toc-action">Zgłoś problem</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -162,6 +206,12 @@ ul.task-list li input[type="checkbox"] {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Opublikowano</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2 lipca 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -169,11 +219,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="wprowadzenie" class="level1 unnumbered">
-<h1 class="unnumbered">Wprowadzenie</h1>
-<p>Tu będzie zbiór zadań z programowania w języku Java. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć wyrównawczych w roku akademickim 2022/23.</p>
+<section id="zbiór-zadań---java" class="level1 unnumbered">
+<h1 class="unnumbered">Zbiór zadań - Java</h1>
+<p>Tu będzie zbiór zadań z programowania w języku Java. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć dydaktycznych realizowanych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-jkozak" class="csl-entry" role="listitem">
+Jan, Kozak. b.d. <em>Materiały do ćwiczeń</em>. <a href="http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/">http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/</a>.
+</div>
+<div id="ref-Rychlicki_2012" class="csl-entry" role="listitem">
+Rychlicki, Wiesław. 2012. <em>Programowanie w języku Java. Zbiór zadań z (p)odpowiedziami</em>. Helion.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -414,8 +472,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">Bibliografia</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./wejsciewyjscie.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Instrukcje wejścia/wyjścia</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -1,3 +1,8 @@
-# Wprowadzenie {.unnumbered}
+# Zbiór zadań - Java {.unnumbered}
 
-Tu będzie zbiór zadań z programowania w języku Java. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć wyrównawczych w roku akademickim 2022/23.
+Tu będzie zbiór zadań z programowania w języku Java. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć dydaktycznych realizowanych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie.
+
+---
+nocite: |
+  @*
+---

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - Bibliografia i inne zbiory zadań</title>
+<title>Zbiór zadań - Java - 3&nbsp; Dziedziczenie</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./dziedziczenie.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./konstruktor.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,7 +73,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">Bibliografia i inne zbiory zadań</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./konstruktor.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./dziedziczenie.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -160,7 +142,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dziedziczenie.html" class="sidebar-item-text sidebar-link">
+  <a href="./dziedziczenie.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span></a>
   </div>
 </li>
@@ -168,7 +150,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografia i inne zbiory zadań</span></a>
   </div>
 </li>
@@ -185,7 +167,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bibliografia i inne zbiory zadań</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></h1>
 </div>
 
 
@@ -200,15 +182,18 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-jkozak" class="csl-entry" role="listitem">
-Jan, Kozak. n.d. <em>Materiały Do Ćwiczeń</em>. <a href="http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/">http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/</a>.
-</div>
-<div id="ref-Rychlicki_2012" class="csl-entry" role="listitem">
-Rychlicki, Wiesław. 2012. <em>Programowanie w Języku Java. Zbiór Zadań z
-(p)odpowiedziami</em>. Helion.
-</div>
-</div>
+<ol type="1">
+<li><p>Utwórz klasę <code>Pojazd</code> z polami <code>marka</code>, <code>model</code> i <code>rokProdukcji</code>. Utwórz klasy <code>Samochod</code> i <code>Motocykl</code>, które dziedziczą po klasie <code>Pojazd</code>. Klasa <code>Samochod</code> powinna mieć dodatkowe pole <code>liczbaDrzwi</code>, a klasa <code>Motocykl</code> pole <code>pojemnoscSilnika</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>Pracownik</code> z polami <code>imie</code>, <code>nazwisko</code> i <code>placa</code>. Utwórz klasy <code>Programista</code> i <code>Tester</code>, które dziedziczą po klasie <code>Pracownik</code>. Klasa <code>Programista</code> powinna mieć dodatkowe pole <code>jezykProgramowania</code>, a klasa <code>Tester</code> pole <code>typTestowania</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>Nieruchomosc</code> z polami <code>adres</code>, <code>metraż</code> i <code>cena</code>. Utwórz klasy <code>Dom</code> i <code>Mieszkanie</code>, które dziedziczą po klasie <code>Nieruchomosc</code>. Klasa <code>Dom</code> powinna mieć dodatkowe pole <code>liczbaPieter</code>, a klasa <code>Mieszkanie</code> pole <code>numerPietra</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>GraPlanszowa</code> z polami <code>nazwaGry</code>, <code>minLiczbaGraczy</code>, <code>maxLiczbaGraczy</code> oraz <code>zasadyGry</code> (jako ArrayList typu <code>String</code>). Utwórz klasy <code>GraEdukacyjna</code> i <code>GraStrategiczna</code>, które dziedziczą po klasie <code>GraPlanszowa</code>. Klasa <code>GraEdukacyjna</code> powinna mieć dodatkowe pole <code>przedmiot</code>, a klasa <code>GraStrategiczna</code> pole <code>czasTrwania</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>Druzyna</code> z polami <code>nazwa</code>, <code>miasto</code> oraz <code>punkty</code> (jako ArrayList typu <code>Integer</code>). Utwórz klasy <code>DruzynaPilkarska</code> i <code>DruzynaSiatkarska</code>, które dziedziczą po klasie <code>Druzyna</code>. Klasa <code>DruzynaPilkarska</code> powinna mieć dodatkowe pole <code>pozycjaWRankingu</code>, a klasa <code>DruzynaSiatkarska</code> pole <code>liczbaZwyciestw</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>Komputer</code> z polami <code>producent</code>, <code>model</code> oraz <code>cenyCzesci</code> (jako ArrayList typu <code>Double</code>). Utwórz klasy <code>Laptop</code> i <code>Stacjonarny</code>, które dziedziczą po klasie <code>Komputer</code>. Klasa <code>Laptop</code> powinna mieć dodatkowe pole <code>waga</code>, a klasa <code>Stacjonarny</code> pole <code>obudowa</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Utwórz klasę <code>AlbumMuzyczny</code> z polami <code>tytul</code>, <code>artysta</code> oraz <code>oceny</code> (jako ArrayList typu <code>Integer</code>). Utwórz klasy <code>AlbumRockowy</code> i <code>AlbumJazzowy</code>, które dziedziczą po klasie <code>AlbumMuzyczny</code>. Klasa <code>AlbumRockowy</code> powinna mieć dodatkowe pole <code>gatunekRocka</code>, a klasa <code>AlbumJazzowy</code> pole <code>gatunekJazzu</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code> oraz <code>equals()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
+<li><p>Zdefiniuj abstrakcyjną klasę <code>NarzedziePracy</code> z polami <code>nazwa</code> typu <code>String</code> oraz <code>rokProdukcji</code> typu <code>java.time.LocalDate</code>. Dodaj metodę abstrakcyjną <code>uzyj()</code>, która będzie symulować użycie narzędzia. Następnie zdefiniuj klasy <code>Mlotek</code>, <code>Srubokret</code> i <code>Pila</code>, które dziedziczą po klasie <code>NarzedziePracy</code> i implementują metodę <code>uzyj()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
+<li><p>Zdefiniuj abstrakcyjną klasę <code>GrafikaKomputerowa</code> z polami <code>szerokosc</code>, <code>wysokosc</code> typu <code>int</code> oraz <code>nazwaPliku</code> typu <code>String</code>. Dodaj abstrakcyjne metody <code>wczytajPlik()</code> i <code>zapiszPlik()</code>. Następnie zdefiniuj klasy <code>Bitmapa</code> i <code>Wektor</code>, które dziedziczą po klasie <code>GrafikaKomputerowa</code> i implementują metody <code>wczytajPlik()</code> oraz <code>zapiszPlik()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
+<li><p>Zdefiniuj abstrakcyjną klasę <code>UrządzenieElektroniczne</code> z polami <code>producent</code> typu <code>String</code>, <code>model</code> typu <code>String</code> oraz <code>rokProdukcji</code> typu <code>java.time.LocalDate</code>. Dodaj abstrakcyjne metody <code>włącz()</code> i <code>wyłącz()</code>. Następnie zdefiniuj klasy <code>Smartfon</code>, <code>Telewizor</code> i <code>Laptop</code>, które dziedziczą po klasie <code>UrządzenieElektroniczne</code> i implementują metody <code>włącz()</code> oraz <code>wyłącz()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
+</ol>
 
 
 
@@ -448,11 +433,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./dziedziczenie.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span>
+      <a href="./konstruktor.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Konstruktor</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">Bibliografia i inne zbiory zadań</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
