@@ -10,6 +10,7 @@ book:
     - part: "Wprowadzenie do języka Java"
       chapters: 
         - wejsciewyjscie.qmd
+        - instrukcjewarunkowe.qmd
     - part: "Programowanie obiektowe"
       chapters:
         - konstruktor.qmd

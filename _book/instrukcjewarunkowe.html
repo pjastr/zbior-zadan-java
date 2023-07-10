@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - 1&nbsp; Instrukcje wejścia/wyjścia</title>
+<title>Zbiór zadań - Java - 2&nbsp; Instrukcje warunkowe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./instrukcjewarunkowe.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./konstruktor.html" rel="next">
+<link href="./wejsciewyjscie.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wejsciewyjscie.html">Wprowadzenie do języka Java</a></li><li class="breadcrumb-item"><a href="./wejsciewyjscie.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Instrukcje wejścia/wyjścia</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wejsciewyjscie.html">Wprowadzenie do języka Java</a></li><li class="breadcrumb-item"><a href="./instrukcjewarunkowe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -119,13 +119,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wejsciewyjscie.html" class="sidebar-item-text sidebar-link active">
+  <a href="./wejsciewyjscie.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Instrukcje wejścia/wyjścia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./instrukcjewarunkowe.html" class="sidebar-item-text sidebar-link">
+  <a href="./instrukcjewarunkowe.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe</span></span></a>
   </div>
 </li>
@@ -211,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Instrukcje wejścia/wyjścia</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe</span></h1>
 </div>
 
 
@@ -227,7 +227,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ol type="1">
-<li>Napisz prostą aplikację kalkulatora tekstowego, która przyjmuje dwa liczby od użytkownika jako wejście i wykonuje podstawowe operacje matematyczne (dodawanie, odejmowanie, mnożenie, dzielenie). Wyświetl wyniki na ekranie.</li>
+<li><p>Napisz program, który sprawdza, czy podana liczba całkowita jest parzysta. Jeżeli tak, program powinien wypisać “Liczba jest parzysta”, w przeciwnym razie “Liczba jest nieparzysta”.</p></li>
+<li><p>Napisz program, który przyjmuje trzy liczby całkowite jako argumenty i zwraca największą z nich. Zastosuj instrukcje warunkowe do porównania liczb.</p></li>
+<li><p>Napisz program, który na podstawie podanego jako argument numeru dnia tygodnia (od 1 do 7) wypisze nazwę tego dnia tygodnia. Dla przykładu, jeżeli użytkownik poda liczbę 1, program powinien wypisać “Poniedziałek”. Jeżeli podana liczba nie jest z zakresu od 1 do 7, program powinien wyświetlić komunikat “Niepoprawny numer dnia tygodnia”.</p></li>
+<li><p>Napisz program, który rozwiązuje równanie kwadratowe o postaci <code>ax^2 + bx + c = 0</code>. Program powinien przyjmować jako argumenty wartości a, b, i c, obliczać delty (b^2 - 4ac), a następnie zwracać rozwiązania równania w zależności od wartości delty (delta &gt; 0, delta = 0, delta &lt; 0).</p></li>
+<li><p>Napisz program, który przyjmuje wiek użytkownika jako argument. Jeżeli wiek jest mniejszy niż 18, program powinien wyświetlić “Jesteś niepełnoletni”. Jeżeli wiek jest większy lub równy 18, ale mniejszy od 65, program powinien wyświetlić “Jesteś dorosły”. Jeżeli wiek jest równy lub większy niż 65, program powinien wyświetlić “Jesteś emerytem”.</p></li>
+<li><p>Napisz program, który będzie sprawdzał, czy podany rok jest rokiem przestępnym. Rok jest przestępny, jeśli jest podzielny przez 4, ale nie jest podzielny przez 100, chyba że jest podzielny przez 400.</p></li>
+<li><p>Napisz program, który przyjmuje trzy liczby całkowite jako argumenty i sortuje je w kolejności rosnącej, używając instrukcji warunkowych, a następnie wyświetla posortowane liczby.</p></li>
+<li><p>Napisz program, który oblicza podatek dochodowy na podstawie podanych dochodów i zasad podatkowych. Załóżmy, że podatek wynosi 18% dla dochodu do 85,528 PLN, a dla dochodu powyżej tej kwoty podatek wynosi 14,839.02 PLN plus 32% nadwyżki ponad 85,528 PLN. Użytkownik powinien wprowadzić swoje dochody, a program powinien obliczyć i wyświetlić kwotę podatku.</p></li>
 </ol>
 
 
@@ -468,13 +475,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Zbiór zadań - Java</span>
+      <a href="./wejsciewyjscie.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Instrukcje wejścia/wyjścia</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./instrukcjewarunkowe.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./konstruktor.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Konstruktor</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
