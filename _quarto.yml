@@ -11,8 +11,11 @@ book:
       chapters: 
         - wejsciewyjscie.qmd
         - instrukcjewarunkowe.qmd
+        - petle.qmd
     - part: "Programowanie obiektowe"
       chapters:
+        - klasaobiekt.qmd
+        - modyfikatorydostepu.qmd
         - konstruktor.qmd
         - zlozonepolawklasie.qmd
         - dziedziczenie.qmd
@@ -24,8 +27,6 @@ book:
     - part: "Wzorce projektowe"
     - references.qmd
   downloads: pdf
-  repo-url: https://github.com/pjastr/zbior-zadan-java
-  repo-actions: [issue]
 
 
 bibliography: references.bib

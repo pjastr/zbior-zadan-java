@@ -1,0 +1,13 @@
+# Pojęcie klasy/obiektu
+
+1. Utwórz klasę `Pies` z polami: `imie`, `rasa` i `wiek`. Napisz metodę `szczekaj()`, która wydrukuje na konsoli `"Hau Hau"`. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
+
+2. Stwórz klasę `Samochod` z polami: `marka`, `model` i `predkosc`. Napisz metody `przyspiesz(int wartosc)` i `zwolnij(int wartosc)`, które odpowiednio zwiększają i zmniejszają prędkość o podaną wartość. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
+
+3. Stwórz klasę `KontoBankowe` z polem `saldo`. Napisz metody `wplata(double kwota)` i `wyplata(double kwota)`, które odpowiednio zwiększają i zmniejszają saldo o daną kwotę. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
+
+4. Utwórz klasę `Punkt` z dwoma polami: `x` i `y` reprezentującymi współrzędne na płaszczyźnie. Napisz metodę `odleglosc(Punkt innyPunkt)`, która oblicza odległość między bieżącym punktem a innym punktem. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
+
+5. Stwórz klasę `Czas` z polami: `godziny` i `minuty`. Napisz metodę `dodajCzas(Czas innyCzas)`, która dodaje do bieżącego czasu czas podany jako argument i zwraca nowy obiekt klasy Czas. Zadbaj o to, aby minuty i godziny nie przekraczały odpowiednio 59 i 23. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
+
+
