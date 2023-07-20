@@ -16,5 +16,35 @@
 
 8. Napisz program, który oblicza podatek dochodowy na podstawie podanych dochodów i zasad podatkowych. Załóżmy, że podatek wynosi 18% dla dochodu do 85,528 PLN, a dla dochodu powyżej tej kwoty podatek wynosi 14,839.02 PLN plus 32% nadwyżki ponad 85,528 PLN. Użytkownik powinien wprowadzić swoje dochody, a program powinien obliczyć i wyświetlić kwotę podatku.
 
+9. Napisz program sprawdzający czy podane liczby z klawiatury mogą stanowić poprawną datę w kalendarzu.
+
+Przykładowe wejście:
+```
+Podaj dzień: 29
+Podaj miesiąc: 2
+Podaj rok: 2017
+```
+Przykładowe wyjście:
+```
+Błędna data
+```
+
+10. Napisz program sprawdzający czy podane liczby z klawiatury mogą stanowić poprawna godzinę w formacie 24-godzinnym.
+
+Przykładowe wejście:
+```
+Podaj godzinę: 22
+Podaj minuty: 12
+Podaj sekundy: 33
+```
+Przykładowe wyjście:
+```
+Poprawna godzina!
+```
+
+11. Napisz program, w którym użytkownik ma wprowadzić trzycyfrową liczbę całkowitą. Następnie należy sprawdzić czy liczba jest palindromem. Stosowny komunikat wyświetl na konsoli.
+
+12. Napisz program, który pobiera trzy liczby całkowite (teoretycznie mogą być różnych znaków) i sprawdza, czy
+można z nich zbudować trójkąt prostokątny - ostatecznie wypisuje „TAK” lub „NIE”.
 
 
