@@ -1,0 +1,56 @@
+# Tablice
+
+1. Napisz program, który tworzy tablicę jednowymiarową 10 liczb całkowitych, a następnie wyświetla je w konsoli w porządku odwrotnym do wprowadzenia.
+
+2. Utwórz program, który tworzy jednowymiarową tablicę 20 liczb losowych z przedziału od 1 do 100, a następnie oblicza i wyświetla ich średnią wartość.
+
+3. Napisz program, który tworzy tablicę jednowymiarową 15 liczb całkowitych, a następnie oblicza i wyświetla największą i najmniejszą wartość w tablicy.
+
+4. Utwórz program, który tworzy jednowymiarową tablicę 30 liczb całkowitych. Następnie poproś użytkownika, aby podał dowolną liczbę. Program powinien wyświetlić informację, czy podana liczba znajduje się w tablicy, a także ile razy się w niej pojawia.
+
+5. Napisz program, który tworzy jednowymiarową tablicę 10 liczb całkowitych. Program powinien obliczać i wyświetlać sumę tych liczb, które są parzyste.
+
+6. Napisz program, który tworzy jednowymiarową tablicę 10 liczb zmiennoprzecinkowych, a następnie oblicza i wyświetla ich sumę.
+
+7. Utwórz program, który tworzy tablicę jednowymiarową 20 liczb zmiennoprzecinkowych, a następnie znajduje i wyświetla wartość średnią oraz medianę tych liczb.
+
+8. Napisz program, który tworzy jednowymiarową tablicę 10 liczb zmiennoprzecinkowych. Program powinien obliczać i wyświetlać sumę tych liczb, które są większe niż 0.5.
+
+9. Napisz program, który tworzy jednowymiarową tablicę 20 liczb całkowitych, a następnie oblicza i wyświetla ilość liczb parzystych i nieparzystych w tablicy.
+
+10. Utwórz program, który tworzy jednowymiarową tablicę 30 liczb całkowitych. Następnie program powinien obliczyć i wyświetlić ilość liczb, które są kwadratami innej liczby całkowitej.
+
+11. Napisz program, który tworzy jednowymiarową tablicę 50 liczb całkowitych. Program powinien obliczać i wyświetlać ilość liczb, które są liczbami pierwszymi.
+
+12. Napisz program, który tworzy jednowymiarową tablicę 15 liczb całkowitych, a następnie oblicza i wyświetla sumę liczb, które są podzielne przez 3.
+
+13. Napisz statyczną metodę `minimumValue`, która przyjmuje tablicę liczb całkowitych jako argument i zwraca najmniejszą liczbę w tablicy. Przyjmij, że tablica zawsze będzie miała co najmniej jeden element. Jeżeli tablica zawiera tylko jeden element, zwróć ten element. Stwórz przypadek testowy.
+
+14. Napisz statyczną metodę `average`, która przyjmuje tablicę liczb zmiennoprzecinkowych jako argument i zwraca średnią arytmetyczną wszystkich liczb w tablicy. Jeżeli tablica jest pusta, zwróć 0. Stwórz przypadek testowy.
+
+15. Napisz statyczną metodę `reverseArray`, która przyjmuje tablicę liczb całkowitych jako argument i zwraca tę samą tablicę, ale z odwróconym porządkiem elementów. Na przykład, dla tablicy [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.
+
+16. Napisz statyczną metodę `reverseArray`, która przyjmuje tablicę liczb całkowitych jako argument. Metoda odwraca porządek elementów w tablicy i powinna być procedurą. Na przykład, dla tablicy [1, 2, 3, 4, 5], funkcja powinna zmienić tablicę na [5, 4, 3, 2, 1]. Stwórz przypadek testowy.
+
+17. Napisz statyczną metodę `countZeros`, która przyjmuje tablicę liczb całkowitych jako argument i zwraca liczbę wystąpień zera w tablicy. Na przykład, dla tablicy [0, 1, 2, 0, 3, 0, 4], funkcja powinna zwrócić 3. Stwórz przypadek testowy.
+
+18. Napisz statyczną metodę `oddElementsSum`, która przyjmuje tablicę liczb całkowitych jako argument i zwraca sumę wszystkich nieparzystych liczb w tablicy. Jeżeli w tablicy nie ma żadnych nieparzystych liczb, funkcja powinna zwrócić 0. Stwórz przypadek testowy.
+
+19. Napisz statyczną metodę `copyArray`, która przyjmuje tablicę liczb całkowitych jako argument i zwraca nową tablicę, która jest kopią pierwotnej. Funkcja powinna skopiować tablicę ręcznie, element po elemencie, bez korzystania z systemowych metod kopiowania. Stwórz przypadek testowy.
+
+20. Napisz statyczną metodę `copyArrayReverse`, która przyjmuje tablicę liczb całkowitych jako argument i zwraca nową tablicę, która jest odwróconą kopią pierwotnej. Na przykład, dla tablicy [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.
+
+21. Napisz statyczną metodę `copyArrayEven`, która przyjmuje tablicę liczb całkowitych jako argument i zwraca nową tablicę zawierającą tylko parzyste liczby z pierwotnej tablicy. Na przykład, dla tablicy [1, 2, 3, 4, 5], funkcja powinna zwrócić [2, 4]. Jeżeli w tablicy nie ma żadnych parzystych liczb, funkcja powinna zwrócić pustą tablicę. Stwórz przypadek testowy.
+
+22. Napisz statyczną metodę `copyArrayWithIndex`, która przyjmuje tablicę liczb całkowitych oraz indeks początkowy i końcowy jako argumenty. Funkcja powinna zwrócić nową tablicę zawierającą elementy pierwotnej tablicy od indeksu początkowego do końcowego (włącznie). Na przykład, dla tablicy [1, 2, 3, 4, 5] i indeksów 1 i 3, funkcja powinna zwrócić [2, 3, 4]. Stwórz przypadek testowy.
+
+23. Napisz statyczną metodę `mergeArrays`, która przyjmuje dwie tablice liczb całkowitych jako argumenty. Funkcja powinna zwrócić nową tablicę, która jest połączeniem obu pierwotnych tablic. Na przykład, dla tablic [1, 2, 3] i [4, 5, 6], funkcja powinna zwrócić [1, 2, 3, 4, 5, 6]. Stwórz przypadek testowy.
+
+24. Napisz metodę `sortArray`, która przyjmuje tablicę liczb całkowitych jako argument i zwraca nową tablicę, która jest posortowaną wersją pierwotnej tablicy. Wykorzystaj metodę `Arrays.sort()` z biblioteki `java.util.Arrays` do posortowania tablicy. Stwórz przypadek testowy.
+
+25. Napisz metodę `checkEquality`, która przyjmuje dwie tablice liczb całkowitych jako argumenty i zwraca wartość `true`, jeśli tablice są równe, a `false` w przeciwnym razie. Wykorzystaj metodę `Arrays.equals()` z biblioteki `java.util.Arrays` do porównania tablic. Stwórz przypadek testowy.
+
+26. Napisz metodę `fillArray`, która przyjmuje tablicę liczb całkowitych i liczbę całkowitą jako argumenty. Metoda powinna wypełnić tablicę podaną liczbą, wykorzystując do tego metodę `Arrays.fill()` z biblioteki `java.util.Arrays`. Stwórz przypadek testowy.
+
+27. Napisz metodę `printArray`, która przyjmuje tablicę liczb całkowitych jako argument i drukuje jej zawartość na konsoli. Wykorzystaj do tego metodę `Arrays.toString()` z biblioteki `java.util.Arrays`, która zwraca tekstową reprezentację tablicy. Stwórz przypadek testowy.
+

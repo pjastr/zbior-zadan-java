@@ -1,0 +1,34 @@
+# Funkcje/metody
+
+
+
+1. Napisz statyczną metodę, której jest dodatnia liczba całkowita $n$. Metoda ma zwrócić jako liczbę całkowitą sumę szeregu
+
+$$1-2+3-4+\ldots \pm n.$$
+Stwórz przypadek testowy dla tej metody.
+
+2. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$ ($n>2$). Metoda ma zwrócić największą liczbę pierwszą mniejszą niż $n$. Stwórz przypadek testowy dla tej metody. 
+
+3. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca odpowiednią wartość logiczną sprawdzającą czy $n$ jest liczbą doskonałą. Liczba doskonała to taka, której suma dzielników jest równa tej liczbie
+(liczbami doskonałymi są np. $1 = 1$, $6 = 1 + 2 + 3$). Stwórz przypadek testowy dla metody.
+
+4. Napisz statyczną metodę, której parametrami są dwie dodatnie liczby całkowite $a$ i $b$. Metoda ma zwrócić najmniejszą wspólną wielokrotność ($NWW$) liczb $a$ i $b$. Stwórz przypadek testowy dla metody.
+
+Przykład: $NWW(5,10)=10$, $NWD(4,5)=20$.
+
+5. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca `true` jeśli zadana liczba $n$ jest nieparzysta, ujemna, (poza minusem) składa się z 4 cyfr i podzielna przez 5, oraz zwraca `false` w pozostałych przypadkach. Stwórz przypadek testowy dla metody. 
+
+6. Napisz statyczną metodę, która jako argument otrzymuje dodatnią liczbę całkowitą $n$ i zwraca liczbę $7^{-n}$. Nie korzystaj z żadnych gotowych funkcji bibliotecznych ani wbudowanych wewnątrz tej funkcji poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. 
+
+Podpowiedź: $7^{-n}=\frac{1}{7^n}$. 
+
+7. Napisz statyczną metodę, której argumentem są cztery dodatnie liczby całkowite $a, b, c, d$. Metoda zwraca ile liczb całkowitych z przedziału $(a,b)$ jest podzielnych przez $c$ i nie jest podzielnych przez $d$. W przypadku braku takich liczb, zwróć zero. Stwórz przypadek testowy dla tej metody. 
+
+8. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca sumę liczb całkowitych od $n$ do $2n$ (włącznie). Stwórz przypadek testowy dla metody. 
+
+9. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca wartość wyrażenia:
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+
+Stwórz przypadek testowy dla metody. 
+
+10. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca 1 jeśli $n$ jest liczbą składającą się z samych jedynek w zapisie dziesiętnym oraz zwraca 0 w przeciwnym wypadku. Stwórz przypadek testowy dla metody. 

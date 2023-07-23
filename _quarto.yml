@@ -12,6 +12,9 @@ book:
         - wejsciewyjscie.qmd
         - instrukcjewarunkowe.qmd
         - petle.qmd
+        - metody.qmd
+        - random.qmd
+        - tablice.qmd
     - part: "Programowanie obiektowe"
       chapters:
         - klasaobiekt.qmd

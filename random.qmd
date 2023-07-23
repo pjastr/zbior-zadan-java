@@ -1,0 +1,11 @@
+# Generowanie liczb pseudolosowych
+
+1. Napisz metodę `generateRandomInt`, która generuje i zwraca losową liczbę całkowitą. Stwórz przypadek testowy.
+
+2. Napisz metodę `generateRandomDouble`, która generuje i zwraca losową liczbę zmiennoprzecinkową z zakresu od 0.0 do 1.0. Stwórz przypadek testowy.
+
+3. Napisz metodę `generateRandomIntInRange`, która przyjmuje dwie liczby całkowite jako argumenty i zwraca losową liczbę całkowitą z tego zakresu (włącznie z granicami). Na przykład, dla argumentów 5 i 10, metoda powinna zwracać liczbę z zakresu od 5 do 10. Stwórz przypadek testowy.
+
+4. Napisz metodę `generateRandomGaussian`, która generuje i zwraca losową liczbę zmiennoprzecinkową zgodnie z rozkładem normalnym. Stwórz przypadek testowy.
+
+5. Napisz metodę `generateRandomBoolean`, która generuje i zwraca losową wartość logiczną (true lub false). Stwórz przypadek testowy.
