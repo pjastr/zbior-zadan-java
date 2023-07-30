@@ -9,3 +9,7 @@
 4. Stwórz dwie klasy w tym samym pakiecie: `Pracownik` i `Firma`. Klasa `Pracownik` powinna mieć pole bez modyfikatora dostępu. Spróbuj uzyskać dostęp do tego pola z klasy `Firma`.
 
 5. Utwórz klasę `KontoBankowe` z publicznym polem `numerKonta` i prywatnym polem `saldo`. Zobacz, jak różne modyfikatory dostępu wpływają na dostęp do tych pól z innej klasy.
+
+6. Stwórz klasę `Zawodnik` z trzema polami: `imie` (publiczne), `wiek` (pomijając modyfikator dostępu) oraz `narodowosc` (prywatne). W klasie `Main` stwórz tablicę zawodników i spróbuj zmienić wartości wszystkich pól. Obserwuj rezultaty.
+
+7. Stwórz klasę `Trener`, która jest zadeklarowana jako `private`. Spróbuj stworzyć obiekt `Trener` w klasie `Main`. Jaki jest rezultat?

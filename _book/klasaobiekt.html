@@ -37,10 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -91,6 +93,7 @@ ul.task-list li input[type="checkbox"] {
       <a href="./">Zbiór zadań - Java</a> 
         <div class="sidebar-tools-main">
     <a href="./Zbiór-zadań---Java.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Przełącz tryb ciemny"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -201,20 +204,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Pola, metody, klasy finalne</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./comparable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparable</code></span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparable</code></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comparator.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparator</code></span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Interfejs <code>Comparator</code></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./kopiowanie.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span></a>
   </div>
 </li>
       </ul>
@@ -267,6 +276,23 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Stwórz klasę <code>KontoBankowe</code> z polem <code>saldo</code>. Napisz metody <code>wplata(double kwota)</code> i <code>wyplata(double kwota)</code>, które odpowiednio zwiększają i zmniejszają saldo o daną kwotę. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.</p></li>
 <li><p>Utwórz klasę <code>Punkt</code> z dwoma polami: <code>x</code> i <code>y</code> reprezentującymi współrzędne na płaszczyźnie. Napisz metodę <code>odleglosc(Punkt innyPunkt)</code>, która oblicza odległość między bieżącym punktem a innym punktem. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.</p></li>
 <li><p>Stwórz klasę <code>Czas</code> z polami: <code>godziny</code> i <code>minuty</code>. Napisz metodę <code>dodajCzas(Czas innyCzas)</code>, która dodaje do bieżącego czasu czas podany jako argument i zwraca nowy obiekt klasy Czas. Zadbaj o to, aby minuty i godziny nie przekraczały odpowiednio 59 i 23. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.</p></li>
+<li><p>Wykonaj po kolei dwa podpunkty:</p>
+<ol type="A">
+<li>Stwórz klasę <code>Samochod</code> zawierającą pole <code>marka</code>. W klasie <code>Main</code>, utwórz obiekt klasy <code>Samochod</code>, przypisz mu wartość <code>null</code> i spróbuj odwołać się do pola <code>marka</code>. Jaki jest wynik?</li>
+<li>Zmodyfikuj kod z podpunktu A tak, aby sprawdzić, czy obiekt <code>Samochod</code> jest <code>null</code> przed odwołaniem się do pola <code>marka</code>. Jaki jest wynik?</li>
+</ol></li>
+<li><p>Utwórz klasę <code>Osoba</code> zawierającą pole <code>imie</code>. W klasie <code>Main</code>, utwórz dwa obiekty klasy <code>Osoba</code> - <code>osoba1</code> i <code>osoba2</code> - oba odnoszące się do tego samego obiektu. Zmień wartość pola <code>imie</code> przez <code>osoba1</code> i wydrukuj wartość pola <code>imie</code> przez <code>osoba2</code>. Przeanalizuj wynik.</p></li>
+<li><p>Stwórz tablicę obiektów klasy <code>Samochod</code>. Następnie spróbuj odwołać się do pola <code>marka</code> jednego z obiektów w tablicy, nie inicjalizując wcześniej tablicy obiektami <code>Samochod</code>. Przeanalizuj wynik.</p></li>
+<li><p>Stwórz listę tablicową (Arraylistę) obiektów klasy <code>Osoba</code>. Następnie spróbuj odwołać się do pola <code>imie</code> jednego z obiektów na liście, nie dodając wcześniej do listy żadnych obiektów <code>Osoba</code>. Przeanalizuj wynik.</p></li>
+<li><p>Utwórz klasę <code>Pies</code> z metodą <code>szczekaj</code>, która wydrukuje wiadomość “Hau! Hau!”. W klasie <code>Main</code> utwórz obiekt <code>Pies</code>, przypisz mu wartość <code>null</code> i spróbuj wywołać metodę <code>szczekaj</code>. Przeanalizuj wynik.</p></li>
+<li><p>Stwórz klasę <code>Kot</code> z polem <code>imie</code>. Dodaj do klasy <code>Kot</code> metodę <code>stworzKota</code>, która zwraca nowy obiekt klasy <code>Kot</code>. Metoda powinna ustawiać pole <code>imie</code> na podaną wartość, ale tylko jeśli wartość nie jest <code>null</code>. W przeciwnym razie powinna zwracać <code>null</code>. W klasie <code>Main</code> użyj metody <code>stworzKota</code> do stworzenia obiektu <code>kot</code>, a następnie spróbuj wydrukować wartość pola <code>imie</code>. Co się stanie, jeśli przekażesz <code>null</code> jako argument do metody <code>stworzKota</code>? Przeanalizuj wynik.</p></li>
+<li><p>Wykonaj kolejno poniższe czynności:</p>
+<ol type="A">
+<li><p>Stwórz klasę <code>Czlowiek</code> z polem <code>imie</code>. Dodaj do klasy metodę <code>przedstawSie</code>, która wyświetli wiadomość “Cześć, jestem” i imię osoby. W klasie <code>Main</code>, utwórz obiekt <code>Czlowiek</code> i wywołaj na nim metodę <code>przedstawSie</code>. Czy musisz użyć słowo kluczowe <code>this</code> w implementacji metody?</p></li>
+<li><p>Dodaj do klasy <code>Czlowiek</code> metodę <code>powiedzCzesc</code>, która jako argument przyjmuje inny obiekt klasy <code>Czlowiek</code> i wyświetla wiadomość “Cześć,” i imię drugiego człowieka. Przeanalizuj działanie.</p></li>
+<li><p>Dodaj do klasy <code>Czlowiek</code> metodę <code>zmienImie</code>, która jako argument przyjmuje łańcuch znaków i przypisuje go do pola <code>imie</code>. Utwórz obiekt <code>Czlowiek</code> i użyj metody <code>zmienImie</code> do zmiany jego imienia. Następnie wywołaj metodę <code>przedstawSie</code>. Czy imię zostało zmienione? Czy musisz użyć słowo kluczowe <code>this</code> w implementacji metody?</p></li>
+<li><p>Dodaj do klasy <code>Czlowiek</code> metodę <code>zamienImionami</code>, która jako argument przyjmuje inny obiekt klasy <code>Czlowiek</code> i zamienia imionami obie osoby. Utwórz dwa obiekty <code>Czlowiek</code> i użyj metody <code>zamienImionami</code> do zamiany ich imion. Następnie wywołaj metodę <code>przedstawSie</code> na obu obiektach. Czy imiona zostały zamienione?</p></li>
+</ol></li>
 </ol>
 
 
@@ -292,6 +318,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

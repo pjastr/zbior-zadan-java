@@ -29,3 +29,4 @@
 14. Stwórz klasę `ZarzadcaZadan` z prywatnym polem `priorytetyZadan` (jako `ArrayList` typu `int`). Dodaj konstruktor domyślny. Dodaj metody dostępowe (gettery i settery) oraz metody `dodajPriorytet(int priorytet)` i `usunPriorytet(int indeks)`, które odpowiednio dodają lub usuwają priorytet z listy priorytetów. Dodaj również metodę `najwyzszyPriorytet()` do znajdowania najwyższego priorytetu.
 
 15. Stwórz klasę  `Magazyn` z prywatnym polem `iloscProduktow` (jako tablica typu `int`). Dodaj konstruktor, który przyjmuje rozmiar tablicy jako argument. Dodaj metody dostępowe (gettery i settery) oraz metodę `dodajProdukty(int indeks, int ilosc)`, która dodaje określoną ilość produktów na podanym indeksie. Dodaj również metodę `sumaProduktow()` do obliczania sumy wszystkich produktów w magazynie.
+

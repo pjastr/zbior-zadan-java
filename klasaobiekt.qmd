@@ -1,13 +1,36 @@
 # Pojęcie klasy/obiektu
 
-1. Utwórz klasę `Pies` z polami: `imie`, `rasa` i `wiek`. Napisz metodę `szczekaj()`, która wydrukuje na konsoli `"Hau Hau"`. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
+1.  Utwórz klasę `Pies` z polami: `imie`, `rasa` i `wiek`. Napisz metodę `szczekaj()`, która wydrukuje na konsoli `"Hau Hau"`. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
 
-2. Stwórz klasę `Samochod` z polami: `marka`, `model` i `predkosc`. Napisz metody `przyspiesz(int wartosc)` i `zwolnij(int wartosc)`, które odpowiednio zwiększają i zmniejszają prędkość o podaną wartość. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
+2.  Stwórz klasę `Samochod` z polami: `marka`, `model` i `predkosc`. Napisz metody `przyspiesz(int wartosc)` i `zwolnij(int wartosc)`, które odpowiednio zwiększają i zmniejszają prędkość o podaną wartość. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
 
-3. Stwórz klasę `KontoBankowe` z polem `saldo`. Napisz metody `wplata(double kwota)` i `wyplata(double kwota)`, które odpowiednio zwiększają i zmniejszają saldo o daną kwotę. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
+3.  Stwórz klasę `KontoBankowe` z polem `saldo`. Napisz metody `wplata(double kwota)` i `wyplata(double kwota)`, które odpowiednio zwiększają i zmniejszają saldo o daną kwotę. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
 
-4. Utwórz klasę `Punkt` z dwoma polami: `x` i `y` reprezentującymi współrzędne na płaszczyźnie. Napisz metodę `odleglosc(Punkt innyPunkt)`, która oblicza odległość między bieżącym punktem a innym punktem. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
+4.  Utwórz klasę `Punkt` z dwoma polami: `x` i `y` reprezentującymi współrzędne na płaszczyźnie. Napisz metodę `odleglosc(Punkt innyPunkt)`, która oblicza odległość między bieżącym punktem a innym punktem. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
 
-5. Stwórz klasę `Czas` z polami: `godziny` i `minuty`. Napisz metodę `dodajCzas(Czas innyCzas)`, która dodaje do bieżącego czasu czas podany jako argument i zwraca nowy obiekt klasy Czas. Zadbaj o to, aby minuty i godziny nie przekraczały odpowiednio 59 i 23. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
+5.  Stwórz klasę `Czas` z polami: `godziny` i `minuty`. Napisz metodę `dodajCzas(Czas innyCzas)`, która dodaje do bieżącego czasu czas podany jako argument i zwraca nowy obiekt klasy Czas. Zadbaj o to, aby minuty i godziny nie przekraczały odpowiednio 59 i 23. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
 
+6.  Wykonaj po kolei dwa podpunkty:
 
+    A.  Stwórz klasę `Samochod` zawierającą pole `marka`. W klasie `Main`, utwórz obiekt klasy `Samochod`, przypisz mu wartość `null` i spróbuj odwołać się do pola `marka`. Jaki jest wynik?
+    B.  Zmodyfikuj kod z podpunktu A tak, aby sprawdzić, czy obiekt `Samochod` jest `null` przed odwołaniem się do pola `marka`. Jaki jest wynik?
+
+7.  Utwórz klasę `Osoba` zawierającą pole `imie`. W klasie `Main`, utwórz dwa obiekty klasy `Osoba` - `osoba1` i `osoba2` - oba odnoszące się do tego samego obiektu. Zmień wartość pola `imie` przez `osoba1` i wydrukuj wartość pola `imie` przez `osoba2`. Przeanalizuj wynik.
+
+8.  Stwórz tablicę obiektów klasy `Samochod`. Następnie spróbuj odwołać się do pola `marka` jednego z obiektów w tablicy, nie inicjalizując wcześniej tablicy obiektami `Samochod`. Przeanalizuj wynik.
+
+9.  Stwórz listę tablicową (Arraylistę) obiektów klasy `Osoba`. Następnie spróbuj odwołać się do pola `imie` jednego z obiektów na liście, nie dodając wcześniej do listy żadnych obiektów `Osoba`. Przeanalizuj wynik.
+
+10. Utwórz klasę `Pies` z metodą `szczekaj`, która wydrukuje wiadomość "Hau! Hau!". W klasie `Main` utwórz obiekt `Pies`, przypisz mu wartość `null` i spróbuj wywołać metodę `szczekaj`. Przeanalizuj wynik.
+
+11. Stwórz klasę `Kot` z polem `imie`. Dodaj do klasy `Kot` metodę `stworzKota`, która zwraca nowy obiekt klasy `Kot`. Metoda powinna ustawiać pole `imie` na podaną wartość, ale tylko jeśli wartość nie jest `null`. W przeciwnym razie powinna zwracać `null`. W klasie `Main` użyj metody `stworzKota` do stworzenia obiektu `kot`, a następnie spróbuj wydrukować wartość pola `imie`. Co się stanie, jeśli przekażesz `null` jako argument do metody `stworzKota`? Przeanalizuj wynik.
+
+12. Wykonaj kolejno poniższe czynności:
+
+    A.  Stwórz klasę `Czlowiek` z polem `imie`. Dodaj do klasy metodę `przedstawSie`, która wyświetli wiadomość "Cześć, jestem" i imię osoby. W klasie `Main`, utwórz obiekt `Czlowiek` i wywołaj na nim metodę `przedstawSie`. Czy musisz użyć słowo kluczowe `this` w implementacji metody?
+
+    B.  Dodaj do klasy `Czlowiek` metodę `powiedzCzesc`, która jako argument przyjmuje inny obiekt klasy `Czlowiek` i wyświetla wiadomość "Cześć," i imię drugiego człowieka. Przeanalizuj działanie.
+
+    C.  Dodaj do klasy `Czlowiek` metodę `zmienImie`, która jako argument przyjmuje łańcuch znaków i przypisuje go do pola `imie`. Utwórz obiekt `Czlowiek` i użyj metody `zmienImie` do zmiany jego imienia. Następnie wywołaj metodę `przedstawSie`. Czy imię zostało zmienione? Czy musisz użyć słowo kluczowe `this` w implementacji metody?
+
+    D.  Dodaj do klasy `Czlowiek` metodę `zamienImionami`, która jako argument przyjmuje inny obiekt klasy `Czlowiek` i zamienia imionami obie osoby. Utwórz dwa obiekty `Czlowiek` i użyj metody `zamienImionami` do zamiany ich imion. Następnie wywołaj metodę `przedstawSie` na obu obiektach. Czy imiona zostały zamienione?

@@ -1,0 +1,12 @@
+# Pola, metody, klasy finalne
+
+1.  Wykonaj kolejno czynności:
+
+    A.  Stwórz klasę `Planeta` z jednym polem finalnym `nazwa`. Spróbuj zmienić wartość pola `nazwa` po jego inicjalizacji. Przeanalizuj wynik.
+    B.  Dodaj do klasy `Planeta` metodę `zmienNazwe`, która próbuje zmienić nazwę planety. Jaki jest wynik próby zmiany finalnego pola za pomocą metody?
+
+2.  Stwórz klasę `Samochod` z dwoma polami: `marka` (normalne pole) i `VIN` (pole finalne - Numer Identyfikacyjny Pojazdu). Stwórz kilka obiektów `Samochod` i spróbuj zmienić pole `VIN` dla każdego z nich. Przeanalizuj wynik.
+
+3.  Stwórz klasę `Zawodnik` z jednym polem finalnym `nazwa` oraz polem `punkty`. Stwórz tablicę zawodników i spróbuj zmienić pole `nazwa` dla jednego z zawodników. Przeanalizuj wynik.
+
+4.  Stwórz klasę `Osoba` z jednym polem finalnym `PESEL`. Następnie stwórz klasę `Student`, która dziedziczy po klasie `Osoba`. Czy możesz zmienić pole `PESEL` w klasie `Student`? Co się stanie, jeśli spróbujesz to zrobić? Przeanalizuj wyniki.
