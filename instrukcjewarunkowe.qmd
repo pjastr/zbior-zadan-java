@@ -1,50 +1,53 @@
 # Instrukcje warunkowe
 
-1. Napisz program, który sprawdza, czy podana liczba całkowita jest parzysta. Jeżeli tak, program powinien wypisać "Liczba jest parzysta", w przeciwnym razie "Liczba jest nieparzysta".
+1.  Napisz program, który sprawdza, czy podana liczba całkowita jest parzysta. Jeżeli tak, program powinien wypisać "Liczba jest parzysta", w przeciwnym razie "Liczba jest nieparzysta".
 
-2. Napisz program, który przyjmuje trzy liczby całkowite jako argumenty i zwraca największą z nich. Zastosuj instrukcje warunkowe do porównania liczb.
+2.  Napisz program, który przyjmuje trzy liczby całkowite jako argumenty i zwraca największą z nich. Zastosuj instrukcje warunkowe do porównania liczb.
 
-3. Napisz program, który na podstawie podanego jako argument numeru dnia tygodnia (od 1 do 7) wypisze nazwę tego dnia tygodnia. Dla przykładu, jeżeli użytkownik poda liczbę 1, program powinien wypisać "Poniedziałek". Jeżeli podana liczba nie jest z zakresu od 1 do 7, program powinien wyświetlić komunikat "Niepoprawny numer dnia tygodnia".
+3.  Napisz program, który na podstawie podanego jako argument numeru dnia tygodnia (od 1 do 7) wypisze nazwę tego dnia tygodnia. Dla przykładu, jeżeli użytkownik poda liczbę 1, program powinien wypisać "Poniedziałek". Jeżeli podana liczba nie jest z zakresu od 1 do 7, program powinien wyświetlić komunikat "Niepoprawny numer dnia tygodnia".
 
-4. Napisz program, który rozwiązuje równanie kwadratowe o postaci `ax^2 + bx + c = 0`. Program powinien przyjmować jako argumenty wartości a, b, i c, obliczać delty (b^2 - 4ac), a następnie zwracać rozwiązania równania w zależności od wartości delty (delta > 0, delta = 0, delta < 0). 
+4.  Napisz program, który rozwiązuje równanie kwadratowe o postaci $ax^2 + bx + c = 0$. Program powinien przyjmować jako argumenty wartości $a$, $b$, i $c$, obliczać delty ($b^2 - 4ac$), a następnie zwracać rozwiązania równania w zależności od wartości delty.
 
-5. Napisz program, który przyjmuje wiek użytkownika jako argument. Jeżeli wiek jest mniejszy niż 18, program powinien wyświetlić "Jesteś niepełnoletni". Jeżeli wiek jest większy lub równy 18, ale mniejszy od 65, program powinien wyświetlić "Jesteś dorosły". Jeżeli wiek jest równy lub większy niż 65, program powinien wyświetlić "Jesteś emerytem". 
+5.  Napisz program, który przyjmuje wiek użytkownika jako argument. Jeżeli wiek jest mniejszy niż 18, program powinien wyświetlić "Jesteś niepełnoletni". Jeżeli wiek jest większy lub równy 18, ale mniejszy od 65, program powinien wyświetlić "Jesteś dorosły". Jeżeli wiek jest równy lub większy niż 65, program powinien wyświetlić "Jesteś emerytem".
 
-6. Napisz program, który będzie sprawdzał, czy podany rok jest rokiem przestępnym. Rok jest przestępny, jeśli jest podzielny przez 4, ale nie jest podzielny przez 100, chyba że jest podzielny przez 400. 
+6.  Napisz program, który będzie sprawdzał, czy podany rok jest rokiem przestępnym. Rok jest przestępny, jeśli jest podzielny przez 4, ale nie jest podzielny przez 100, chyba że jest podzielny przez 400.
 
-7. Napisz program, który przyjmuje trzy liczby całkowite jako argumenty i sortuje je w kolejności rosnącej, używając instrukcji warunkowych, a następnie wyświetla posortowane liczby.
+7.  Napisz program, który przyjmuje trzy liczby całkowite jako argumenty i sortuje je w kolejności rosnącej, używając instrukcji warunkowych, a następnie wyświetla posortowane liczby.
 
-8. Napisz program, który oblicza podatek dochodowy na podstawie podanych dochodów i zasad podatkowych. Załóżmy, że podatek wynosi 18% dla dochodu do 85,528 PLN, a dla dochodu powyżej tej kwoty podatek wynosi 14,839.02 PLN plus 32% nadwyżki ponad 85,528 PLN. Użytkownik powinien wprowadzić swoje dochody, a program powinien obliczyć i wyświetlić kwotę podatku.
+8.  Napisz program, który oblicza podatek dochodowy na podstawie podanych dochodów i zasad podatkowych. Załóżmy, że podatek wynosi 18% dla dochodu do 85,528 PLN, a dla dochodu powyżej tej kwoty podatek wynosi 14,839.02 PLN plus 32% nadwyżki ponad 85,528 PLN. Użytkownik powinien wprowadzić swoje dochody, a program powinien obliczyć i wyświetlić kwotę podatku.
 
-9. Napisz program sprawdzający czy podane liczby z klawiatury mogą stanowić poprawną datę w kalendarzu.
+9.  Napisz program sprawdzający czy podane liczby z klawiatury mogą stanowić poprawną datę w kalendarzu.
 
 Przykładowe wejście:
-```
+
+```         
 Podaj dzień: 29
 Podaj miesiąc: 2
 Podaj rok: 2017
 ```
+
 Przykładowe wyjście:
-```
+
+```         
 Błędna data
 ```
 
 10. Napisz program sprawdzający czy podane liczby z klawiatury mogą stanowić poprawna godzinę w formacie 24-godzinnym.
 
 Przykładowe wejście:
-```
+
+```         
 Podaj godzinę: 22
 Podaj minuty: 12
 Podaj sekundy: 33
 ```
+
 Przykładowe wyjście:
-```
+
+```         
 Poprawna godzina!
 ```
 
 11. Napisz program, w którym użytkownik ma wprowadzić trzycyfrową liczbę całkowitą. Następnie należy sprawdzić czy liczba jest palindromem. Stosowny komunikat wyświetl na konsoli.
 
-12. Napisz program, który pobiera trzy liczby całkowite (teoretycznie mogą być różnych znaków) i sprawdza, czy
-można z nich zbudować trójkąt prostokątny - ostatecznie wypisuje „TAK” lub „NIE”.
-
-
+12. Napisz program, który pobiera trzy liczby całkowite (teoretycznie mogą być różnych znaków) i sprawdza, czy można z nich zbudować trójkąt prostokątny - ostatecznie wypisuje „TAK" lub „NIE".
