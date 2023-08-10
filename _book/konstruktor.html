@@ -91,7 +91,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Zbiór zadań - Java</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/pjastr/zbior-zadan-java" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <a href="./Zbiór-zadań---Java.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Przełącz tryb ciemny"><i class="bi"></i></a>
 </div>
@@ -271,6 +272,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ol type="1">
+<li><p>Napisz klasę “Ksiazka”, która będzie zawierać trzy pola: tytul, autor, rokWydania. Następnie zaimplementuj dwa konstruktory - jeden domyślny, który nie przyjmuje żadnych argumentów, i drugi, który przyjmuje trzy argumenty odpowiadające polom klasy. W przypadku drugiego konstruktora, nazwy parametrów muszą być takie same jak nazwy pól. Sprawdź czy jesteś w stanie prawidłowo przypisać wartości do pól klasy używając słowa kluczowego “this”.</p></li>
+<li><p>Zaprojektuj klasę “Osoba”, która będzie zawierać dwa pola: imie, nazwisko. Zaimplementuj konstruktor, który przyjmuje dwa argumenty odpowiadające polom klasy. Nazwy parametrów muszą być takie same jak nazwy pól. Spróbuj przypisać wartości do pól klasy bez używania słowa kluczowego “this”. Czy jest to możliwe? Jeżeli nie, to dlaczego?</p></li>
+<li><p>Stwórz klasę “Samochod”, która będzie zawierać trzy pola: marka, model, rokProdukcji. Zaimplementuj trzy konstruktory - pierwszy domyślny, drugi przyjmujący dwa argumenty (marka i model), trzeci przyjmujący trzy argumenty (marka, model, rokProdukcji). W przypadku drugiego i trzeciego konstruktora, nazwy parametrów muszą być takie same jak nazwy pól. Wykorzystaj słowo kluczowe “this” do rozróżnienia pól klasy od parametrów.</p></li>
+<li><p>Napisz klasę “Osoba”, która będzie miała pola: imię, nazwisko i wiek. Zdefiniuj w niej dwa konstruktory, jeden przyjmujący wszystkie trzy parametry, a drugi tylko imię i nazwisko. Drugi konstruktor powinien wywołać pierwszy, przekazując mu domyślną wartość wieku jako 0.</p></li>
+<li><p>Zaprojektuj klasę “Kwadrat”, która posiada pole “bok” oraz konstruktor, który umożliwia ustawienie wartości tego pola. Następnie napisz drugi konstruktor, który nie przyjmuje żadnych argumentów, a jedynie wywołuje pierwszy konstruktor z wartością domyślną 1.</p></li>
+<li><p>Zdefiniuj klasę “Samochod”, która ma pola: marka, model i rokProdukcji. Klasa powinna zawierać dwa konstruktory: pierwszy przyjmujący wszystkie trzy parametry, a drugi tylko markę i model. Drugi konstruktor powinien wywoływać pierwszy, przekazując mu domyślną wartość rokProdukcji jako aktualny rok.</p></li>
+<li><p>Stwórz klasę “Pies”, która posiada pola: imie, rasa i wiek. Klasa powinna mieć dwa konstruktory: jeden, który przyjmuje wszystkie trzy parametry, a drugi, który przyjmuje tylko imię i rasę. Drugi konstruktor powinien wywoływać pierwszy, przekazując mu domyślną wartość wieku jako 1.</p></li>
+<li><p>Napisz klasę “Student”, która ma pola: imię, nazwisko i kierunek studiów. Zdefiniuj w niej dwa konstruktory, jeden przyjmujący wszystkie trzy parametry, a drugi tylko imię i nazwisko. Drugi konstruktor powinien wywoływać pierwszy, przekazując mu domyślną wartość kierunku studiów jako “nieznany”.</p></li>
+<li><p>Zdefiniuj klasę “Pracownik”, która posiada pola: imię, nazwisko i pensja. Napisz konstruktor, który przyjmuje dwa argumenty (imię i nazwisko), oraz blok inicjujący, który ustawia wartość pensji na 3000. Sprawdź, co stanie się, gdy w konstruktorze spróbujesz nadpisać wartość pensji.</p></li>
+<li><p>Zaprojektuj klasę “Samochod”, która posiada pola: marka, model i cena. Napisz konstruktor, który przyjmuje dwa argumenty (marka i model), a w bloku inicjującym ustaw domyślną wartość ceny na 50000. Zobacz, co stanie się, gdy w konstruktorze spróbujesz zmienić wartość ceny.</p></li>
+<li><p>Zdefiniuj klasę “Telefon”, która ma pola: producent, model i system. W bloku inicjującym ustaw wartość system na “Android”. Następnie napisz konstruktor, który przyjmuje dwa argumenty (producent i model) i próbuje nadpisać wartość system na “iOS”. Sprawdź, która wartość zostanie ostatecznie przypisana do pola system.</p></li>
 <li><p>Stwórz klasę <code>Samochod</code> zawierającą prywatne pola: <code>marka</code>, <code>model</code>, <code>rokProdukcji</code>, <code>przebieg</code> oraz <code>kolor</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) dla wszystkich pól. Następnie dodaj metodę <code>wyswietlInformacje()</code>, która wyświetla wszystkie informacje o samochodzie.</p></li>
 <li><p>Stwórz klasę <code>Osoba</code> z prywatnymi polami: <code>imie</code>, <code>nazwisko</code>, <code>wiek</code>, <code>adres</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>przedstawSie()</code>, która zwraca łańcuch znaków z informacjami o osobie.</p></li>
 <li><p>Stwórz klasę <code>Ksiazka</code> z prywatnymi polami: <code>tytul</code>, <code>autor</code>, <code>rokWydania</code>, <code>wydawnictwo</code> oraz <code>liczbaStron</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>pokazInformacje()</code>, która wyświetla informacje o książce.</p></li>
@@ -286,6 +298,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Stwórz klasę <code>WynikiTestow</code> z prywatnymi polami: <code>imie</code>, <code>nazwisko</code> oraz <code>wyniki</code> (jako tablica typu <code>int</code>). Dodaj konstruktor, który przyjmuje imię, nazwisko oraz rozmiar tablicy jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>dodajWynik(int indeks, int wynik)</code>, która dodaje wynik testu na podanym indeksie. Dodaj również metodę <code>sredniWynik()</code> do obliczania średniego wyniku.</p></li>
 <li><p>Stwórz klasę <code>ZarzadcaZadan</code> z prywatnym polem <code>priorytetyZadan</code> (jako <code>ArrayList</code> typu <code>int</code>). Dodaj konstruktor domyślny. Dodaj metody dostępowe (gettery i settery) oraz metody <code>dodajPriorytet(int priorytet)</code> i <code>usunPriorytet(int indeks)</code>, które odpowiednio dodają lub usuwają priorytet z listy priorytetów. Dodaj również metodę <code>najwyzszyPriorytet()</code> do znajdowania najwyższego priorytetu.</p></li>
 <li><p>Stwórz klasę <code>Magazyn</code> z prywatnym polem <code>iloscProduktow</code> (jako tablica typu <code>int</code>). Dodaj konstruktor, który przyjmuje rozmiar tablicy jako argument. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>dodajProdukty(int indeks, int ilosc)</code>, która dodaje określoną ilość produktów na podanym indeksie. Dodaj również metodę <code>sumaProduktow()</code> do obliczania sumy wszystkich produktów w magazynie.</p></li>
+<li><p>Zdefiniuj klasę “Osoba”, która posiada pola: imię, nazwisko i wiek. Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól. Wiek osoby nie powinien być ujemny, a imię i nazwisko nie powinny być puste.</p></li>
+<li><p>Stwórz klasę “Punkt”, reprezentującą punkt w przestrzeni 3D, z polami: x, y, z. Napisz konstruktor, który przyjmuje te trzy wartości i sprawdza, czy są one w zakresie od -100 do 100. Jeśli wartości nie są w tym zakresie, powinny być ustawione na najbliższą granicę.</p></li>
+<li><p>Zaprojektuj klasę “Samochod”, która posiada pola: marka, model i rokProdukcji. Napisz konstruktor, który przyjmuje trzy argumenty. Zadaniem konstruktora jest sprawdzenie, czy rokProdukcji nie jest większy niż aktualny rok oraz czy marka i model nie są puste.</p></li>
+<li><p>Zdefiniuj klasę “KontoBankowe”, która posiada pola: numerKonta i saldo. Napisz konstruktor, który przyjmuje dwa argumenty. Przed przypisaniem wartości do pola numerKonta, sprawdź, czy jest ono 26-cyfrowe, a przed przypisaniem wartości do pola saldo, sprawdź, czy saldo nie jest ujemne.</p></li>
 </ol>
 
 
@@ -655,4 +671,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/pjastr/zbior-zadan-java/issues/new" class="toc-action">Zgłoś problem</a></p></div></div></div></div></footer></body></html>

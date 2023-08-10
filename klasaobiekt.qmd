@@ -34,3 +34,15 @@
     C.  Dodaj do klasy `Czlowiek` metodę `zmienImie`, która jako argument przyjmuje łańcuch znaków i przypisuje go do pola `imie`. Utwórz obiekt `Czlowiek` i użyj metody `zmienImie` do zmiany jego imienia. Następnie wywołaj metodę `przedstawSie`. Czy imię zostało zmienione? Czy musisz użyć słowo kluczowe `this` w implementacji metody?
 
     D.  Dodaj do klasy `Czlowiek` metodę `zamienImionami`, która jako argument przyjmuje inny obiekt klasy `Czlowiek` i zamienia imionami obie osoby. Utwórz dwa obiekty `Czlowiek` i użyj metody `zamienImionami` do zamiany ich imion. Następnie wywołaj metodę `przedstawSie` na obu obiektach. Czy imiona zostały zamienione?
+
+13. Wykonaj kolejno poniższe czynności:
+
+    A.  Stwórz klasę `Licznik` z jednym polem `liczba`. Dodaj do klasy metodę `zwieksz`, która przyjmuje parametr typu int i zwiększa wartość pola `liczba` o wartość tego parametru. W klasie `Main`, utwórz zmienną typu int, przekaż ją do metody `zwieksz` i sprawdź, czy wartość zmiennej zmieniła się po wywołaniu metody.
+
+    B.  Dodaj do klasy `Licznik` metodę `dodaj`, która przyjmuje inny obiekt `Licznik` i dodaje wartość jego pola `liczba` do pola `liczba` bieżącego obiektu. Utwórz dwa obiekty `Licznik` w klasie `Main` i użyj metody `dodaj`. Sprawdź, czy obiekt przekazany jako argument metody `dodaj` zmienił swoją wartość po wywołaniu metody.
+
+    C.  Stwórz klasę `Zmieniacz`, która posiada metodę `zmienWartosc`, która jako argument przyjmuje typ int. Wewnątrz metody zmień wartość argumentu na inną. W klasie `Main` utwórz zmienną int, a następnie przekaż ją do metody `zmienWartosc` i sprawdź, czy wartość zmiennej się zmieniła.
+
+    D.  Dodaj do klasy `Zmieniacz` metodę `zmienObiekt`, która jako argument przyjmuje obiekt `Licznik`. Wewnątrz metody zmień wartość pola `liczba` obiektu `Licznik` na inną. W klasie `Main` utwórz obiekt `Licznik`, a następnie przekaż go do metody `zmienObiekt` i sprawdź, czy wartość pola `liczba` obiektu się zmieniła.
+
+14. Zdefiniuj klasę `Punkt`, która reprezentuje punkt w przestrzeni 3D (o współrzędnych `x`, `y` i `z`). Klasa powinna mieć metody do zmiany wartości współrzędnych. W `Main` stwórz dwa obiekty tej klasy i przetestuj różnicę pomiędzy przekazywaniem parametrów przez wartość i przez referencję.

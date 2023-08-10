@@ -31,6 +31,8 @@ book:
     - part: "Wzorce projektowe"
     - references.qmd
   downloads: pdf
+  repo-url: https://github.com/pjastr/zbior-zadan-java
+  repo-actions: [issue]
 
 
 bibliography: references.bib
@@ -39,7 +41,7 @@ format:
   html:
     theme:
       light: cosmo
-      dark: darkly
+      dark: solar
     lang: pl
   pdf:
     lang: pl

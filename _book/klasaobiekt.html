@@ -91,7 +91,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Zbiór zadań - Java</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/pjastr/zbior-zadan-java" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <a href="./Zbiór-zadań---Java.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Przełącz tryb ciemny"><i class="bi"></i></a>
 </div>
@@ -293,6 +294,14 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Dodaj do klasy <code>Czlowiek</code> metodę <code>zmienImie</code>, która jako argument przyjmuje łańcuch znaków i przypisuje go do pola <code>imie</code>. Utwórz obiekt <code>Czlowiek</code> i użyj metody <code>zmienImie</code> do zmiany jego imienia. Następnie wywołaj metodę <code>przedstawSie</code>. Czy imię zostało zmienione? Czy musisz użyć słowo kluczowe <code>this</code> w implementacji metody?</p></li>
 <li><p>Dodaj do klasy <code>Czlowiek</code> metodę <code>zamienImionami</code>, która jako argument przyjmuje inny obiekt klasy <code>Czlowiek</code> i zamienia imionami obie osoby. Utwórz dwa obiekty <code>Czlowiek</code> i użyj metody <code>zamienImionami</code> do zamiany ich imion. Następnie wywołaj metodę <code>przedstawSie</code> na obu obiektach. Czy imiona zostały zamienione?</p></li>
 </ol></li>
+<li><p>Wykonaj kolejno poniższe czynności:</p>
+<ol type="A">
+<li><p>Stwórz klasę <code>Licznik</code> z jednym polem <code>liczba</code>. Dodaj do klasy metodę <code>zwieksz</code>, która przyjmuje parametr typu int i zwiększa wartość pola <code>liczba</code> o wartość tego parametru. W klasie <code>Main</code>, utwórz zmienną typu int, przekaż ją do metody <code>zwieksz</code> i sprawdź, czy wartość zmiennej zmieniła się po wywołaniu metody.</p></li>
+<li><p>Dodaj do klasy <code>Licznik</code> metodę <code>dodaj</code>, która przyjmuje inny obiekt <code>Licznik</code> i dodaje wartość jego pola <code>liczba</code> do pola <code>liczba</code> bieżącego obiektu. Utwórz dwa obiekty <code>Licznik</code> w klasie <code>Main</code> i użyj metody <code>dodaj</code>. Sprawdź, czy obiekt przekazany jako argument metody <code>dodaj</code> zmienił swoją wartość po wywołaniu metody.</p></li>
+<li><p>Stwórz klasę <code>Zmieniacz</code>, która posiada metodę <code>zmienWartosc</code>, która jako argument przyjmuje typ int. Wewnątrz metody zmień wartość argumentu na inną. W klasie <code>Main</code> utwórz zmienną int, a następnie przekaż ją do metody <code>zmienWartosc</code> i sprawdź, czy wartość zmiennej się zmieniła.</p></li>
+<li><p>Dodaj do klasy <code>Zmieniacz</code> metodę <code>zmienObiekt</code>, która jako argument przyjmuje obiekt <code>Licznik</code>. Wewnątrz metody zmień wartość pola <code>liczba</code> obiektu <code>Licznik</code> na inną. W klasie <code>Main</code> utwórz obiekt <code>Licznik</code>, a następnie przekaż go do metody <code>zmienObiekt</code> i sprawdź, czy wartość pola <code>liczba</code> obiektu się zmieniła.</p></li>
+</ol></li>
+<li><p>Zdefiniuj klasę <code>Punkt</code>, która reprezentuje punkt w przestrzeni 3D (o współrzędnych <code>x</code>, <code>y</code> i <code>z</code>). Klasa powinna mieć metody do zmiany wartości współrzędnych. W <code>Main</code> stwórz dwa obiekty tej klasy i przetestuj różnicę pomiędzy przekazywaniem parametrów przez wartość i przez referencję.</p></li>
 </ol>
 
 
@@ -662,4 +671,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/pjastr/zbior-zadan-java/issues/new" class="toc-action">Zgłoś problem</a></p></div></div></div></div></footer></body></html>
