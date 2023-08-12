@@ -1,0 +1,19 @@
+# Pola i metody statyczne
+
+1. Stwórz klasę `Osoba`. Klasa powinna zawierać pole imienne oraz statyczne pole `licznik`. Zadaniem jest zwiększanie wartości `licznik` za każdym razem, gdy tworzona jest nowa instancja klasy `Osoba`. Dodaj metodę, która zwróci wartość `licznik`. Stwórz przypadek testowy.
+
+2. Stwórz klasę `Matematyka`, która posiada pole statyczne `PI`, które przechowuje przybliżoną wartość liczby $\pi$. Upewnij się, że wartość tego pola jest niemutowalna. Stwórz przypadek testowy.
+
+3. Stwórz klasę `Singleton`, która używa pola statycznego do przechowywania jednej i tylko jednej instancji tej klasy. Klasa powinna zawierać prywatny konstruktor oraz publiczną statyczną metodę `getInstance()`, która zwraca jedyną instancję klasy `Singleton`. Stwórz przypadek testowy.
+
+4. Stwórz klasę `Konfiguracja`, która zawiera pole statyczne `wersjaAplikacji` z domyślną wartością "1.0". Dodaj metody pozwalające na odczyt i zmianę tej wartości. Stwórz przypadek testowy.
+
+5. Stwórz klasę `Kalkulator`, która posiada podstawowe metody matematyczne: dodawanie, odejmowanie, mnożenie i dzielenie. Zaimplementuj te metody jako metody statyczne. Utwórz drugą klasę, w której przetestujesz te metody bez tworzenia instancji klasy `Kalkulator`. 
+
+6. Stwórz klasę `FabrykaFigur`, która posiada metody statyczne do tworzenia różnych figur geometrycznych, takich jak koła, kwadraty czy trójkąty. Następnie stwórz klasę testową, w której wykorzystasz te metody do stworzenia różnych figur, bez potrzeby tworzenia instancji klasy `FabrykaFigur`.
+
+7. Stwórz klasę `Ustawienia`, która posiada różne parametry konfiguracyjne aplikacji (np. wersja, język). Dodaj metody niestatyczne do zmiany tych parametrów oraz statyczną metodę `domyslneUstawienia()`, która zwróci domyślną konfigurację aplikacji. W klasie testowej zobacz, jak działają obie grupy metod i jakie są między nimi różnice.
+
+8. Utwórz klasę `Konfiguracja`, która posiada pole statyczne `wersjaAplikacji` oraz pole statyczne `nazwaAplikacji`. Jedno z tych pól oznacz jako `final`. Zastanów się, co by się stało, gdybyś chciał zaktualizować wartość jednego z tych pól w trakcie działania aplikacji.
+
+9. Stwórz klasę `Produkt`, która zawiera pole statyczne `liczbaProduktow` oraz pole statyczne `MAX_PRODUKTOW`. Pole `liczbaProduktow` będzie służyć do zliczania ilości utworzonych produktów, a `MAX_PRODUKTOW` do ograniczenia ich liczby. Oznacz tylko jedno z tych pól słowem kluczowym `final` i zastanów się nad konsekwencjami tego wyboru.

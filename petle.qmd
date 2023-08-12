@@ -1,32 +1,32 @@
 # Pętle
 
-(1) Napisz program, który wykorzystując pętlę `for` wyświetli liczby od 1 do 100.
+1.  Napisz program, który wykorzystując pętlę `for` wyświetli liczby od 1 do 100.
 
-(2) Napisz program, który przy użyciu pętli `while` obliczy sumę liczb od 1 do 50.
+2.  Napisz program, który przy użyciu pętli `while` obliczy sumę liczb od 1 do 50.
 
-(3) Napisz program w Javie, który za pomocą pętli `for` generuje pierwsze 10 liczb ciągu Fibonacciego.
+3.  Napisz program w Javie, który za pomocą pętli `for` generuje pierwsze 10 liczb ciągu Fibonacciego.
 
-(4) Stwórz program, który używając zagnieżdżonych pętli `for`, wyświetli tabliczkę mnożenia dla liczb od 1 do 10.
+4.  Stwórz program, który używając zagnieżdżonych pętli `for`, wyświetli tabliczkę mnożenia dla liczb od 1 do 10.
 
-(5) Napisz program, który używając pętli `do-while`, wyświetli pierwsze 20 liczb parzystych i nieparzystych.
+5.  Napisz program, który używając pętli `do-while`, wyświetli pierwsze 20 liczb parzystych i nieparzystych.
 
-(6) Napisz program, który sprawdzi, czy podana liczba jest liczbą pierwszą. Liczba powinna być wprowadzona przez użytkownika.
+6.  Napisz program, który sprawdzi, czy podana liczba jest liczbą pierwszą. Liczba powinna być wprowadzona przez użytkownika.
 
-(7) Napisz program, który oblicza sumę cyfr dowolnej wprowadzonej liczby. Program powinien akceptować liczbę jako input od użytkownika.
+7.  Napisz program, który oblicza sumę cyfr dowolnej wprowadzonej liczby. Program powinien akceptować liczbę jako input od użytkownika.
 
-(8) Napisz program, który generuje i wyświetla pierwsze 10 elementów szeregu geometrycznego o zadanym pierwszym elemencie i ilorazie. Parametry szeregu powinny być wprowadzane przez użytkownika.
+8.  Napisz program, który generuje i wyświetla pierwsze 10 elementów szeregu geometrycznego o zadanym pierwszym elemencie i ilorazie. Parametry szeregu powinny być wprowadzane przez użytkownika.
 
-(9) Stwórz program, który przyjmie od użytkownika liczbę całkowitą i zwróci tę liczbę w odwrotnej kolejności. Na przykład, dla liczby 12345, wynik powinien wynosić 54321. Możesz ograniczyć program tylko do liczb dodatnich.
+9.  Stwórz program, który przyjmie od użytkownika liczbę całkowitą i zwróci tę liczbę w odwrotnej kolejności. Na przykład, dla liczby 12345, wynik powinien wynosić 54321. Możesz ograniczyć program tylko do liczb dodatnich.
 
-(10) Napisz program, który obliczy sumę kwadratów liczb od 1 do n, gdzie n jest liczbą wprowadzoną przez użytkownika.
+10. Napisz program, który obliczy sumę kwadratów liczb od 1 do n, gdzie n jest liczbą wprowadzoną przez użytkownika.
 
-(11) Napisz program, który znajdzie i wyświetli wszystkie liczby doskonałe mniejsze od 10 000. Liczba doskonała to taka, której suma dzielników (bez niej samej) jest równa jej wartości. Na przykład, 6 jest liczbą doskonałą, ponieważ $1 + 2 + 3 = 6$.
+11. Napisz program, który znajdzie i wyświetli wszystkie liczby doskonałe mniejsze od 10 000. Liczba doskonała to taka, której suma dzielników (bez niej samej) jest równa jej wartości. Na przykład, 6 jest liczbą doskonałą, ponieważ $1 + 2 + 3 = 6$.
 
-(12) Napisz program, który znajdzie wszystkie liczby Amstronga mniejsze od 10 000. Liczba Amstronga to taka, której suma jej cyfr podniesionych do potęgi równiej liczbie cyfr w tej liczbie, jest równa samej liczbie. Na przykład 153 jest liczbą Amstronga, ponieważ $1^3 + 5^3 + 3^3 = 153$.
+12. Napisz program, który znajdzie wszystkie liczby Amstronga mniejsze od 10 000. Liczba Amstronga to taka, której suma jej cyfr podniesionych do potęgi równiej liczbie cyfr w tej liczbie, jest równa samej liczbie. Na przykład 153 jest liczbą Amstronga, ponieważ $1^3 + 5^3 + 3^3 = 153$.
 
-(13) Napisz program, który dla dwóch podanych liczb obliczy ich najmniejszą wspólną wielokrotność (NWW). Użytkownik powinien podać dwie liczby jako dane wejściowe.
+13. Napisz program, który dla dwóch podanych liczb obliczy ich najmniejszą wspólną wielokrotność (NWW). Użytkownik powinien podać dwie liczby jako dane wejściowe.
 
-(14) Napisz program pobierający z klawiatury liczbę całkowitą dodatnią. Następnie narysuj odpowiedni trójkąt np. dla 5:
+14. Napisz program pobierający z klawiatury liczbę całkowitą dodatnią. Następnie narysuj odpowiedni trójkąt np. dla 5:
 
 ```         
 1
@@ -38,9 +38,13 @@
 
 15. Napisz program, który pobiera od użytkownika liczbę naturalną $n$ ($n\geqslant 0$). Następnie wyznacz i wyświetl $n$-ty element ciągu:
 
+<!-- -->
+
 a)  $(4,-8,16,-32,64,\ldots )$
 b)  $(2,6,18,54,162,\ldots )$
 c)  $(8,3,-2,-7,-12,\ldots )$
+
+<!-- -->
 
 16. Napisz program wczytujący kolejne liczby całkowite (różnych znaków) z klawiatury i kończący się gdy ich suma przekroczy 100.
 

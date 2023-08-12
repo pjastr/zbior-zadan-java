@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - 6&nbsp; Tablice</title>
+<title>Zbiór zadań - Java - 11&nbsp; Pola i metody statyczne</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./klasaobiekt.html" rel="next">
-<link href="./random.html" rel="prev">
+<link href="./dziedziczenie.html" rel="next">
+<link href="./zlozonepolawklasie.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,6 +64,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -76,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wejsciewyjscie.html">Wprowadzenie do języka Java</a></li><li class="breadcrumb-item"><a href="./tablice.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tablice</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./static.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Pola i metody statyczne</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -153,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tablice.html" class="sidebar-item-text sidebar-link active">
+  <a href="./tablice.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tablice</span></span></a>
   </div>
 </li>
@@ -194,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./static.html" class="sidebar-item-text sidebar-link">
+  <a href="./static.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Pola i metody statyczne</span></span></a>
   </div>
 </li>
@@ -263,7 +265,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tablice</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Pola i metody statyczne</span></h1>
 </div>
 
 
@@ -279,33 +281,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ol type="1">
-<li><p>Napisz program, który tworzy tablicę jednowymiarową 10 liczb całkowitych, a następnie wyświetla je w konsoli w porządku odwrotnym do wprowadzenia.</p></li>
-<li><p>Utwórz program, który tworzy jednowymiarową tablicę 20 liczb losowych z przedziału od 1 do 100, a następnie oblicza i wyświetla ich średnią wartość.</p></li>
-<li><p>Napisz program, który tworzy tablicę jednowymiarową 15 liczb całkowitych, a następnie oblicza i wyświetla największą i najmniejszą wartość w tablicy.</p></li>
-<li><p>Utwórz program, który tworzy jednowymiarową tablicę 30 liczb całkowitych. Następnie poproś użytkownika, aby podał dowolną liczbę. Program powinien wyświetlić informację, czy podana liczba znajduje się w tablicy, a także ile razy się w niej pojawia.</p></li>
-<li><p>Napisz program, który tworzy jednowymiarową tablicę 10 liczb całkowitych. Program powinien obliczać i wyświetlać sumę tych liczb, które są parzyste.</p></li>
-<li><p>Napisz program, który tworzy jednowymiarową tablicę 10 liczb zmiennoprzecinkowych, a następnie oblicza i wyświetla ich sumę.</p></li>
-<li><p>Utwórz program, który tworzy tablicę jednowymiarową 20 liczb zmiennoprzecinkowych, a następnie znajduje i wyświetla wartość średnią oraz medianę tych liczb.</p></li>
-<li><p>Napisz program, który tworzy jednowymiarową tablicę 10 liczb zmiennoprzecinkowych. Program powinien obliczać i wyświetlać sumę tych liczb, które są większe niż 0.5.</p></li>
-<li><p>Napisz program, który tworzy jednowymiarową tablicę 20 liczb całkowitych, a następnie oblicza i wyświetla ilość liczb parzystych i nieparzystych w tablicy.</p></li>
-<li><p>Utwórz program, który tworzy jednowymiarową tablicę 30 liczb całkowitych. Następnie program powinien obliczyć i wyświetlić ilość liczb, które są kwadratami innej liczby całkowitej.</p></li>
-<li><p>Napisz program, który tworzy jednowymiarową tablicę 50 liczb całkowitych. Program powinien obliczać i wyświetlać ilość liczb, które są liczbami pierwszymi.</p></li>
-<li><p>Napisz program, który tworzy jednowymiarową tablicę 15 liczb całkowitych, a następnie oblicza i wyświetla sumę liczb, które są podzielne przez 3.</p></li>
-<li><p>Napisz statyczną metodę <code>minimumValue</code>, która przyjmuje tablicę liczb całkowitych jako argument i zwraca najmniejszą liczbę w tablicy. Przyjmij, że tablica zawsze będzie miała co najmniej jeden element. Jeżeli tablica zawiera tylko jeden element, zwróć ten element. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz statyczną metodę <code>average</code>, która przyjmuje tablicę liczb zmiennoprzecinkowych jako argument i zwraca średnią arytmetyczną wszystkich liczb w tablicy. Jeżeli tablica jest pusta, zwróć 0. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz statyczną metodę <code>reverseArray</code>, która przyjmuje tablicę liczb całkowitych jako argument i zwraca tę samą tablicę, ale z odwróconym porządkiem elementów. Na przykład, dla tablicy [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz statyczną metodę <code>reverseArray</code>, która przyjmuje tablicę liczb całkowitych jako argument. Metoda odwraca porządek elementów w tablicy i powinna być procedurą. Na przykład, dla tablicy [1, 2, 3, 4, 5], funkcja powinna zmienić tablicę na [5, 4, 3, 2, 1]. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz statyczną metodę <code>countZeros</code>, która przyjmuje tablicę liczb całkowitych jako argument i zwraca liczbę wystąpień zera w tablicy. Na przykład, dla tablicy [0, 1, 2, 0, 3, 0, 4], funkcja powinna zwrócić 3. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz statyczną metodę <code>oddElementsSum</code>, która przyjmuje tablicę liczb całkowitych jako argument i zwraca sumę wszystkich nieparzystych liczb w tablicy. Jeżeli w tablicy nie ma żadnych nieparzystych liczb, funkcja powinna zwrócić 0. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz statyczną metodę <code>copyArray</code>, która przyjmuje tablicę liczb całkowitych jako argument i zwraca nową tablicę, która jest kopią pierwotnej. Funkcja powinna skopiować tablicę ręcznie, element po elemencie, bez korzystania z systemowych metod kopiowania. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz statyczną metodę <code>copyArrayReverse</code>, która przyjmuje tablicę liczb całkowitych jako argument i zwraca nową tablicę, która jest odwróconą kopią pierwotnej. Na przykład, dla tablicy [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz statyczną metodę <code>copyArrayEven</code>, która przyjmuje tablicę liczb całkowitych jako argument i zwraca nową tablicę zawierającą tylko parzyste liczby z pierwotnej tablicy. Na przykład, dla tablicy [1, 2, 3, 4, 5], funkcja powinna zwrócić [2, 4]. Jeżeli w tablicy nie ma żadnych parzystych liczb, funkcja powinna zwrócić pustą tablicę. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz statyczną metodę <code>copyArrayWithIndex</code>, która przyjmuje tablicę liczb całkowitych oraz indeks początkowy i końcowy jako argumenty. Funkcja powinna zwrócić nową tablicę zawierającą elementy pierwotnej tablicy od indeksu początkowego do końcowego (włącznie). Na przykład, dla tablicy [1, 2, 3, 4, 5] i indeksów 1 i 3, funkcja powinna zwrócić [2, 3, 4]. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz statyczną metodę <code>mergeArrays</code>, która przyjmuje dwie tablice liczb całkowitych jako argumenty. Funkcja powinna zwrócić nową tablicę, która jest połączeniem obu pierwotnych tablic. Na przykład, dla tablic [1, 2, 3] i [4, 5, 6], funkcja powinna zwrócić [1, 2, 3, 4, 5, 6]. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz metodę <code>sortArray</code>, która przyjmuje tablicę liczb całkowitych jako argument i zwraca nową tablicę, która jest posortowaną wersją pierwotnej tablicy. Wykorzystaj metodę <code>Arrays.sort()</code> z biblioteki <code>java.util.Arrays</code> do posortowania tablicy. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz metodę <code>checkEquality</code>, która przyjmuje dwie tablice liczb całkowitych jako argumenty i zwraca wartość <code>true</code>, jeśli tablice są równe, a <code>false</code> w przeciwnym razie. Wykorzystaj metodę <code>Arrays.equals()</code> z biblioteki <code>java.util.Arrays</code> do porównania tablic. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz metodę <code>fillArray</code>, która przyjmuje tablicę liczb całkowitych i liczbę całkowitą jako argumenty. Metoda powinna wypełnić tablicę podaną liczbą, wykorzystując do tego metodę <code>Arrays.fill()</code> z biblioteki <code>java.util.Arrays</code>. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz metodę <code>printArray</code>, która przyjmuje tablicę liczb całkowitych jako argument i drukuje jej zawartość na konsoli. Wykorzystaj do tego metodę <code>Arrays.toString()</code> z biblioteki <code>java.util.Arrays</code>, która zwraca tekstową reprezentację tablicy. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz klasę <code>Osoba</code>. Klasa powinna zawierać pole imienne oraz statyczne pole <code>licznik</code>. Zadaniem jest zwiększanie wartości <code>licznik</code> za każdym razem, gdy tworzona jest nowa instancja klasy <code>Osoba</code>. Dodaj metodę, która zwróci wartość <code>licznik</code>. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz klasę <code>Matematyka</code>, która posiada pole statyczne <code>PI</code>, które przechowuje przybliżoną wartość liczby <span class="math inline">\(\pi\)</span>. Upewnij się, że wartość tego pola jest niemutowalna. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz klasę <code>Singleton</code>, która używa pola statycznego do przechowywania jednej i tylko jednej instancji tej klasy. Klasa powinna zawierać prywatny konstruktor oraz publiczną statyczną metodę <code>getInstance()</code>, która zwraca jedyną instancję klasy <code>Singleton</code>. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz klasę <code>Konfiguracja</code>, która zawiera pole statyczne <code>wersjaAplikacji</code> z domyślną wartością “1.0”. Dodaj metody pozwalające na odczyt i zmianę tej wartości. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz klasę <code>Kalkulator</code>, która posiada podstawowe metody matematyczne: dodawanie, odejmowanie, mnożenie i dzielenie. Zaimplementuj te metody jako metody statyczne. Utwórz drugą klasę, w której przetestujesz te metody bez tworzenia instancji klasy <code>Kalkulator</code>.</p></li>
+<li><p>Stwórz klasę <code>FabrykaFigur</code>, która posiada metody statyczne do tworzenia różnych figur geometrycznych, takich jak koła, kwadraty czy trójkąty. Następnie stwórz klasę testową, w której wykorzystasz te metody do stworzenia różnych figur, bez potrzeby tworzenia instancji klasy <code>FabrykaFigur</code>.</p></li>
+<li><p>Stwórz klasę <code>Ustawienia</code>, która posiada różne parametry konfiguracyjne aplikacji (np. wersja, język). Dodaj metody niestatyczne do zmiany tych parametrów oraz statyczną metodę <code>domyslneUstawienia()</code>, która zwróci domyślną konfigurację aplikacji. W klasie testowej zobacz, jak działają obie grupy metod i jakie są między nimi różnice.</p></li>
+<li><p>Utwórz klasę <code>Konfiguracja</code>, która posiada pole statyczne <code>wersjaAplikacji</code> oraz pole statyczne <code>nazwaAplikacji</code>. Jedno z tych pól oznacz jako <code>final</code>. Zastanów się, co by się stało, gdybyś chciał zaktualizować wartość jednego z tych pól w trakcie działania aplikacji.</p></li>
+<li><p>Stwórz klasę <code>Produkt</code>, która zawiera pole statyczne <code>liczbaProduktow</code> oraz pole statyczne <code>MAX_PRODUKTOW</code>. Pole <code>liczbaProduktow</code> będzie służyć do zliczania ilości utworzonych produktów, a <code>MAX_PRODUKTOW</code> do ograniczenia ich liczby. Oznacz tylko jedno z tych pól słowem kluczowym <code>final</code> i zastanów się nad konsekwencjami tego wyboru.</p></li>
 </ol>
 
 
@@ -661,13 +645,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./random.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Generowanie liczb pseudolosowych</span></span>
+      <a href="./zlozonepolawklasie.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./klasaobiekt.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Pojęcie klasy/obiektu</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./dziedziczenie.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -21,6 +21,7 @@ book:
         - modyfikatorydostepu.qmd
         - konstruktor.qmd
         - zlozonepolawklasie.qmd
+        - static.qmd
         - dziedziczenie.qmd
         - klasyabstrakcyjne.qmd
         - final.qmd
