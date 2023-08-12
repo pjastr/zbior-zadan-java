@@ -1,26 +1,26 @@
 # Konstruktor
 
-1.  Napisz klasę "Ksiazka", która będzie zawierać trzy pola: tytul, autor, rokWydania. Następnie zaimplementuj dwa konstruktory - jeden domyślny, który nie przyjmuje żadnych argumentów, i drugi, który przyjmuje trzy argumenty odpowiadające polom klasy. W przypadku drugiego konstruktora, nazwy parametrów muszą być takie same jak nazwy pól. Sprawdź czy jesteś w stanie prawidłowo przypisać wartości do pól klasy używając słowa kluczowego "this".
+1.  Napisz klasę `Ksiazka`, która będzie zawierać trzy pola: `tytul`, `autor`, `rokWydania`. Następnie zaimplementuj dwa konstruktory - jeden domyślny, który nie przyjmuje żadnych argumentów, i drugi, który przyjmuje trzy argumenty odpowiadające polom klasy. W przypadku drugiego konstruktora, nazwy parametrów muszą być takie same jak nazwy pól. Sprawdź czy jesteś w stanie prawidłowo przypisać wartości do pól klasy używając słowa kluczowego `this`.
 
-2.  Zaprojektuj klasę "Osoba", która będzie zawierać dwa pola: imie, nazwisko. Zaimplementuj konstruktor, który przyjmuje dwa argumenty odpowiadające polom klasy. Nazwy parametrów muszą być takie same jak nazwy pól. Spróbuj przypisać wartości do pól klasy bez używania słowa kluczowego "this". Czy jest to możliwe? Jeżeli nie, to dlaczego?
+2.  Zaprojektuj klasę `Osoba`, która będzie zawierać dwa pola: `imie`, `nazwisko`. Zaimplementuj konstruktor, który przyjmuje dwa argumenty odpowiadające polom klasy. Nazwy parametrów muszą być takie same jak nazwy pól. Spróbuj przypisać wartości do pól klasy bez używania słowa kluczowego `this`. Czy jest to możliwe? Jeżeli nie, to dlaczego?
 
-3.  Stwórz klasę "Samochod", która będzie zawierać trzy pola: marka, model, rokProdukcji. Zaimplementuj trzy konstruktory - pierwszy domyślny, drugi przyjmujący dwa argumenty (marka i model), trzeci przyjmujący trzy argumenty (marka, model, rokProdukcji). W przypadku drugiego i trzeciego konstruktora, nazwy parametrów muszą być takie same jak nazwy pól. Wykorzystaj słowo kluczowe "this" do rozróżnienia pól klasy od parametrów.
+3.  Stwórz klasę `Samochod`, która będzie zawierać trzy pola: `marka`, `model`, `rokProdukcji`. Zaimplementuj trzy konstruktory - pierwszy domyślny, drugi przyjmujący dwa argumenty (`marka` i `model`), trzeci przyjmujący trzy argumenty (`marka`, `model`, `rokProdukcji`). W przypadku drugiego i trzeciego konstruktora, nazwy parametrów muszą być takie same jak nazwy pól. Wykorzystaj słowo kluczowe `this` do rozróżnienia pól klasy od parametrów.
 
-4.  Napisz klasę "Osoba", która będzie miała pola: imię, nazwisko i wiek. Zdefiniuj w niej dwa konstruktory, jeden przyjmujący wszystkie trzy parametry, a drugi tylko imię i nazwisko. Drugi konstruktor powinien wywołać pierwszy, przekazując mu domyślną wartość wieku jako 0.
+4.  Napisz klasę `Osoba`, która będzie miała pola: `imie`, `nazwisko` i `wiek`. Zdefiniuj w niej dwa konstruktory, jeden przyjmujący wszystkie trzy parametry, a drugi tylko imię i nazwisko. Drugi konstruktor powinien wywołać pierwszy, przekazując mu domyślną wartość wieku jako 0.
 
-5.  Zaprojektuj klasę "Kwadrat", która posiada pole "bok" oraz konstruktor, który umożliwia ustawienie wartości tego pola. Następnie napisz drugi konstruktor, który nie przyjmuje żadnych argumentów, a jedynie wywołuje pierwszy konstruktor z wartością domyślną 1.
+5.  Zaprojektuj klasę `Kwadrat`, która posiada pole `bok` oraz konstruktor, który umożliwia ustawienie wartości tego pola. Następnie napisz drugi konstruktor, który nie przyjmuje żadnych argumentów, a jedynie wywołuje pierwszy konstruktor z wartością domyślną 1.
 
-6.  Zdefiniuj klasę "Samochod", która ma pola: marka, model i rokProdukcji. Klasa powinna zawierać dwa konstruktory: pierwszy przyjmujący wszystkie trzy parametry, a drugi tylko markę i model. Drugi konstruktor powinien wywoływać pierwszy, przekazując mu domyślną wartość rokProdukcji jako aktualny rok.
+6.  Zdefiniuj klasę `Samochod`, która ma pola: `marka`, `model` i `rokProdukcji`. Klasa powinna zawierać dwa konstruktory: pierwszy przyjmujący wszystkie trzy parametry, a drugi tylko markę i model. Drugi konstruktor powinien wywoływać pierwszy, przekazując mu domyślną wartość `rokProdukcji` jako aktualny rok.
 
-7.  Stwórz klasę "Pies", która posiada pola: imie, rasa i wiek. Klasa powinna mieć dwa konstruktory: jeden, który przyjmuje wszystkie trzy parametry, a drugi, który przyjmuje tylko imię i rasę. Drugi konstruktor powinien wywoływać pierwszy, przekazując mu domyślną wartość wieku jako 1.
+7.  Stwórz klasę `Pies`, która posiada pola: `imie`, `rasa` i `wiek`. Klasa powinna mieć dwa konstruktory: jeden, który przyjmuje wszystkie trzy parametry, a drugi, który przyjmuje tylko imię i rasę. Drugi konstruktor powinien wywoływać pierwszy, przekazując mu domyślną wartość wieku jako 1.
 
-8.  Napisz klasę "Student", która ma pola: imię, nazwisko i kierunek studiów. Zdefiniuj w niej dwa konstruktory, jeden przyjmujący wszystkie trzy parametry, a drugi tylko imię i nazwisko. Drugi konstruktor powinien wywoływać pierwszy, przekazując mu domyślną wartość kierunku studiów jako "nieznany".
+8.  Napisz klasę `Student`, która ma pola: `imie`, `nazwisko` i `kierunekStudiow`. Zdefiniuj w niej dwa konstruktory, jeden przyjmujący wszystkie trzy parametry, a drugi tylko imię i nazwisko. Drugi konstruktor powinien wywoływać pierwszy, przekazując mu domyślną wartość kierunku studiów jako `nieznany`.
 
-9.  Zdefiniuj klasę "Pracownik", która posiada pola: imię, nazwisko i pensja. Napisz konstruktor, który przyjmuje dwa argumenty (imię i nazwisko), oraz blok inicjujący, który ustawia wartość pensji na 3000. Sprawdź, co stanie się, gdy w konstruktorze spróbujesz nadpisać wartość pensji.
+9.  Zdefiniuj klasę `Pracownik`, która posiada pola: `imie`, `nazwisko` i `pensja`. Napisz konstruktor, który przyjmuje dwa argumenty (imię i nazwisko), oraz blok inicjujący, który ustawia wartość pensji na 3000. Sprawdź, co stanie się, gdy w konstruktorze spróbujesz nadpisać wartość pensji.
 
-10. Zaprojektuj klasę "Samochod", która posiada pola: marka, model i cena. Napisz konstruktor, który przyjmuje dwa argumenty (marka i model), a w bloku inicjującym ustaw domyślną wartość ceny na 50000. Zobacz, co stanie się, gdy w konstruktorze spróbujesz zmienić wartość ceny.
+10. Zaprojektuj klasę `Samochod`, która posiada pola: `marka`, `model` i `cena`. Napisz konstruktor, który przyjmuje dwa argumenty (marka i model), a w bloku inicjującym ustaw domyślną wartość ceny na 50000. Zobacz, co stanie się, gdy w konstruktorze spróbujesz zmienić wartość ceny.
 
-11. Zdefiniuj klasę "Telefon", która ma pola: producent, model i system. W bloku inicjującym ustaw wartość system na "Android". Następnie napisz konstruktor, który przyjmuje dwa argumenty (producent i model) i próbuje nadpisać wartość system na "iOS". Sprawdź, która wartość zostanie ostatecznie przypisana do pola system.
+11. Zdefiniuj klasę `Telefon`, która ma pola: `producent`, `model` i `system`. W bloku inicjującym ustaw wartość `system` na `Android`. Następnie napisz konstruktor, który przyjmuje dwa argumenty (`producent` i `model`) i próbuje nadpisać wartość system na `iOS`. Sprawdź, która wartość zostanie ostatecznie przypisana do pola system.
 
 12. Stwórz klasę `Samochod` zawierającą prywatne pola: `marka`, `model`, `rokProdukcji`, `przebieg` oraz `kolor`. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) dla wszystkich pól. Następnie dodaj metodę `wyswietlInformacje()`, która wyświetla wszystkie informacje o samochodzie.
 
@@ -52,10 +52,10 @@
 
 26. Stwórz klasę `Magazyn` z prywatnym polem `iloscProduktow` (jako tablica typu `int`). Dodaj konstruktor, który przyjmuje rozmiar tablicy jako argument. Dodaj metody dostępowe (gettery i settery) oraz metodę `dodajProdukty(int indeks, int ilosc)`, która dodaje określoną ilość produktów na podanym indeksie. Dodaj również metodę `sumaProduktow()` do obliczania sumy wszystkich produktów w magazynie.
 
-27. Zdefiniuj klasę "Osoba", która posiada pola: imię, nazwisko i wiek. Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól. Wiek osoby nie powinien być ujemny, a imię i nazwisko nie powinny być puste.
+27. Zdefiniuj klasę `Osoba`, która posiada pola: imię, nazwisko i wiek. Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól. Wiek osoby nie powinien być ujemny, a imię i nazwisko nie powinny być puste.
 
-28. Stwórz klasę "Punkt", reprezentującą punkt w przestrzeni 3D, z polami: x, y, z. Napisz konstruktor, który przyjmuje te trzy wartości i sprawdza, czy są one w zakresie od -100 do 100. Jeśli wartości nie są w tym zakresie, powinny być ustawione na najbliższą granicę.
+28. Stwórz klasę `Punkt`, reprezentującą punkt w przestrzeni 3D, z polami: x, y, z. Napisz konstruktor, który przyjmuje te trzy wartości i sprawdza, czy są one w zakresie od -100 do 100. Jeśli wartości nie są w tym zakresie, powinny być ustawione na najbliższą granicę.
 
-29. Zaprojektuj klasę "Samochod", która posiada pola: marka, model i rokProdukcji. Napisz konstruktor, który przyjmuje trzy argumenty. Zadaniem konstruktora jest sprawdzenie, czy rokProdukcji nie jest większy niż aktualny rok oraz czy marka i model nie są puste.
+29. Zaprojektuj klasę `Samochod`, która posiada pola: marka, model i rokProdukcji. Napisz konstruktor, który przyjmuje trzy argumenty. Zadaniem konstruktora jest sprawdzenie, czy rokProdukcji nie jest większy niż aktualny rok oraz czy marka i model nie są puste.
 
-30. Zdefiniuj klasę "KontoBankowe", która posiada pola: numerKonta i saldo. Napisz konstruktor, który przyjmuje dwa argumenty. Przed przypisaniem wartości do pola numerKonta, sprawdź, czy jest ono 26-cyfrowe, a przed przypisaniem wartości do pola saldo, sprawdź, czy saldo nie jest ujemne.
+30. Zdefiniuj klasę `KontoBankowe`, która posiada pola: numerKonta i saldo. Napisz konstruktor, który przyjmuje dwa argumenty. Przed przypisaniem wartości do pola numerKonta, sprawdź, czy jest ono 26-cyfrowe, a przed przypisaniem wartości do pola saldo, sprawdź, czy saldo nie jest ujemne.
