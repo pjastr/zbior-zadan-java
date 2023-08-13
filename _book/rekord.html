@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - 8&nbsp; Modyfikatory dostępu</title>
+<title>Zbiór zadań - Java - 12&nbsp; Rekordy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./konstruktor.html" rel="next">
-<link href="./klasaobiekt.html" rel="prev">
+<link href="./dziedziczenie.html" rel="next">
+<link href="./static.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./modyfikatorydostepu.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modyfikatory dostępu</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./rekord.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Rekordy</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modyfikatorydostepu.html" class="sidebar-item-text sidebar-link active">
+  <a href="./modyfikatorydostepu.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modyfikatory dostępu</span></span></a>
   </div>
 </li>
@@ -200,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rekord.html" class="sidebar-item-text sidebar-link">
+  <a href="./rekord.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Rekordy</span></span></a>
   </div>
 </li>
@@ -269,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modyfikatory dostępu</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Rekordy</span></h1>
 </div>
 
 
@@ -285,13 +285,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ol type="1">
-<li><p>Utwórz klasę <code>Osoba</code> z publicznym polem <code>imie</code> oraz prywatnym polem <code>haslo</code>. Zobacz jak różne modyfikatory dostępu wpływają na dostęp do tych pól z innej klasy.</p></li>
-<li><p>Stwórz dwie klasy: <code>Rodzic</code> i <code>Dziecko</code>. Klasa <code>Rodzic</code> powinna mieć jedno pole <code>protected</code>. Spróbuj uzyskać dostęp do tego pola z klasy <code>Dziecko</code>.</p></li>
-<li><p>Utwórz klasę <code>Samochod</code> z prywatną metodą <code>zawalSilnik()</code>. Spróbuj wywołać tę metodę z zewnątrz klasy.</p></li>
-<li><p>Stwórz dwie klasy w tym samym pakiecie: <code>Pracownik</code> i <code>Firma</code>. Klasa <code>Pracownik</code> powinna mieć pole bez modyfikatora dostępu. Spróbuj uzyskać dostęp do tego pola z klasy <code>Firma</code>.</p></li>
-<li><p>Utwórz klasę <code>KontoBankowe</code> z publicznym polem <code>numerKonta</code> i prywatnym polem <code>saldo</code>. Zobacz, jak różne modyfikatory dostępu wpływają na dostęp do tych pól z innej klasy.</p></li>
-<li><p>Stwórz klasę <code>Zawodnik</code> z trzema polami: <code>imie</code> (publiczne), <code>wiek</code> (pomijając modyfikator dostępu) oraz <code>narodowosc</code> (prywatne). W klasie <code>Main</code> stwórz tablicę zawodników i spróbuj zmienić wartości wszystkich pól. Obserwuj rezultaty.</p></li>
-<li><p>Stwórz klasę <code>Trener</code>, która jest zadeklarowana jako <code>private</code>. Spróbuj stworzyć obiekt <code>Trener</code> w klasie <code>Main</code>. Jaki jest rezultat?</p></li>
+<li><p>Stwórz rekord <code>KsiążkaDTO</code>, który reprezentuje książkę w sklepie internetowym. Powinien zawierać takie informacje jak tytuł, autor, cena i rok wydania. Następnie stwórz kilka instancji tego rekordu, reprezentujących różne książki.</p></li>
+<li><p>Utwórz rekord <code>Adres</code>, który zawiera ulicę, numer domu, kod pocztowy i miasto. Następnie, stwórz rekord <code>Osoba</code>, który oprócz podstawowych informacji o osobie (np. imię, nazwisko) zawiera również pole typu <code>Adres</code>. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz klasę <code>PunktKlasy</code> reprezentującą punkt na płaszczyźnie 2D z polami x i y. Następnie, stwórz rekord <code>PunktRekord</code> z tymi samymi polami. Dodaj metody umożliwiające konwersję z instancji klasy na rekord i odwrotnie. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz rekord <code>Książka</code>, który reprezentuje tytuł, autora i rok wydania. Dodaj metodę <code>opis()</code>, która zwraca sformatowaną postać informacji o książce w stylu “Autor - Tytuł (Rok wydania)”. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz rekord <code>Punkt2D</code>, reprezentujący punkt na płaszczyźnie 2D z koordynatami x i y. Wprowadź metodę <code>odlegloscDo(Punkt2D innyPunkt)</code>, która oblicza i zwraca odległość euklidesową między aktualnym punktem a podanym jako argument. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz rekord <code>Samochód</code>, który zawiera markę, model i spalanie na 100km. Dodaj metodę <code>kosztPaliwa(double cenaPaliwa, double dystans)</code>, która oblicza i zwraca koszt podróży na podstawie podanej ceny paliwa oraz dystansu. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz rekord <code>Uczeń</code>, który reprezentuje imię, nazwisko i listę ocen ucznia. Wprowadź metodę <code>sredniaOcen()</code>, która oblicza średnią ocen ucznia. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz rekord <code>Zamówienie</code>, który zawiera listę produktów oraz ich cen. Każdy produkt reprezentowany jest przez rekord <code>Produkt</code> z nazwą i ceną. W rekordzie <code>Zamówienie</code> dodaj metodę <code>calaWartosc()</code>, która oblicza łączną wartość zamówienia na podstawie cen produktów. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz rekord <code>Osoba</code>, który reprezentuje imię i wiek osoby. Dodaj konstruktor, który weryfikuje, czy podany wiek nie jest ujemny. W przypadku podania wartości ujemnej, ustaw wiek na 0. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz rekord <code>KontoBankowe</code>, który zawiera numer konta oraz saldo. Dodaj konstruktor, który pozwala na tworzenie konta tylko z numerem, przy czym domyślne saldo wynosi 0. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz rekord <code>UtwórMuzyczny</code>, który opisuje tytuł, artystę i czas trwania utworu w sekundach. Dodaj konstruktor, który przyjmuje tylko tytuł i artystę, przyjmując domyślną długość utworu jako 180 sekund. Stwórz przypadek testowy.</p></li>
 </ol>
 
 
@@ -647,13 +651,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./klasaobiekt.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Pojęcie klasy/obiektu</span></span>
+      <a href="./static.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Pola i metody statyczne</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./konstruktor.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Konstruktor</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./dziedziczenie.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

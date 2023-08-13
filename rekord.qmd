@@ -1,0 +1,23 @@
+# Rekordy
+
+1. Stwórz rekord `KsiążkaDTO`, który reprezentuje książkę w sklepie internetowym. Powinien zawierać takie informacje jak tytuł, autor, cena i rok wydania. Następnie stwórz kilka instancji tego rekordu, reprezentujących różne książki.
+
+3. Utwórz rekord `Adres`, który zawiera ulicę, numer domu, kod pocztowy i miasto. Następnie, stwórz rekord `Osoba`, który oprócz podstawowych informacji o osobie (np. imię, nazwisko) zawiera również pole typu `Adres`. Stwórz przypadek testowy.
+
+4. Stwórz klasę `PunktKlasy` reprezentującą punkt na płaszczyźnie 2D z polami x i y. Następnie, stwórz rekord `PunktRekord` z tymi samymi polami. Dodaj metody umożliwiające konwersję z instancji klasy na rekord i odwrotnie. Stwórz przypadek testowy.
+
+6. Stwórz rekord `Książka`, który reprezentuje tytuł, autora i rok wydania. Dodaj metodę `opis()`, która zwraca sformatowaną postać informacji o książce w stylu "Autor - Tytuł (Rok wydania)". Stwórz przypadek testowy.
+
+7. Stwórz rekord `Punkt2D`, reprezentujący punkt na płaszczyźnie 2D z koordynatami x i y. Wprowadź metodę `odlegloscDo(Punkt2D innyPunkt)`, która oblicza i zwraca odległość euklidesową między aktualnym punktem a podanym jako argument. Stwórz przypadek testowy.
+
+8. Stwórz rekord `Samochód`, który zawiera markę, model i spalanie na 100km. Dodaj metodę `kosztPaliwa(double cenaPaliwa, double dystans)`, która oblicza i zwraca koszt podróży na podstawie podanej ceny paliwa oraz dystansu. Stwórz przypadek testowy.
+
+9. Stwórz rekord `Uczeń`, który reprezentuje imię, nazwisko i listę ocen ucznia. Wprowadź metodę `sredniaOcen()`, która oblicza średnią ocen ucznia. Stwórz przypadek testowy.
+
+10. Stwórz rekord `Zamówienie`, który zawiera listę produktów oraz ich cen. Każdy produkt reprezentowany jest przez rekord `Produkt` z nazwą i ceną. W rekordzie `Zamówienie` dodaj metodę `calaWartosc()`, która oblicza łączną wartość zamówienia na podstawie cen produktów. Stwórz przypadek testowy.
+
+11. Stwórz rekord `Osoba`, który reprezentuje imię i wiek osoby. Dodaj konstruktor, który weryfikuje, czy podany wiek nie jest ujemny. W przypadku podania wartości ujemnej, ustaw wiek na 0. Stwórz przypadek testowy.
+
+12. Stwórz rekord `KontoBankowe`, który zawiera numer konta oraz saldo. Dodaj konstruktor, który pozwala na tworzenie konta tylko z numerem, przy czym domyślne saldo wynosi 0. Stwórz przypadek testowy.
+
+13. Stwórz rekord `UtwórMuzyczny`, który opisuje tytuł, artystę i czas trwania utworu w sekundach. Dodaj konstruktor, który przyjmuje tylko tytuł i artystę, przyjmując domyślną długość utworu jako 180 sekund. Stwórz przypadek testowy.

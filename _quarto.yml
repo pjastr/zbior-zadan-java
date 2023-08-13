@@ -22,6 +22,7 @@ book:
         - konstruktor.qmd
         - zlozonepolawklasie.qmd
         - static.qmd
+        - rekord.qmd
         - dziedziczenie.qmd
         - klasyabstrakcyjne.qmd
         - final.qmd
