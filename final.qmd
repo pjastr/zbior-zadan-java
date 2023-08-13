@@ -10,3 +10,13 @@
 3.  Stwórz klasę `Zawodnik` z jednym polem finalnym `nazwa` oraz polem `punkty`. Stwórz tablicę zawodników i spróbuj zmienić pole `nazwa` dla jednego z zawodników. Przeanalizuj wynik.
 
 4.  Stwórz klasę `Osoba` z jednym polem finalnym `PESEL`. Następnie stwórz klasę `Student`, która dziedziczy po klasie `Osoba`. Czy możesz zmienić pole `PESEL` w klasie `Student`? Co się stanie, jeśli spróbujesz to zrobić? Przeanalizuj wyniki.
+
+5.  Stwórz klasę bazową `Elektronika` z metodą finalną `włącz`, która wypisuje "Urządzenie włączone". Następnie stwórz klasę potomną `Telewizor` i spróbuj przesłonić metodę `włącz`. Zaobserwuj, co się dzieje.
+
+6.  Stwórz klasę `Komputer` z metodą finalną `boot` oraz zwykłą metodą `uruchomAplikacje`. W klasie potomnej `Laptop`, spróbuj przesłonić obie metody. Sprawdź, która z metod pozwoli się przesłonić, a której nie.
+
+7.  Utwórz finalną klasę `NiezmienneDane` z pewnymi atrybutami i metodami. Następnie spróbuj stworzyć klasę potomną `ZmienneDane`, która dziedziczy po klasie `NiezmienneDane`. Zastanów się, dlaczego nie można dziedziczyć po klasie oznaczonej jako `final`.
+
+8.  Stwórz klasę `Gra`, która w swoim konstruktorze ma metodę finalną `inicjuj` (inicializującą pewne dane). Utwórz klasę potomną `RPG`, która próbuje dostosować konstruktor klasy bazowej. Upewnij się, że metoda `inicjuj` działa poprawnie, mimo że jest oznaczona jako `final`.
+
+9.  Utwórz klasę `StałaMatematyczna` z finalnym polem `PI`, które jest inicjowane wartością 3.14159. W klasie potomnej `StałaFizyczna`, spróbuj stworzyć metodę, która próbuje zmienić wartość `PI`. Zastanów się, dlaczego wartość finalnego pola nie może zostać zmieniona po jego inicjalizacji.
