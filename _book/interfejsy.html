@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - 1&nbsp; Instrukcje wejścia/wyjścia</title>
+<title>Zbiór zadań - Java - 19&nbsp; Interfejsy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./instrukcjewarunkowe.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./delegacje.html" rel="next">
+<link href="./kopiowanie.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,8 +64,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -78,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wejsciewyjscie.html">Wprowadzenie do języka Java</a></li><li class="breadcrumb-item"><a href="./wejsciewyjscie.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Instrukcje wejścia/wyjścia</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./interfejsy.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Interfejsy</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -125,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wejsciewyjscie.html" class="sidebar-item-text sidebar-link active">
+  <a href="./wejsciewyjscie.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Instrukcje wejścia/wyjścia</span></span></a>
   </div>
 </li>
@@ -244,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./interfejsy.html" class="sidebar-item-text sidebar-link">
+  <a href="./interfejsy.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Interfejsy</span></span></a>
   </div>
 </li>
@@ -283,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Instrukcje wejścia/wyjścia</span></h1>
+<h1 class="title"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Interfejsy</span></h1>
 </div>
 
 
@@ -299,26 +297,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ol type="1">
-<li>Napisz prostą aplikację kalkulatora tekstowego, która przyjmuje dwa liczby od użytkownika jako wejście i wykonuje podstawowe operacje matematyczne (dodawanie, odejmowanie, mnożenie, dzielenie). Wyświetl wyniki na ekranie.</li>
-<li>Napisz program, który wczytuje ze standardowego wejścia dwa łańcuchy znaków, a następnie wypisuje je w kolejnych wierszach na standardowym wyjściu.</li>
-<li>Napisz program, który wczytuje ze standardowego wejścia cztery liczby wymierne, a następnie wypisuje ich sumę na standardowym wyjściu.</li>
-<li>Stwórz program do obliczenia pola kwadratu. Dane pobierz od użytkownika, wynik wyświetl na standardowym wyjściu.</li>
-<li>Napisz program, w którym wartości zmiennych pobierasz od użytkownika i wykonasz i wyświetlisz wyniki operacji:</li>
+<li><p>Napisz interfejs o nazwie <code>GłośneZwierzę</code>, który będzie miał jedną metodę o nazwie <code>dajGłos()</code>. Następnie stwórz dwie klasy: <code>Pies</code> i <code>Kot</code>, które będą implementować ten interfejs. Dla każdej klasy zaimplementuj metodę <code>dajGłos()</code>, tak aby wydrukowała ona odpowiedni dźwięk zwierzęcia.</p></li>
+<li><p>Stwórz interfejs o nazwie <code>Komparator</code>, który będzie zawierał metodę <code>porównaj(int a, int b): int</code>. Metoda ta powinna zwrócić -1, jeśli <code>a &lt; b</code>, 0 jeśli <code>a == b</code> i 1 jeśli <code>a &gt; b</code>. Następnie stwórz klasę <code>MojaKlasaKomparatora</code>, która będzie implementować ten interfejs. W klasie tej zaimplementuj metodę <code>porównaj</code> zgodnie z jej opisem.</p></li>
+<li><p>Załóżmy, że mamy interfejs <code>OdtwarzaczMuzyki</code> z metodami <code>włącz()</code>, <code>wyłącz()</code> i <code>następnyUtwór()</code>. Stwórz klasę <code>Radio</code>, która będzie implementować ten interfejs. W metodzie <code>włącz()</code> powinien zostać wydrukowany komunikat “Radio włączone”, w metodzie <code>wyłącz()</code> - “Radio wyłączone”, a w <code>następnyUtwór()</code> - “Zmieniono stację radiową”.</p></li>
 </ol>
-<ul>
-<li><span class="math inline">\(a+b-x^2\)</span></li>
-<li><span class="math inline">\(\frac{a-b}{c-3}\)</span></li>
-<li><span class="math inline">\(3(4+5a)(b-c^3)\)</span></li>
-</ul>
-<ol start="6" type="1">
-<li>Napisz program, w którym zostaną wykonane poniższe operacje za pomocą tzw. złożonych operatorów przypisania (<code>+=</code> , <code>-=</code> i innych podobnych operatorów):</li>
-</ol>
-<ul>
-<li><span class="math inline">\(a=a+4\)</span></li>
-<li><span class="math inline">\(b=b-a\)</span></li>
-<li><span class="math inline">\(c=c(2-4a)\)</span></li>
-<li><span class="math inline">\(d=\frac{d}{4-a^2}\)</span></li>
-</ul>
 
 
 
@@ -673,13 +655,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Zbiór zadań - Java</span>
+      <a href="./kopiowanie.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Kopiowanie obiektów</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./instrukcjewarunkowe.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./delegacje.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Delegacje</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

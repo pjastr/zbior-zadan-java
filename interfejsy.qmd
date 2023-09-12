@@ -1,0 +1,7 @@
+# Interfejsy
+
+1. Napisz interfejs o nazwie `GłośneZwierzę`, który będzie miał jedną metodę o nazwie `dajGłos()`. Następnie stwórz dwie klasy: `Pies` i `Kot`, które będą implementować ten interfejs. Dla każdej klasy zaimplementuj metodę `dajGłos()`, tak aby wydrukowała ona odpowiedni dźwięk zwierzęcia.
+
+2. Stwórz interfejs o nazwie `Komparator`, który będzie zawierał metodę `porównaj(int a, int b): int`. Metoda ta powinna zwrócić -1, jeśli `a < b`, 0 jeśli `a == b` i 1 jeśli `a > b`. Następnie stwórz klasę `MojaKlasaKomparatora`, która będzie implementować ten interfejs. W klasie tej zaimplementuj metodę `porównaj` zgodnie z jej opisem.
+
+3. Załóżmy, że mamy interfejs `OdtwarzaczMuzyki` z metodami `włącz()`, `wyłącz()` i `następnyUtwór()`. Stwórz klasę `Radio`, która będzie implementować ten interfejs. W metodzie `włącz()` powinien zostać wydrukowany komunikat "Radio włączone", w metodzie `wyłącz()` - "Radio wyłączone", a w `następnyUtwór()` - "Zmieniono stację radiową".

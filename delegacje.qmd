@@ -1,0 +1,20 @@
+# Delegacje
+
+1.  Wykonaj poniższe czynności:
+
+a.  Stwórz interfejs `Printer` z metodą `drukuj(String tekst)`.
+b.  Utwórz klasę `StandardowyPrinter`, która implementuje `Printer` i wypisuje tekst na konsolę.
+c.  Utwórz klasę `Biuro`, która posiada prywatne pole typu `Printer`. W konstruktorze `Biuro` przyjmij `Printer` jako argument i przypisz go do pola. Dodaj metodę `drukujDokument(String tekst)`, która będzie delegować zadanie drukowania do obiektu klasy `Printer`.
+
+
+2. Wykonaj poniższe czynności:
+
+a. Stwórz interfejs `Silnik` z metodami `uruchom()` i `zatrzymaj()`.
+b. Utwórz klasę `BenzynowySilnik`, która implementuje `Silnik` i symuluje działanie silnika na benzynę.
+c. Utwórz klasę `Samochód`, która posiada prywatne pole typu `Silnik`. W konstruktorze przyjmij `Silnik` jako argument. Dodaj metody `start()` i `stop()`, które będą delegować odpowiednio zadanie uruchomienia i zatrzymania silnika do obiektu klasy `Silnik`.
+
+3. Wykonaj poniższe czynności:
+
+a. Stwórz interfejs `Powiadomienie` z metodą `wyślij(String wiadomość)`.
+b. Utwórz klasę `Email`, która implementuje `Powiadomienie` i symuluje wysyłanie wiadomości e-mail.
+c. Utwórz klasę `Użytkownik`, która posiada prywatne pole typu `Powiadomienie`. W konstruktorze przyjmij `Powiadomienie` jako argument. Dodaj metodę `powiadomOModernizacji(String informacja)`, która będzie delegować zadanie wysyłania powiadomienia do obiektu klasy `Powiadomienie`.
