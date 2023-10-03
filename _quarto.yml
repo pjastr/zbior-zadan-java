@@ -15,6 +15,7 @@ book:
         - metody.qmd
         - random.qmd
         - tablice.qmd
+        - napisy.qmd
     - part: "Programowanie obiektowe"
       chapters:
         - klasaobiekt.qmd

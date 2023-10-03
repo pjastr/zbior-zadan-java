@@ -1,0 +1,29 @@
+# Napisy
+
+1. Napisz statyczną metodę, która przyjmuje napis jako argument i zwraca ten napis w odwrotnej kolejności. Stwórz przypadek testowy.
+
+2. Napisz statyczną metodę, która sprawdza, czy dany napis jest palindromem. Palindrom to słowo, fraza, liczba lub inny ciąg znaków, który czyta się tak samo od przodu, jak i od tyłu. Stwórz przypadek testowy.
+
+3. Napisz statyczną metodę, która usuwa wszystkie spacje z danego napisu. Stwórz przypadek testowy.
+
+4. Napisz statyczną metodę, która przyjmuje napis jako argument i zwraca ten napis z zamienioną pierwszą i ostatnią literą. Stwórz przypadek testowy.
+
+5. Napisz program, który analizuje dany napis pod kątem częstotliwości występowania każdego ze znaków. Program powinien wyświetlić znak i liczbę jego wystąpień w danym napisie. Dane pobierz ze standardowego wejścia.
+
+6. Napisz program, który przyjmuje napis jako wejście i wypisuje wszystkie znaki znajdujące się na parzystych indeksach napisu, używając metody `charAt`.
+
+7. Używając metody `charAt`, napisz statyczną metodę, która sprawdza, czy dany napis zaczyna się i kończy tym samym znakiem. Stwórz przypadek testowy.
+
+8. Napisz program, który przyjmuje trzy napisy: główny napis, prefiks i sufiks. Używając metod `startsWith` oraz `endsWith`, sprawdź czy główny napis zaczyna się od podanego prefiksu i kończy podanym sufiksem. Wypisz odpowiedni komunikat dla każdego z tych przypadków.
+
+9.    Napisz program, który przyjmuje jako wejście pojedynczy znak oraz liczbę całkowitą `n`. Używając klasy `StringBuilder`, zbuduj i wypisz piramidę o wysokości `n`, gdzie każdy poziom piramidy składa się z podanego znaku. Na przykład dla znaku `*` i `n=3`, oczekiwany wynik to:
+
+```
+ *
+***
+*****
+```
+
+10. Dany jest napis. Używając `StringBuilder`, napisz program, który usuwa wszystkie powtarzające się znaki, pozostawiając tylko pierwsze wystąpienie każdego znaku. Na przykład dla napisu "bananowy", oczekiwany wynik to "banowy".
+
+11. Napisz program, który przyjmuje zdanie jako wejście. Używając `StringBuilder`, odwróć każde słowo w zdaniu, ale zachowaj kolejność słów. Na przykład dla zdania "Java jest fajna", oczekiwany wynik to "avaJ tsej anjaf".
