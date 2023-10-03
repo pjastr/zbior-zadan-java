@@ -58,12 +58,8 @@ c)  $(8,3,-2,-7,-12,\ldots )$
 
 21. Napisz program, który wczytuje ze standardowego wejścia dwie liczby całkowite $n$ i $m$ (zakładamy, że $n < m$) i wypisuje na standardowym wyjściu wartość liczby $n+ \ldots + m$.
 
-22. Napisz program, który pobiera od użytkownika trzy liczby całkowite $a, b, c$. Program ma wyświetlić informację, czy liczby są uporządkowane nierosnąco w kolejności ich wprowadzania lub nie.
+22. Napisz program, który pobiera od użytkownika trzy dodatnie liczby całkowite $a, b, c$. Na standardowym wyjściu wyświetl dodatnie liczby całkowite większe od $b$, mniejsze lub równe od $a$ i podzielne przez $c$.
 
-23. Napisz program, który pobiera od użytkownika trzy liczby całkowite $a, b, c$. Program ma sprawdzić, czy b jest większa niż minimum z pozostałych liczb. Wyświetl komunikat słowny czy warunek jest lub nie jest spełniony.
+23. Napisz program, który ze standardowego wejścia pobiera liczbę naturalną $a$ a następnie wypisuje na standardowym wyjściu ile z cyfr liczby $a$ jest równe 7.
 
-24. Napisz program, który pobiera od użytkownika trzy dodatnie liczby całkowite $a, b, c$. Na standardowym wyjściu wyświetl dodatnie liczby całkowite większe od $b$, mniejsze lub równe od $a$ i podzielne przez $c$.
-
-25. Napisz program, który ze standardowego wejścia pobiera liczbę naturalną $a$ a następnie wypisuje na standardowym wyjściu ile z cyfr liczby $a$ jest równe 7.
-
-26. Napisać program, który wczyta z wejścia liczby całkowite aż do napotkania liczby ujemnej, a następnie wyświetla największy oraz najmniejszy element z wczytanych liczb (z pominięciem ostatniej, ujemnej liczby).
+24. Napisać program, który wczyta z wejścia liczby całkowite aż do napotkania liczby ujemnej, a następnie wyświetla największy oraz najmniejszy element z wczytanych liczb (z pominięciem ostatniej, ujemnej liczby).
