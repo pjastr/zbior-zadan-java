@@ -9,7 +9,7 @@
   {
     "objectID": "wejsciewyjscie.html",
     "href": "wejsciewyjscie.html",
-    "title": "1  Instrukcje wejścia/wyjścia",
+    "title": "1  Operacje wejścia/wyjścia",
     "section": "",
     "text": "Napisz prostą aplikację kalkulatora tekstowego, która przyjmuje dwa liczby od użytkownika jako wejście i wykonuje podstawowe operacje matematyczne (dodawanie, odejmowanie, mnożenie, dzielenie). Wyświetl wyniki na ekranie.\nNapisz program, który wczytuje ze standardowego wejścia dwa łańcuchy znaków, a następnie wypisuje je w kolejnych wierszach na standardowym wyjściu.\nNapisz program, który wczytuje ze standardowego wejścia cztery liczby wymierne, a następnie wypisuje ich sumę na standardowym wyjściu.\nStwórz program do obliczenia pola kwadratu. Dane pobierz od użytkownika, wynik wyświetl na standardowym wyjściu.\nNapisz program, w którym wartości zmiennych pobierasz od użytkownika i wykonasz i wyświetlisz wyniki operacji:\n\n\n\\(a+b-x^2\\)\n\\(\\frac{a-b}{c-3}\\)\n\\(3(4+5a)(b-c^3)\\)\n\n\nNapisz program, w którym zostaną wykonane poniższe operacje za pomocą tzw. złożonych operatorów przypisania (+= , -= i innych podobnych operatorów):\n\n\n\\(a=a+4\\)\n\\(b=b-a\\)\n\\(c=c(2-4a)\\)\n\\(d=\\frac{d}{4-a^2}\\)"
   },
