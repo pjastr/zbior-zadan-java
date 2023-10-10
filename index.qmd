@@ -2,6 +2,11 @@
 
 Tu będzie zbiór zadań z programowania w języku Java. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć dydaktycznych realizowanych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie.
 
+Zmiany:
+
+**10.10.2023**
+- uzupełniono zadania dot tablic, list tablicowych, napisów
+
 ---
 nocite: |
   @*

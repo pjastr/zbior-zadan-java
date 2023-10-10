@@ -1,0 +1,31 @@
+# ArrayList (listy tablicowe)
+
+1. Napisz program, który tworzy listę tablicową 10 liczb całkowitych, a następnie wyświetla je w konsoli w porządku odwrotnym do wprowadzenia.
+
+2. Napisz program, który tworzy listę tablicową 10 liczb zmiennoprzecinkowych, a następnie oblicza i wyświetla ich sumę.
+
+3. Napisz statyczną metodę `minimumValue`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca najmniejszą liczbę w liście tablicowej. Przyjmij, że lista tablicowa zawsze będzie miała co najmniej jeden element. Stwórz przypadek testowy.
+
+4. Napisz statyczną metodę `minimumValue`, która przyjmuje listę tablicową liczb wymiernych jako argument i zwraca najmniejszą liczbę w liście tablicowej. Przyjmij, że lista tablicowa zawsze będzie miała co najmniej jeden element. Stwórz przypadek testowy.
+
+5. Napisz statyczną metodę `average`, która przyjmuje listę tablicową liczb zmiennoprzecinkowych jako argument i zwraca średnią arytmetyczną wszystkich liczb. Jeżeli lista tablicowa jest pusta, zwróć 0. Stwórz przypadek testowy.
+
+6. Napisz statyczną metodę `reverseArray`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca tę samą listę tablicową, ale z odwróconym porządkiem elementów. Na przykład, dla [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.
+
+7. Napisz statyczną metodę `reverseArray`, która przyjmuje listę tablicową liczb całkowitych jako argument. Metoda odwraca porządek elementów w liście tablicowej i powinna być procedurą. Na przykład, dla [1, 2, 3, 4, 5], funkcja powinna zmienić listę tablicową na [5, 4, 3, 2, 1]. Stwórz przypadek testowy.
+
+8. Napisz statyczną metodę `countZeros`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca liczbę wystąpień zera w liście tablicowej. Na przykład, dla [0, 1, 2, 0, 3, 0, 4], funkcja powinna zwrócić 3. Stwórz przypadek testowy.
+
+9. Napisz statyczną metodę `oddElementsSum`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca sumę wszystkich nieparzystych liczb w liście tablicowej. Jeżeli w liście tablicowej nie ma żadnych nieparzystych liczb, funkcja powinna zwrócić 0. Stwórz przypadek testowy.
+
+10. Napisz statyczną metodę `copyArray`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca nową listę tablicową, która jest kopią pierwotnej. Funkcja powinna skopiować listę tablicową ręcznie, element po elemencie, bez korzystania z systemowych metod kopiowania. Stwórz przypadek testowy.
+
+11. Napisz statyczną metodę `copyArrayReverse`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca nową listę tablicową, która jest odwróconą kopią pierwotnej. Na przykład, dla liście tablicowej [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.
+
+12. Napisz statyczną metodę `copyArrayEven`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca nową listę tablicową zawierającą tylko parzyste liczby z pierwotnej liście tablicowej. Na przykład, dla liście tablicowej [1, 2, 3, 4, 5], funkcja powinna zwrócić [2, 4]. Jeżeli w liście tablicowej nie ma żadnych parzystych liczb, funkcja powinna zwrócić pustą listę tablicową. Stwórz przypadek testowy.
+
+13. Napisz statyczną metodę `copyArrayWithIndex`, która przyjmuje listę tablicową liczb całkowitych oraz indeks początkowy i końcowy jako argumenty. Funkcja powinna zwrócić nową listę tablicową zawierającą elementy pierwotnej liście tablicowej od indeksu początkowego do końcowego (włącznie). Na przykład, dla liście tablicowej [1, 2, 3, 4, 5] i indeksów 1 i 3, funkcja powinna zwrócić [2, 3, 4]. Stwórz przypadek testowy.
+
+14. Napisz statyczną metodę `mergeArrays`, która przyjmuje dwie tablice liczb całkowitych jako argumenty. Funkcja powinna zwrócić nową listę tablicową, która jest połączeniem obu pierwotnych tablic. Na przykład, dla list tablicowych [1, 2, 3] i [4, 5, 6], funkcja powinna zwrócić [1, 2, 3, 4, 5, 6]. Stwórz przypadek testowy.
+
+15. Napisz metodę `sortArray`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca nową listę tablicową, która jest posortowaną wersją pierwotnej liście tablicowej. Stwórz przypadek testowy.

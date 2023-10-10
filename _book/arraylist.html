@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - 2&nbsp; Instrukcje warunkowe</title>
+<title>Zbiór zadań - Java - 7&nbsp; ArrayList (listy tablicowe)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./petle.html" rel="next">
-<link href="./wejsciewyjscie.html" rel="prev">
+<link href="./napisy.html" rel="next">
+<link href="./tablice.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,8 +64,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -78,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wejsciewyjscie.html">Wprowadzenie do języka Java</a></li><li class="breadcrumb-item"><a href="./instrukcjewarunkowe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wejsciewyjscie.html">Wprowadzenie do języka Java</a></li><li class="breadcrumb-item"><a href="./arraylist.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ArrayList (listy tablicowe)</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -131,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./instrukcjewarunkowe.html" class="sidebar-item-text sidebar-link active">
+  <a href="./instrukcjewarunkowe.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe</span></span></a>
   </div>
 </li>
@@ -161,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./arraylist.html" class="sidebar-item-text sidebar-link">
+  <a href="./arraylist.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ArrayList (listy tablicowe)</span></span></a>
   </div>
 </li>
@@ -295,7 +293,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ArrayList (listy tablicowe)</span></h1>
 </div>
 
 
@@ -311,34 +309,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ol type="1">
-<li><p>Napisz program, który sprawdza, czy podana liczba całkowita jest parzysta. Jeżeli tak, program powinien wypisać “Liczba jest parzysta”, w przeciwnym razie “Liczba jest nieparzysta”.</p></li>
-<li><p>Napisz program, który przyjmuje trzy liczby całkowite jako argumenty i zwraca największą z nich. Zastosuj instrukcje warunkowe do porównania liczb.</p></li>
-<li><p>Napisz program, który na podstawie podanego jako argument numeru dnia tygodnia (od 1 do 7) wypisze nazwę tego dnia tygodnia. Dla przykładu, jeżeli użytkownik poda liczbę 1, program powinien wypisać “Poniedziałek”. Jeżeli podana liczba nie jest z zakresu od 1 do 7, program powinien wyświetlić komunikat “Niepoprawny numer dnia tygodnia”.</p></li>
-<li><p>Napisz program, który rozwiązuje równanie kwadratowe o postaci <span class="math inline">\(ax^2 + bx + c = 0\)</span>. Program powinien przyjmować jako argumenty wartości <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, i <span class="math inline">\(c\)</span>, obliczać delty (<span class="math inline">\(b^2 - 4ac\)</span>), a następnie zwracać rozwiązania równania w zależności od wartości delty.</p></li>
-<li><p>Napisz program, który przyjmuje wiek użytkownika jako argument. Jeżeli wiek jest mniejszy niż 18, program powinien wyświetlić “Jesteś niepełnoletni”. Jeżeli wiek jest większy lub równy 18, ale mniejszy od 65, program powinien wyświetlić “Jesteś dorosły”. Jeżeli wiek jest równy lub większy niż 65, program powinien wyświetlić “Jesteś emerytem”.</p></li>
-<li><p>Napisz program, który będzie sprawdzał, czy podany rok jest rokiem przestępnym. Rok jest przestępny, jeśli jest podzielny przez 4, ale nie jest podzielny przez 100, chyba że jest podzielny przez 400.</p></li>
-<li><p>Napisz program, który przyjmuje trzy liczby całkowite jako argumenty i sortuje je w kolejności rosnącej, używając instrukcji warunkowych, a następnie wyświetla posortowane liczby.</p></li>
-<li><p>Napisz program, który oblicza podatek dochodowy na podstawie podanych dochodów i zasad podatkowych. Załóżmy, że podatek wynosi 18% dla dochodu do 85,528 PLN, a dla dochodu powyżej tej kwoty podatek wynosi 14,839.02 PLN plus 32% nadwyżki ponad 85,528 PLN. Użytkownik powinien wprowadzić swoje dochody, a program powinien obliczyć i wyświetlić kwotę podatku.</p></li>
-<li><p>Napisz program sprawdzający czy podane liczby z klawiatury mogą stanowić poprawną datę w kalendarzu.</p></li>
-</ol>
-<p>Przykładowe wejście:</p>
-<pre><code>Podaj dzień: 29
-Podaj miesiąc: 2
-Podaj rok: 2017</code></pre>
-<p>Przykładowe wyjście:</p>
-<pre><code>Błędna data</code></pre>
-<ol start="10" type="1">
-<li>Napisz program sprawdzający czy podane liczby z klawiatury mogą stanowić poprawna godzinę w formacie 24-godzinnym.</li>
-</ol>
-<p>Przykładowe wejście:</p>
-<pre><code>Podaj godzinę: 22
-Podaj minuty: 12
-Podaj sekundy: 33</code></pre>
-<p>Przykładowe wyjście:</p>
-<pre><code>Poprawna godzina!</code></pre>
-<ol start="11" type="1">
-<li><p>Napisz program, w którym użytkownik ma wprowadzić trzycyfrową liczbę całkowitą. Następnie należy sprawdzić czy liczba jest palindromem. Stosowny komunikat wyświetl na konsoli.</p></li>
-<li><p>Napisz program, który pobiera trzy liczby całkowite (teoretycznie mogą być różnych znaków) i sprawdza, czy można z nich zbudować trójkąt prostokątny - ostatecznie wypisuje „TAK” lub „NIE”.</p></li>
+<li><p>Napisz program, który tworzy listę tablicową 10 liczb całkowitych, a następnie wyświetla je w konsoli w porządku odwrotnym do wprowadzenia.</p></li>
+<li><p>Napisz program, który tworzy listę tablicową 10 liczb zmiennoprzecinkowych, a następnie oblicza i wyświetla ich sumę.</p></li>
+<li><p>Napisz statyczną metodę <code>minimumValue</code>, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca najmniejszą liczbę w liście tablicowej. Przyjmij, że lista tablicowa zawsze będzie miała co najmniej jeden element. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>minimumValue</code>, która przyjmuje listę tablicową liczb wymiernych jako argument i zwraca najmniejszą liczbę w liście tablicowej. Przyjmij, że lista tablicowa zawsze będzie miała co najmniej jeden element. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>average</code>, która przyjmuje listę tablicową liczb zmiennoprzecinkowych jako argument i zwraca średnią arytmetyczną wszystkich liczb. Jeżeli lista tablicowa jest pusta, zwróć 0. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>reverseArray</code>, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca tę samą listę tablicową, ale z odwróconym porządkiem elementów. Na przykład, dla [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>reverseArray</code>, która przyjmuje listę tablicową liczb całkowitych jako argument. Metoda odwraca porządek elementów w liście tablicowej i powinna być procedurą. Na przykład, dla [1, 2, 3, 4, 5], funkcja powinna zmienić listę tablicową na [5, 4, 3, 2, 1]. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>countZeros</code>, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca liczbę wystąpień zera w liście tablicowej. Na przykład, dla [0, 1, 2, 0, 3, 0, 4], funkcja powinna zwrócić 3. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>oddElementsSum</code>, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca sumę wszystkich nieparzystych liczb w liście tablicowej. Jeżeli w liście tablicowej nie ma żadnych nieparzystych liczb, funkcja powinna zwrócić 0. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>copyArray</code>, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca nową listę tablicową, która jest kopią pierwotnej. Funkcja powinna skopiować listę tablicową ręcznie, element po elemencie, bez korzystania z systemowych metod kopiowania. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>copyArrayReverse</code>, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca nową listę tablicową, która jest odwróconą kopią pierwotnej. Na przykład, dla liście tablicowej [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>copyArrayEven</code>, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca nową listę tablicową zawierającą tylko parzyste liczby z pierwotnej liście tablicowej. Na przykład, dla liście tablicowej [1, 2, 3, 4, 5], funkcja powinna zwrócić [2, 4]. Jeżeli w liście tablicowej nie ma żadnych parzystych liczb, funkcja powinna zwrócić pustą listę tablicową. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>copyArrayWithIndex</code>, która przyjmuje listę tablicową liczb całkowitych oraz indeks początkowy i końcowy jako argumenty. Funkcja powinna zwrócić nową listę tablicową zawierającą elementy pierwotnej liście tablicowej od indeksu początkowego do końcowego (włącznie). Na przykład, dla liście tablicowej [1, 2, 3, 4, 5] i indeksów 1 i 3, funkcja powinna zwrócić [2, 3, 4]. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz statyczną metodę <code>mergeArrays</code>, która przyjmuje dwie tablice liczb całkowitych jako argumenty. Funkcja powinna zwrócić nową listę tablicową, która jest połączeniem obu pierwotnych tablic. Na przykład, dla list tablicowych [1, 2, 3] i [4, 5, 6], funkcja powinna zwrócić [1, 2, 3, 4, 5, 6]. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz metodę <code>sortArray</code>, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca nową listę tablicową, która jest posortowaną wersją pierwotnej liście tablicowej. Stwórz przypadek testowy.</p></li>
 </ol>
 
 
@@ -694,13 +679,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./wejsciewyjscie.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia/wyjścia</span></span>
+      <a href="./tablice.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tablice</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./petle.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pętle</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./napisy.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Napisy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

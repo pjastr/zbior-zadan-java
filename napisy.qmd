@@ -27,3 +27,24 @@
 10. Dany jest napis. Używając `StringBuilder`, napisz program, który usuwa wszystkie powtarzające się znaki, pozostawiając tylko pierwsze wystąpienie każdego znaku. Na przykład dla napisu "bananowy", oczekiwany wynik to "banowy".
 
 11. Napisz program, który przyjmuje zdanie jako wejście. Używając `StringBuilder`, odwróć każde słowo w zdaniu, ale zachowaj kolejność słów. Na przykład dla zdania "Java jest fajna", oczekiwany wynik to "avaJ tsej anjaf".
+
+12. Napisz metodę statyczną `reverseString`, która przyjmuje jako argument obiekt typu `StringBuilder` i zwraca nowy `StringBuilder`, będący odwróconym napisem pierwotnym. Stwórz przypadek testowy.
+
+13. Napisz metodę statyczną `removeDuplicates`, która przyjmuje `StringBuilder` i usuwa wszystkie powtarzające się znaki w napisie, pozostawiając tylko pierwsze wystąpienie danego znaku. Stwórz przypadek testowy.
+
+14. Napisz metodę statyczną `mostFrequentChar`, która przyjmuje `StringBuilder` jako argument i zwraca znak, który występuje najczęściej w napisie. W przypadku remisów, zwróć pierwszy znak z remisowych. Stwórz przypadek testowy.
+
+15. Napisz metodę statyczną `insertSubstring`, która przyjmuje dwa argumenty: `StringBuilder sb` oraz `String toInsert`. Metoda ma wstawiać `toInsert` w środek pierwotnego `StringBuilder`. Stwórz przypadek testowy.
+
+16. Napisz metodę statyczną `splitByEvenOdd`, która przyjmuje `StringBuilder` jako argument. Metoda powinna zwracać tablicę dwóch elementów typu `StringBuilder`. Pierwszy element tablicy ma zawierać znaki z nieparzystych indeksów pierwotnego napisu, a drugi z parzystych. Stwórz przypadek testowy.
+
+17. Napisz metodę statyczną `capitalizeEverySecond`, która przyjmuje jako argument obiekt typu `StringBuffer`. Metoda ma zmienić każdą drugą literę na wielką. Stwórz przypadek testowy.
+
+18. Napisz metodę statyczną `replaceSubstring`, która przyjmuje dwa argumenty: `StringBuffer sb` i `String oldSub`, oraz `String newSub`. Metoda ma zamienić wszystkie wystąpienia podciągu `oldSub` na `newSub`. Stwórz przypadek testowy.
+
+19. Napisz metodę statyczną `countOccurrences`, która przyjmuje dwa argumenty: `StringBuffer sb` oraz `char c`. Metoda powinna zwracać liczbę wystąpień znaku `c` w napisie. Stwórz przypadek testowy.
+
+20. Napisz metodę statyczną `trimToSize`, która przyjmuje `StringBuffer sb` i liczbę całkowitą `n`. Metoda ma zmniejszyć długość napisu do `n` znaków (jeśli pierwotny napis jest dłuższy). Jeśli napis jest krótszy lub równy `n`, nie powinien ulec zmianie. Stwórz przypadek testowy.
+
+21. Napisz metodę statyczną `isPalindrome`, która przyjmuje `StringBuffer` jako argument. Metoda powinna sprawdzić, czy napis jest palindromem (odczytywany tak samo od przodu jak i od tyłu) i zwrócić odpowiednią wartość logiczną. Stwórz przypadek testowy.
+

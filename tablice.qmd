@@ -54,3 +54,7 @@
 
 27. Napisz metodę `printArray`, która przyjmuje tablicę liczb całkowitych jako argument i drukuje jej zawartość na konsoli. Wykorzystaj do tego metodę `Arrays.toString()` z biblioteki `java.util.Arrays`, która zwraca tekstową reprezentację tablicy. Stwórz przypadek testowy.
 
+28. Napisz metodę `copyArray`, która przyjmuje tablicę liczb wymiernych jako argument. Metoda powinna zwracać nową tablicę, będącą kopią przekazanej tablicy. Do skopiowania tablicy wykorzystaj metodę `Arrays.copyOf()` z biblioteki `java.util.Arrays`. Stwórz przypadek testowy.
+
+29. Napisz metodę `sortArray`, która przyjmuje tablicę liczb wymiernych jako argument. Metoda powinna sortować tablicę w porządku rosnącym, wykorzystując do tego metodę `Arrays.sort()` z biblioteki `java.util.Arrays`. Stwórz przypadek testowy.
+
