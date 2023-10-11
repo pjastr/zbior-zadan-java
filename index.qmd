@@ -8,7 +8,7 @@ Zmiany:
 - uzupełniono zadania dot tablic, list tablicowych, napisów
 
 **11.10.2023**
-- prawa zadania z symbolem Newtona
+- drobne poprawki w zadaniach dot. metod
 
 ---
 nocite: |
