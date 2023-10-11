@@ -2,7 +2,7 @@
 
 
 
-1. Napisz statyczną metodę, której argumetnem jest dodatnia liczba całkowita $n$. Metoda ma zwrócić jako liczbę całkowitą sumę szeregu
+1. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda ma zwrócić jako liczbę całkowitą sumę szeregu
 
 $$1-2+3-4+\ldots \pm n.$$
 Stwórz przypadek testowy dla tej metody.
