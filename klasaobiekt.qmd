@@ -1,19 +1,20 @@
 # Pojęcie klasy/obiektu
 
-1.  Utwórz klasę `Pies` z polami: `imie`, `rasa` i `wiek`. Napisz metodę `szczekaj()`, która wydrukuje na konsoli `"Hau Hau"`. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
+1.  Utwórz klasę `Dog` z polami: `name`, `breed` i `age`. Napisz metodę `bark()`, która wydrukuje na konsoli `"Hau Hau"`. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
 
-2.  Stwórz klasę `Samochod` z polami: `marka`, `model` i `predkosc`. Napisz metody `przyspiesz(int wartosc)` i `zwolnij(int wartosc)`, które odpowiednio zwiększają i zmniejszają prędkość o podaną wartość. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
+2.  Stwórz klasę `Car` z polami: `brand`, `model` i `speed`. Napisz metody `accelerate(int value)` i `decelerate(int value)`, które odpowiednio zwiększają i zmniejszają prędkość o podaną wartość. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
 
-3.  Stwórz klasę `KontoBankowe` z polem `saldo`. Napisz metody `wplata(double kwota)` i `wyplata(double kwota)`, które odpowiednio zwiększają i zmniejszają saldo o daną kwotę. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
+3.  Stwórz klasę `BankAccount` z polem `balance`. Napisz metody `deposit(double amount)` i `withdraw(double amount)`, które odpowiednio zwiększają i zmniejszają saldo o daną kwotę. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
 
-4.  Utwórz klasę `Punkt` z dwoma polami: `x` i `y` reprezentującymi współrzędne na płaszczyźnie. Napisz metodę `odleglosc(Punkt innyPunkt)`, która oblicza odległość między bieżącym punktem a innym punktem. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
+4.  Utwórz klasę `Point` z dwoma polami: `x` i `y` reprezentującymi współrzędne na płaszczyźnie. Napisz metodę `distance(Point otherPoint)`, która oblicza odległość między bieżącym punktem a innym punktem. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
 
-5.  Stwórz klasę `Czas` z polami: `godziny` i `minuty`. Napisz metodę `dodajCzas(Czas innyCzas)`, która dodaje do bieżącego czasu czas podany jako argument i zwraca nowy obiekt klasy Czas. Zadbaj o to, aby minuty i godziny nie przekraczały odpowiednio 59 i 23. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
+5.  Stwórz klasę `Time` z polami: `hours` i `minutes`. Napisz metodę `addTime(Time otherTime)`, która dodaje do bieżącego czasu czas podany jako argument i zwraca nowy obiekt klasy Time. Zadbaj o to, aby minuty i godziny nie przekraczały odpowiednio 59 i 23. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
 
 6.  Wykonaj po kolei dwa podpunkty:
 
-    A.  Stwórz klasę `Samochod` zawierającą pole `marka`. W klasie `Main`, utwórz obiekt klasy `Samochod`, przypisz mu wartość `null` i spróbuj odwołać się do pola `marka`. Jaki jest wynik?
-    B.  Zmodyfikuj kod z podpunktu A tak, aby sprawdzić, czy obiekt `Samochod` jest `null` przed odwołaniem się do pola `marka`. Jaki jest wynik?
+    A. Stwórz klasę `Car` zawierającą pole `brand`. W klasie `Main`, utwórz obiekt klasy `Car`, przypisz mu wartość `null` i spróbuj odwołać się do pola `brand`. Jaki jest wynik?
+
+    B. Zmodyfikuj kod z podpunktu A tak, aby sprawdzić, czy obiekt `Car` jest `null` przed odwołaniem się do pola `brand`. Jaki jest wynik?
 
 7.  Utwórz klasę `Osoba` zawierającą pole `imie`. W klasie `Main`, utwórz dwa obiekty klasy `Osoba` - `osoba1` i `osoba2` - oba odnoszące się do tego samego obiektu. Zmień wartość pola `imie` przez `osoba1` i wydrukuj wartość pola `imie` przez `osoba2`. Przeanalizuj wynik.
 
