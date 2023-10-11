@@ -26,7 +26,7 @@ Podpowiedź: $7^{-n}=\frac{1}{7^n}$.
 
 8. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca sumę liczb całkowitych od $n$ do $2n$ (włącznie). Stwórz przypadek testowy dla metody. 
 
-9. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca wartość wyrażenia:
+9. Napisz statyczną metodę, której argumentem są nieujemne liczby całkowite $n$ i $k$. Metoda zwraca wartość wyrażenia:
 $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
 Stwórz przypadek testowy dla metody. 
