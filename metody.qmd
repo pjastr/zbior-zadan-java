@@ -2,7 +2,7 @@
 
 
 
-1. Napisz statyczną metodę, której jest dodatnia liczba całkowita $n$. Metoda ma zwrócić jako liczbę całkowitą sumę szeregu
+1. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda ma zwrócić jako liczbę całkowitą sumę szeregu
 
 $$1-2+3-4+\ldots \pm n.$$
 Stwórz przypadek testowy dla tej metody.
@@ -14,7 +14,7 @@ Stwórz przypadek testowy dla tej metody.
 
 4. Napisz statyczną metodę, której parametrami są dwie dodatnie liczby całkowite $a$ i $b$. Metoda ma zwrócić najmniejszą wspólną wielokrotność ($NWW$) liczb $a$ i $b$. Stwórz przypadek testowy dla metody.
 
-Przykład: $NWW(5,10)=10$, $NWD(4,5)=20$.
+Przykład: $NWW(5,10)=10$, $NWW(4,5)=20$.
 
 5. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca `true` jeśli zadana liczba $n$ jest nieparzysta, ujemna, (poza minusem) składa się z 4 cyfr i podzielna przez 5, oraz zwraca `false` w pozostałych przypadkach. Stwórz przypadek testowy dla metody. 
 
@@ -26,7 +26,7 @@ Podpowiedź: $7^{-n}=\frac{1}{7^n}$.
 
 8. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca sumę liczb całkowitych od $n$ do $2n$ (włącznie). Stwórz przypadek testowy dla metody. 
 
-9. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca wartość wyrażenia:
+9. Napisz statyczną metodę, której argumentem są nieujemne liczby całkowite $n$ i $k$. Metoda zwraca wartość wyrażenia:
 $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
 Stwórz przypadek testowy dla metody. 
