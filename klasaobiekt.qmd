@@ -16,11 +16,11 @@
 
     B. Zmodyfikuj kod z podpunktu A tak, aby sprawdzić, czy obiekt `Car` jest `null` przed odwołaniem się do pola `brand`. Jaki jest wynik?
 
-7.  Utwórz klasę `Osoba` zawierającą pole `imie`. W klasie `Main`, utwórz dwa obiekty klasy `Osoba` - `osoba1` i `osoba2` - oba odnoszące się do tego samego obiektu. Zmień wartość pola `imie` przez `osoba1` i wydrukuj wartość pola `imie` przez `osoba2`. Przeanalizuj wynik.
+7.  Utwórz klasę `Person` zawierającą pole `name`. W klasie `Main`, utwórz dwa obiekty klasy `Person` - `person1` i `person2` - oba odnoszące się do tego samego obiektu. Zmień wartość pola `name` przez `person1` i wydrukuj wartość pola `name` przez `person2`. Przeanalizuj wynik.
 
-8.  Stwórz tablicę obiektów klasy `Samochod`. Następnie spróbuj odwołać się do pola `marka` jednego z obiektów w tablicy, nie inicjalizując wcześniej tablicy obiektami `Samochod`. Przeanalizuj wynik.
+8.  Stwórz tablicę obiektów klasy `Car` (klasa zawiera pole `brand`). Następnie spróbuj odwołać się do pola `brand` jednego z obiektów w tablicy, nie inicjalizując wcześniej tablicy obiektami `Car`. Przeanalizuj wynik.
 
-9.  Stwórz listę tablicową (Arraylistę) obiektów klasy `Osoba`. Następnie spróbuj odwołać się do pola `imie` jednego z obiektów na liście, nie dodając wcześniej do listy żadnych obiektów `Osoba`. Przeanalizuj wynik.
+9.  Stwórz listę tablicową (ArrayList) obiektów klasy `Person` (klasa zawiera pole `name`). Następnie spróbuj odwołać się do pola `name` jednego z obiektów na liście, nie dodając wcześniej do listy żadnych obiektów `Person`. Przeanalizuj wynik.
 
 10. Utwórz klasę `Pies` z metodą `szczekaj`, która wydrukuje wiadomość "Hau! Hau!". W klasie `Main` utwórz obiekt `Pies`, przypisz mu wartość `null` i spróbuj wywołać metodę `szczekaj`. Przeanalizuj wynik.
 
