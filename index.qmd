@@ -10,6 +10,9 @@ Zmiany:
 **11.10.2023**
 - drobne poprawki w zadaniach dot. metod
 
+**16.10.2023**
+- dodano przypisy do wybranych "problematycznych" sformułowań niektórych zadań.
+
 ---
 nocite: |
   @*
