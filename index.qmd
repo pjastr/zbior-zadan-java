@@ -13,6 +13,9 @@ Zmiany:
 **16.10.2023**
 - dodano przypisy do wybranych "problematycznych" sformułowań niektórych zadań.
 
+**17.10.2023**
+- poprawka przypisu
+
 ---
 nocite: |
   @*
