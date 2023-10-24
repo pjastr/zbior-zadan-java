@@ -16,6 +16,9 @@ Zmiany:
 **17.10.2023**
 - poprawka przypisu, poprawa niektórych zadań
 
+**24.10.2023**
+- poprawki zadań dot. klas, obiektów i modyfikatorów dostępu
+
 ---
 nocite: |
   @*

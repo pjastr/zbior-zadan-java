@@ -1,6 +1,6 @@
 # Pojęcie klasy/obiektu
 
-1.  Utwórz klasę `Dog` z polami: `name`, `breed` i `age`. Napisz metodę `bark()`, która wydrukuje na konsoli `"Hau Hau"`. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
+1.  Utwórz klasę `Dog` z polami: `name`, `breed` i `age`. Napisz metodę `bark()`, która wydrukuje na konsoli `"Wow Wow"`. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.
 
 2.  Stwórz klasę `Car` z polami: `brand`, `model` i `speed`. Napisz metody `accelerate(int value)` i `decelerate(int value)`, które odpowiednio zwiększają i zmniejszają prędkość o podaną wartość. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.
 
@@ -12,15 +12,15 @@
 
 6.  Wykonaj po kolei dwa podpunkty:
 
-    A. Stwórz klasę `Car` zawierającą pole `brand`. W klasie `Main`, utwórz obiekt klasy `Car`, przypisz mu wartość `null` i spróbuj odwołać się do pola `brand`. Jaki jest wynik?
+    A. Stwórz klasę `Car` zawierającą publiczne pole `brand`. W klasie `Main`, utwórz obiekt klasy `Car`, przypisz mu wartość `null` i spróbuj odwołać się do pola `brand`. Jaki jest wynik?
 
     B. Zmodyfikuj kod z podpunktu A tak, aby sprawdzić, czy obiekt `Car` jest `null` przed odwołaniem się do pola `brand`. Jaki jest wynik?
 
 7.  Utwórz klasę `Person` zawierającą pole `name`. W klasie `Main`, utwórz dwa obiekty klasy `Person` - `person1` i `person2` - oba odnoszące się do tego samego obiektu. Zmień wartość pola `name` przez `person1` i wydrukuj wartość pola `name` przez `person2`. Przeanalizuj wynik.
 
-8.  Stwórz tablicę obiektów klasy `Car` (klasa zawiera pole `brand`). Następnie spróbuj odwołać się do pola `brand` jednego z obiektów w tablicy, nie inicjalizując wcześniej tablicy obiektami `Car`. Przeanalizuj wynik.
+8.  Stwórz tablicę obiektów klasy `Car` (klasa zawiera publiczne pole `brand`). Następnie spróbuj odwołać się do pola `brand` jednego z obiektów w tablicy, nie inicjalizując wcześniej tablicy obiektami `Car`. Przeanalizuj wynik.
 
-9.  Stwórz listę tablicową (ArrayList) obiektów klasy `Person` (klasa zawiera pole `name`). Następnie spróbuj odwołać się do pola `name` jednego z obiektów na liście, nie dodając wcześniej do listy żadnych obiektów `Person`. Przeanalizuj wynik.
+9.  Stwórz listę tablicową (ArrayList) obiektów klasy `Person` (klasa zawiera publiczne pole `name`). Następnie spróbuj odwołać się do pola `name` jednego z obiektów na liście, nie dodając wcześniej do listy żadnych obiektów `Person`. Przeanalizuj wynik.
 
 10. Utwórz klasę `Pies` z metodą `szczekaj`, która wydrukuje wiadomość "Hau! Hau!". W klasie `Main` utwórz obiekt `Pies`, przypisz mu wartość `null` i spróbuj wywołać metodę `szczekaj`. Przeanalizuj wynik.
 
