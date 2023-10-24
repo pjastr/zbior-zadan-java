@@ -28,13 +28,13 @@
 
 12. Wykonaj kolejno poniższe czynności:
 
-    A.  Stwórz klasę `Czlowiek` z polem `imie`. Dodaj do klasy metodę `przedstawSie`, która wyświetli wiadomość "Cześć, jestem" i imię osoby. W klasie `Main`, utwórz obiekt `Czlowiek` i wywołaj na nim metodę `przedstawSie`. Czy musisz użyć słowo kluczowe `this` w implementacji metody?
+    A.  Stwórz klasę `Person` z polem `name`. Dodaj do klasy metodę `introduceYourself`, która wyświetli wiadomość "Hi, I'm" i imię osoby. W klasie `Main`, utwórz obiekt `Person` i wywołaj na nim metodę `introduceYourself`. Czy musisz użyć słowo kluczowe `this` w implementacji metody?
 
-    B.  Dodaj do klasy `Czlowiek` metodę `powiedzCzesc`, która jako argument przyjmuje inny obiekt klasy `Czlowiek` i wyświetla wiadomość "Cześć," i imię drugiego człowieka. Przeanalizuj działanie.
+    B.  Dodaj do klasy `Person` metodę `sayHello`, która jako argument przyjmuje inny obiekt klasy `Person` i wyświetla wiadomość "Hello," i imię drugiej osoby. Przeanalizuj działanie.
 
-    C.  Dodaj do klasy `Czlowiek` metodę `zmienImie`, która jako argument przyjmuje łańcuch znaków i przypisuje go do pola `imie`. Utwórz obiekt `Czlowiek` i użyj metody `zmienImie` do zmiany jego imienia. Następnie wywołaj metodę `przedstawSie`. Czy imię zostało zmienione? Czy musisz użyć słowo kluczowe `this` w implementacji metody?
+    C.  Dodaj do klasy `Person` metodę `changeName`, która jako argument przyjmuje łańcuch znaków i przypisuje go do pola `name`. Utwórz obiekt `Person` i użyj metody `changeName` do zmiany jego imienia. Następnie wywołaj metodę `introduceYourself`. Czy imię zostało zmienione? Czy musisz użyć słowo kluczowe `this` w implementacji metody?
 
-    D.  Dodaj do klasy `Czlowiek` metodę `zamienImionami`, która jako argument przyjmuje inny obiekt klasy `Czlowiek` i zamienia imionami obie osoby. Utwórz dwa obiekty `Czlowiek` i użyj metody `zamienImionami` do zamiany ich imion. Następnie wywołaj metodę `przedstawSie` na obu obiektach. Czy imiona zostały zamienione?
+    D.  Dodaj do klasy `Person` metodę `swapNames`, która jako argument przyjmuje inny obiekt klasy `Person` i zamienia imionami obie osoby. Utwórz dwa obiekty `Person` i użyj metody `swapNames` do zamiany ich imion. Następnie wywołaj metodę `introduceYourself` na obu obiektach. Czy imiona zostały zamienione?
 
 13. Wykonaj kolejno poniższe czynności:
 
