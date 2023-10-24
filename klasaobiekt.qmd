@@ -22,9 +22,9 @@
 
 9.  Stwórz listę tablicową (ArrayList) obiektów klasy `Person` (klasa zawiera publiczne pole `name`). Następnie spróbuj odwołać się do pola `name` jednego z obiektów na liście, nie dodając wcześniej do listy żadnych obiektów `Person`. Przeanalizuj wynik.
 
-10. Utwórz klasę `Pies` z metodą `szczekaj`, która wydrukuje wiadomość "Hau! Hau!". W klasie `Main` utwórz obiekt `Pies`, przypisz mu wartość `null` i spróbuj wywołać metodę `szczekaj`. Przeanalizuj wynik.
+10. Utwórz klasę `Dog` z metodą `bark`, która wydrukuje wiadomość "Woof! Woof!". W klasie `Main` utwórz obiekt `Dog`, przypisz mu wartość `null` i spróbuj wywołać metodę `bark`. Przeanalizuj wynik.
 
-11. Stwórz klasę `Kot` z polem `imie`. Dodaj do klasy `Kot` metodę `stworzKota`, która zwraca nowy obiekt klasy `Kot`. Metoda powinna ustawiać pole `imie` na podaną wartość, ale tylko jeśli wartość nie jest `null`. W przeciwnym razie powinna zwracać `null`. W klasie `Main` użyj metody `stworzKota` do stworzenia obiektu `kot`, a następnie spróbuj wydrukować wartość pola `imie`. Co się stanie, jeśli przekażesz `null` jako argument do metody `stworzKota`? Przeanalizuj wynik.
+11. Stwórz klasę `Cat` z polem `name`. Dodaj do klasy `Cat` metodę `createCat`, która zwraca nowy obiekt klasy `Cat`. Metoda powinna ustawiać pole `name` na podaną wartość, ale tylko jeśli wartość nie jest `null`. W przeciwnym razie powinna zwracać `null`. W klasie `Main` użyj metody `createCat` do stworzenia obiektu `cat`, a następnie spróbuj wydrukować wartość pola `name`. Co się stanie, jeśli przekażesz `null` jako argument do metody `createCat`? Przeanalizuj wynik.
 
 12. Wykonaj kolejno poniższe czynności:
 
@@ -38,12 +38,11 @@
 
 13. Wykonaj kolejno poniższe czynności:
 
-    A.  Stwórz klasę `Licznik` z jednym polem `liczba`. Dodaj do klasy metodę `zwieksz`, która przyjmuje parametr typu int i zwiększa wartość pola `liczba` o wartość tego parametru. W klasie `Main`, utwórz zmienną typu int, przekaż ją do metody `zwieksz` i sprawdź, czy wartość zmiennej zmieniła się po wywołaniu metody.
+    A.  Stwórz klasę `Counter` z jednym polem `number`. Dodaj do klasy metodę `increase`, która przyjmuje parametr typu int i zwiększa wartość pola `number` o wartość tego parametru. W klasie `Main`, utwórz zmienną typu int, przekaż ją do metody `increase` i sprawdź, czy wartość zmiennej zmieniła się po wywołaniu metody.
 
-    B.  Dodaj do klasy `Licznik` metodę `dodaj`, która przyjmuje inny obiekt `Licznik` i dodaje wartość jego pola `liczba` do pola `liczba` bieżącego obiektu. Utwórz dwa obiekty `Licznik` w klasie `Main` i użyj metody `dodaj`. Sprawdź, czy obiekt przekazany jako argument metody `dodaj` zmienił swoją wartość po wywołaniu metody.
+    B.  Dodaj do klasy `Counter` metodę `add`, która przyjmuje inny obiekt `Counter` i dodaje wartość jego pola `number` do pola `number` bieżącego obiektu. Utwórz dwa obiekty `Counter` w klasie `Main` i użyj metody `add`. Sprawdź, czy obiekt przekazany jako argument metody `add` zmienił swoją wartość po wywołaniu metody.
 
-    C.  Stwórz klasę `Zmieniacz`, która posiada metodę `zmienWartosc`, która jako argument przyjmuje typ int. Wewnątrz metody zmień wartość argumentu na inną. W klasie `Main` utwórz zmienną int, a następnie przekaż ją do metody `zmienWartosc` i sprawdź, czy wartość zmiennej się zmieniła.
+    C.  Stwórz klasę `Modifier`, która posiada metodę `changeValue`, która jako argument przyjmuje typ int. Wewnątrz metody zmień wartość argumentu na inną. W klasie `Main` utwórz zmienną int, a następnie przekaż ją do metody `changeValue` i sprawdź, czy wartość zmiennej się zmieniła.
 
-    D.  Dodaj do klasy `Zmieniacz` metodę `zmienObiekt`, która jako argument przyjmuje obiekt `Licznik`. Wewnątrz metody zmień wartość pola `liczba` obiektu `Licznik` na inną. W klasie `Main` utwórz obiekt `Licznik`, a następnie przekaż go do metody `zmienObiekt` i sprawdź, czy wartość pola `liczba` obiektu się zmieniła.
+    D.  Dodaj do klasy `Modifier` metodę `changeObject`, która jako argument przyjmuje obiekt `Counter`. Wewnątrz metody zmień wartość pola `number` obiektu `Counter` na inną. W klasie `Main` utwórz obiekt `Counter`, a następnie przekaż go do metody `changeObject` i sprawdź, czy wartość pola `number` obiektu się zmieniła.
 
-14. Zdefiniuj klasę `Punkt`, która reprezentuje punkt w przestrzeni 3D (o współrzędnych `x`, `y` i `z`). Klasa powinna mieć metody do zmiany wartości współrzędnych. W `Main` stwórz dwa obiekty tej klasy i przetestuj różnicę pomiędzy przekazywaniem parametrów przez wartość i przez referencję.
