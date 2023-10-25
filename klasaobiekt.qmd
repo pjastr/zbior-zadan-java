@@ -12,23 +12,23 @@
 
 6.  Wykonaj po kolei dwa podpunkty:
 
-    A. Stwórz klasę `Car` zawierającą publiczne pole `brand`. W klasie `Main`, utwórz obiekt klasy `Car`, przypisz mu wartość `null` i spróbuj odwołać się do pola `brand`. Jaki jest wynik?
+    A. Stwórz klasę `Car` zawierającą publiczne pole `brand`. W klasie `TestCar`, utwórz obiekt klasy `Car`, przypisz mu wartość `null` i spróbuj odwołać się do pola `brand`. Jaki jest wynik?
 
     B. Zmodyfikuj kod z podpunktu A tak, aby sprawdzić, czy obiekt `Car` jest `null` przed odwołaniem się do pola `brand`. Jaki jest wynik?
 
-7.  Utwórz klasę `Person` zawierającą pole `name`. W klasie `Main`, utwórz dwa obiekty klasy `Person` - `person1` i `person2` - oba odnoszące się do tego samego obiektu. Zmień wartość pola `name` przez `person1` i wydrukuj wartość pola `name` przez `person2`. Przeanalizuj wynik.
+7.  Utwórz klasę `Person` zawierającą pole `name`. W klasie `TestPerson`, utwórz dwa obiekty klasy `Person` - `person1` i `person2` - oba odnoszące się do tego samego obiektu. Zmień wartość pola `name` przez `person1` i wydrukuj wartość pola `name` przez `person2`. Przeanalizuj wynik.
 
 8.  Stwórz tablicę obiektów klasy `Car` (klasa zawiera publiczne pole `brand`). Następnie spróbuj odwołać się do pola `brand` jednego z obiektów w tablicy, nie inicjalizując wcześniej tablicy obiektami `Car`. Przeanalizuj wynik.
 
 9.  Stwórz listę tablicową (ArrayList) obiektów klasy `Person` (klasa zawiera publiczne pole `name`). Następnie spróbuj odwołać się do pola `name` jednego z obiektów na liście, nie dodając wcześniej do listy żadnych obiektów `Person`. Przeanalizuj wynik.
 
-10. Utwórz klasę `Dog` z metodą `bark`, która wydrukuje wiadomość "Woof! Woof!". W klasie `Main` utwórz obiekt `Dog`, przypisz mu wartość `null` i spróbuj wywołać metodę `bark`. Przeanalizuj wynik.
+10. Utwórz klasę `Dog` z metodą `bark`, która wydrukuje wiadomość "Woof! Woof!". W klasie `TestDog` utwórz obiekt `Dog`, przypisz mu wartość `null` i spróbuj wywołać metodę `bark`. Przeanalizuj wynik.
 
-11. Stwórz klasę `Cat` z polem `name`. Dodaj do klasy `Cat` metodę `createCat`, która zwraca nowy obiekt klasy `Cat`. Metoda powinna ustawiać pole `name` na podaną wartość, ale tylko jeśli wartość nie jest `null`. W przeciwnym razie powinna zwracać `null`. W klasie `Main` użyj metody `createCat` do stworzenia obiektu `cat`, a następnie spróbuj wydrukować wartość pola `name`. Co się stanie, jeśli przekażesz `null` jako argument do metody `createCat`? Przeanalizuj wynik.
+11. Stwórz klasę `Cat` z polem `name`. Dodaj do klasy `Cat` metodę `createCat`, która zwraca nowy obiekt klasy `Cat`. Metoda powinna ustawiać pole `name` na podaną wartość, ale tylko jeśli wartość nie jest `null`. W przeciwnym razie powinna zwracać `null`. W klasie `TestCat` użyj metody `createCat` do stworzenia obiektu `cat`, a następnie spróbuj wydrukować wartość pola `name`. Co się stanie, jeśli przekażesz `null` jako argument do metody `createCat`? Przeanalizuj wynik.
 
 12. Wykonaj kolejno poniższe czynności:
 
-    A.  Stwórz klasę `Person` z polem `name`. Dodaj do klasy metodę `introduceYourself`, która wyświetli wiadomość "Hi, I'm" i imię osoby. W klasie `Main`, utwórz obiekt `Person` i wywołaj na nim metodę `introduceYourself`. Czy musisz użyć słowo kluczowe `this` w implementacji metody?
+    A.  Stwórz klasę `Person` z polem `name`. Dodaj do klasy metodę `introduceYourself`, która wyświetli wiadomość "Hi, I'm" i imię osoby. W klasie `TestPerson`, utwórz obiekt `Person` i wywołaj na nim metodę `introduceYourself`. Czy musisz użyć słowo kluczowe `this` w implementacji metody?
 
     B.  Dodaj do klasy `Person` metodę `sayHello`, która jako argument przyjmuje inny obiekt klasy `Person` i wyświetla wiadomość "Hello," i imię drugiej osoby. Przeanalizuj działanie.
 
@@ -38,11 +38,11 @@
 
 13. Wykonaj kolejno poniższe czynności:
 
-    A.  Stwórz klasę `Counter` z jednym polem `number`. Dodaj do klasy metodę `increase`, która przyjmuje parametr typu int i zwiększa wartość pola `number` o wartość tego parametru. W klasie `Main`, utwórz zmienną typu int, przekaż ją do metody `increase` i sprawdź, czy wartość zmiennej zmieniła się po wywołaniu metody.
+    A.  Stwórz klasę `Counter` z jednym polem `number`. Dodaj do klasy metodę `increase`, która przyjmuje parametr typu int i zwiększa wartość pola `number` o wartość tego parametru. W klasie `TestCounter`, utwórz zmienną typu int, przekaż ją do metody `increase` i sprawdź, czy wartość zmiennej zmieniła się po wywołaniu metody.
 
-    B.  Dodaj do klasy `Counter` metodę `add`, która przyjmuje inny obiekt `Counter` i dodaje wartość jego pola `number` do pola `number` bieżącego obiektu. Utwórz dwa obiekty `Counter` w klasie `Main` i użyj metody `add`. Sprawdź, czy obiekt przekazany jako argument metody `add` zmienił swoją wartość po wywołaniu metody.
+    B.  Dodaj do klasy `Counter` metodę `add`, która przyjmuje inny obiekt `Counter` i dodaje wartość jego pola `number` do pola `number` bieżącego obiektu. Utwórz dwa obiekty `Counter` w klasie `TestCounter` i użyj metody `add`. Sprawdź, czy obiekt przekazany jako argument metody `add` zmienił swoją wartość po wywołaniu metody.
 
-    C.  Stwórz klasę `Modifier`, która posiada metodę `changeValue`, która jako argument przyjmuje typ int. Wewnątrz metody zmień wartość argumentu na inną. W klasie `Main` utwórz zmienną int, a następnie przekaż ją do metody `changeValue` i sprawdź, czy wartość zmiennej się zmieniła.
+    C.  Stwórz klasę `Modifier`, która posiada metodę `changeValue`, która jako argument przyjmuje typ int. Wewnątrz metody zmień wartość argumentu na inną. W klasie `TestCounter` utwórz zmienną int, a następnie przekaż ją do metody `changeValue` i sprawdź, czy wartość zmiennej się zmieniła.
 
-    D.  Dodaj do klasy `Modifier` metodę `changeObject`, która jako argument przyjmuje obiekt `Counter`. Wewnątrz metody zmień wartość pola `number` obiektu `Counter` na inną. W klasie `Main` utwórz obiekt `Counter`, a następnie przekaż go do metody `changeObject` i sprawdź, czy wartość pola `number` obiektu się zmieniła.
+    D.  Dodaj do klasy `Modifier` metodę `changeObject`, która jako argument przyjmuje obiekt `Counter`. Wewnątrz metody zmień wartość pola `number` obiektu `Counter` na inną. W klasie `TestCounter` utwórz obiekt `Counter`, a następnie przekaż go do metody `changeObject` i sprawdź, czy wartość pola `number` obiektu się zmieniła.
 
