@@ -1,12 +1,12 @@
 # Pola i metody statyczne
 
-1. Stwórz klasę `Osoba`. Klasa powinna zawierać pole imienne oraz statyczne pole `licznik`. Zadaniem jest zwiększanie wartości `licznik` za każdym razem, gdy tworzona jest nowa instancja klasy `Osoba`. Dodaj metodę, która zwróci wartość `licznik`. Stwórz przypadek testowy.
+1. Stwórz klasę `Person`. Klasa powinna zawierać pole `name` oraz statyczne pole `counter`. Zadaniem jest zwiększanie wartości `counter` za każdym razem, gdy tworzona jest nowa instancja klasy `Person`. Dodaj metodę, która zwróci wartość `counter`. Stwórz przypadek testowy.
 
-2. Stwórz klasę `Matematyka`, która posiada pole statyczne `PI`, które przechowuje przybliżoną wartość liczby $\pi$. Upewnij się, że wartość tego pola jest niemutowalna. Stwórz przypadek testowy.
+2. Stwórz klasę `Mathematics`, która posiada pole statyczne `PI`, które przechowuje przybliżoną wartość liczby $\pi$. Upewnij się, że wartość tego pola jest niemodyfikowalna. Stwórz przypadek testowy.
 
 3. Stwórz klasę `Singleton`, która używa pola statycznego do przechowywania jednej i tylko jednej instancji tej klasy. Klasa powinna zawierać prywatny konstruktor oraz publiczną statyczną metodę `getInstance()`, która zwraca jedyną instancję klasy `Singleton`. Stwórz przypadek testowy.
 
-4. Stwórz klasę `Konfiguracja`, która zawiera pole statyczne `wersjaAplikacji` z domyślną wartością "1.0". Dodaj metody pozwalające na odczyt i zmianę tej wartości. Stwórz przypadek testowy.
+4. Stwórz klasę `Configuration`, która zawiera pole statyczne `applicationVersion` z domyślną wartością "1.0". Dodaj metody pozwalające na odczyt i zmianę tej wartości. Stwórz przypadek testowy.
 
 5. Stwórz klasę `Kalkulator`, która posiada podstawowe metody matematyczne: dodawanie, odejmowanie, mnożenie i dzielenie. Zaimplementuj te metody jako metody statyczne. Utwórz drugą klasę, w której przetestujesz te metody bez tworzenia instancji klasy `Kalkulator`. 
 

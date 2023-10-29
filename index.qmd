@@ -20,7 +20,7 @@ Zmiany:
 - poprawki zadań dot. klas, obiektów i modyfikatorów dostępu
 
 **29.10.2023**
-- zmiana nazw na angielski w części dot. modyfikatorów dostępu, konstruktora; dodano sekcję "Metody `toString` i `equals`" oraz Pakiety
+- zmiana nazw na angielski w części dot. modyfikatorów dostępu, konstruktora, pól i metod statycznych; dodano sekcję "Metody `toString` i `equals`" oraz Pakiety
 
 ---
 nocite: |
