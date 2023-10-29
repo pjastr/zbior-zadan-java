@@ -1,46 +1,30 @@
 # Dziedziczenie
 
 1.  Wykonaj kolejno poniższe czynności:
+    A.  Stwórz klasę bazową `Person` z prywatnym polem `firstName` oraz chronionym polem `lastName`. Następnie stwórz klasę `Employee`, która dziedziczy po klasie `Person`. W klasie `Employee` próbuj odnieść się do obu pól i zauważ, które z nich są dostępne.
+    B.  Na bazie klasy `Person` z poprzedniego podpunktu, stwórz metody dostępowe (gettery) dla obu pól. W klasie `Employee` stwórz metodę `displayData`, która korzysta z tych metod dostępowych, aby wypisać informacje o pracowniku. Zastanów się, dlaczego metody dostępowe są używane do dostępu do prywatnych pól.
+    
+2.  Stwórz klasę bazową `Book` z prywatnym polem `title` oraz chronionym polem `author`. Stwórz klasę potomną `Ebook`, która dziedziczy po klasie `Book`. W klasie `Ebook` spróbuj zmienić modyfikator dostępu dla obu pól z klasy bazowej. Zastanów się, dlaczego jedno z pól pozwala na to, a drugie nie.
 
-    A.  Stwórz klasę bazową `Osoba` z prywatnym polem `imie` oraz chronionym polem `nazwisko`. Następnie stwórz klasę `Pracownik`, która dziedziczy po klasie `Osoba`. W klasie `Pracownik` próbuj odnieść się do obu pól i zauważ, które z nich są dostępne.
-    B.  Na bazie klasy `Osoba` z poprzedniego podpunktu, stwórz metody dostępowe (gettery) dla obu pól. W klasie `Pracownik` stwórz metodę `wyswietlDane`, która korzysta z tych metod dostępowych, aby wypisać informacje o pracowniku. Zastanów się, dlaczego metody dostępowe są używane do dostępu do prywatnych pól.
+3.  Stwórz klasę `Tool` z chronionym konstruktorem, który przyjmuje nazwę narzędzia. Następnie stwórz klasę potomną `Hammer`, która dziedziczy po klasie `Tool`. W klasie `Hammer` stwórz konstruktor, który korzysta z konstruktora klasy bazowej. Zastanów się, dlaczego używając modyfikatora `private` dla konstruktora klasy bazowej, taki scenariusz nie byłby możliwy.
 
-2.  Stwórz klasę bazową `Ksiazka` z prywatnym polem `tytul` oraz chronionym polem `autor`. Stwórz klasę potomną `Ebook`, która dziedziczy po klasie `Ksiazka`. W klasie `Ebook` spróbuj zmienić modyfikator dostępu dla obu pól z klasy bazowej. Zastanów się, dlaczego jedno z pól pozwala na to, a drugie nie.
-
-3.  Stwórz klasę `Narzędzie` z chronionym konstruktorem, który przyjmuje nazwę narzędzia. Następnie stwórz klasę potomną `Młotek`, która dziedziczy po klasie `Narzędzie`. W klasie `Młotek` stwórz konstruktor, który korzysta z konstruktora klasy bazowej. Zastanów się, dlaczego używając modyfikatora `private` dla konstruktora klasy bazowej, taki scenariusz nie byłby możliwy.
-
-4.  Stwórz dwa różne pakiety: `zwierzeta` i `ssaki`. W pakiecie `zwierzeta` stwórz klasę bazową `Zwierze` z chronionym polem `gatunek` i prywatnym polem `wiek`. W pakiecie `ssaki` stwórz klasę `Pies`, która dziedziczy po klasie `Zwierze`. Spróbuj odnieść się w klasie `Pies` do obu pól z klasy bazowej i zauważ, które z nich są dostępne. Uwzględnij, że modyfikator `protected` pozwala na dostęp do pól w klasach potomnych, ale tylko w obrębie tego samego pakietu.
+4.  Stwórz dwa różne pakiety: `animals` i `mammals`. W pakiecie `animals` stwórz klasę bazową `Animal` z chronionym polem `species` i prywatnym polem `age`. W pakiecie `mammals` stwórz klasę `Dog`, która dziedziczy po klasie `Animal`. Spróbuj odnieść się w klasie `Dog` do obu pól z klasy bazowej i zauważ, które z nich są dostępne. 
 
 5.  Wykonaj kolejno poniższe czynności:
-
     A.  Stwórz klasę bazową `Pojazd` z metodą `jedz`, która wypisuje "Pojazd jedzie". Następnie stwórz klasę potomną `Samochod`, która przesłania metodę `jedz` tak, by wypisywała "Samochod jedzie". Utwórz obiekt klasy `Samochod` i wywołaj jego metodę `jedz`, aby zaobserwować wynik.
 
     B.  Na bazie klasy `Pojazd` z poprzedniego podpunktu, w klasie `Samochod`, przesłoń metodę `jedz` tak, by wywoływała oryginalną metodę z klasy bazowej i dodatkowo wypisywała informacje specyficzne dla klasy `Samochod`. Użyj słowa kluczowego `super`, aby wywołać metodę z klasy bazowej.
-
 6.  Stwórz klasę `Kalkulator` z metodą `dodaj`, która przyjmuje dwa argumenty typu `int` i zwraca ich sumę. Następnie stwórz klasę potomną `KalkulatorRozszerzony`, która przesłania metodę `dodaj` w taki sposób, by przyjmowała trzy argumenty typu `int` i zwracała ich sumę. Zastanów się, czy to faktycznie przesłanianie metody, czy może coś innego.
-
 7.  Stwórz klasę bazową `Baza` z metodą statyczną `info`, która wypisuje "To jest klasa bazowa". Następnie stwórz klasę potomną `Potomek` i próbuj przesłonić metodę statyczną `info` tak, by wypisywała "To jest klasa potomna". Zastanów się nad zachowaniem tak przesłoniętych metod i dlaczego takie przesłanianie jest inaczej traktowane.
-
 8.  Stwórz klasę bazową `Komputer` z chronioną metodą `uruchom`, która wypisuje "Komputer uruchomiony". Stwórz klasę potomną `Laptop`, która próbuje przesłonić metodę `uruchom`, ale z modyfikatorem dostępu `public`. Spróbuj skompilować kod i zastanów się, dlaczego występują pewne ograniczenia w przesłanianiu metod pod względem modyfikatorów dostępu.
-
 9.  Stwórz klasę bazową o nazwie `Pojazd` z polami: `marka` i `model`. Klasa ta powinna posiadać konstruktor przyjmujący oba te parametry. Następnie stwórz klasę potomną o nazwie `Samochod`, która dziedziczy po klasie `Pojazd`. Klasa `Samochod` powinna posiadać dodatkowe pole `liczbaDrzwi`. Stwórz konstruktor dla klasy `Samochod`, który przyjmuje wszystkie trzy parametry i korzysta z konstruktora klasy bazowej. Stwórz przypadek testowy.
-
 10. Stwórz klasę bazową o nazwie `Zwierze` z polem `nazwa` oraz konstruktor z domyślnym przypisaniem nazwy do "Nieznane". Następnie stwórz klasę `Pies`, która dziedziczy po klasie `Zwierze`. Nie twórz w niej dodatkowego konstruktora. Sprawdź, jakie zwierzę zostanie utworzone, gdy stworzysz nową instancję klasy `Pies`.
-
 11. Stwórz klasę bazową o nazwie `Budynek` z polami: `wysokosc` i `kolor`. Klasa ta powinna posiadać dwa konstruktory: jeden przyjmujący oba parametry i drugi bezparametrowy, który przypisuje domyślne wartości. Stwórz klasę potomną `Dom` z dodatkowym polem `liczbaPokoi`. Klasa `Dom` powinna posiadać konstruktor, który wykorzystuje przeciążony konstruktor klasy bazowej. Stwórz przypadek testowy.
-
 12. Stwórz trzy klasy: `Istota`, `Człowiek` i `Programista`. Klasa `Człowiek` powinna dziedziczyć po klasie `Istota`, a klasa `Programista` po klasie `Człowiek`. W każdej z klas dodaj konstruktor, który wypisuje informację o tworzeniu instancji danej klasy. Stwórz instancję klasy `Programista` i zaobserwuj kolejność wywoływania konstruktorów.
-
 13. Utwórz klasę `Pojazd` z polami `marka`, `model` i `rokProdukcji`. Utwórz klasy `Samochod` i `Motocykl`, które dziedziczą po klasie `Pojazd`. Klasa `Samochod` powinna mieć dodatkowe pole `liczbaDrzwi`, a klasa `Motocykl` pole `pojemnoscSilnika`. Dodaj konstruktory, metody gettery i settery, metodę `toString()` oraz `equals()` dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.
-
 14. Utwórz klasę `Pracownik` z polami `imie`, `nazwisko` i `placa`. Utwórz klasy `Programista` i `Tester`, które dziedziczą po klasie `Pracownik`. Klasa `Programista` powinna mieć dodatkowe pole `jezykProgramowania`, a klasa `Tester` pole `typTestowania`. Dodaj konstruktory, metody gettery i settery, metodę `toString()` oraz `equals()` dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.
-
 15. Utwórz klasę `Nieruchomosc` z polami `adres`, `metraż` i `cena`. Utwórz klasy `Dom` i `Mieszkanie`, które dziedziczą po klasie `Nieruchomosc`. Klasa `Dom` powinna mieć dodatkowe pole `liczbaPieter`, a klasa `Mieszkanie` pole `numerPietra`. Dodaj konstruktory, metody gettery i settery, metodę `toString()` oraz `equals()` dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.
-
 16. Utwórz klasę `GraPlanszowa` z polami `nazwaGry`, `minLiczbaGraczy`, `maxLiczbaGraczy` oraz `zasadyGry` (jako ArrayList typu `String`). Utwórz klasy `GraEdukacyjna` i `GraStrategiczna`, które dziedziczą po klasie `GraPlanszowa`. Klasa `GraEdukacyjna` powinna mieć dodatkowe pole `przedmiot`, a klasa `GraStrategiczna` pole `czasTrwania`. Dodaj konstruktory, metody gettery i settery, metodę `toString()` oraz `equals()` dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.
-
 17. Utwórz klasę `Druzyna` z polami `nazwa`, `miasto` oraz `punkty` (jako ArrayList typu `Integer`). Utwórz klasy `DruzynaPilkarska` i `DruzynaSiatkarska`, które dziedziczą po klasie `Druzyna`. Klasa `DruzynaPilkarska` powinna mieć dodatkowe pole `pozycjaWRankingu`, a klasa `DruzynaSiatkarska` pole `liczbaZwyciestw`. Dodaj konstruktory, metody gettery i settery, metodę `toString()` oraz `equals()` dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.
-
 18. Utwórz klasę `Komputer` z polami `producent`, `model` oraz `cenyCzesci` (jako ArrayList typu `Double`). Utwórz klasy `Laptop` i `Stacjonarny`, które dziedziczą po klasie `Komputer`. Klasa `Laptop` powinna mieć dodatkowe pole `waga`, a klasa `Stacjonarny` pole `obudowa`. Dodaj konstruktory, metody gettery i settery, metodę `toString()` oraz `equals()` dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.
-
 19. Utwórz klasę `AlbumMuzyczny` z polami `tytul`, `artysta` oraz `oceny` (jako ArrayList typu `Integer`). Utwórz klasy `AlbumRockowy` i `AlbumJazzowy`, które dziedziczą po klasie `AlbumMuzyczny`. Klasa `AlbumRockowy` powinna mieć dodatkowe pole `gatunekRocka`, a klasa `AlbumJazzowy` pole `gatunekJazzu`. Dodaj konstruktory, metody gettery i settery, metodę `toString()` oraz `equals()` dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.
