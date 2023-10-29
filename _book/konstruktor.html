@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./zlozonepolawklasie.html" rel="next">
+<link href="./static.html" rel="next">
 <link href="./modyfikatorydostepu.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -200,26 +200,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./zlozonepolawklasie.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./static.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Pola i metody statyczne</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pola i metody statyczne</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./rekord.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Rekordy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Rekordy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./dziedziczenie.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./zlozonepolawklasie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -329,16 +329,19 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Stwórz klasę <code>Student</code> z prywatnymi polami: <code>firstName</code>, <code>lastName</code>, <code>indexNumber</code>, <code>yearOfStudy</code> oraz <code>gradeAverage</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>showInformation()</code>, która wyświetla informacje o studencie.</p></li>
 <li><p>Stwórz klasę <code>Employee</code> z prywatnymi polami: <code>firstName</code>, <code>lastName</code>, <code>position</code>, <code>age</code> oraz <code>salary</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>showInformation()</code>, która wyświetla informacje o pracowniku.</p></li>
 <li><p>Stwórz klasę <code>BankAccount</code> z prywatnymi polami: <code>accountNumber</code>, <code>owner</code>, <code>balance</code> oraz <code>accountType</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody <code>deposit(double amount)</code> i <code>withdraw(double amount)</code>, które odpowiednio dodają lub odejmują kwotę od salda konta.</p></li>
-<li><p>Stwórz klasę <code>Telewizor</code> z prywatnymi polami: <code>marka</code>, <code>przekatnaEkranu</code>, <code>rozdzielczosc</code>, <code>czySmartTV</code> oraz <code>cena</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>pokazInformacje()</code>, która wyświetla informacje o telewizorze.</p></li>
-<li><p>Stwórz klasę <code>DziennikOcen</code> z prywatnymi polami: <code>imie</code>, <code>nazwisko</code> oraz <code>oceny</code> (jako <code>ArrayList</code> typu <code>int</code>). Dodaj konstruktor, który przyjmuje imię i nazwisko jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody <code>dodajOcene(int ocena)</code> i <code>usunOcene(int indeks)</code>, które odpowiednio dodają lub usuwają ocenę z listy ocen. Dodaj również metodę <code>sredniaOcen()</code> do obliczania średniej ocen.</p></li>
-<li><p>Stwórz klasę <code>HistoriaTemperatur</code> z prywatnym polem temperatury (jako <code>ArrayList</code> typu <code>double</code>). Dodaj konstruktor domyślny. Dodaj metody dostępowe (gettery i settery) oraz metody <code>dodajTemperature(double temperatura)</code> i <code>usunTemperature(int indeks)</code>, które odpowiednio dodają lub usuwają temperaturę z listy temperatur. Dodaj również metodę <code>sredniaTemperatur()</code> do obliczania średniej temperatur.</p></li>
-<li><p>Stwórz klasę <code>WynikiTestow</code> z prywatnymi polami: <code>imie</code>, <code>nazwisko</code> oraz <code>wyniki</code> (jako tablica typu <code>int</code>). Dodaj konstruktor, który przyjmuje imię, nazwisko oraz rozmiar tablicy jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>dodajWynik(int indeks, int wynik)</code>, która dodaje wynik testu na podanym indeksie. Dodaj również metodę <code>sredniWynik()</code> do obliczania średniego wyniku.</p></li>
-<li><p>Stwórz klasę <code>ZarzadcaZadan</code> z prywatnym polem <code>priorytetyZadan</code> (jako <code>ArrayList</code> typu <code>int</code>). Dodaj konstruktor domyślny. Dodaj metody dostępowe (gettery i settery) oraz metody <code>dodajPriorytet(int priorytet)</code> i <code>usunPriorytet(int indeks)</code>, które odpowiednio dodają lub usuwają priorytet z listy priorytetów. Dodaj również metodę <code>najwyzszyPriorytet()</code> do znajdowania najwyższego priorytetu.</p></li>
-<li><p>Stwórz klasę <code>Magazyn</code> z prywatnym polem <code>iloscProduktow</code> (jako tablica typu <code>int</code>). Dodaj konstruktor, który przyjmuje rozmiar tablicy jako argument. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>dodajProdukty(int indeks, int ilosc)</code>, która dodaje określoną ilość produktów na podanym indeksie. Dodaj również metodę <code>sumaProduktow()</code> do obliczania sumy wszystkich produktów w magazynie.</p></li>
-<li><p>Zdefiniuj klasę <code>Osoba</code>, która posiada pola: imię, nazwisko i wiek. Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól. Wiek osoby nie powinien być ujemny, a imię i nazwisko nie powinny być puste.</p></li>
-<li><p>Stwórz klasę <code>Punkt</code>, reprezentującą punkt w przestrzeni 3D, z polami: x, y, z. Napisz konstruktor, który przyjmuje te trzy wartości i sprawdza, czy są one w zakresie od -100 do 100. Jeśli wartości nie są w tym zakresie, powinny być ustawione na najbliższą granicę.</p></li>
-<li><p>Zaprojektuj klasę <code>Samochod</code>, która posiada pola: marka, model i rokProdukcji. Napisz konstruktor, który przyjmuje trzy argumenty. Zadaniem konstruktora jest sprawdzenie, czy rokProdukcji nie jest większy niż aktualny rok oraz czy marka i model nie są puste.</p></li>
-<li><p>Zdefiniuj klasę <code>KontoBankowe</code>, która posiada pola: numerKonta i saldo. Napisz konstruktor, który przyjmuje dwa argumenty. Przed przypisaniem wartości do pola numerKonta, sprawdź, czy jest ono 26-cyfrowe, a przed przypisaniem wartości do pola saldo, sprawdź, czy saldo nie jest ujemne.</p></li>
+<li><p>Stwórz klasę <code>Television</code> z prywatnymi polami: <code>brand</code>, <code>screenDiagonal</code>, <code>resolution</code>, <code>isSmartTV</code> oraz <code>price</code>. Dodaj konstruktor, który przyjmuje wszystkie pola jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>showInformation()</code>, która wyświetla informacje o telewizorze.</p></li>
+<li><p>Stwórz klasę <code>Gradebook</code> z prywatnymi polami: <code>firstName</code>, <code>lastName</code> oraz <code>grades</code> (jako <code>ArrayList</code> typu <code>int</code>). Dodaj konstruktor, który przyjmuje firstName i lastName jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody <code>addGrade(int grade)</code> i <code>removeGrade(int index)</code>, które odpowiednio dodają lub usuwają ocenę z listy ocen. Dodaj również metodę <code>averageGrade()</code> do obliczania i zwracania średniej ocen.</p></li>
+<li><p>Stwórz klasę <code>TemperatureHistory</code> z prywatnym polem <code>temperatures</code> (jako <code>ArrayList</code> typu <code>double</code>). Dodaj konstruktor domyślny. Dodaj metody dostępowe (gettery i settery) oraz metody <code>addTemperature(double temperature)</code> i <code>removeTemperature(int index)</code>, które odpowiednio dodają lub usuwają temperaturę z listy temperatur. Dodaj również metodę <code>averageTemperature()</code> do obliczania i zwracania średniej temperatur.</p></li>
+<li><p>Stwórz klasę <code>TestResults</code> z prywatnymi polami: <code>firstName</code>, <code>lastName</code> oraz <code>results</code> (jako tablica typu <code>int</code>). Dodaj konstruktor, który przyjmuje <code>firstName</code>, <code>lastName</code> oraz rozmiar tablicy jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>addResult(int index, int result)</code>, która dodaje wynik testu na podanym indeksie. Dodaj również metodę <code>averageResult()</code> do obliczania i zwracania średniego wyniku.</p></li>
+<li><p>Stwórz klasę <code>TaskManager</code> z prywatnym polem <code>taskPriorities</code> (jako <code>ArrayList</code> typu <code>int</code>). Dodaj konstruktor domyślny. Dodaj metody dostępowe (gettery i settery) oraz metody <code>addPriority(int priority)</code> i <code>removePriority(int index)</code>, które odpowiednio dodają lub usuwają priorytet z listy priorytetów. Dodaj również metodę <code>highestPriority()</code> do znajdowania i zwracania wartości najwyższego priorytetu.</p></li>
+<li><p>Stwórz klasę <code>Warehouse</code> z prywatnym polem <code>productQuantities</code> (jako tablica typu <code>int</code>). Dodaj konstruktor, który przyjmuje rozmiar tablicy jako argument. Dodaj metody dostępowe (getters and setters) oraz metodę <code>addProducts(int index, int quantity)</code>, która dodaje określoną ilość produktów na podanym indeksie. Dodaj również metodę <code>totalProducts()</code> do obliczania i zwracania sumy wszystkich produktów w magazynie.</p></li>
+<li><p>Zdefiniuj klasę <code>Person</code>, która posiada pola: <code>firstName</code>, <code>lastName</code> i <code>age</code>. Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól. Wiek osoby (<code>age</code>) nie powinien być ujemny, a <code>firstName</code> i <code>lastName</code> nie powinny być puste i nullem (w przypadku niepoprawnych wartości z osobna ustaw pusty napis lub zero).</p></li>
+<li><p>Stwórz klasę <code>Point</code>, reprezentującą punkt w przestrzeni 3D, z polami: <code>x</code>, <code>y</code>, <code>z</code>. Napisz konstruktor, który przyjmuje te trzy wartości i sprawdza, czy są one w zakresie od -100 do 100. Jeśli wartości nie są w tym zakresie, powinny być ustawione na najbliższą granicę.</p></li>
+<li><p>Zaprojektuj klasę <code>Car</code>, która posiada pola: <code>brand</code>, <code>model</code> i <code>productionYear</code>. Napisz konstruktor, który przyjmuje trzy argumenty. Zadaniem konstruktora jest sprawdzenie, czy <code>productionYear</code> nie jest większy niż aktualny rok oraz czy <code>brand</code> i <code>model</code> nie są puste i nullem (w przypadku niepoprawnych wartości z osobna ustaw pusty napis lub bieżący rok).</p></li>
+</ol>
+<p>Wskazówka: wykorzystaj <code>Calendar.getInstance().get(Calendar.YEAR)</code> do pobrania aktualnego roku.</p>
+<ol start="30" type="1">
+<li>Zdefiniuj klasę <code>BankAccount</code>, która posiada pola: <code>accountNumber</code> i <code>balance</code>. Napisz konstruktor, który przyjmuje dwa argumenty. Przed przypisaniem wartości do pola <code>accountNumber</code>, sprawdź, czy jest ono 26-cyfrowe, a przed przypisaniem wartości do pola <code>balance</code>, sprawdź, czy <code>balance</code> nie jest ujemne (w przypadku niepoprawności wartości ustaw numer konta na taki, by składał się z samych jedynek a saldo na zero).</li>
 </ol>
 
 
@@ -699,8 +702,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./zlozonepolawklasie.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./static.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pola i metody statyczne</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -22,10 +22,10 @@ book:
         - klasaobiekt.qmd
         - modyfikatorydostepu.qmd
         - konstruktor.qmd
-        - zlozonepolawklasie.qmd
         - static.qmd
         - rekord.qmd
         - dziedziczenie.qmd
+        - zlozonepolawklasie.qmd
         - klasyabstrakcyjne.qmd
         - final.qmd
         - comparable.qmd
