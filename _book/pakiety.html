@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - 9&nbsp; Pojęcie klasy/obiektu</title>
+<title>Zbiór zadań - Java - 16&nbsp; Pakiety</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./modyfikatorydostepu.html" rel="next">
-<link href="./napisy.html" rel="prev">
+<link href="./zlozonepolawklasie.html" rel="next">
+<link href="./dziedziczenie.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./klasaobiekt.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Pojęcie klasy/obiektu</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./pakiety.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pakiety</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -182,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./klasaobiekt.html" class="sidebar-item-text sidebar-link active">
+  <a href="./klasaobiekt.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Pojęcie klasy/obiektu</span></span></a>
   </div>
 </li>
@@ -224,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pakiety.html" class="sidebar-item-text sidebar-link">
+  <a href="./pakiety.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pakiety</span></span></a>
   </div>
 </li>
@@ -305,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Pojęcie klasy/obiektu</span></h1>
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pakiety</span></h1>
 </div>
 
 
@@ -321,33 +321,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ol type="1">
-<li><p>Utwórz klasę <code>Dog</code> z polami: <code>name</code>, <code>breed</code> i <code>age</code>. Napisz metodę <code>bark()</code>, która wydrukuje na konsoli <code>"Wow Wow"</code>. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.</p></li>
-<li><p>Stwórz klasę <code>Car</code> z polami: <code>brand</code>, <code>model</code> i <code>speed</code>. Napisz metody <code>accelerate(int value)</code> i <code>decelerate(int value)</code>, które odpowiednio zwiększają i zmniejszają prędkość o podaną wartość. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.</p></li>
-<li><p>Stwórz klasę <code>BankAccount</code> z polem <code>balance</code>. Napisz metody <code>deposit(double amount)</code> i <code>withdraw(double amount)</code>, które odpowiednio zwiększają i zmniejszają saldo o daną kwotę. Stwórz przypadek testowy, aby wywołać każdą metodę co najmniej jeden raz.</p></li>
-<li><p>Utwórz klasę <code>Point</code> z dwoma polami: <code>x</code> i <code>y</code> reprezentującymi współrzędne na płaszczyźnie. Napisz metodę <code>distance(Point otherPoint)</code>, która oblicza odległość między bieżącym punktem a innym punktem. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.</p></li>
-<li><p>Stwórz klasę <code>Time</code> z polami: <code>hours</code> i <code>minutes</code>. Napisz metodę <code>addTime(Time otherTime)</code>, która dodaje do bieżącego czasu czas podany jako argument i zwraca nowy obiekt klasy Time. Zadbaj o to, aby minuty i godziny nie przekraczały odpowiednio 59 i 23. Stwórz przypadek testowy, aby wywołać metodę co najmniej jeden raz.</p></li>
-<li><p>Wykonaj po kolei dwa podpunkty:</p>
-<p>A. Stwórz klasę <code>Car</code> zawierającą publiczne pole <code>brand</code>. W klasie <code>TestCar</code>, utwórz obiekt klasy <code>Car</code>, przypisz mu wartość <code>null</code> i spróbuj odwołać się do pola <code>brand</code>. Jaki jest wynik?</p>
-<p>B. Zmodyfikuj kod z podpunktu A tak, aby sprawdzić, czy obiekt <code>Car</code> jest <code>null</code> przed odwołaniem się do pola <code>brand</code>. Jaki jest wynik?</p></li>
-<li><p>Utwórz klasę <code>Person</code> zawierającą pole <code>name</code>. W klasie <code>TestPerson</code>, utwórz dwa obiekty klasy <code>Person</code> - <code>person1</code> i <code>person2</code> - oba odnoszące się do tego samego obiektu. Zmień wartość pola <code>name</code> przez <code>person1</code> i wydrukuj wartość pola <code>name</code> przez <code>person2</code>. Przeanalizuj wynik.</p></li>
-<li><p>Stwórz tablicę obiektów klasy <code>Car</code> (klasa zawiera publiczne pole <code>brand</code>). Następnie spróbuj odwołać się do pola <code>brand</code> jednego z obiektów w tablicy, nie inicjalizując wcześniej tablicy obiektami <code>Car</code>. Przeanalizuj wynik.</p></li>
-<li><p>Stwórz listę tablicową (ArrayList) obiektów klasy <code>Person</code> (klasa zawiera publiczne pole <code>name</code>). Następnie spróbuj odwołać się do pola <code>name</code> jednego z obiektów na liście, nie dodając wcześniej do listy żadnych obiektów <code>Person</code>. Przeanalizuj wynik.</p></li>
-<li><p>Utwórz klasę <code>Dog</code> z metodą <code>bark</code>, która wydrukuje wiadomość “Woof! Woof!”. W klasie <code>TestDog</code> utwórz obiekt <code>Dog</code>, przypisz mu wartość <code>null</code> i spróbuj wywołać metodę <code>bark</code>. Przeanalizuj wynik.</p></li>
-<li><p>Stwórz klasę <code>Cat</code> z polem <code>name</code>. Dodaj do klasy <code>Cat</code> metodę <code>createCat</code>, która zwraca nowy obiekt klasy <code>Cat</code>. Metoda powinna ustawiać pole <code>name</code> na podaną wartość, ale tylko jeśli wartość nie jest <code>null</code>. W przeciwnym razie powinna zwracać <code>null</code>. W klasie <code>TestCat</code> użyj metody <code>createCat</code> do stworzenia obiektu <code>cat</code>, a następnie spróbuj wydrukować wartość pola <code>name</code>. Co się stanie, jeśli przekażesz <code>null</code> jako argument do metody <code>createCat</code>? Przeanalizuj wynik.</p></li>
-<li><p>Wykonaj kolejno poniższe czynności:</p>
-<ol type="A">
-<li><p>Stwórz klasę <code>Person</code> z polem <code>name</code>. Dodaj do klasy metodę <code>introduceYourself</code>, która wyświetli wiadomość “Hi, I’m” i imię osoby. W klasie <code>TestPerson</code>, utwórz obiekt <code>Person</code> i wywołaj na nim metodę <code>introduceYourself</code>. Czy musisz użyć słowo kluczowe <code>this</code> w implementacji metody?</p></li>
-<li><p>Dodaj do klasy <code>Person</code> metodę <code>sayHello</code>, która jako argument przyjmuje inny obiekt klasy <code>Person</code> i wyświetla wiadomość “Hello,” i imię drugiej osoby. Przeanalizuj działanie.</p></li>
-<li><p>Dodaj do klasy <code>Person</code> metodę <code>changeName</code>, która jako argument przyjmuje łańcuch znaków i przypisuje go do pola <code>name</code>. Utwórz obiekt <code>Person</code> i użyj metody <code>changeName</code> do zmiany jego imienia. Następnie wywołaj metodę <code>introduceYourself</code>. Czy imię zostało zmienione? Czy musisz użyć słowo kluczowe <code>this</code> w implementacji metody?</p></li>
-<li><p>Dodaj do klasy <code>Person</code> metodę <code>swapNames</code>, która jako argument przyjmuje inny obiekt klasy <code>Person</code> i zamienia imionami obie osoby. Utwórz dwa obiekty <code>Person</code> i użyj metody <code>swapNames</code> do zamiany ich imion. Następnie wywołaj metodę <code>introduceYourself</code> na obu obiektach. Czy imiona zostały zamienione?</p></li>
-</ol></li>
-<li><p>Wykonaj kolejno poniższe czynności:</p>
-<ol type="A">
-<li><p>Stwórz klasę <code>Counter</code> z jednym polem <code>number</code>. Dodaj do klasy metodę <code>increase</code>, która przyjmuje parametr typu int i zwiększa wartość pola <code>number</code> o wartość tego parametru. W klasie <code>TestCounter</code>, utwórz zmienną typu int, przekaż ją do metody <code>increase</code> i sprawdź, czy wartość zmiennej zmieniła się po wywołaniu metody.</p></li>
-<li><p>Dodaj do klasy <code>Counter</code> metodę <code>add</code>, która przyjmuje inny obiekt <code>Counter</code> i dodaje wartość jego pola <code>number</code> do pola <code>number</code> bieżącego obiektu. Utwórz dwa obiekty <code>Counter</code> w klasie <code>TestCounter</code> i użyj metody <code>add</code>. Sprawdź, czy obiekt przekazany jako argument metody <code>add</code> zmienił swoją wartość po wywołaniu metody.</p></li>
-<li><p>Stwórz klasę <code>Modifier</code>, która posiada metodę <code>changeValue</code>, która jako argument przyjmuje typ int. Wewnątrz metody zmień wartość argumentu na inną. W klasie <code>TestCounter</code> utwórz zmienną int, a następnie przekaż ją do metody <code>changeValue</code> i sprawdź, czy wartość zmiennej się zmieniła.</p></li>
-<li><p>Dodaj do klasy <code>Modifier</code> metodę <code>changeObject</code>, która jako argument przyjmuje obiekt <code>Counter</code>. Wewnątrz metody zmień wartość pola <code>number</code> obiektu <code>Counter</code> na inną. W klasie <code>TestCounter</code> utwórz obiekt <code>Counter</code>, a następnie przekaż go do metody <code>changeObject</code> i sprawdź, czy wartość pola <code>number</code> obiektu się zmieniła.</p></li>
-</ol></li>
+<li><p>Stwórz pakiet o nazwie <code>cars</code>. Wewnątrz tego pakietu utwórz klasę <code>Car</code> zawierającą trzy prywatne pola: <code>brand</code>, <code>model</code> i <code>yearOfProduction</code>. Dodaj do klasy odpowiednie metody dostępowe (gettery i settery) oraz konstruktor przyjmujący wszystkie trzy pola. W klasie testującej, poza tym pakietem, stwórz obiekt klasy <code>Car</code>, nadaj mu wartości i wydrukuj je na ekran.</p></li>
+<li><p>Stwórz pakiet o nazwie <code>animals</code>. Wewnątrz tego pakietu utwórz dwie klasy: <code>Dog</code> i <code>Cat</code>. Oba powinny zawierać pola <code>name</code> i <code>age</code>. Każda z klas powinna posiadać metodę <code>makeSound()</code>. Dla klasy <code>Dog</code> metoda ta powinna drukować “Woof, woof!”, a dla klasy <code>Cat</code> - “Meow!”. W klasie testującej, poza tym pakietem, stwórz obiekty obu klas, nadaj im wartości i wywołaj ich metody <code>makeSound()</code>.</p></li>
+<li><p>Stwórz dwa pakiety: <code>employees</code> i <code>tools</code>. W pakiecie <code>employees</code> utwórz klasę <code>Employee</code> z polami <code>firstName</code>, <code>lastName</code> oraz <code>salary</code>. Pole <code>salary</code> powinno być chronione (protected). W pakiecie <code>tools</code> stwórz klasę <code>SalaryCalculator</code>, która posiada metodę <code>raiseSalary(Employee employee, double percent)</code>, która zwiększa pensję pracownika o podany procent. Spróbuj wywołać tę metodę w klasie testującej, poza oboma pakietami, i zastanów się nad problemami dostępu do chronionych pól w różnych pakietach.</p></li>
+<li><p>Stwórz pakiet o nazwie <code>electronics</code>. Wewnątrz tego pakietu stwórz dwa podpakiety: <code>televisions</code> i <code>phones</code>. W podpakiecie <code>televisions</code> utwórz klasę <code>Television</code> z polami <code>brand</code> i <code>screenDiagonal</code>. W podpakiecie <code>phones</code> utwórz klasę <code>Phone</code> z polami <code>brand</code> i <code>operatingSystem</code>. Dla obu klas dodaj odpowiednie gettery, settery oraz konstruktory. W klasie testującej, poza pakietem <code>electronics</code>, stwórz obiekty obu klas, nadaj im wartości i wyświetl je.</p></li>
+<li><p>Stwórz dwa pakiety: <code>books</code> i <code>library</code>. W pakiecie <code>books</code> stwórz klasę <code>Book</code> z polami <code>title</code>, <code>author</code> i <code>publicationYear</code>. W pakiecie <code>library</code> stwórz klasę <code>Shelf</code> zawierającą listę książek oraz metody umożliwiające umożliwiające dodawanie i usuwanie książek. Aby korzystać z klasy <code>Book</code> w pakiecie <code>library</code>, musisz zaimportować odpowiedni pakiet. W klasie testującej, stwórz kilka książek, dodaj je do półki i wydrukuj zawartość półki.</p></li>
+<li><p>Stwórz pakiet <code>bank</code>. Wewnątrz tego pakietu stwórz dwie klasy: <code>Account</code> i <code>Bank</code>. Klasa <code>Account</code> powinna posiadać prywatne pola <code>accountNumber</code>, <code>balance</code> oraz metody <code>deposit(double amount)</code> i <code>withdraw(double amount)</code>. Klasa <code>Bank</code> powinna zawierać listę kont oraz metody do tworzenia new kont i realizacji przelewów między nimi. Spróbuj utworzyć konto bezpośrednio w klasie testującej poza pakietem <code>bank</code> i zastanów się, jak modyfikatory dostępu wpłynęły na dostęp do klas i metod w pakiecie.</p></li>
+<li><p>Stwórz pakiet o nazwie <code>animals</code>. Wewnątrz tego pakietu utwórz klasę bazową <code>Animal</code> z polami: <code>name</code> i <code>age</code> oraz metodą <code>makeSound()</code>. Następnie, w tym samym pakiecie, stwórz dwie klasy pochodne: <code>Dog</code> i <code>Cat</code>, które dziedziczą po klasie <code>Animal</code>. Klasy pochodne powinny nadpisywać metodę <code>makeSound()</code>. W klasie testującej, poza pakietem <code>animals</code>, stwórz obiekty obu klas pochodnych, nadaj im wartości i wywołaj metodę <code>makeSound()</code> dla każdego z nich.</p></li>
+<li><p>Stwórz pakiet o nazwie <code>computers</code>. W tym pakiecie utwórz klasę bazową <code>Computer</code> z polami: <code>brand</code> i <code>processor</code>. Następnie stwórz dwie klasy pochodne: <code>Laptop</code> i <code>Desktop</code>. Klasa <code>Laptop</code> powinna dodatkowo posiadać pole <code>weight</code>, a klasa <code>Desktop</code> pole <code>caseType</code>. Wszystkie klasy powinny posiadać odpowiednie gettery, settery oraz konstruktory. W klasie testującej, poza pakietem <code>computers</code>, stwórz obiekty obu klas pochodnych, nadaj im wartości i wydrukuj je.</p></li>
+<li><p>Stwórz pakiet o nazwie <code>company</code>. Wewnątrz tego pakietu utwórz klasę bazową <code>Employee</code> z polami: <code>firstName</code>, <code>lastName</code> i <code>salary</code>. Następnie stwórz dwie klasy pochodne: <code>Manager</code> i <code>Developer</code>. Klasa <code>Manager</code> powinna dodatkowo posiadać pole <code>bonus</code>, a klasa <code>Developer</code> pole <code>programmingLanguage</code>. Dodaj odpowiednie metody pozwalające na obliczanie rocznego zarobku (pensja + ewentualne premie). W klasie testującej, poza pakietem <code>company</code>, stwórz obiekty obu klas pochodnych, nadaj im wartości i oblicz ich roczne zarobki.</p></li>
 </ol>
 
 
@@ -703,13 +685,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./napisy.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Napisy</span></span>
+      <a href="./dziedziczenie.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Dziedziczenie</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./modyfikatorydostepu.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Modyfikatory dostępu</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./zlozonepolawklasie.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

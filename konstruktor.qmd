@@ -46,7 +46,7 @@
 
 23. Stwórz klasę `TemperatureHistory` z prywatnym polem `temperatures` (jako `ArrayList` typu `double`). Dodaj konstruktor domyślny. Dodaj metody dostępowe (gettery i settery) oraz metody `addTemperature(double temperature)` i `removeTemperature(int index)`, które odpowiednio dodają lub usuwają temperaturę z listy temperatur. Dodaj również metodę `averageTemperature()` do obliczania i zwracania średniej temperatur.
 
-24. Stwórz klasę `TestResults` z prywatnymi polami: `firstName`, `lastName` oraz `results` (jako tablica typu `int`). Dodaj konstruktor, który przyjmuje `firstName`, `lastName` oraz rozmiar tablicy jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę `addResult(int index, int result)`, która dodaje wynik testu na podanym indeksie. Dodaj również metodę `averageResult()` do obliczania i zwracania średniego wyniku.
+24. Stwórz klasę `Results` (wyniki testu) z prywatnymi polami: `firstName`, `lastName` oraz `results` (jako tablica typu `int`). Dodaj konstruktor, który przyjmuje `firstName`, `lastName` oraz rozmiar tablicy jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę `addResult(int index, int result)`, która dodaje wynik testu na podanym indeksie. Dodaj również metodę `averageResult()` do obliczania i zwracania średniego wyniku.
 
 25. Stwórz klasę `TaskManager` z prywatnym polem `taskPriorities` (jako `ArrayList` typu `int`). Dodaj konstruktor domyślny. Dodaj metody dostępowe (gettery i settery) oraz metody `addPriority(int priority)` i `removePriority(int index)`, które odpowiednio dodają lub usuwają priorytet z listy priorytetów. Dodaj również metodę `highestPriority()` do znajdowania i zwracania wartości najwyższego priorytetu.
 

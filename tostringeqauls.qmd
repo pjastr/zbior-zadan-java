@@ -1,0 +1,86 @@
+# Metody `toString` i `equals`
+
+
+1. Wykonaj poniższe czynności:
+
+* Zdefiniuj klasę `Person`, która posiada następujące pola: `firstName`, `lastName` i `age`.
+
+* Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól. 
+    - Wiek osoby (`age`) nie powinien być ujemny. W przypadku podania wartości ujemnej dla wieku, ustaw wiek osoby na zero.
+    - Pola `firstName` i `lastName` nie powinny być puste ani równać się null. W przypadku podania pustego napisu lub null dla tych pól, ustaw odpowiednio pusty napis.
+
+* Dodaj metodę `toString()`, która zwraca informacje o osobie w formacie: `"Person: [firstName] [lastName], Age: [age]."`. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.
+
+* Dodaj metodę `equals()`, która porównuje dwie osoby na podstawie ich pól `firstName`, `lastName` i `age`. Dwie osoby są uważane za identyczne, jeśli wszystkie trzy pola są takie same.
+
+2. Wykonaj poniższe czynności:
+
+* Zdefiniuj klasę `Vehicle`, która posiada następujące pola: `brand`, `model` i `yearOfProduction`.
+* Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól. 
+    - Rok produkcji (`yearOfProduction`) nie powinien być większy od aktualnego roku. W przypadku podania wartości większej, ustaw rok produkcji na aktualny rok.
+    - Pola `brand` i `model` nie powinny być puste ani równać się null. W przypadku podania pustego napisu lub null dla tych pól, ustaw odpowiednio pusty napis.
+* Dodaj metodę `toString()`, która zwraca informacje o pojeździe w formacie: `"Vehicle: [brand] [model], Year: [yearOfProduction]."`.
+* Dodaj metodę `equals()`, która porównuje dwa pojazdy na podstawie ich pól `brand`, `model` i `yearOfProduction`.
+
+3. Wykonaj poniższe czynności:
+
+* Zdefiniuj klasę `Book`, która posiada następujące pola: `title`, `author` i `numberOfPages`.
+* Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól.
+    - Liczba stron (`numberOfPages`) nie powinna być ujemna. W przypadku podania wartości ujemnej, ustaw liczbę stron na jedną.
+    - Pola `title` i `author` nie powinny być puste ani równać się null. W przypadku podania pustego napisu lub null, ustaw odpowiednio pusty napis.
+* Dodaj metodę `toString()`, która zwraca informacje o książce w formacie: `"Book: [title] by [author], Pages: [numberOfPages]."`.
+* Dodaj metodę `equals()`, która porównuje dwie książki na podstawie ich pól `title`, `author` i `numberOfPages`.
+
+4. Wykonaj poniższe czynności:
+
+* Zdefiniuj klasę `Product`, która posiada następujące pola: `productName`, `category` i `price`.
+* Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól.
+    - Cena (`price`) nie powinna być ujemna. W przypadku podania wartości ujemnej, ustaw cenę produktu na zero.
+    - Pola `productName` i `category` nie powinny być puste ani równać się null. W przypadku podania pustego napisu lub null, ustaw odpowiednio pusty napis.
+* Dodaj metodę `toString()`, która zwraca informacje o produkcie w formacie: `"Product: [productName], Category: [category], Price: [price]."`.
+* Dodaj metodę `equals()`, która porównuje dwa produkty na podstawie ich pól `productName`, `category` i `price`.
+
+4. Wykonaj poniższe czynności:
+
+* Stwórz klasę `Results` (wyniki testu) z prywatnymi polami: `firstName`, `lastName` oraz `results` (jako tablica typu `int`). Dodaj konstruktor, który przyjmuje `firstName`, `lastName` oraz rozmiar tablicy jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę `addResult(int index, int result)`, która dodaje wynik testu na podanym indeksie. Dodaj również metodę `averageResult()` do obliczania i zwracania średniego wyniku.  
+* Dodaj metodę `toString()`, która zwraca informacje o uczniu, jego wynikach oraz zawartość tablicy `results` w formacie: `"Results for [firstName] [lastName]: Average Score = [averageResult], Results: [result1, result2, ...]. "`. Ponadto dodaj metodę `equals()`, która porównuje dwa obiekty klasy `Results` na podstawie ich pól `firstName`, `lastName` oraz zawartości tablicy `results`. Dwa obiekty są uważane za identyczne, jeśli wszystkie pola i wyniki testów w tablicach są takie same.
+
+5. Wykonaj poniższe czynności:
+
+* Stwórz klasę `CDAlbum` z prywatnymi polami: `artistName`, `albumTitle` oraz `tracks` (jako tablica typu `int` reprezentująca długość każdego utworu w minutach). 
+* Dodaj konstruktor, który przyjmuje `artistName`, `albumTitle` oraz ilość utworów jako argumenty.
+* Dodaj metody dostępowe (gettery i settery) oraz metodę `addTrack(int index, int length)`, która dodaje długość utworu na podanym indeksie.
+* Dodaj również metodę `totalLength()` do obliczania i zwracania łącznej długości wszystkich utworów.
+* Dodaj metodę `toString()`, która zwraca informacje o artyście, albumie oraz czasie trwania wszystkich utworów w formacie: `"CDAlbum by [artistName]: [albumTitle], Total Length = [totalLength] minutes, Tracks Length: [length1, length2, ...]. "`.
+* Dodaj metodę `equals()`, która porównuje dwa obiekty klasy `CDAlbum` na podstawie ich pól `artistName`, `albumTitle` oraz zawartości tablicy `tracks`. Dwa albumy są uważane za identyczne, jeśli wszystkie informacje są takie same.
+   
+6. Wykonaj poniższe czynności:
+
+* Stwórz klasę `MovieRating` z prywatnymi polami: `movieTitle`, `directorName` oraz `ratings` (jako tablica typu `double` reprezentująca oceny filmu w skali od 1 do 10).
+* Dodaj konstruktor, który przyjmuje `movieTitle`, `directorName` oraz ilość ocen jako argumenty.
+* Dodaj metody dostępowe (gettery i settery) oraz metodę `addRating(int index, double rating)`, która dodaje ocenę filmu na podanym indeksie.
+* Dodaj również metodę `averageRating()` do obliczania i zwracania średniej oceny filmu.
+* Dodaj metodę `toString()`, która zwraca informacje o filmie, reżyserze, średniej ocenie oraz wszystkich ocenach w formacie: `"MovieRating for [movieTitle] by [directorName]: Average Rating = [averageRating], Ratings: [rating1, rating2, ...]. "`.
+* Dodaj metodę `equals()`, która porównuje dwa obiekty klasy `MovieRating` na podstawie ich pól `movieTitle`, `directorName` oraz zawartości tablicy `ratings`. Dwa filmy są uważane za identyczne, jeśli wszystkie informacje są takie same.
+
+7. Wykonaj poniższe czynności:
+
+* Stwórz klasę `Gradebook` z prywatnymi polami: `firstName`, `lastName` oraz `grades` (jako `ArrayList` typu `int`). Dodaj konstruktor, który przyjmuje firstName i lastName jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody `addGrade(int grade)` i `removeGrade(int index)`, które odpowiednio dodają lub usuwają ocenę z listy ocen. Dodaj również metodę `averageGrade()` do obliczania i zwracania średniej ocen.
+
+* Dodaj metodę `toString()`, która zwraca informacje o uczniu, średniej jego ocen oraz wszystkich ocenach w formacie: `"Gradebook for [firstName] [lastName]: Average Grade = [averageGrade], Grades: [grade1, grade2, ...]."`. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.
+
+* Dodaj metodę `equals()`, która porównuje dwa obiekty klasy `Gradebook` na podstawie ich pól `firstName`, `lastName` oraz zawartości listy `grades`. Dwa dzienniczki są uważane za identyczne, jeśli mają takie same imię, nazwisko i identyczny zestaw ocen (z uwzględnieniem kolejności).
+
+8. Wykonaj poniższe czynności:
+
+* Stwórz klasę `Wallet` z prywatnymi polami: `ownerName`, `ownerSurname` oraz `coins` (jako `ArrayList` typu `double`). Dodaj konstruktor, który przyjmuje `ownerName` i `ownerSurname` jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody `addCoin(double coin)` i `removeCoin(int index)`, które odpowiednio dodają lub usuwają monetę z listy monet.
+* Dodaj również metodę `totalAmount()` do obliczania i zwracania łącznej kwoty w portfelu.
+* Dodaj metodę `toString()`, która zwraca informacje o właścicielu portfela, łącznej kwocie oraz wszystkich monetach w formacie: `"Wallet of [ownerName] [ownerSurname]: Total Amount = [totalAmount], Coins: [coin1, coin2, ...]."`. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.
+* Dodaj metodę `equals()`, która porównuje dwa obiekty klasy `Wallet` na podstawie ich pól `ownerName`, `ownerSurname` oraz zawartości listy `coins`. Dwa portfele są uważane za identyczne, jeśli mają tego samego właściciela i identyczny zestaw monet (bez uwzględnienia kolejności).
+
+9. Wykonaj poniższe czynności:
+
+* Stwórz klasę `LibraryCard` z prywatnymi polami: `holderFirstName`, `holderLastName` oraz `booksBorrowed` (jako `ArrayList` typu `String`). Dodaj konstruktor, który przyjmuje `holderFirstName` i `holderLastName` jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody `borrowBook(String bookTitle)` i `returnBook(String bookTitle)`, które odpowiednio dodają lub usuwają tytuł książki z listy wypożyczonych książek.
+* Dodaj również metodę `numberOfBooksBorrowed()` do obliczania i zwracania liczby wypożyczonych książek.
+* Dodaj metodę `toString()`, która zwraca informacje o posiadaczu karty, liczbie wypożyczonych książek oraz wszystkich tytułach wypożyczonych książek w formacie: `"Library card of [holderFirstName] [holderLastName]: Number of books borrowed = [numberOfBooksBorrowed], Books: [book1, book2, ...]."`. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.
+* Dodaj metodę `equals()`, która porównuje dwa obiekty klasy `LibraryCard` na podstawie ich pól `holderFirstName`, `holderLastName` oraz zawartości listy `booksBorrowed`. Dwóch posiadaczy kart bibliotecznych uważa się za identycznych, jeśli mają takie same imię, nazwisko i identyczny zestaw wypożyczonych książek (z zachowaniem kolejności).

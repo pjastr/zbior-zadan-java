@@ -1,0 +1,21 @@
+# Pakiety
+
+1. Stwórz pakiet o nazwie `cars`. Wewnątrz tego pakietu utwórz klasę `Car` zawierającą trzy prywatne pola: `brand`, `model` i `yearOfProduction`. Dodaj do klasy odpowiednie metody dostępowe (gettery i settery) oraz konstruktor przyjmujący wszystkie trzy pola. W klasie testującej, poza tym pakietem, stwórz obiekt klasy `Car`, nadaj mu wartości i wydrukuj je na ekran.
+
+2. Stwórz pakiet o nazwie `animals`. Wewnątrz tego pakietu utwórz dwie klasy: `Dog` i `Cat`. Oba powinny zawierać pola `name` i `age`. Każda z klas powinna posiadać metodę `makeSound()`. Dla klasy `Dog` metoda ta powinna drukować "Woof, woof!", a dla klasy `Cat` - "Meow!". W klasie testującej, poza tym pakietem, stwórz obiekty obu klas, nadaj im wartości i wywołaj ich metody `makeSound()`.
+
+3. Stwórz dwa pakiety: `employees` i `tools`. W pakiecie `employees` utwórz klasę `Employee` z polami `firstName`, `lastName` oraz `salary`. Pole `salary` powinno być chronione (protected). W pakiecie `tools` stwórz klasę `SalaryCalculator`, która posiada metodę `raiseSalary(Employee employee, double percent)`, która zwiększa pensję pracownika o podany procent. Spróbuj wywołać tę metodę w klasie testującej, poza oboma pakietami, i zastanów się nad problemami dostępu do chronionych pól w różnych pakietach.
+
+4. Stwórz pakiet o nazwie `electronics`. Wewnątrz tego pakietu stwórz dwa podpakiety: `televisions` i `phones`. W podpakiecie `televisions` utwórz klasę `Television` z polami `brand` i `screenDiagonal`. W podpakiecie `phones` utwórz klasę `Phone` z polami `brand` i `operatingSystem`. Dla obu klas dodaj odpowiednie gettery, settery oraz konstruktory. W klasie testującej, poza pakietem `electronics`, stwórz obiekty obu klas, nadaj im wartości i wyświetl je.
+
+5. Stwórz dwa pakiety: `books` i `library`. W pakiecie `books` stwórz klasę `Book` z polami `title`, `author` i `publicationYear`. W pakiecie `library` stwórz klasę `Shelf` zawierającą listę książek oraz metody umożliwiające umożliwiające dodawanie i usuwanie książek. Aby korzystać z klasy `Book` w pakiecie `library`, musisz zaimportować odpowiedni pakiet. W klasie testującej, stwórz kilka książek, dodaj je do półki i wydrukuj zawartość półki.
+
+6. Stwórz pakiet `bank`. Wewnątrz tego pakietu stwórz dwie klasy: `Account` i `Bank`. Klasa `Account` powinna posiadać prywatne pola `accountNumber`, `balance` oraz metody `deposit(double amount)` i `withdraw(double amount)`. Klasa `Bank` powinna zawierać listę kont oraz metody do tworzenia new kont i realizacji przelewów między nimi. Spróbuj utworzyć konto bezpośrednio w klasie testującej poza pakietem `bank` i zastanów się, jak modyfikatory dostępu wpłynęły na dostęp do klas i metod w pakiecie.
+
+
+7. Stwórz pakiet o nazwie `animals`. Wewnątrz tego pakietu utwórz klasę bazową `Animal` z polami: `name` i `age` oraz metodą `makeSound()`. Następnie, w tym samym pakiecie, stwórz dwie klasy pochodne: `Dog` i `Cat`, które dziedziczą po klasie `Animal`. Klasy pochodne powinny nadpisywać metodę `makeSound()`. W klasie testującej, poza pakietem `animals`, stwórz obiekty obu klas pochodnych, nadaj im wartości i wywołaj metodę `makeSound()` dla każdego z nich.
+
+8. Stwórz pakiet o nazwie `computers`. W tym pakiecie utwórz klasę bazową `Computer` z polami: `brand` i `processor`. Następnie stwórz dwie klasy pochodne: `Laptop` i `Desktop`. Klasa `Laptop` powinna dodatkowo posiadać pole `weight`, a klasa `Desktop` pole `caseType`. Wszystkie klasy powinny posiadać odpowiednie gettery, settery oraz konstruktory. W klasie testującej, poza pakietem `computers`, stwórz obiekty obu klas pochodnych, nadaj im wartości i wydrukuj je.
+
+
+9. Stwórz pakiet o nazwie `company`. Wewnątrz tego pakietu utwórz klasę bazową `Employee` z polami: `firstName`, `lastName` i `salary`. Następnie stwórz dwie klasy pochodne: `Manager` i `Developer`. Klasa `Manager` powinna dodatkowo posiadać pole `bonus`, a klasa `Developer` pole `programmingLanguage`. Dodaj odpowiednie metody pozwalające na obliczanie rocznego zarobku (pensja + ewentualne premie). W klasie testującej, poza pakietem `company`, stwórz obiekty obu klas pochodnych, nadaj im wartości i oblicz ich roczne zarobki.
