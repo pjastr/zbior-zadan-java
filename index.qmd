@@ -20,7 +20,7 @@ Zmiany:
 - poprawki zadań dot. klas, obiektów i modyfikatorów dostępu
 
 **29.10.2023**
-- zmiana nazw na angielski w części dot. modyfikatorów dostępu
+- zmiana nazw na angielski w części dot. modyfikatorów dostępu, konstruktora
 
 ---
 nocite: |
