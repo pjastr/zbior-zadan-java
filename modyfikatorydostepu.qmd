@@ -1,15 +1,15 @@
 # Modyfikatory dostępu
 
-1. Utwórz klasę `Osoba` z publicznym polem `imie` oraz prywatnym polem `haslo`. Zobacz jak różne modyfikatory dostępu wpływają na dostęp do tych pól z innej klasy.
+1. Utwórz klasę `Person` z publicznym polem `name` oraz prywatnym polem `password`. Zobacz jak różne modyfikatory dostępu wpływają na dostęp do tych pól z innej klasy.
 
-2. Stwórz dwie klasy: `Rodzic` i `Dziecko`. Klasa `Rodzic` powinna mieć jedno pole `protected`. Spróbuj uzyskać dostęp do tego pola z klasy `Dziecko`.
+2. Stwórz dwie klasy: `Parent` i `Child`. Klasa `Parent` powinna mieć jedno pole `protected`. Spróbuj uzyskać dostęp do tego pola z klasy `Child`.
 
-3. Utwórz klasę `Samochod` z prywatną metodą `zawalSilnik()`. Spróbuj wywołać tę metodę z zewnątrz klasy.
+3. Utwórz klasę `Car` z prywatną metodą `engineFailure()`. Spróbuj wywołać tę metodę z zewnątrz klasy.
 
-4. Stwórz dwie klasy w tym samym pakiecie: `Pracownik` i `Firma`. Klasa `Pracownik` powinna mieć pole bez modyfikatora dostępu. Spróbuj uzyskać dostęp do tego pola z klasy `Firma`.
+4. Stwórz dwie klasy w tym samym pakiecie: `Employee` i `Company`. Klasa `Employee` powinna mieć pole bez modyfikatora dostępu. Spróbuj uzyskać dostęp do tego pola z klasy `Company`.
 
-5. Utwórz klasę `KontoBankowe` z publicznym polem `numerKonta` i prywatnym polem `saldo`. Zobacz, jak różne modyfikatory dostępu wpływają na dostęp do tych pól z innej klasy.
+5. Utwórz klasę `BankAccount` z publicznym polem `accountNumber` i prywatnym polem `balance`. Zobacz, jak różne modyfikatory dostępu wpływają na dostęp do tych pól z innej klasy.
 
-6. Stwórz klasę `Zawodnik` z trzema polami: `imie` (publiczne), `wiek` (pomijając modyfikator dostępu) oraz `narodowosc` (prywatne). W klasie `Main` stwórz tablicę zawodników i spróbuj zmienić wartości wszystkich pól. Obserwuj rezultaty.
+6. Stwórz klasę `Player` z trzema polami: `name` (publiczne), `age` (pomijając modyfikator dostępu) oraz `nationality` (prywatne). W klasie `Main` stwórz tablicę zawodników i spróbuj zmienić wartości wszystkich pól. Obserwuj rezultaty.
 
-7. Stwórz klasę `Trener`, która jest zadeklarowana jako `private`. Spróbuj stworzyć obiekt `Trener` w klasie `Main`. Jaki jest rezultat?
+7. Stwórz klasę `Coach`, która jest zadeklarowana jako `private`. Spróbuj stworzyć obiekt `Coach` w klasie `Main`. Jaki jest rezultat?

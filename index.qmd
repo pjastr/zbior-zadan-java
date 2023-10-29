@@ -19,6 +19,9 @@ Zmiany:
 **24.10.2023**
 - poprawki zadań dot. klas, obiektów i modyfikatorów dostępu
 
+**29.10.2023**
+- zmiana nazw na angielski w części dot. modyfikatorów dostępu
+
 ---
 nocite: |
   @*
