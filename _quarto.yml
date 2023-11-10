@@ -5,6 +5,7 @@ book:
   title: "Zbiór zadań - Java"
   author: Piotr Jastrzębski
   date: today
+  cover-image: logo-java.jpg
   chapters:
     - index.qmd
     - part: "Wprowadzenie do języka Java"
@@ -53,6 +54,8 @@ format:
     lang: pl
   pdf:
     lang: pl
+    header-includes: |
+      \titlehead{\includegraphics[width=6in]{logo-java.jpg}}
 
 
 editor: visual
