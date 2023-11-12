@@ -28,8 +28,8 @@ Zmiany:
 **11.11.2023**
 - zmiana nazw na angielski w części dot. rekordów
 
-**10.11.2023**
-- uzupełnienie w sposób jawny o metodę `hasCode`, 
+**12.11.2023**
+- uzupełnienie w sposób jawny o metodę `hasCode`, zmiana nazw na angielski w części dot. dziedziczenia
 
 ---
 nocite: |
