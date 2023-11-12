@@ -22,6 +22,12 @@ Zmiany:
 **29.10.2023**
 - zmiana nazw na angielski w części dot. modyfikatorów dostępu, konstruktora, pól i metod statycznych, dziedziczenia; dodano sekcję "Metody `toString` i `equals`" oraz Pakiety
 
+**10.11.2023**
+- dodano logo
+
+**11.11.2023**
+- zmiana nazw na angielski w części dot. rekordów
+
 ---
 nocite: |
   @*
