@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - 14&nbsp; Metody toString i equals</title>
+<title>Zbiór zadań - Java - 14&nbsp; Metody toString, equals i hashCode.</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./tostringeqauls.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Metody `toString` i `equals`</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./tostringeqaulshashcode.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Metody `toString`, `equals` i `hashCode`.</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -212,8 +212,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tostringeqauls.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Metody <code>toString</code> i <code>equals</code></span></span></a>
+  <a href="./tostringeqaulshashcode.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -305,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Metody <code>toString</code> i <code>equals</code></span></h1>
+<h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</span></h1>
 </div>
 
 
@@ -332,6 +332,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><p>Dodaj metodę <code>toString()</code>, która zwraca informacje o osobie w formacie: <code>"Person: [firstName] [lastName], Age: [age]."</code>. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.</p></li>
 <li><p>Dodaj metodę <code>equals()</code>, która porównuje dwie osoby na podstawie ich pól <code>firstName</code>, <code>lastName</code> i <code>age</code>. Dwie osoby są uważane za identyczne, jeśli wszystkie trzy pola są takie same.</p></li>
+<li><p>Dodaj metodę <code>hashCode()</code>, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą <code>equals()</code></p></li>
 </ul>
 <ol start="2" type="1">
 <li>Wykonaj poniższe czynności:</li>
@@ -345,6 +346,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li>Dodaj metodę <code>toString()</code>, która zwraca informacje o pojeździe w formacie: <code>"Vehicle: [brand] [model], Year: [yearOfProduction]."</code>.</li>
 <li>Dodaj metodę <code>equals()</code>, która porównuje dwa pojazdy na podstawie ich pól <code>brand</code>, <code>model</code> i <code>yearOfProduction</code>.</li>
+<li>Dodaj metodę <code>hashCode()</code>, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą <code>equals()</code></li>
 </ul>
 <ol start="3" type="1">
 <li>Wykonaj poniższe czynności:</li>
@@ -358,6 +360,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li>Dodaj metodę <code>toString()</code>, która zwraca informacje o książce w formacie: <code>"Book: [title] by [author], Pages: [numberOfPages]."</code>.</li>
 <li>Dodaj metodę <code>equals()</code>, która porównuje dwie książki na podstawie ich pól <code>title</code>, <code>author</code> i <code>numberOfPages</code>.</li>
+<li>Dodaj metodę <code>hashCode()</code>, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą <code>equals()</code></li>
 </ul>
 <ol start="4" type="1">
 <li>Wykonaj poniższe czynności:</li>
@@ -371,6 +374,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li>Dodaj metodę <code>toString()</code>, która zwraca informacje o produkcie w formacie: <code>"Product: [productName], Category: [category], Price: [price]."</code>.</li>
 <li>Dodaj metodę <code>equals()</code>, która porównuje dwa produkty na podstawie ich pól <code>productName</code>, <code>category</code> i <code>price</code>.</li>
+<li>Dodaj metodę <code>hashCode()</code>, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą <code>equals()</code></li>
 </ul>
 <ol start="4" type="1">
 <li>Wykonaj poniższe czynności:</li>
@@ -378,7 +382,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Stwórz klasę <code>Results</code> (wyniki testu) z prywatnymi polami: <code>firstName</code>, <code>lastName</code> oraz <code>results</code> (jako tablica typu <code>int</code>). Dodaj konstruktor, który przyjmuje <code>firstName</code>, <code>lastName</code> oraz rozmiar tablicy jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę <code>addResult(int index, int result)</code>, która dodaje wynik testu na podanym indeksie. Dodaj również metodę <code>averageResult()</code> do obliczania i zwracania średniego wyniku.<br>
 </li>
-<li>Dodaj metodę <code>toString()</code>, która zwraca informacje o uczniu, jego wynikach oraz zawartość tablicy <code>results</code> w formacie: <code>"Results for [firstName] [lastName]: Average Score = [averageResult], Results: [result1, result2, ...]. "</code>. Ponadto dodaj metodę <code>equals()</code>, która porównuje dwa obiekty klasy <code>Results</code> na podstawie ich pól <code>firstName</code>, <code>lastName</code> oraz zawartości tablicy <code>results</code>. Dwa obiekty są uważane za identyczne, jeśli wszystkie pola i wyniki testów w tablicach są takie same.</li>
+<li>Dodaj metodę <code>toString()</code>, która zwraca informacje o uczniu, jego wynikach oraz zawartość tablicy <code>results</code> w formacie: <code>"Results for [firstName] [lastName]: Average Score = [averageResult], Results: [result1, result2, ...]. "</code>. Ponadto dodaj metodę <code>equals()</code>, która porównuje dwa obiekty klasy <code>Results</code> na podstawie ich pól <code>firstName</code>, <code>lastName</code> oraz zawartości tablicy <code>results</code>. Dwa obiekty są uważane za identyczne, jeśli wszystkie pola i wyniki testów w tablicach są takie same. Dodaj także metodę <code>hashCode()</code>, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą <code>equals()</code></li>
 </ul>
 <ol start="5" type="1">
 <li>Wykonaj poniższe czynności:</li>
@@ -390,6 +394,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Dodaj również metodę <code>totalLength()</code> do obliczania i zwracania łącznej długości wszystkich utworów.</li>
 <li>Dodaj metodę <code>toString()</code>, która zwraca informacje o artyście, albumie oraz czasie trwania wszystkich utworów w formacie: <code>"CDAlbum by [artistName]: [albumTitle], Total Length = [totalLength] minutes, Tracks Length: [length1, length2, ...]. "</code>.</li>
 <li>Dodaj metodę <code>equals()</code>, która porównuje dwa obiekty klasy <code>CDAlbum</code> na podstawie ich pól <code>artistName</code>, <code>albumTitle</code> oraz zawartości tablicy <code>tracks</code>. Dwa albumy są uważane za identyczne, jeśli wszystkie informacje są takie same.</li>
+<li>Dodaj metodę <code>hashCode()</code>, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą <code>equals()</code></li>
 </ul>
 <ol start="6" type="1">
 <li>Wykonaj poniższe czynności:</li>
@@ -401,6 +406,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Dodaj również metodę <code>averageRating()</code> do obliczania i zwracania średniej oceny filmu.</li>
 <li>Dodaj metodę <code>toString()</code>, która zwraca informacje o filmie, reżyserze, średniej ocenie oraz wszystkich ocenach w formacie: <code>"MovieRating for [movieTitle] by [directorName]: Average Rating = [averageRating], Ratings: [rating1, rating2, ...]. "</code>.</li>
 <li>Dodaj metodę <code>equals()</code>, która porównuje dwa obiekty klasy <code>MovieRating</code> na podstawie ich pól <code>movieTitle</code>, <code>directorName</code> oraz zawartości tablicy <code>ratings</code>. Dwa filmy są uważane za identyczne, jeśli wszystkie informacje są takie same.</li>
+<li>Dodaj metodę <code>hashCode()</code>, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą <code>equals()</code></li>
 </ul>
 <ol start="7" type="1">
 <li>Wykonaj poniższe czynności:</li>
@@ -409,6 +415,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Stwórz klasę <code>Gradebook</code> z prywatnymi polami: <code>firstName</code>, <code>lastName</code> oraz <code>grades</code> (jako <code>ArrayList</code> typu <code>int</code>). Dodaj konstruktor, który przyjmuje firstName i lastName jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody <code>addGrade(int grade)</code> i <code>removeGrade(int index)</code>, które odpowiednio dodają lub usuwają ocenę z listy ocen. Dodaj również metodę <code>averageGrade()</code> do obliczania i zwracania średniej ocen.</p></li>
 <li><p>Dodaj metodę <code>toString()</code>, która zwraca informacje o uczniu, średniej jego ocen oraz wszystkich ocenach w formacie: <code>"Gradebook for [firstName] [lastName]: Average Grade = [averageGrade], Grades: [grade1, grade2, ...]."</code>. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.</p></li>
 <li><p>Dodaj metodę <code>equals()</code>, która porównuje dwa obiekty klasy <code>Gradebook</code> na podstawie ich pól <code>firstName</code>, <code>lastName</code> oraz zawartości listy <code>grades</code>. Dwa dzienniczki są uważane za identyczne, jeśli mają takie same imię, nazwisko i identyczny zestaw ocen (z uwzględnieniem kolejności).</p></li>
+<li><p>Dodaj metodę <code>hashCode()</code>, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą <code>equals()</code></p></li>
 </ul>
 <ol start="8" type="1">
 <li>Wykonaj poniższe czynności:</li>
@@ -418,6 +425,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Dodaj również metodę <code>totalAmount()</code> do obliczania i zwracania łącznej kwoty w portfelu.</li>
 <li>Dodaj metodę <code>toString()</code>, która zwraca informacje o właścicielu portfela, łącznej kwocie oraz wszystkich monetach w formacie: <code>"Wallet of [ownerName] [ownerSurname]: Total Amount = [totalAmount], Coins: [coin1, coin2, ...]."</code>. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.</li>
 <li>Dodaj metodę <code>equals()</code>, która porównuje dwa obiekty klasy <code>Wallet</code> na podstawie ich pól <code>ownerName</code>, <code>ownerSurname</code> oraz zawartości listy <code>coins</code>. Dwa portfele są uważane za identyczne, jeśli mają tego samego właściciela i identyczny zestaw monet (bez uwzględnienia kolejności).</li>
+<li>Dodaj metodę <code>hashCode()</code>, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą <code>equals()</code></li>
 </ul>
 <ol start="9" type="1">
 <li>Wykonaj poniższe czynności:</li>
@@ -427,6 +435,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Dodaj również metodę <code>numberOfBooksBorrowed()</code> do obliczania i zwracania liczby wypożyczonych książek.</li>
 <li>Dodaj metodę <code>toString()</code>, która zwraca informacje o posiadaczu karty, liczbie wypożyczonych książek oraz wszystkich tytułach wypożyczonych książek w formacie: <code>"Library card of [holderFirstName] [holderLastName]: Number of books borrowed = [numberOfBooksBorrowed], Books: [book1, book2, ...]."</code>. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.</li>
 <li>Dodaj metodę <code>equals()</code>, która porównuje dwa obiekty klasy <code>LibraryCard</code> na podstawie ich pól <code>holderFirstName</code>, <code>holderLastName</code> oraz zawartości listy <code>booksBorrowed</code>. Dwóch posiadaczy kart bibliotecznych uważa się za identycznych, jeśli mają takie same imię, nazwisko i identyczny zestaw wypożyczonych książek (z zachowaniem kolejności).</li>
+<li>Dodaj metodę <code>hashCode()</code>, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą <code>equals()</code></li>
 </ul>
 
 

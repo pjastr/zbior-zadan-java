@@ -1,4 +1,4 @@
-# Metody `toString` i `equals`
+# Metody `toString`, `equals` i `hashCode`.
 
 
 1. Wykonaj poniższe czynności:
@@ -12,6 +12,7 @@
 * Dodaj metodę `toString()`, która zwraca informacje o osobie w formacie: `"Person: [firstName] [lastName], Age: [age]."`. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.
 
 * Dodaj metodę `equals()`, która porównuje dwie osoby na podstawie ich pól `firstName`, `lastName` i `age`. Dwie osoby są uważane za identyczne, jeśli wszystkie trzy pola są takie same.
+* Dodaj metodę `hashCode()`, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą `equals()`
 
 2. Wykonaj poniższe czynności:
 
@@ -21,6 +22,7 @@
     - Pola `brand` i `model` nie powinny być puste ani równać się null. W przypadku podania pustego napisu lub null dla tych pól, ustaw odpowiednio pusty napis.
 * Dodaj metodę `toString()`, która zwraca informacje o pojeździe w formacie: `"Vehicle: [brand] [model], Year: [yearOfProduction]."`.
 * Dodaj metodę `equals()`, która porównuje dwa pojazdy na podstawie ich pól `brand`, `model` i `yearOfProduction`.
+* Dodaj metodę `hashCode()`, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą `equals()`
 
 3. Wykonaj poniższe czynności:
 
@@ -30,6 +32,7 @@
     - Pola `title` i `author` nie powinny być puste ani równać się null. W przypadku podania pustego napisu lub null, ustaw odpowiednio pusty napis.
 * Dodaj metodę `toString()`, która zwraca informacje o książce w formacie: `"Book: [title] by [author], Pages: [numberOfPages]."`.
 * Dodaj metodę `equals()`, która porównuje dwie książki na podstawie ich pól `title`, `author` i `numberOfPages`.
+* Dodaj metodę `hashCode()`, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą `equals()`
 
 4. Wykonaj poniższe czynności:
 
@@ -39,11 +42,12 @@
     - Pola `productName` i `category` nie powinny być puste ani równać się null. W przypadku podania pustego napisu lub null, ustaw odpowiednio pusty napis.
 * Dodaj metodę `toString()`, która zwraca informacje o produkcie w formacie: `"Product: [productName], Category: [category], Price: [price]."`.
 * Dodaj metodę `equals()`, która porównuje dwa produkty na podstawie ich pól `productName`, `category` i `price`.
+* Dodaj metodę `hashCode()`, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą `equals()`
 
 4. Wykonaj poniższe czynności:
 
 * Stwórz klasę `Results` (wyniki testu) z prywatnymi polami: `firstName`, `lastName` oraz `results` (jako tablica typu `int`). Dodaj konstruktor, który przyjmuje `firstName`, `lastName` oraz rozmiar tablicy jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metodę `addResult(int index, int result)`, która dodaje wynik testu na podanym indeksie. Dodaj również metodę `averageResult()` do obliczania i zwracania średniego wyniku.  
-* Dodaj metodę `toString()`, która zwraca informacje o uczniu, jego wynikach oraz zawartość tablicy `results` w formacie: `"Results for [firstName] [lastName]: Average Score = [averageResult], Results: [result1, result2, ...]. "`. Ponadto dodaj metodę `equals()`, która porównuje dwa obiekty klasy `Results` na podstawie ich pól `firstName`, `lastName` oraz zawartości tablicy `results`. Dwa obiekty są uważane za identyczne, jeśli wszystkie pola i wyniki testów w tablicach są takie same.
+* Dodaj metodę `toString()`, która zwraca informacje o uczniu, jego wynikach oraz zawartość tablicy `results` w formacie: `"Results for [firstName] [lastName]: Average Score = [averageResult], Results: [result1, result2, ...]. "`. Ponadto dodaj metodę `equals()`, która porównuje dwa obiekty klasy `Results` na podstawie ich pól `firstName`, `lastName` oraz zawartości tablicy `results`. Dwa obiekty są uważane za identyczne, jeśli wszystkie pola i wyniki testów w tablicach są takie same. Dodaj także metodę `hashCode()`, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą `equals()`
 
 5. Wykonaj poniższe czynności:
 
@@ -53,6 +57,7 @@
 * Dodaj również metodę `totalLength()` do obliczania i zwracania łącznej długości wszystkich utworów.
 * Dodaj metodę `toString()`, która zwraca informacje o artyście, albumie oraz czasie trwania wszystkich utworów w formacie: `"CDAlbum by [artistName]: [albumTitle], Total Length = [totalLength] minutes, Tracks Length: [length1, length2, ...]. "`.
 * Dodaj metodę `equals()`, która porównuje dwa obiekty klasy `CDAlbum` na podstawie ich pól `artistName`, `albumTitle` oraz zawartości tablicy `tracks`. Dwa albumy są uważane za identyczne, jeśli wszystkie informacje są takie same.
+* Dodaj metodę `hashCode()`, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą `equals()`
    
 6. Wykonaj poniższe czynności:
 
@@ -62,6 +67,7 @@
 * Dodaj również metodę `averageRating()` do obliczania i zwracania średniej oceny filmu.
 * Dodaj metodę `toString()`, która zwraca informacje o filmie, reżyserze, średniej ocenie oraz wszystkich ocenach w formacie: `"MovieRating for [movieTitle] by [directorName]: Average Rating = [averageRating], Ratings: [rating1, rating2, ...]. "`.
 * Dodaj metodę `equals()`, która porównuje dwa obiekty klasy `MovieRating` na podstawie ich pól `movieTitle`, `directorName` oraz zawartości tablicy `ratings`. Dwa filmy są uważane za identyczne, jeśli wszystkie informacje są takie same.
+* Dodaj metodę `hashCode()`, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą `equals()`
 
 7. Wykonaj poniższe czynności:
 
@@ -71,12 +77,15 @@
 
 * Dodaj metodę `equals()`, która porównuje dwa obiekty klasy `Gradebook` na podstawie ich pól `firstName`, `lastName` oraz zawartości listy `grades`. Dwa dzienniczki są uważane za identyczne, jeśli mają takie same imię, nazwisko i identyczny zestaw ocen (z uwzględnieniem kolejności).
 
+* Dodaj metodę `hashCode()`, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą `equals()`
+
 8. Wykonaj poniższe czynności:
 
 * Stwórz klasę `Wallet` z prywatnymi polami: `ownerName`, `ownerSurname` oraz `coins` (jako `ArrayList` typu `double`). Dodaj konstruktor, który przyjmuje `ownerName` i `ownerSurname` jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody `addCoin(double coin)` i `removeCoin(int index)`, które odpowiednio dodają lub usuwają monetę z listy monet.
 * Dodaj również metodę `totalAmount()` do obliczania i zwracania łącznej kwoty w portfelu.
 * Dodaj metodę `toString()`, która zwraca informacje o właścicielu portfela, łącznej kwocie oraz wszystkich monetach w formacie: `"Wallet of [ownerName] [ownerSurname]: Total Amount = [totalAmount], Coins: [coin1, coin2, ...]."`. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.
 * Dodaj metodę `equals()`, która porównuje dwa obiekty klasy `Wallet` na podstawie ich pól `ownerName`, `ownerSurname` oraz zawartości listy `coins`. Dwa portfele są uważane za identyczne, jeśli mają tego samego właściciela i identyczny zestaw monet (bez uwzględnienia kolejności).
+* Dodaj metodę `hashCode()`, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą `equals()`
 
 9. Wykonaj poniższe czynności:
 
@@ -84,3 +93,4 @@
 * Dodaj również metodę `numberOfBooksBorrowed()` do obliczania i zwracania liczby wypożyczonych książek.
 * Dodaj metodę `toString()`, która zwraca informacje o posiadaczu karty, liczbie wypożyczonych książek oraz wszystkich tytułach wypożyczonych książek w formacie: `"Library card of [holderFirstName] [holderLastName]: Number of books borrowed = [numberOfBooksBorrowed], Books: [book1, book2, ...]."`. Zwróć uwagę na wielkość liter i znaki interpunkcyjne.
 * Dodaj metodę `equals()`, która porównuje dwa obiekty klasy `LibraryCard` na podstawie ich pól `holderFirstName`, `holderLastName` oraz zawartości listy `booksBorrowed`. Dwóch posiadaczy kart bibliotecznych uważa się za identycznych, jeśli mają takie same imię, nazwisko i identyczny zestaw wypożyczonych książek (z zachowaniem kolejności).
+* Dodaj metodę `hashCode()`, która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą `equals()`
