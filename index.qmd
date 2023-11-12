@@ -29,7 +29,7 @@ Zmiany:
 - zmiana nazw na angielski w części dot. rekordów
 
 **12.11.2023**
-- uzupełnienie w sposób jawny o metodę `hasCode`, zmiana nazw na angielski w części dot. dziedziczenia
+- uzupełnienie w sposób jawny o metodę `hasCode`, zmiana nazw na angielski w części dot. dziedziczenia, złożonych pół w klasie
 
 ---
 nocite: |
