@@ -31,6 +31,9 @@ Zmiany:
 **12.11.2023**
 - uzupełnienie w sposób jawny o metodę `hasCode`, zmiana nazw na angielski w części dot. dziedziczenia, złożonych pół w klasie, klas abstrakcyjnych
 
+**19.11.2023**
+- dodanie kilku zadań dot. dziedziczenia
+
 ---
 nocite: |
   @*
