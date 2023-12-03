@@ -11,3 +11,18 @@
 5. Utwórz klasę `ArtGallery` z polami `name`, `city` oraz `paintings` (jako tablica z elementami typu `String`). Dodaj metody pozwalające na dodawanie i usuwanie obrazów. Utwórz klasę `ContemporaryGallery`, która dziedziczy po klasie `ArtGallery`. Klasa `ContemporaryGallery` powinna mieć dodatkowe pole `numberOfInstallations`. Dodaj konstruktory, metody gettery i settery, metodę `toString()`, `equals()` oraz `hashCode()` dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.
 
 6. Utwórz klasę `Car` z polami `brand`, `model` oraz `engineVariants` (jako tablica z elementami typu `String`). Dodaj metody pozwalające na dodawanie i usuwanie wariantów silników. Utwórz klasę `ElectricCar`, która dziedziczy po klasie `Car`. Klasa `ElectricCar` powinna mieć dodatkowe pole `range`. Dodaj konstruktory, metody gettery i settery, metodę `toString()`, `equals()` oraz `hashCode()` dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.
+
+7. Wykonaj poniższe czynności:
+
+- Stwórz klasę `Engine` (Silnik) z polami: `power` (moc), `type` (typ silnika), `serialNumber` (numer seryjny). Dodaj konstruktor parametryczny, gettery, settery, oraz metody `toString`, `equals` i `hashCode`.
+- Stwórz klasę `Car` (Samochód). Klasa `Car` powinna mieć pola: `make` (marka), `model` (model), `engine` typu `Engine` (silnik). Dodaj konstruktor parametryczny, który przyjmuje obiekt `Engine` jako parametr, gettery, settery, oraz metody `toString`, `equals` i `hashCode`.
+
+8. Wykonaj poniższe czynności:
+
+- Stwórz klasę `Processor` (Procesor) z polami: `frequency` (częstotliwość), `cores` (liczba rdzeni), `manufacturer` (producent). Dodaj konstruktor parametryczny, gettery, settery, oraz metody `toString`, `equals` i `hashCode`.
+- Stwórz klasę `Computer` (Komputer). Klasa `Computer` powinna mieć pola: `brand` (marka), `model` (model), `processor` typu `Processor` (procesor). Dodaj konstruktor parametryczny, który przyjmuje obiekt `Processor` jako parametr, gettery, settery, oraz metody `toString`, `equals` i `hashCode`.
+
+9. Wykonaj poniższe czynności:
+
+- Stwórz klasę `Address` (Adres) z polami: `street` (ulica), `city` (miasto), `zipCode` (kod pocztowy), `country` (kraj). Dodaj konstruktor parametryczny, gettery, settery, oraz metody `toString`, `equals` i `hashCode`.
+- Stwórz klasę `UserAccount` (Konto Użytkownika). Klasa `UserAccount` powinna mieć pola: `username` (nazwa użytkownika), `email` (email), `address` typu `Address` (adres). Dodaj konstruktor parametryczny, który przyjmuje obiekt `Address` jako parametr, gettery, settery, oraz metody `toString`, `equals` i `hashCode`.

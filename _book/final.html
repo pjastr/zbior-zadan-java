@@ -322,19 +322,45 @@ ul.task-list li input[type="checkbox"] {
 
 <ol type="1">
 <li><p>Wykonaj kolejno czynności:</p>
-<ol type="A">
-<li>Stwórz klasę <code>Planeta</code> z jednym polem finalnym <code>nazwa</code>. Spróbuj zmienić wartość pola <code>nazwa</code> po jego inicjalizacji. Przeanalizuj wynik.</li>
-<li>Dodaj do klasy <code>Planeta</code> metodę <code>zmienNazwe</code>, która próbuje zmienić nazwę planety. Jaki jest wynik próby zmiany finalnego pola za pomocą metody?</li>
-</ol></li>
-<li><p>Stwórz klasę <code>Samochod</code> z dwoma polami: <code>marka</code> (normalne pole) i <code>VIN</code> (pole finalne - Numer Identyfikacyjny Pojazdu). Stwórz kilka obiektów <code>Samochod</code> i spróbuj zmienić pole <code>VIN</code> dla każdego z nich. Przeanalizuj wynik.</p></li>
-<li><p>Stwórz klasę <code>Zawodnik</code> z jednym polem finalnym <code>nazwa</code> oraz polem <code>punkty</code>. Stwórz tablicę zawodników i spróbuj zmienić pole <code>nazwa</code> dla jednego z zawodników. Przeanalizuj wynik.</p></li>
-<li><p>Stwórz klasę <code>Osoba</code> z jednym polem finalnym <code>PESEL</code>. Następnie stwórz klasę <code>Student</code>, która dziedziczy po klasie <code>Osoba</code>. Czy możesz zmienić pole <code>PESEL</code> w klasie <code>Student</code>? Co się stanie, jeśli spróbujesz to zrobić? Przeanalizuj wyniki.</p></li>
-<li><p>Stwórz klasę bazową <code>Elektronika</code> z metodą finalną <code>włącz</code>, która wypisuje “Urządzenie włączone”. Następnie stwórz klasę potomną <code>Telewizor</code> i spróbuj przesłonić metodę <code>włącz</code>. Zaobserwuj, co się dzieje.</p></li>
-<li><p>Stwórz klasę <code>Komputer</code> z metodą finalną <code>boot</code> oraz zwykłą metodą <code>uruchomAplikacje</code>. W klasie potomnej <code>Laptop</code>, spróbuj przesłonić obie metody. Sprawdź, która z metod pozwoli się przesłonić, a której nie.</p></li>
-<li><p>Utwórz finalną klasę <code>NiezmienneDane</code> z pewnymi atrybutami i metodami. Następnie spróbuj stworzyć klasę potomną <code>ZmienneDane</code>, która dziedziczy po klasie <code>NiezmienneDane</code>. Zastanów się, dlaczego nie można dziedziczyć po klasie oznaczonej jako <code>final</code>.</p></li>
-<li><p>Stwórz klasę <code>Gra</code>, która w swoim konstruktorze ma metodę finalną <code>inicjuj</code> (inicializującą pewne dane). Utwórz klasę potomną <code>RPG</code>, która próbuje dostosować konstruktor klasy bazowej. Upewnij się, że metoda <code>inicjuj</code> działa poprawnie, mimo że jest oznaczona jako <code>final</code>.</p></li>
-<li><p>Utwórz klasę <code>StałaMatematyczna</code> z finalnym polem <code>PI</code>, które jest inicjowane wartością 3.14159. W klasie potomnej <code>StałaFizyczna</code>, spróbuj stworzyć metodę, która próbuje zmienić wartość <code>PI</code>. Zastanów się, dlaczego wartość finalnego pola nie może zostać zmieniona po jego inicjalizacji.</p></li>
+<p>A. Stwórz klasę <code>Planet</code> z jednym polem finalnym <code>name</code>. Spróbuj zmienić wartość pola <code>name</code> po jego inicjalizacji. Przeanalizuj wynik.</p>
+<p>B. Dodaj do klasy <code>Planet</code> metodę <code>changeName</code>, która próbuje zmienić nazwę planety. Jaki jest wynik próby zmiany finalnego pola za pomocą metody?</p></li>
+<li><p>Stwórz klasę <code>Car</code> z dwoma polami: <code>brand</code> (normalne pole) i <code>VIN</code> (pole finalne - Numer Identyfikacyjny Pojazdu). Stwórz kilka obiektów <code>Car</code> i spróbuj zmienić pole <code>VIN</code> dla każdego z nich. Przeanalizuj wynik.</p></li>
+<li><p>Stwórz klasę <code>Athlete</code> z jednym polem finalnym <code>name</code> oraz polem <code>points</code>. Stwórz tablicę zawodników i spróbuj zmienić pole <code>name</code> dla jednego z zawodników. Przeanalizuj wynik.</p></li>
+<li><p>Stwórz klasę <code>Person</code> z jednym polem finalnym <code>PESEL</code>. Następnie stwórz klasę <code>Student</code>, która dziedziczy po klasie <code>Person</code>. Czy możesz zmienić pole <code>PESEL</code> w klasie <code>Student</code>? Co się stanie, jeśli spróbujesz to zrobić? Przeanalizuj wyniki.</p></li>
+<li><p>Stwórz klasę bazową <code>Electronics</code> z metodą finalną <code>turnOn</code>, która wypisuje “Urządzenie włączone”. Następnie stwórz klasę potomną <code>Television</code> i spróbuj przesłonić metodę <code>turnOn</code>. Zaobserwuj, co się dzieje.</p></li>
+<li><p>Stwórz klasę <code>Computer</code> z metodą finalną <code>boot</code> oraz zwykłą metodą <code>launchApplication</code>. W klasie potomnej <code>Laptop</code>, spróbuj przesłonić obie metody. Sprawdź, która z metod pozwoli się przesłonić, a której nie.</p></li>
+<li><p>Utwórz finalną klasę <code>ImmutableData</code> z pewnymi atrybutami i metodami. Następnie spróbuj stworzyć klasę potomną <code>VariableData</code>, która dziedziczy po klasie <code>ImmutableData</code>. Zastanów się, dlaczego nie można dziedziczyć po klasie oznaczonej jako <code>final</code>.</p></li>
+<li><p>Stwórz klasę <code>Game</code>, która w swoim konstruktorze ma metodę finalną <code>initialize</code> (inicializującą pewne dane). Utwórz klasę potomną <code>RPG</code>, która próbuje dostosować konstruktor klasy bazowej. Upewnij się, że metoda <code>initialize</code> działa poprawnie, mimo że jest oznaczona jako <code>final</code>.</p></li>
+<li><p>Utwórz klasę <code>MathConstant</code> z finalnym polem <code>PI</code>, które jest inicjowane wartością 3.14159. W klasie potomnej <code>PhysicalConstant</code>, spróbuj stworzyć metodę, która próbuje zmienić wartość <code>PI</code>. Zastanów się, dlaczego wartość finalnego pola nie może zostać zmieniona po jego inicjalizacji.</p></li>
+<li><p>Wykonaj poniższe czynności:</p></li>
 </ol>
+<ul>
+<li>Stwórz klasę <code>ImmutableDate</code> z prywatnymi finalnymi polami: <code>year</code> (rok), <code>month</code> (miesiąc), <code>day</code> (dzień).</li>
+<li>Dodaj konstruktor parametryczny do inicjalizacji wszystkich pól.</li>
+<li>Dodaj publiczne metody <code>getYear</code>, <code>getMonth</code>, <code>getDay</code> do pobierania wartości pól, ale nie dodawaj żadnych metod umożliwiających ich modyfikację.</li>
+<li>Zaimplementuj metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</li>
+<li>Sprawdź, czy taka klasa może być uznana jako niemodyfikowalna (inmutable).</li>
+</ul>
+<ol start="11" type="1">
+<li>Wykonaj poniższe czynności:</li>
+</ol>
+<ul>
+<li>Stwórz klasę <code>ImmutablePoint</code> z prywatnymi finalnymi polami: <code>x</code>, <code>y</code>, <code>z</code> (współrzędne punktu).</li>
+<li>Dodaj konstruktor parametryczny do inicjalizacji wszystkich pól.</li>
+<li>Dodaj publiczne metody <code>getX</code>, <code>getY</code>, <code>getZ</code> do pobierania wartości pól, ale nie dodawaj żadnych metod umożliwiających ich modyfikację.</li>
+<li>Zaimplementuj metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</li>
+<li>Sprawdź, czy taka klasa może być uznana jako niemodyfikowalna (inmutable).</li>
+</ul>
+<ol start="12" type="1">
+<li>Wykonaj poniższe czynności:</li>
+</ol>
+<ul>
+<li>Stwórz klasę <code>ImmutableBook</code> z prywatnymi finalnymi polami: <code>title</code> (tytuł), <code>author</code> (autor), <code>isbn</code> (numer ISBN).</li>
+<li>Dodaj konstruktor parametryczny do inicjalizacji wszystkich pól.</li>
+<li>Dodaj publiczne metody <code>getTitle</code>, <code>getAuthor</code>, <code>getIsbn</code> do pobierania wartości pól, ale nie dodawaj żadnych metod umożliwiających ich modyfikację.</li>
+<li>Zaimplementuj metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</li>
+<li>Sprawdź, czy taka klasa może być uznana jako niemodyfikowalna (inmutable).</li>
+</ul>
 
 
 

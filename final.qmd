@@ -2,21 +2,47 @@
 
 1.  Wykonaj kolejno czynności:
 
-    A.  Stwórz klasę `Planeta` z jednym polem finalnym `nazwa`. Spróbuj zmienić wartość pola `nazwa` po jego inicjalizacji. Przeanalizuj wynik.
-    B.  Dodaj do klasy `Planeta` metodę `zmienNazwe`, która próbuje zmienić nazwę planety. Jaki jest wynik próby zmiany finalnego pola za pomocą metody?
+    A. Stwórz klasę `Planet` z jednym polem finalnym `name`. Spróbuj zmienić wartość pola `name` po jego inicjalizacji. Przeanalizuj wynik.
 
-2.  Stwórz klasę `Samochod` z dwoma polami: `marka` (normalne pole) i `VIN` (pole finalne - Numer Identyfikacyjny Pojazdu). Stwórz kilka obiektów `Samochod` i spróbuj zmienić pole `VIN` dla każdego z nich. Przeanalizuj wynik.
+    B. Dodaj do klasy `Planet` metodę `changeName`, która próbuje zmienić nazwę planety. Jaki jest wynik próby zmiany finalnego pola za pomocą metody?
 
-3.  Stwórz klasę `Zawodnik` z jednym polem finalnym `nazwa` oraz polem `punkty`. Stwórz tablicę zawodników i spróbuj zmienić pole `nazwa` dla jednego z zawodników. Przeanalizuj wynik.
 
-4.  Stwórz klasę `Osoba` z jednym polem finalnym `PESEL`. Następnie stwórz klasę `Student`, która dziedziczy po klasie `Osoba`. Czy możesz zmienić pole `PESEL` w klasie `Student`? Co się stanie, jeśli spróbujesz to zrobić? Przeanalizuj wyniki.
+2. Stwórz klasę `Car` z dwoma polami: `brand` (normalne pole) i `VIN` (pole finalne - Numer Identyfikacyjny Pojazdu). Stwórz kilka obiektów `Car` i spróbuj zmienić pole `VIN` dla każdego z nich. Przeanalizuj wynik.
 
-5.  Stwórz klasę bazową `Elektronika` z metodą finalną `włącz`, która wypisuje "Urządzenie włączone". Następnie stwórz klasę potomną `Telewizor` i spróbuj przesłonić metodę `włącz`. Zaobserwuj, co się dzieje.
+3. Stwórz klasę `Athlete` z jednym polem finalnym `name` oraz polem `points`. Stwórz tablicę zawodników i spróbuj zmienić pole `name` dla jednego z zawodników. Przeanalizuj wynik.
 
-6.  Stwórz klasę `Komputer` z metodą finalną `boot` oraz zwykłą metodą `uruchomAplikacje`. W klasie potomnej `Laptop`, spróbuj przesłonić obie metody. Sprawdź, która z metod pozwoli się przesłonić, a której nie.
+4. Stwórz klasę `Person` z jednym polem finalnym `PESEL`. Następnie stwórz klasę `Student`, która dziedziczy po klasie `Person`. Czy możesz zmienić pole `PESEL` w klasie `Student`? Co się stanie, jeśli spróbujesz to zrobić? Przeanalizuj wyniki.
 
-7.  Utwórz finalną klasę `NiezmienneDane` z pewnymi atrybutami i metodami. Następnie spróbuj stworzyć klasę potomną `ZmienneDane`, która dziedziczy po klasie `NiezmienneDane`. Zastanów się, dlaczego nie można dziedziczyć po klasie oznaczonej jako `final`.
+5. Stwórz klasę bazową `Electronics` z metodą finalną `turnOn`, która wypisuje "Urządzenie włączone". Następnie stwórz klasę potomną `Television` i spróbuj przesłonić metodę `turnOn`. Zaobserwuj, co się dzieje.
 
-8.  Stwórz klasę `Gra`, która w swoim konstruktorze ma metodę finalną `inicjuj` (inicializującą pewne dane). Utwórz klasę potomną `RPG`, która próbuje dostosować konstruktor klasy bazowej. Upewnij się, że metoda `inicjuj` działa poprawnie, mimo że jest oznaczona jako `final`.
+6. Stwórz klasę `Computer` z metodą finalną `boot` oraz zwykłą metodą `launchApplication`. W klasie potomnej `Laptop`, spróbuj przesłonić obie metody. Sprawdź, która z metod pozwoli się przesłonić, a której nie.
 
-9.  Utwórz klasę `StałaMatematyczna` z finalnym polem `PI`, które jest inicjowane wartością 3.14159. W klasie potomnej `StałaFizyczna`, spróbuj stworzyć metodę, która próbuje zmienić wartość `PI`. Zastanów się, dlaczego wartość finalnego pola nie może zostać zmieniona po jego inicjalizacji.
+7. Utwórz finalną klasę `ImmutableData` z pewnymi atrybutami i metodami. Następnie spróbuj stworzyć klasę potomną `VariableData`, która dziedziczy po klasie `ImmutableData`. Zastanów się, dlaczego nie można dziedziczyć po klasie oznaczonej jako `final`.
+
+8. Stwórz klasę `Game`, która w swoim konstruktorze ma metodę finalną `initialize` (inicializującą pewne dane). Utwórz klasę potomną `RPG`, która próbuje dostosować konstruktor klasy bazowej. Upewnij się, że metoda `initialize` działa poprawnie, mimo że jest oznaczona jako `final`.
+
+9. Utwórz klasę `MathConstant` z finalnym polem `PI`, które jest inicjowane wartością 3.14159. W klasie potomnej `PhysicalConstant`, spróbuj stworzyć metodę, która próbuje zmienić wartość `PI`. Zastanów się, dlaczego wartość finalnego pola nie może zostać zmieniona po jego inicjalizacji.
+
+10. Wykonaj poniższe czynności:
+
+- Stwórz klasę `ImmutableDate` z prywatnymi finalnymi polami: `year` (rok), `month` (miesiąc), `day` (dzień). 
+- Dodaj konstruktor parametryczny do inicjalizacji wszystkich pól.
+- Dodaj publiczne metody `getYear`, `getMonth`, `getDay` do pobierania wartości pól, ale nie dodawaj żadnych metod umożliwiających ich modyfikację.
+- Zaimplementuj metody `toString`, `equals` i `hashCode`.
+- Sprawdź, czy taka klasa może być uznana jako niemodyfikowalna (inmutable).
+
+11. Wykonaj poniższe czynności:
+
+- Stwórz klasę `ImmutablePoint` z prywatnymi finalnymi polami: `x`, `y`, `z` (współrzędne punktu).
+- Dodaj konstruktor parametryczny do inicjalizacji wszystkich pól.
+- Dodaj publiczne metody `getX`, `getY`, `getZ` do pobierania wartości pól, ale nie dodawaj żadnych metod umożliwiających ich modyfikację.
+- Zaimplementuj metody `toString`, `equals` i `hashCode`.
+- Sprawdź, czy taka klasa może być uznana jako niemodyfikowalna (inmutable).
+
+12. Wykonaj poniższe czynności:
+
+- Stwórz klasę `ImmutableBook` z prywatnymi finalnymi polami: `title` (tytuł), `author` (autor), `isbn` (numer ISBN).
+- Dodaj konstruktor parametryczny do inicjalizacji wszystkich pól.
+- Dodaj publiczne metody `getTitle`, `getAuthor`, `getIsbn` do pobierania wartości pól, ale nie dodawaj żadnych metod umożliwiających ich modyfikację.
+- Zaimplementuj metody `toString`, `equals` i `hashCode`.
+- Sprawdź, czy taka klasa może być uznana jako niemodyfikowalna (inmutable).

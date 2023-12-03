@@ -34,6 +34,9 @@ Zmiany:
 **19.11.2023**
 - dodanie kilku zadań dot. dziedziczenia
 
+**3.12.2023**
+- poprawki w `final` i złożonych polach w klasie
+
 ---
 nocite: |
   @*
