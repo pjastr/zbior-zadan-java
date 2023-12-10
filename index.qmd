@@ -37,6 +37,9 @@ Zmiany:
 **3.12.2023**
 - poprawki w `final` i złożonych polach w klasie
 
+**10.12.2023**
+- poprawki i uzupełnienia w interfejsach
+
 ---
 nocite: |
   @*

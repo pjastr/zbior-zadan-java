@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -321,10 +355,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ol type="1">
-<li><p>Napisz interfejs o nazwie <code>GłośneZwierzę</code>, który będzie miał jedną metodę o nazwie <code>dajGłos()</code>. Następnie stwórz dwie klasy: <code>Pies</code> i <code>Kot</code>, które będą implementować ten interfejs. Dla każdej klasy zaimplementuj metodę <code>dajGłos()</code>, tak aby wydrukowała ona odpowiedni dźwięk zwierzęcia.</p></li>
-<li><p>Stwórz interfejs o nazwie <code>Komparator</code>, który będzie zawierał metodę <code>porównaj(int a, int b): int</code>. Metoda ta powinna zwrócić -1, jeśli <code>a &lt; b</code>, 0 jeśli <code>a == b</code> i 1 jeśli <code>a &gt; b</code>. Następnie stwórz klasę <code>MojaKlasaKomparatora</code>, która będzie implementować ten interfejs. W klasie tej zaimplementuj metodę <code>porównaj</code> zgodnie z jej opisem.</p></li>
-<li><p>Załóżmy, że mamy interfejs <code>OdtwarzaczMuzyki</code> z metodami <code>włącz()</code>, <code>wyłącz()</code> i <code>następnyUtwór()</code>. Stwórz klasę <code>Radio</code>, która będzie implementować ten interfejs. W metodzie <code>włącz()</code> powinien zostać wydrukowany komunikat “Radio włączone”, w metodzie <code>wyłącz()</code> - “Radio wyłączone”, a w <code>następnyUtwór()</code> - “Zmieniono stację radiową”.</p></li>
+<li><p>Napisz interfejs o nazwie <code>LoudAnimal</code>, który będzie miał jedną metodę o nazwie <code>makeNoise()</code>. Następnie stwórz dwie klasy: <code>Dog</code> i <code>Cat</code>, które będą implementować ten interfejs. Dla każdej klasy zaimplementuj metodę <code>makeNoise()</code>, tak aby wydrukowała ona odpowiedni dźwięk zwierzęcia.</p></li>
+<li><p>Stwórz interfejs o nazwie <code>MyComparator</code>, który będzie zawierał metodę <code>compare(int a, int b): int</code>. Metoda ta powinna zwrócić -1, jeśli <code>a &lt; b</code>, 0 jeśli <code>a == b</code> i 1 jeśli <code>a &gt; b</code>. Następnie stwórz klasę <code>TestMyComparator</code>, która będzie implementować ten interfejs. W klasie tej zaimplementuj metodę <code>compare</code> zgodnie z jej opisem.</p></li>
+<li><p>Załóżmy, że mamy interfejs <code>MusicPlayer</code> z metodami <code>turnOn()</code>, <code>turnOff()</code> i <code>nextTrack()</code>. Stwórz klasę <code>Radio</code>, która będzie implementować ten interfejs. W metodzie <code>turnOn()</code> powinien zostać wydrukowany komunikat “Radio włączone”, w metodzie <code>turnOff()</code> - “Radio wyłączone”, a w <code>nextTrack()</code> - “Zmieniono stację radiową”.</p></li>
+<li><p>Napisz interfejs <code>Converter</code> z trzema abstrakcyjnymi metodami: <code>convertToEuro(double amount)</code> zwracającą <code>double</code>, <code>convertToUSD(double amount)</code> zwracającą <code>double</code> oraz <code>getConversionRate(String currency)</code> przyjmującą nazwę waluty jako <code>String</code> i zwracającą <code>double</code>. Stwórz dwie klasy: <code>CurrencyConverter</code> i <code>UnitConverter</code>, które implementują ten interfejs. W osobnej klasie <code>ConverterTest</code>, przetestuj implementację metod dla obiektów obu klas.</p></li>
+<li><p>Utwórz interfejs <code>Authentication</code> z trzema metodami abstrakcyjnymi: <code>login(String username, String password)</code> zwracającą <code>boolean</code>, <code>logout()</code> zwracającą <code>void</code> oraz <code>resetPassword(String username, String oldPassword, String newPassword)</code> zwracającą <code>boolean</code>. Stwórz dwie klasy <code>UserAuthentication</code> i <code>AdminAuthentication</code>, które implementują ten interfejs. W klasie <code>AuthenticationTest</code> przetestuj implementacje metod dla obiektów obu klas.</p></li>
+<li><p>Zaprojektuj interfejs <code>Sensor</code> z trzema metodami abstrakcyjnymi: <code>readValue()</code> zwracającą <code>double</code>, <code>getStatus()</code> zwracającą <code>String</code> oraz <code>reset()</code> zwracającą <code>void</code>. Stwórz dwie klasy <code>TemperatureSensor</code> i <code>PressureSensor</code>, które implementują ten interfejs. W klasie <code>SensorTest</code> przetestuj działanie metod dla obiektów z obu klas.</p></li>
+<li><p>Opracuj interfejs <code>MediaPlayer</code> z trzema abstrakcyjnymi metodami: <code>play(String trackName)</code> zwracającą <code>void</code>, <code>pause()</code> zwracającą <code>void</code> oraz <code>getCurrentTrack()</code> zwracającą <code>String</code>. Stwórz dwie klasy <code>AudioPlayer</code> i <code>VideoPlayer</code>, które implementują ten interfejs. W osobnej klasie <code>MediaPlayerTest</code> sprawdź działanie metod dla obiektów z obu klas.</p></li>
+<li><p>Stwórz interfejs <code>Storage</code> z trzema metodami abstrakcyjnymi: <code>save(String data)</code> zwracającą <code>boolean</code>, <code>delete(String identifier)</code> zwracającą <code>boolean</code> oraz <code>retrieve(String identifier)</code> zwracającą <code>String</code>. Zaprojektuj dwie klasy <code>FileStorage</code> i <code>DatabaseStorage</code>, które implementują ten interfejs. W klasie <code>StorageTest</code> wykonaj testy metod dla obiektów z obu klas.</p></li>
+<li><p>Wykonaj poniższe czynności:</p></li>
 </ol>
+<ul>
+<li>Napisz interfejs <code>DataProcessor</code> z dwoma metodami abstrakcyjnymi: <code>processData(String data)</code> zwracającą <code>String</code> i <code>isValid(String data)</code> zwracającą <code>boolean</code>.</li>
+<li>Stwórz klasę <code>TextProcessor</code>, która implementuje <code>DataProcessor</code>. W metodzie <code>processData</code> zwróć dane w odwróconej kolejności, a w metodzie <code>isValid</code> sprawdź, czy dane nie są pustym napisem. Zabezpiecz metody przed nullem.</li>
+<li>Stwórz drugą klasę <code>NumberProcessor</code>, która również implementuje <code>DataProcessor</code>. W metodzie <code>processData</code> zwróć dane z dodatkowym tekstem na początku “Processed:”, a w metodzie <code>isValid</code> sprawdź, czy dane są liczbą.</li>
+<li>W klasie <code>TestDataProcessor</code> stwórz obiekty obu klas i przetestuj ich metody.</li>
+</ul>
+<p>Wskazówka: W celu sprawdzenia, że string jest liczbą możesz użyć wyrażenia regularne:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>str<span class="op">.</span><span class="fu">matches</span><span class="op">(</span><span class="st">"-?</span><span class="sc">\\</span><span class="st">d+(</span><span class="sc">\\</span><span class="st">.</span><span class="sc">\\</span><span class="st">d+)?"</span><span class="op">)</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="10" type="1">
+<li>Wykonaj poniższe czynności:</li>
+</ol>
+<ul>
+<li>Utwórz interfejs <code>VehicleManager</code> z dwoma metodami abstrakcyjnymi: <code>startEngine()</code> zwracającą <code>String</code> i <code>getFuelLevel()</code> zwracającą <code>int</code>.</li>
+<li>Stwórz klasę <code>Car</code>, implementującą <code>VehicleManager</code>. W metodzie <code>startEngine</code> zwróć “Silnik samochodu uruchomiony”, a w <code>getFuelLevel</code> zwróć wartość 50.</li>
+<li>Stwórz klasę <code>Motorcycle</code>, również implementującą <code>VehicleManager</code>. W <code>startEngine</code> zwróć “Silnik motocykla uruchomiony”, a w <code>getFuelLevel</code> zwróć wartość 30.</li>
+<li>W klasie <code>VehicleManagerTest</code> stwórz obiekty obu klas i przetestuj ich metody.</li>
+</ul>
+<ol start="11" type="1">
+<li>Wykonaj poniższe czynności:</li>
+</ol>
+<ul>
+<li>Stwórz interfejs <code>AnimalSound</code> z jedną metodą <code>makeSound()</code>.</li>
+<li>Rozszerz ten interfejs, tworząc interfejs <code>DomesticAnimalSound</code>, który dodaje metodę <code>makeHappySound()</code>.</li>
+<li>Stwórz klasę <code>Dog</code>, która implementuje <code>DomesticAnimalSound</code>. Metoda <code>makeSound()</code> powinna zwracać string “Woof”, a <code>makeHappySound()</code> - “Wag tail”.</li>
+<li>W osobnej klasie testującej (<code>TestAnimals</code>), utwórz obiekt <code>Dog</code> i wywołaj obie metody.</li>
+</ul>
+<ol start="12" type="1">
+<li>Wykonaj poniższe czynności:</li>
+</ol>
+<ul>
+<li>Stwórz interfejs <code>PowerControl</code> z metodą <code>turnOn()</code>.</li>
+<li>Rozszerz ten interfejs, tworząc <code>AdvancedPowerControl</code>, który dodaje metodę <code>setPowerSavingMode()</code>.</li>
+<li>Stwórz klasę <code>SmartLamp</code>, implementującą <code>AdvancedPowerControl</code>. Metoda <code>turnOn()</code> powinna aktywować lampę, a <code>setPowerSavingMode()</code> - przełączać ją w tryb oszczędzania energii (metody mają wyświetlać odpowiednie komunikaty).</li>
+<li>W osobnej klasie testującej (<code>TestDevices</code>), utwórz obiekt <code>SmartLamp</code> i wywołaj obie metody.</li>
+</ul>
+<ol start="13" type="1">
+<li>Wykonaj poniższe czynności:</li>
+</ol>
+<ul>
+<li>Stwórz interfejs <code>Drawable</code> z metodą <code>draw()</code>.</li>
+<li>Rozszerz ten interfejs, tworząc <code>ColorDrawable</code>, który dodaje metodę <code>setColor(String color)</code>.</li>
+<li>Stwórz klasę <code>Circle</code>, implementującą <code>ColorDrawable</code>. Metoda <code>draw()</code> powinna rysować koło, a <code>setColor()</code> - zmieniać kolor koła (metody mają wyświetlać odpowiednie komunikaty).</li>
+<li>W osobnej klasie testującej (<code>TestDrawing</code>), utwórz obiekt <code>Circle</code>, ustaw kolor i narysuj koło za pomocą obu metod.</li>
+</ul>
+<ol start="14" type="1">
+<li>Stwórz interfejs <code>Drawable</code> z:</li>
+</ol>
+<ul>
+<li>Metodą abstrakcyjną <code>draw()</code>.</li>
+<li>Metodą domyślną <code>display()</code> wyświetlającą informację “Displaying Drawable”.</li>
+<li>Metodą statyczną <code>getType()</code> zwracającą <code>String</code> “Drawable Type”.</li>
+</ul>
+<p>Stwórz klasy <code>Circle</code> i <code>Rectangle</code>, które implementują <code>Drawable</code>. <code>draw()</code> w <code>Circle</code> powinno wyświetlać “Drawing Circle”, a w <code>Rectangle</code> - “Drawing Rectangle”. Stwórz klasę testującą <code>DrawableTester</code>. Utwórz obiekty <code>Circle</code> i <code>Rectangle</code>, wywołaj dla nich <code>draw()</code> i <code>display()</code>, oraz statycznie <code>Drawable.getType()</code>.</p>
+<ol start="15" type="1">
+<li>Stwórz interfejs <code>SoundPlayer</code> z:</li>
+</ol>
+<ul>
+<li>Metodą abstrakcyjną <code>playSound()</code>.</li>
+<li>Metodą domyślną <code>stopSound()</code> wyświetlającą informację “Sound Stopped”.</li>
+<li>Metodą statyczną <code>getDeviceType()</code> zwracającą <code>String</code> “Sound Device”.</li>
+</ul>
+<p>Stwórz klasy <code>MusicPlayer</code> i <code>Radio</code>, które implementują <code>SoundPlayer</code>. <code>playSound()</code> w <code>MusicPlayer</code> powinno wyświetlać “Playing Music”, a w <code>Radio</code> - “Playing Radio”. Stwórz klasę testującą <code>SoundTester</code>. Utwórz obiekty <code>MusicPlayer</code> i <code>Radio</code>, wywołaj dla nich <code>playSound()</code> i <code>stopSound()</code>, oraz statycznie <code>SoundPlayer.getDeviceType()</code>.</p>
+<ol start="16" type="1">
+<li>Stwórz interfejs <code>MemoryManager</code> z:</li>
+</ol>
+<ul>
+<li>Metodą abstrakcyjną <code>allocateMemory(int size)</code>.</li>
+<li>Metodą domyślną <code>freeMemory()</code> wyświetlającą informację “Memory Freed”.</li>
+<li>Metodą statyczną <code>getMemoryType()</code> zwracającą <code>String</code> “Memory Type”.</li>
+</ul>
+<p>Stwórz klasy <code>RAMManager</code> i <code>DiskManager</code>, które implementują <code>MemoryManager</code>. <code>allocateMemory(int size)</code> w <code>RAMManager</code> powinno wyświetlać “Allocating RAM Memory”, a w <code>DiskManager</code> - “Allocating Disk Space”. Stwórz klasę testującą <code>MemoryTester</code>. Utwórz obiekty <code>RAMManager</code> i <code>DiskManager</code>, wywołaj dla nich <code>allocateMemory(int size)</code> i <code>freeMemory()</code>, oraz statycznie <code>MemoryManager.getMemoryType()</code>.</p>
+<ol start="17" type="1">
+<li>Stwórz interfejs <code>VATCalculator</code> z:</li>
+</ol>
+<ul>
+<li>Polem <code>double vatRate</code> ustawionym na wartość standardowej stawki VAT (np. 23%).</li>
+<li>Metodą statyczną <code>calculateWithVAT(double price)</code>, która oblicza i zwraca cenę produktu z doliczonym VAT.</li>
+</ul>
+<p>Stwórz klasę testującą <code>VATTest</code>, która wywołuje metodę <code>calculateWithVAT(double price)</code> z przykładową ceną produktu i wyświetla wynik.</p>
 
 
 

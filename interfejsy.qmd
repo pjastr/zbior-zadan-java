@@ -1,7 +1,91 @@
 # Interfejsy
 
-1. Napisz interfejs o nazwie `GłośneZwierzę`, który będzie miał jedną metodę o nazwie `dajGłos()`. Następnie stwórz dwie klasy: `Pies` i `Kot`, które będą implementować ten interfejs. Dla każdej klasy zaimplementuj metodę `dajGłos()`, tak aby wydrukowała ona odpowiedni dźwięk zwierzęcia.
 
-2. Stwórz interfejs o nazwie `Komparator`, który będzie zawierał metodę `porównaj(int a, int b): int`. Metoda ta powinna zwrócić -1, jeśli `a < b`, 0 jeśli `a == b` i 1 jeśli `a > b`. Następnie stwórz klasę `MojaKlasaKomparatora`, która będzie implementować ten interfejs. W klasie tej zaimplementuj metodę `porównaj` zgodnie z jej opisem.
+1. Napisz interfejs o nazwie `LoudAnimal`, który będzie miał jedną metodę o nazwie `makeNoise()`. Następnie stwórz dwie klasy: `Dog` i `Cat`, które będą implementować ten interfejs. Dla każdej klasy zaimplementuj metodę `makeNoise()`, tak aby wydrukowała ona odpowiedni dźwięk zwierzęcia.
 
-3. Załóżmy, że mamy interfejs `OdtwarzaczMuzyki` z metodami `włącz()`, `wyłącz()` i `następnyUtwór()`. Stwórz klasę `Radio`, która będzie implementować ten interfejs. W metodzie `włącz()` powinien zostać wydrukowany komunikat "Radio włączone", w metodzie `wyłącz()` - "Radio wyłączone", a w `następnyUtwór()` - "Zmieniono stację radiową".
+2. Stwórz interfejs o nazwie `MyComparator`, który będzie zawierał metodę `compare(int a, int b): int`. Metoda ta powinna zwrócić -1, jeśli `a < b`, 0 jeśli `a == b` i 1 jeśli `a > b`. Następnie stwórz klasę `TestMyComparator`, która będzie implementować ten interfejs. W klasie tej zaimplementuj metodę `compare` zgodnie z jej opisem.
+
+3. Załóżmy, że mamy interfejs `MusicPlayer` z metodami `turnOn()`, `turnOff()` i `nextTrack()`. Stwórz klasę `Radio`, która będzie implementować ten interfejs. W metodzie `turnOn()` powinien zostać wydrukowany komunikat "Radio włączone", w metodzie `turnOff()` - "Radio wyłączone", a w `nextTrack()` - "Zmieniono stację radiową".
+
+4. Napisz interfejs `Converter` z trzema abstrakcyjnymi metodami: `convertToEuro(double amount)` zwracającą `double`, `convertToUSD(double amount)` zwracającą `double` oraz `getConversionRate(String currency)` przyjmującą nazwę waluty jako `String` i zwracającą `double`. Stwórz dwie klasy: `CurrencyConverter` i `UnitConverter`, które implementują ten interfejs. W osobnej klasie `ConverterTest`, przetestuj implementację metod dla obiektów obu klas.
+
+5. Utwórz interfejs `Authentication` z trzema metodami abstrakcyjnymi: `login(String username, String password)` zwracającą `boolean`, `logout()` zwracającą `void` oraz `resetPassword(String username, String oldPassword, String newPassword)` zwracającą `boolean`. Stwórz dwie klasy `UserAuthentication` i `AdminAuthentication`, które implementują ten interfejs. W klasie `AuthenticationTest` przetestuj implementacje metod dla obiektów obu klas.
+
+6. Zaprojektuj interfejs `Sensor` z trzema metodami abstrakcyjnymi: `readValue()` zwracającą `double`, `getStatus()` zwracającą `String` oraz `reset()` zwracającą `void`. Stwórz dwie klasy `TemperatureSensor` i `PressureSensor`, które implementują ten interfejs. W klasie `SensorTest` przetestuj działanie metod dla obiektów z obu klas.
+
+7. Opracuj interfejs `MediaPlayer` z trzema abstrakcyjnymi metodami: `play(String trackName)` zwracającą `void`, `pause()` zwracającą `void` oraz `getCurrentTrack()` zwracającą `String`. Stwórz dwie klasy `AudioPlayer` i `VideoPlayer`, które implementują ten interfejs. W osobnej klasie `MediaPlayerTest` sprawdź działanie metod dla obiektów z obu klas.
+
+8. Stwórz interfejs `Storage` z trzema metodami abstrakcyjnymi: `save(String data)` zwracającą `boolean`, `delete(String identifier)` zwracającą `boolean` oraz `retrieve(String identifier)` zwracającą `String`. Zaprojektuj dwie klasy `FileStorage` i `DatabaseStorage`, które implementują ten interfejs. W klasie `StorageTest` wykonaj testy metod dla obiektów z obu klas.
+
+9. Wykonaj poniższe czynności:
+
+- Napisz interfejs `DataProcessor` z dwoma metodami abstrakcyjnymi: `processData(String data)` zwracającą `String` i `isValid(String data)` zwracającą `boolean`.
+- Stwórz klasę `TextProcessor`, która implementuje `DataProcessor`. W metodzie `processData` zwróć dane w odwróconej kolejności, a w metodzie `isValid` sprawdź, czy dane nie są pustym napisem. Zabezpiecz metody przed nullem. 
+- Stwórz drugą klasę `NumberProcessor`, która również implementuje `DataProcessor`. W metodzie `processData` zwróć dane z dodatkowym tekstem na początku "Processed: ", a w metodzie `isValid` sprawdź, czy dane są liczbą.
+- W klasie `TestDataProcessor` stwórz obiekty obu klas i przetestuj ich metody.
+
+Wskazówka: W celu sprawdzenia, że string jest liczbą możesz użyć wyrażenia regularne: 
+
+```java
+str.matches("-?\\d+(\\.\\d+)?")
+```
+
+10. Wykonaj poniższe czynności:
+
+- Utwórz interfejs `VehicleManager` z dwoma metodami abstrakcyjnymi: `startEngine()` zwracającą `String` i `getFuelLevel()` zwracającą `int`.
+- Stwórz klasę `Car`, implementującą `VehicleManager`. W metodzie `startEngine` zwróć "Silnik samochodu uruchomiony", a w `getFuelLevel` zwróć  wartość 50.
+- Stwórz klasę `Motorcycle`, również implementującą `VehicleManager`. W `startEngine` zwróć "Silnik motocykla uruchomiony", a w `getFuelLevel` zwróć wartość 30.
+- W klasie `VehicleManagerTest` stwórz obiekty obu klas i przetestuj ich metody.
+
+11. Wykonaj poniższe czynności:
+
+- Stwórz interfejs `AnimalSound` z jedną metodą `makeSound()`.
+- Rozszerz ten interfejs, tworząc interfejs `DomesticAnimalSound`, który dodaje metodę `makeHappySound()`.
+- Stwórz klasę `Dog`, która implementuje `DomesticAnimalSound`. Metoda `makeSound()` powinna zwracać string "Woof", a `makeHappySound()` - "Wag tail".
+- W osobnej klasie testującej (`TestAnimals`), utwórz obiekt `Dog` i wywołaj obie metody.
+
+12. Wykonaj poniższe czynności:
+
+- Stwórz interfejs `PowerControl` z metodą `turnOn()`.
+- Rozszerz ten interfejs, tworząc `AdvancedPowerControl`, który dodaje metodę `setPowerSavingMode()`.
+- Stwórz klasę `SmartLamp`, implementującą `AdvancedPowerControl`. Metoda `turnOn()` powinna aktywować lampę, a `setPowerSavingMode()` - przełączać ją w tryb oszczędzania energii (metody mają wyświetlać odpowiednie komunikaty).
+- W osobnej klasie testującej (`TestDevices`), utwórz obiekt `SmartLamp` i wywołaj obie metody.
+
+13. Wykonaj poniższe czynności:
+
+- Stwórz interfejs `Drawable` z metodą `draw()`.
+- Rozszerz ten interfejs, tworząc `ColorDrawable`, który dodaje metodę `setColor(String color)`.
+- Stwórz klasę `Circle`, implementującą `ColorDrawable`. Metoda `draw()` powinna rysować koło, a `setColor()` - zmieniać kolor koła (metody mają wyświetlać odpowiednie komunikaty).
+- W osobnej klasie testującej (`TestDrawing`), utwórz obiekt `Circle`, ustaw kolor i narysuj koło za pomocą obu metod. 
+
+14.  Stwórz interfejs `Drawable` z:
+
+- Metodą abstrakcyjną `draw()`.
+- Metodą domyślną `display()` wyświetlającą informację "Displaying Drawable".
+- Metodą statyczną `getType()` zwracającą `String` "Drawable Type".
+
+Stwórz klasy `Circle` i `Rectangle`, które implementują `Drawable`. `draw()` w `Circle` powinno wyświetlać "Drawing Circle", a w `Rectangle` - "Drawing Rectangle". Stwórz klasę testującą `DrawableTester`. Utwórz obiekty `Circle` i `Rectangle`, wywołaj dla nich `draw()` i `display()`, oraz statycznie `Drawable.getType()`.
+
+15. Stwórz interfejs `SoundPlayer` z:
+
+- Metodą abstrakcyjną `playSound()`.
+- Metodą domyślną `stopSound()` wyświetlającą informację "Sound Stopped".
+- Metodą statyczną `getDeviceType()` zwracającą `String` "Sound Device".
+
+Stwórz klasy `MusicPlayer` i `Radio`, które implementują `SoundPlayer`. `playSound()` w `MusicPlayer` powinno wyświetlać "Playing Music", a w `Radio` - "Playing Radio". Stwórz klasę testującą `SoundTester`. Utwórz obiekty `MusicPlayer` i `Radio`, wywołaj dla nich `playSound()` i `stopSound()`, oraz statycznie `SoundPlayer.getDeviceType()`.
+
+
+16. Stwórz interfejs `MemoryManager` z:
+
+- Metodą abstrakcyjną `allocateMemory(int size)`.
+- Metodą domyślną `freeMemory()` wyświetlającą informację "Memory Freed".
+- Metodą statyczną `getMemoryType()` zwracającą `String` "Memory Type".
+
+Stwórz klasy `RAMManager` i `DiskManager`, które implementują `MemoryManager`. `allocateMemory(int size)` w `RAMManager` powinno wyświetlać "Allocating RAM Memory", a w `DiskManager` - "Allocating Disk Space". Stwórz klasę testującą `MemoryTester`. Utwórz obiekty `RAMManager` i `DiskManager`, wywołaj dla nich `allocateMemory(int size)` i `freeMemory()`, oraz statycznie `MemoryManager.getMemoryType()`.
+
+17. Stwórz interfejs `VATCalculator` z:
+
+- Polem `double vatRate` ustawionym na wartość standardowej stawki VAT (np. 23%).
+- Metodą statyczną `calculateWithVAT(double price)`, która oblicza i zwraca cenę produktu z doliczonym VAT.
+
+Stwórz klasę testującą `VATTest`, która wywołuje metodę `calculateWithVAT(double price)` z przykładową ceną produktu i wyświetla wynik.
