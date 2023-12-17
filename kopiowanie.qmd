@@ -35,3 +35,8 @@
 17. Napisz klasę `Developer` z polami `name` (String), `age` (int) i `salary` (double). Następnie napisz klasę `SeniorDeveloper`, która dziedziczy po klasie `Developer` i dodaje pole `bonus` (double). Zaimplementuj interfejs `Cloneable` i nadpisz metodę `clone()` w obu klasach. W metodzie `main()` pokaż przykład prezentujący poprawność klonowania obiektów tych klas.
 
 18. Napisz klasę `Nurse` z polami `name` (String), `age` (int) i `salary` (double). Następnie napisz klasę `HeadNurse`, która dziedziczy po klasie `Nurse` i dodaje pole `bonus` (double). Zaimplementuj interfejs `Cloneable` i nadpisz metodę `clone()` w obu klasach. W metodzie `main()` pokaż przykład prezentujący poprawność klonowania obiektów tych klas.
+
+19. Wykonaj poniższe czynności:
+
+- Stwórz klasę `Engine` (Silnik) z polami: `power` (moc), `type` (typ silnika), `serialNumber` (numer seryjny). Dodaj konstruktor parametryczny oraz zaimplementuj interfejs `Cloneable`.
+- Stwórz klasę `Car` (Samochód). Klasa `Car` powinna mieć pola: `make` (marka), `model` (model), `engine` typu `Engine` (silnik). Dodaj konstruktor parametryczny oraz zaimplementuj interfejs `Cloneable`.

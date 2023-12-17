@@ -35,6 +35,7 @@ book:
         - comparator.qmd
         - kopiowanie.qmd
         - interfejsy.qmd
+        - wyjatki.qmd
         - delegacje.qmd
     - part: "Zadania różne"
     - part: "Wzorce projektowe"

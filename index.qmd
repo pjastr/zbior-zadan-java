@@ -40,6 +40,9 @@ Zmiany:
 **10.12.2023**
 - poprawki i uzupełnienia w interfejsach
 
+**17.12.2023**
+- uzupełnienie w części dot. interfejsów, kopiowania i wyjątków
+
 ---
 nocite: |
   @*

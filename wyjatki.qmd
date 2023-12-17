@@ -1,0 +1,8 @@
+# Wyjątki
+
+
+1. Napisz program, który definiuje metodę `checkAge(int age)`. Metoda ta powinna rzucić wyjątek `IllegalArgumentException` z odpowiednim komunikatem, jeśli podany wiek jest mniejszy niż 18. W głównej metodzie programu (`main`) wywołaj `sprawdzWiek` z różnymi wartościami i obsłuż wyjątek, wyświetlając stosowny komunikat dla użytkownika.
+
+2. Napisz program, który prosi użytkownika o wpisanie dwóch liczb, a następnie dzieli pierwszą liczbę przez drugą. Program powinien obsługiwać dwa rodzaje wyjątków: `ArithmeticException` w przypadku dzielenia przez zero i `InputMismatchException`, gdy użytkownik wprowadzi coś innego niż liczby. W obu przypadkach należy wyświetlić stosowny komunikat błędu i poprosić użytkownika o ponowne wprowadzenie danych. Wykorzystaj typ `int`.
+
+3. Zaprojektuj i zaimplementuj klasę wyjątku `NiepoprawnyFormatDanychException`, która będzie rozszerzać klasę `Exception`. Następnie napisz metodę `sprawdzFormatDanych(String dane)`, która rzuci wyjątek `NiepoprawnyFormatDanychException`, jeśli podany ciąg znaków nie odpowiada określonemu wzorcowi (np. nie jest adresem e-mail). W metodzie `main` przetestuj działanie tej metody, obsługując wyjątek i informując użytkownika o błędzie.

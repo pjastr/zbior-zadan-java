@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - 17&nbsp; Złożone pola w klasie</title>
+<title>Zbiór zadań - Java - 24&nbsp; Wyjątki</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./klasyabstrakcyjne.html" rel="next">
-<link href="./pakiety.html" rel="prev">
+<link href="./delegacje.html" rel="next">
+<link href="./interfejsy.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./zlozonepolawklasie.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./wyjatki.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Wyjątki</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -230,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./zlozonepolawklasie.html" class="sidebar-item-text sidebar-link active">
+  <a href="./zlozonepolawklasie.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></span></a>
   </div>
 </li>
@@ -272,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wyjatki.html" class="sidebar-item-text sidebar-link">
+  <a href="./wyjatki.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Wyjątki</span></span></a>
   </div>
 </li>
@@ -311,7 +311,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Złożone pola w klasie</span></h1>
+<h1 class="title"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Wyjątki</span></h1>
 </div>
 
 
@@ -327,32 +327,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ol type="1">
-<li><p>Utwórz klasę <code>MusicAlbum</code> z polami <code>title</code>, <code>artist</code> oraz <code>ratings</code> (jako tablica z elementami typu double). Dodaj metodę pozwalającą na dodawanie i usuwanie ocen. Utwórz klasę <code>RockAlbum</code>, która dziedziczy po klasie <code>MusicAlbum</code>. Klasa <code>RockAlbum</code> powinna mieć dodatkowe pole <code>rockGenre</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code>, <code>equals()</code> oraz <code>hashCode()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
-<li><p>Utwórz klasę <code>Book</code> z polami <code>title</code>, <code>author</code> oraz <code>reviews</code> (jako tablica z elementami typu double). Dodaj metody pozwalające na dodawanie i usuwanie recenzji. Utwórz klasę <code>FantasyBook</code>, która dziedziczy po klasie <code>Book</code>. Klasa <code>FantasyBook</code> powinna mieć dodatkowe pole <code>fantasySubgenre</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code>, <code>equals()</code> oraz <code>hashCode()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
-<li><p>Utwórz klasę <code>ComputerGame</code> z polami <code>title</code>, <code>producer</code> oraz <code>ratings</code> (jako tablica z elementami typu double). Dodaj metody pozwalające na dodawanie i usuwanie ocen. Utwórz klasę <code>RPGGame</code>, która dziedziczy po klasie <code>ComputerGame</code>. Klasa <code>RPGGame</code> powinna mieć dodatkowe pole <code>gameWorld</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code>, <code>equals()</code> oraz <code>hashCode()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
-<li><p>Utwórz klasę <code>University</code> z polami <code>name</code>, <code>location</code> oraz <code>studyPrograms</code> (jako tablica z elementami typu <code>String</code>). Dodaj metody pozwalające na dodawanie i usuwanie kierunków studiów. Utwórz klasę <code>TechnicalUniversity</code>, która dziedziczy po klasie <code>University</code>. Klasa <code>TechnicalUniversity</code> powinna mieć dodatkowe pole <code>numberOfLaboratories</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code>, <code>equals()</code> oraz <code>hashCode()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
-<li><p>Utwórz klasę <code>ArtGallery</code> z polami <code>name</code>, <code>city</code> oraz <code>paintings</code> (jako tablica z elementami typu <code>String</code>). Dodaj metody pozwalające na dodawanie i usuwanie obrazów. Utwórz klasę <code>ContemporaryGallery</code>, która dziedziczy po klasie <code>ArtGallery</code>. Klasa <code>ContemporaryGallery</code> powinna mieć dodatkowe pole <code>numberOfInstallations</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code>, <code>equals()</code> oraz <code>hashCode()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
-<li><p>Utwórz klasę <code>Car</code> z polami <code>brand</code>, <code>model</code> oraz <code>engineVariants</code> (jako tablica z elementami typu <code>String</code>). Dodaj metody pozwalające na dodawanie i usuwanie wariantów silników. Utwórz klasę <code>ElectricCar</code>, która dziedziczy po klasie <code>Car</code>. Klasa <code>ElectricCar</code> powinna mieć dodatkowe pole <code>range</code>. Dodaj konstruktory, metody gettery i settery, metodę <code>toString()</code>, <code>equals()</code> oraz <code>hashCode()</code> dla każdej z klas. Napisz program testujący zdefiniowane klasy i metody.</p></li>
-<li><p>Wykonaj poniższe czynności:</p></li>
+<li><p>Napisz program, który definiuje metodę <code>checkAge(int age)</code>. Metoda ta powinna rzucić wyjątek <code>IllegalArgumentException</code> z odpowiednim komunikatem, jeśli podany wiek jest mniejszy niż 18. W głównej metodzie programu (<code>main</code>) wywołaj <code>sprawdzWiek</code> z różnymi wartościami i obsłuż wyjątek, wyświetlając stosowny komunikat dla użytkownika.</p></li>
+<li><p>Napisz program, który prosi użytkownika o wpisanie dwóch liczb, a następnie dzieli pierwszą liczbę przez drugą. Program powinien obsługiwać dwa rodzaje wyjątków: <code>ArithmeticException</code> w przypadku dzielenia przez zero i <code>InputMismatchException</code>, gdy użytkownik wprowadzi coś innego niż liczby. W obu przypadkach należy wyświetlić stosowny komunikat błędu i poprosić użytkownika o ponowne wprowadzenie danych. Wykorzystaj typ <code>int</code>.</p></li>
+<li><p>Zaprojektuj i zaimplementuj klasę wyjątku <code>NiepoprawnyFormatDanychException</code>, która będzie rozszerzać klasę <code>Exception</code>. Następnie napisz metodę <code>sprawdzFormatDanych(String dane)</code>, która rzuci wyjątek <code>NiepoprawnyFormatDanychException</code>, jeśli podany ciąg znaków nie odpowiada określonemu wzorcowi (np. nie jest adresem e-mail). W metodzie <code>main</code> przetestuj działanie tej metody, obsługując wyjątek i informując użytkownika o błędzie.</p></li>
 </ol>
-<ul>
-<li>Stwórz klasę <code>Engine</code> (Silnik) z polami: <code>power</code> (moc), <code>type</code> (typ silnika), <code>serialNumber</code> (numer seryjny). Dodaj konstruktor parametryczny, gettery, settery, oraz metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</li>
-<li>Stwórz klasę <code>Car</code> (Samochód). Klasa <code>Car</code> powinna mieć pola: <code>make</code> (marka), <code>model</code> (model), <code>engine</code> typu <code>Engine</code> (silnik). Dodaj konstruktor parametryczny, który przyjmuje obiekt <code>Engine</code> jako parametr, gettery, settery, oraz metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</li>
-</ul>
-<ol start="8" type="1">
-<li>Wykonaj poniższe czynności:</li>
-</ol>
-<ul>
-<li>Stwórz klasę <code>Processor</code> (Procesor) z polami: <code>frequency</code> (częstotliwość), <code>cores</code> (liczba rdzeni), <code>manufacturer</code> (producent). Dodaj konstruktor parametryczny, gettery, settery, oraz metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</li>
-<li>Stwórz klasę <code>Computer</code> (Komputer). Klasa <code>Computer</code> powinna mieć pola: <code>brand</code> (marka), <code>model</code> (model), <code>processor</code> typu <code>Processor</code> (procesor). Dodaj konstruktor parametryczny, który przyjmuje obiekt <code>Processor</code> jako parametr, gettery, settery, oraz metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</li>
-</ul>
-<ol start="9" type="1">
-<li>Wykonaj poniższe czynności:</li>
-</ol>
-<ul>
-<li>Stwórz klasę <code>Address</code> (Adres) z polami: <code>street</code> (ulica), <code>city</code> (miasto), <code>zipCode</code> (kod pocztowy), <code>country</code> (kraj). Dodaj konstruktor parametryczny, gettery, settery, oraz metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</li>
-<li>Stwórz klasę <code>UserAccount</code> (Konto Użytkownika). Klasa <code>UserAccount</code> powinna mieć pola: <code>username</code> (nazwa użytkownika), <code>email</code> (email), <code>address</code> typu <code>Address</code> (adres). Dodaj konstruktor parametryczny, który przyjmuje obiekt <code>Address</code> jako parametr, gettery, settery, oraz metody <code>toString</code>, <code>equals</code> i <code>hashCode</code>.</li>
-</ul>
 
 
 
@@ -707,13 +685,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./pakiety.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pakiety</span></span>
+      <a href="./interfejsy.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Interfejsy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./klasyabstrakcyjne.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Klasy abstrakcyjne</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./delegacje.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Delegacje</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
