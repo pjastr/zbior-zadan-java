@@ -46,7 +46,7 @@ Zmiany:
 - uzupełnienie w części dot. interfejsów, kopiowania i wyjątków
 
 **18.12.2023**
-- dodanie zadań dot. programowania generycznego
+- dodanie zadań dot. programowania generycznego, kolekcji
 
 ---
 nocite: |

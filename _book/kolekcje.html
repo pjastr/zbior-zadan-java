@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - Bibliografia i inne zbiory zadań</title>
+<title>Zbiór zadań - Java - 26&nbsp; Kolekcje</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./delegacje.html" rel="prev">
+<link href="./delegacje.html" rel="next">
+<link href="./programowaniegeneryczne.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -94,7 +76,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">Bibliografia i inne zbiory zadań</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./kolekcje.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Kolekcje</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -302,7 +284,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./kolekcje.html" class="sidebar-item-text sidebar-link">
+  <a href="./kolekcje.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Kolekcje</span></span></a>
   </div>
 </li>
@@ -324,7 +306,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografia i inne zbiory zadań</span></a>
   </div>
 </li>
@@ -334,14 +316,21 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Spis treści</h2>
+   
+  <ul>
+  <li><a href="#arraylist" id="toc-arraylist" class="nav-link active" data-scroll-target="#arraylist"><span class="header-section-number">26.1</span> <code>ArrayList</code></a></li>
+  <li><a href="#vector" id="toc-vector" class="nav-link" data-scroll-target="#vector"><span class="header-section-number">26.2</span> <code>Vector</code></a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/pjastr/zbior-zadan-java/issues/new" class="toc-action">Zgłoś problem</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bibliografia i inne zbiory zadań</h1>
+<h1 class="title"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Kolekcje</span></h1>
 </div>
 
 
@@ -356,18 +345,24 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-jkozak" class="csl-entry" role="listitem">
-Kozak, Jan. n.d. <em>Materiały Do Ćwiczeń</em>. Accessed July 16, 2023.
-<a href="http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/">http://www.jkozak.pl/przedmioty/podstawy-i-jezyki-programowania/materialy-do-cwiczen/</a>.
-</div>
-<div id="ref-Rychlicki_2012" class="csl-entry" role="listitem">
-Rychlicki, Wiesław. 2012. <em>Programowanie w Języku Java. Zbiór Zadań z
-(p)odpowiedziami</em>. Helion.
-</div>
-</div>
+<section id="arraylist" class="level2" data-number="26.1">
+<h2 data-number="26.1" class="anchored" data-anchor-id="arraylist"><span class="header-section-number">26.1</span> <code>ArrayList</code></h2>
+<ol type="1">
+<li><p>Stwórz metodę <code>mergeLists</code>, która przyjmuje dwie generyczne <code>ArrayList&lt;T&gt;</code> i zwraca nową <code>ArrayList&lt;T&gt;</code>, będącą połączeniem elementów z obu list. Upewnij się, że kolejność elementów z oryginalnych list jest zachowana w wynikowej liście.</p></li>
+<li><p>Napisz funkcję <code>removeDuplicates</code>, która przyjmuje <code>ArrayList&lt;T&gt;</code> i zwraca nową listę, z której usunięto wszystkie duplikaty, pozostawiając tylko unikalne elementy. Kolejność zachowanych elementów powinna odpowiadać ich pierwszemu wystąpieniu na oryginalnej liście.</p></li>
+<li><p>Zaimplementuj metodę <code>countOccurrences</code>, która przyjmuje <code>ArrayList&lt;T&gt;</code> i element typu <code>T</code>, a następnie zwraca liczbę wystąpień tego elementu w podanej liście.</p></li>
+</ol>
+</section>
+<section id="vector" class="level2" data-number="26.2">
+<h2 data-number="26.2" class="anchored" data-anchor-id="vector"><span class="header-section-number">26.2</span> <code>Vector</code></h2>
+<ol type="1">
+<li><p>Stwórz funkcję <code>concatenateVectors</code>, która przyjmuje dwa obiekty <code>Vector&lt;T&gt;</code> i zwraca nowy <code>Vector&lt;T&gt;</code>, zawierający wszystkie elementy z pierwszego wektora, a po nich wszystkie elementy z drugiego wektora.</p></li>
+<li><p>Napisz metodę <code>reverseVector</code>, która przyjmuje obiekt <code>Vector&lt;T&gt;</code> i zwraca nowy <code>Vector&lt;T&gt;</code>, w którym kolejność elementów jest odwrócona względem oryginalnego wektora.</p></li>
+<li><p>Zaimplementuj funkcję <code>filterVector</code>, która przyjmuje <code>Vector&lt;T&gt;</code> i interfejs funkcyjny <code>Predicate&lt;T&gt;</code>. Funkcja powinna zwracać nowy <code>Vector&lt;T&gt;</code>, zawierający tylko te elementy z oryginalnego wektora, które spełniają warunek zdefiniowany przez <code>Predicate&lt;T&gt;</code>.</p></li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -720,15 +715,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./delegacje.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Delegacje</span></span>
+      <a href="./programowaniegeneryczne.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Programowanie generyczne</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./delegacje.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Delegacje</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/pjastr/zbior-zadan-java/issues/new" class="toc-action">Zgłoś problem</a></p></div></div></div></div></footer></body></html>
+</body></html>

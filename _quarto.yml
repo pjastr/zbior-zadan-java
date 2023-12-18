@@ -37,6 +37,7 @@ book:
         - interfejsy.qmd
         - wyjatki.qmd
         - programowaniegeneryczne.qmd
+        - kolekcje.qmd
         - delegacje.qmd
     - part: "Zadania różne"
     - part: "Wzorce projektowe"

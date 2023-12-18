@@ -1,0 +1,17 @@
+# Kolekcje
+
+## `ArrayList`
+
+1. Stwórz metodę `mergeLists`, która przyjmuje dwie generyczne `ArrayList<T>` i zwraca nową `ArrayList<T>`, będącą połączeniem elementów z obu list. Upewnij się, że kolejność elementów z oryginalnych list jest zachowana w wynikowej liście.
+
+2. Napisz funkcję `removeDuplicates`, która przyjmuje `ArrayList<T>` i zwraca nową listę, z której usunięto wszystkie duplikaty, pozostawiając tylko unikalne elementy. Kolejność zachowanych elementów powinna odpowiadać ich pierwszemu wystąpieniu na oryginalnej liście.
+
+3. Zaimplementuj metodę `countOccurrences`, która przyjmuje `ArrayList<T>` i element typu `T`, a następnie zwraca liczbę wystąpień tego elementu w podanej liście.
+
+## `Vector`
+
+1. Stwórz funkcję `concatenateVectors`, która przyjmuje dwa obiekty `Vector<T>` i zwraca nowy `Vector<T>`, zawierający wszystkie elementy z pierwszego wektora, a po nich wszystkie elementy z drugiego wektora.
+
+2. Napisz metodę `reverseVector`, która przyjmuje obiekt `Vector<T>` i zwraca nowy `Vector<T>`, w którym kolejność elementów jest odwrócona względem oryginalnego wektora.
+
+3. Zaimplementuj funkcję `filterVector`, która przyjmuje `Vector<T>` i interfejs funkcyjny `Predicate<T>`. Funkcja powinna zwracać nowy `Vector<T>`, zawierający tylko te elementy z oryginalnego wektora, które spełniają warunek zdefiniowany przez `Predicate<T>`.
