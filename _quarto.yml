@@ -36,6 +36,7 @@ book:
         - kopiowanie.qmd
         - interfejsy.qmd
         - wyjatki.qmd
+        - programowaniegeneryczne.qmd
         - delegacje.qmd
     - part: "Zadania różne"
     - part: "Wzorce projektowe"

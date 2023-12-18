@@ -1,0 +1,23 @@
+# Programowanie generyczne
+
+1. Stwórz prostą klasę generyczną `Box`, która może przechowywać obiekt dowolnego typu. Klasa powinna zawierać metodę `set`, aby ustawić obiekt, oraz metodę `get`, aby go pobrać.
+
+2. Napisz generyczną metodę `isEqual`, która przyjmuje dwa dowolne obiekty tego samego typu i zwraca `true`, jeśli są one równe, w przeciwnym razie `false`.
+
+3. Stwórz klasę generyczną `Counter<T>`, która będzie zliczać ilość dodanych elementów określonego typu. Klasa powinna mieć metodę `add(T element)`, która dodaje element do wewnętrznej struktury, oraz metodę `getCount()`, która zwraca liczbę dodanych elementów.
+
+4. Stwórz klasę generyczną `Triple<T, U, V>`, która może przechowywać trzy obiekty różnych typów. Zaimplementuj metody `getFirst()`, `getSecond()` i `getThird()` do pobierania odpowiednio pierwszego, drugiego i trzeciego elementu.
+
+5. Napisz generyczną metodę `max`, która przyjmuje tablicę elementów typu porównywalnego (implementujących interfejs `Comparable<T>`) i zwraca element o najwyższej wartości. Uwzględnij obsługę przypadku pustej tablicy.
+
+6. Zdefiniuj generyczny interfejs `Stack<T>` z metodami `push(T item)`, `T pop()`, `T peek()` i `boolean isEmpty()`. Stwórz klasę implementującą ten interfejs, która będzie reprezentować stos przechowujący elementy dowolnego typu.
+
+7. Stwórz klasę generyczną `Storage<T>`, która przechowuje pojedynczy obiekt dowolnego typu. Klasa powinna mieć metody `store(T item)`, która zapisuje obiekt, oraz `T retrieve()`, która zwraca przechowywany obiekt.
+
+8. Napisz generyczną metodę `printArray`, która przyjmuje tablicę elementów dowolnego typu i wypisuje wszystkie elementy tej tablicy na standardowe wyjście. Metoda powinna być w stanie obsłużyć tablice każdego typu obiektów.
+
+9. Stwórz klasę generyczną `Pair`, która przechowuje dwie wartości dowolnego typu. Klasa powinna mieć dwie metody: `getFirst()`, która zwraca pierwszy element pary, i `getSecond()`, która zwraca drugi element pary.
+
+10. Napisz generyczną metodę `swap`, która przyjmuje tablicę dowolnego typu oraz dwie liczby całkowite reprezentujące indeksy. Metoda powinna zamienić miejscami elementy tablicy na podanych indeksach.
+
+11. Stwórz generyczną klasę `GenericQueue<T>`, która implementuje prostą kolejkę. Klasa powinna mieć metody `enqueue(T element)`, która dodaje element do kolejki, i `dequeue()`, która usuwa i zwraca element z początku kolejki.

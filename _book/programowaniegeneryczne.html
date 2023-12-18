@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - Java - 4&nbsp; Funkcje/metody</title>
+<title>Zbiór zadań - Java - 25&nbsp; Programowanie generyczne</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./random.html" rel="next">
-<link href="./petle.html" rel="prev">
+<link href="./delegacje.html" rel="next">
+<link href="./wyjatki.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,8 +64,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -78,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wejsciewyjscie.html">Wprowadzenie do języka Java</a></li><li class="breadcrumb-item"><a href="./metody.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje/metody</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./klasaobiekt.html">Programowanie obiektowe</a></li><li class="breadcrumb-item"><a href="./programowaniegeneryczne.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Programowanie generyczne</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -143,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./metody.html" class="sidebar-item-text sidebar-link active">
+  <a href="./metody.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje/metody</span></span></a>
   </div>
 </li>
@@ -280,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./programowaniegeneryczne.html" class="sidebar-item-text sidebar-link">
+  <a href="./programowaniegeneryczne.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Programowanie generyczne</span></span></a>
   </div>
 </li>
@@ -319,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje/metody</span></h1>
+<h1 class="title"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Programowanie generyczne</span></h1>
 </div>
 
 
@@ -335,39 +333,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ol type="1">
-<li>Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Metoda ma zwrócić jako liczbę całkowitą sumę szeregu</li>
-</ol>
-<p><span class="math display">\[1-2+3-4+\ldots \pm n.\]</span> Stwórz przypadek testowy dla tej metody.</p>
-<ol start="2" type="1">
-<li><p>Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span> (<span class="math inline">\(n&gt;2\)</span>). Metoda ma zwrócić największą liczbę pierwszą mniejszą niż <span class="math inline">\(n\)</span>. Stwórz przypadek testowy dla tej metody.</p></li>
-<li><p>Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Metoda zwraca odpowiednią wartość logiczną sprawdzającą czy <span class="math inline">\(n\)</span> jest liczbą doskonałą. Liczba doskonała to taka, której suma dzielników jest równa tej liczbie (liczbami doskonałymi są np. <span class="math inline">\(1 = 1\)</span>, <span class="math inline">\(6 = 1 + 2 + 3\)</span>). Stwórz przypadek testowy dla metody.</p></li>
-<li><p>Napisz statyczną metodę, której parametrami są dwie dodatnie liczby całkowite <span class="math inline">\(a\)</span> i <span class="math inline">\(b\)</span>. Metoda ma zwrócić najmniejszą wspólną wielokrotność (<span class="math inline">\(NWW\)</span>) liczb <span class="math inline">\(a\)</span> i <span class="math inline">\(b\)</span>. Stwórz przypadek testowy dla metody.</p></li>
-</ol>
-<p>Przykład: <span class="math inline">\(NWW(5,10)=10\)</span>, <span class="math inline">\(NWW(4,5)=20\)</span>.</p>
-<ol start="5" type="1">
-<li>Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Metoda zwraca <code>true</code> jeśli zadana liczba <span class="math inline">\(n\)</span> jest nieparzysta, ujemna, (poza minusem) składa się z 4 cyfr i podzielna przez 5, oraz zwraca <code>false</code> w pozostałych przypadkach. Stwórz przypadek testowy dla metody. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
-</ol>
-<ol start="6" type="1">
-<li>Napisz statyczną metodę, która jako argument otrzymuje dodatnią liczbę całkowitą <span class="math inline">\(n\)</span> i zwraca liczbę <span class="math inline">\(7^{-n}\)</span>. Nie korzystaj z żadnych gotowych funkcji bibliotecznych ani wbudowanych wewnątrz tej funkcji poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy.</li>
-</ol>
-<p>Podpowiedź: <span class="math inline">\(7^{-n}=\frac{1}{7^n}\)</span>.</p>
-<ol start="7" type="1">
-<li><p>Napisz statyczną metodę, której argumentem są cztery dodatnie liczby całkowite <span class="math inline">\(a, b, c, d\)</span>. Metoda zwraca ile liczb całkowitych z przedziału <span class="math inline">\((a,b)\)</span> jest podzielnych przez <span class="math inline">\(c\)</span> i nie jest podzielnych przez <span class="math inline">\(d\)</span>. W przypadku braku takich liczb, zwróć zero. Stwórz przypadek testowy dla tej metody.</p></li>
-<li><p>Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Metoda zwraca sumę liczb całkowitych od <span class="math inline">\(n\)</span> do <span class="math inline">\(2n\)</span> (włącznie). Stwórz przypadek testowy dla metody.</p></li>
-<li><p>Napisz statyczną metodę, której argumentem są nieujemne liczby całkowite <span class="math inline">\(n\)</span> i <span class="math inline">\(k\)</span>. Metoda zwraca wartość wyrażenia: <span class="math display">\[\binom{n}{k} = \frac{n!}{k!(n-k)!}\]</span></p></li>
-</ol>
-<p>Stwórz przypadek testowy dla metody.</p>
-<ol start="10" type="1">
-<li>Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Metoda zwraca 1 jeśli <span class="math inline">\(n\)</span> jest liczbą składającą się z samych jedynek w zapisie dziesiętnym oraz zwraca 0 w przeciwnym wypadku. Stwórz przypadek testowy dla metody.</li>
+<li><p>Stwórz prostą klasę generyczną <code>Box</code>, która może przechowywać obiekt dowolnego typu. Klasa powinna zawierać metodę <code>set</code>, aby ustawić obiekt, oraz metodę <code>get</code>, aby go pobrać.</p></li>
+<li><p>Napisz generyczną metodę <code>isEqual</code>, która przyjmuje dwa dowolne obiekty tego samego typu i zwraca <code>true</code>, jeśli są one równe, w przeciwnym razie <code>false</code>.</p></li>
+<li><p>Stwórz klasę generyczną <code>Counter&lt;T&gt;</code>, która będzie zliczać ilość dodanych elementów określonego typu. Klasa powinna mieć metodę <code>add(T element)</code>, która dodaje element do wewnętrznej struktury, oraz metodę <code>getCount()</code>, która zwraca liczbę dodanych elementów.</p></li>
+<li><p>Stwórz klasę generyczną <code>Triple&lt;T, U, V&gt;</code>, która może przechowywać trzy obiekty różnych typów. Zaimplementuj metody <code>getFirst()</code>, <code>getSecond()</code> i <code>getThird()</code> do pobierania odpowiednio pierwszego, drugiego i trzeciego elementu.</p></li>
+<li><p>Napisz generyczną metodę <code>max</code>, która przyjmuje tablicę elementów typu porównywalnego (implementujących interfejs <code>Comparable&lt;T&gt;</code>) i zwraca element o najwyższej wartości. Uwzględnij obsługę przypadku pustej tablicy.</p></li>
+<li><p>Zdefiniuj generyczny interfejs <code>Stack&lt;T&gt;</code> z metodami <code>push(T item)</code>, <code>T pop()</code>, <code>T peek()</code> i <code>boolean isEmpty()</code>. Stwórz klasę implementującą ten interfejs, która będzie reprezentować stos przechowujący elementy dowolnego typu.</p></li>
+<li><p>Stwórz klasę generyczną <code>Storage&lt;T&gt;</code>, która przechowuje pojedynczy obiekt dowolnego typu. Klasa powinna mieć metody <code>store(T item)</code>, która zapisuje obiekt, oraz <code>T retrieve()</code>, która zwraca przechowywany obiekt.</p></li>
+<li><p>Napisz generyczną metodę <code>printArray</code>, która przyjmuje tablicę elementów dowolnego typu i wypisuje wszystkie elementy tej tablicy na standardowe wyjście. Metoda powinna być w stanie obsłużyć tablice każdego typu obiektów.</p></li>
+<li><p>Stwórz klasę generyczną <code>Pair</code>, która przechowuje dwie wartości dowolnego typu. Klasa powinna mieć dwie metody: <code>getFirst()</code>, która zwraca pierwszy element pary, i <code>getSecond()</code>, która zwraca drugi element pary.</p></li>
+<li><p>Napisz generyczną metodę <code>swap</code>, która przyjmuje tablicę dowolnego typu oraz dwie liczby całkowite reprezentujące indeksy. Metoda powinna zamienić miejscami elementy tablicy na podanych indeksach.</p></li>
+<li><p>Stwórz generyczną klasę <code>GenericQueue&lt;T&gt;</code>, która implementuje prostą kolejkę. Klasa powinna mieć metody <code>enqueue(T element)</code>, która dodaje element do kolejki, i <code>dequeue()</code>, która usuwa i zwraca element z początku kolejki.</p></li>
 </ol>
 
 
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>Te zadanie nie ma w błędu w formułowaniu. Takich liczb nie ma, jednak pod kątem teoretycznym można zastanowić się które warunki należałoby spełnić i jak je zakodować.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -720,13 +699,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./petle.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pętle</span></span>
+      <a href="./wyjatki.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Wyjątki</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./random.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Generowanie liczb pseudolosowych</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./delegacje.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Delegacje</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
