@@ -1,7 +1,7 @@
 # Wyjątki
 
 
-1. Napisz program, który definiuje metodę `checkAge(int age)`. Metoda ta powinna rzucić wyjątek `IllegalArgumentException` z odpowiednim komunikatem, jeśli podany wiek jest mniejszy niż 18. W głównej metodzie programu (`main`) wywołaj `sprawdzWiek` z różnymi wartościami i obsłuż wyjątek, wyświetlając stosowny komunikat dla użytkownika.
+1. Napisz program, który definiuje metodę `checkAge(int age)`. Metoda ta powinna rzucić wyjątek `IllegalArgumentException` z odpowiednim komunikatem, jeśli podany wiek jest mniejszy niż 18. W głównej metodzie programu (`main`) wywołaj `checkAge` z różnymi wartościami i obsłuż wyjątek, wyświetlając stosowny komunikat dla użytkownika.
 
 2. Napisz program, który prosi użytkownika o wpisanie dwóch liczb, a następnie dzieli pierwszą liczbę przez drugą. Program powinien obsługiwać dwa rodzaje wyjątków: `ArithmeticException` w przypadku dzielenia przez zero i `InputMismatchException`, gdy użytkownik wprowadzi coś innego niż liczby. W obu przypadkach należy wyświetlić stosowny komunikat błędu i poprosić użytkownika o ponowne wprowadzenie danych. Wykorzystaj typ `int`.
 
