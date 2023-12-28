@@ -48,6 +48,9 @@ Zmiany:
 **18.12.2023**
 - dodanie zadań dot. programowania generycznego, kolekcji
 
+**28.12.2023**
+- dodanie zadań dot. programowania generycznego
+
 ---
 nocite: |
   @*

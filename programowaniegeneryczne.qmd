@@ -21,3 +21,42 @@
 10. Napisz generyczną metodę `swap`, która przyjmuje tablicę dowolnego typu oraz dwie liczby całkowite reprezentujące indeksy. Metoda powinna zamienić miejscami elementy tablicy na podanych indeksach.
 
 11. Stwórz generyczną klasę `GenericQueue<T>`, która implementuje prostą kolejkę. Klasa powinna mieć metody `enqueue(T element)`, która dodaje element do kolejki, i `dequeue()`, która usuwa i zwraca element z początku kolejki.
+
+12. Napisz statyczną metodę generyczną `swap`, która przyjmuje tablicę dowolnego typu i dwa indeksy, a następnie zamienia miejscami elementy w tej tablicy pod wskazanymi indeksami. Metoda powinna działać dla tablicy każdego typu. Przykładowe wywołanie metody: `swap(myArray, 0, 2);`, gdzie `myArray` to tablica typu `Integer[]` lub dowolnego innego typu. Zabezpiecz metodę tak, aby nie można było jej wywołać z indeksami spoza zakresu tablicy.
+
+13. Utwórz statyczną metodę generyczną `reverseArray`, która przyjmuje tablicę elementów typu `T` i odwraca kolejność jej elementów. Metoda powinna modyfikować przekazaną tablicę, nie zwracając nowej. Sprawdź działanie metody na tablicach różnych typów, takich jak `Character`, `Boolean` oraz własnych typów obiektowych. Zabezpiecz metodę tak, aby nie można było jej wywołać z tablicą `null`.
+
+14. Napisz statyczną metodę generyczną `minValue`, która przyjmuje tablicę elementów typu generycznego `T`, gdzie `T` rozszerza `Comparable<T>`. Metoda powinna zwracać najmniejszy element z tablicy. Przetestuj tę metodę na tablicach zawierających różne typy porównywalnych obiektów, takie jak `Integer`, `Double`, czy `String`. Zabezpiecz metodę tak, aby nie można było jej wywołać z tablicą o zerowej liczbie elementów. Dodaj klasę 'Person` z polami `name` i `age` i przetestuj metodę `minValue` na tablicy obiektów `Person`.
+
+15. Napisz statyczną metodę generyczną `maxValue`, która przyjmuje tablicę elementów typu generycznego `T`, gdzie `T` rozszerza `Comparable<T>`. Metoda powinna zwracać największy element z tablicy. Upewnij się, że metoda nie akceptuje pustej tablicy (o zerowej liczbie elementów). Przetestuj metodę na tablicach zawierających różne typy porównywalnych obiektów, jak `Integer`, `Float`, czy `String`. Stwórz klasę `Vehicle` z polami `model` i `speed`, implementującą generyczny `Comparable`, i przetestuj metodę `maxValue` na tablicy obiektów `Vehicle`.
+
+16. Utwórz statyczną metodę generyczną `sortAndReturnFirst`, która przyjmuje tablicę elementów typu generycznego `T`, gdzie `T` rozszerza `Comparable<T>`. Metoda powinna sortować tablicę i zwracać jej pierwszy element. Zabezpiecz metodę przed wywołaniem z pustą tablicą (o zerowej liczbie elementów). Przetestuj tę metodę na różnych typach danych, w tym na nowo utworzonej klasie `Book` z polami `title` i `author`. Klasa `Book` powinna implementować generyczny interfejs `Comparable` na podstawie pola `title` zgodnie z porządkiem naturalnym.
+
+17. Napisz statyczną metodę generyczną `printArray`, która przyjmuje jako argument tablicę elementów typu generycznego `T` i drukuje wszystkie elementy tablicy. Przetestuj tę metodę na tablicy typu `Integer` i `Double`. Następnie spróbuj przetestować metodę na tablicy typu prostego, np. `int` lub `double`, i zanotuj wynikające z tego błędy kompilacji. Wyjaśnij, dlaczego Java nie pozwala na użycie typów prostych w kontekście typów generycznych.
+
+18. Utwórz statyczną metodę generyczną `sumElements`, która przyjmuje kolekcję elementów typu generycznego `T` i zwraca ich sumę. Przetestuj tę metodę na kolekcji typu `Integer` oraz `Float`. Następnie spróbuj użyć tej metody z kolekcją typów prostych, np. `int` lub `float`, i zobacz, jakie błędy kompilacji się pojawią. Wykorzystaj to do wyjaśnienia różnicy między typami prostymi a obiektowymi w Javie.
+
+19. Zaprojektuj statyczną metodę generyczną `compareElements`, która przyjmuje dwa argumenty typu generycznego `T` i zwraca wartość `boolean` wskazującą, czy są one równe. Przetestuj metodę na parze obiektów `Integer`, `String` oraz `Character`. Następnie spróbuj przetestować tę samą metodę na typach prostych, takich jak `int` czy `char`, i opisz napotkane problemy związane z próbą użycia typów prostych w generykach.
+
+20. Napisz statyczną metodę generyczną `printObjectInfo`, która przyjmuje argument typu generycznego `T` z górnym ograniczeniem typu `Object`. Metoda powinna drukować klasę obiektu, jego hashcode oraz wynik metody `toString()`. Przetestuj tę metodę na różnych typach obiektów, jak `String`, `Integer`, własnych klasach np. `Car`, `Animal`, gdzie każda klasa ma własne unikalne pola i metody.
+
+22. Utwórz dwie klasy: `Animal` (Zwierzę) i `Dog` (Pies), gdzie `Dog` dziedziczy po `Animal`. Następnie napisz statyczną metodę generyczną `findMax`, która przyjmuje dwa argumenty: `element1` i `element2` typu `extends Animal`. Metoda powinna zwracać element większy według własnie zdefiniowanego kryterium porównania. W implementacji porównaj elementy bazując na wybranym przez siebie atrybucie, na przykład wieku.
+
+23. Zdefiniuj klasy `Car` (Samochód) i `ElectricCar` (Samochód Elektryczny), gdzie `ElectricCar` dziedziczy po `Car`. Napisz statyczną metodę generyczną `compareObjects`, która przyjmuje dwa argumenty: `object1` i `object2` typu `extends Car`. Metoda ma zwracać wartość `true`, jeśli obiekty są tego samego typu, w przeciwnym wypadku `false`. Użyj metody `getClass()` do porównania klas obiektów.
+
+24. Stwórz klasę generyczną `Pair<T>` która przechowuje dwa obiekty tego samego typu. Utwórz dwie klasy: `Animal` (Zwierzę) i `Dog` (Pies), gdzie `Dog` dziedziczy po `Animal`. Następnie napisz statyczną metodę generyczną `findMax`, która przyjmuje `Pair<? extends Animal>`. Metoda powinna zwracać element większy według własnie zdefiniowanego kryterium porównania. 
+
+25. Stwórz klasę generyczną `Triple<T>`, która przechowuje trzy obiekty tego samego typu. Następnie utwórz dwie klasy: `Bird` i `Eagle`, gdzie `Eagle` dziedziczy po `Bird`. Potem napisz statyczną metodę generyczną `findMin`, która przyjmuje `Triple<? extends Bird>`. Ta metoda powinna zwracać element mniejszy na podstawie kryterium porównania zdefiniowanego przez ciebie.
+
+
+26. Stwórz klasę generyczną `Triple<T>`, która przechowuje trzy obiekty tego samego typu. Następnie utwórz dwie klasy: `Bird` i `Eagle`, gdzie `Eagle` dziedziczy po `Bird`. Potem napisz statyczną metodę generyczną `findMin`, która przyjmuje `Triple<? extends Bird>`. Ta metoda powinna zwracać element mniejszy na podstawie kryterium porównania zdefiniowanego przez ciebie.
+
+
+27. Stwórz klasę generyczną `ElementPair<T>`, która przechowuje dwa obiekty tego samego typu. Utwórz dwie klasy: `Shape` i `Circle`, gdzie `Circle` dziedziczy po `Shape`. Następnie napisz statyczną metodę generyczną `findLargest`, która przyjmuje `ElementPair<? extends Shape>`. Metoda powinna zwracać element większy według własnie zdefiniowanego kryterium porównania.
+
+28. Stwórz klasę generyczną `DoubleElement<T>`, która przechowuje dwa obiekty tego samego typu. Utwórz dwie klasy: `Person` i `Student`, gdzie `Student` dziedziczy po `Person`. Następnie napisz statyczną metodę generyczną `findYoungest`, która przyjmuje `DoubleElement<? extends Person>`. Metoda powinna zwracać element mniejszy według własnego kryterium porównania, na przykład wieku.
+
+29. Stwórz klasę generyczną `Pair<T>` która przechowuje dwa obiekty tego samego typu. Utwórz dwie klasy: `Animal` (Zwierzę) i `Dog` (Pies), gdzie `Dog` dziedziczy po `Animal`. Klasa `Dog` ma posiadać prywatne pole `age`, które nie posiada klasa `Animal`. Następnie napisz statyczną metodę generyczną `findMinMaxAge`, która przyjmuje jako argument tablicę obiektów typu `Dog` oraz `Pair<?super Dog> result`. Metoda powinna ma zapisać (jako obiekty typu `Dog`) najmniejszy i najmniejszy (pod kątem wieku) psa z tablicy w drugim argumencie metody. Zrób to bezpośrednio bez używania interfejsów `Comparable` czy `Comparator`.
+
+30. Stwórz klasę generyczną `Pair<T>`, która przechowuje dwa obiekty tego samego typu. Następnie utwórz dwie klasy: `Plant` i `Tree`, gdzie `Tree` dziedziczy po `Plant`. Klasa `Tree` powinna posiadać prywatne pole `height`, którego nie posiada klasa `Plant`. Następnie napisz statyczną metodę generyczną `findMinMaxHeight`, która przyjmuje jako argument tablicę obiektów typu `Tree` oraz `Pair<? super Tree> result`. Metoda powinna zapisać (jako obiekty typu Tree) najniższe i najwyższe (pod kątem wysokości) drzewo z tablicy w drugim argumencie metody. Wykorzystaj też generyczny interfejs `Comparable`.
+
