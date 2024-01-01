@@ -1,5 +1,21 @@
 # Kolekcje
 
+## Interfejs `Collection`
+
+1. Napisz metodę `printUnique(Collection items)`, która przyjmuje generyczny interfejs Collection jako argument i wyświetla na ekranie każdy unikalny element z tej kolekcji dokładnie raz.
+
+2. Stwórz funkcję `countOccurrences(Collection items, Object element)`, która zwraca liczbę wystąpień danego elementu w podanej kolekcji. Funkcja powinna działać dla dowolnego typu obiektów przechowywanych w kolekcji.
+
+3. Zaimplementuj metodę `removeEveryOther(Collection items)`, która usuwa co drugi element z przekazanej kolekcji. Metoda powinna modyfikować oryginalną kolekcję, nie tworząc jej kopii.
+
+## Interfejs `Iterable`
+
+1. Napisz metodę `reversePrint(Iterable items)`, która przyjmuje generyczny interfejs Iterable jako argument i wyświetla na ekranie elementy tej sekwencji w odwrotnej kolejności, niż zostały one przekazane.
+
+2. Stwórz funkcję `findMax(Iterable numbers)`, która przeszukuje kolekcję typu Iterable zawierającą liczby i zwraca największą liczbę. Zakładamy, że elementy kolekcji są obiektami klasy `Comparable`.
+
+3. Zaimplementuj metodę `countElements(Iterable items, Object element)`, która zlicza ile razy dany element pojawił się w kolekcji implementującej interfejs Iterable. Metoda powinna porównywać elementy przy użyciu metody `equals`.
+
 ## `ArrayList`
 
 1. Stwórz metodę `mergeLists`, która przyjmuje dwie generyczne `ArrayList<T>` i zwraca nową `ArrayList<T>`, będącą połączeniem elementów z obu list. Upewnij się, że kolejność elementów z oryginalnych list jest zachowana w wynikowej liście.
@@ -7,6 +23,72 @@
 2. Napisz funkcję `removeDuplicates`, która przyjmuje `ArrayList<T>` i zwraca nową listę, z której usunięto wszystkie duplikaty, pozostawiając tylko unikalne elementy. Kolejność zachowanych elementów powinna odpowiadać ich pierwszemu wystąpieniu na oryginalnej liście.
 
 3. Zaimplementuj metodę `countOccurrences`, która przyjmuje `ArrayList<T>` i element typu `T`, a następnie zwraca liczbę wystąpień tego elementu w podanej liście.
+
+## Lista powiązana `LinkedList`
+
+1. Napisz metodę `isPalindrome`, która przyjmuje generyczną listę powiązaną (`LinkedList<T> list`) i zwraca `true`, jeśli lista jest palindromem, a `false` w przeciwnym przypadku. Lista jest palindromem, gdy czytana od przodu i od tyłu jest taka sama. Metoda powinna być jak najbardziej wydajna.
+
+2. Napisz metodę `findCommonElements`, która przyjmuje dwie generyczne listy powiązane (`LinkedList<T> list1` i `LinkedList<T> list2`) i zwraca nową listę zawierającą elementy, które występują zarówno w `list1`, jak i `list2`. Elementy w zwróconej liście powinny być unikalne i nie muszą być posortowane. Metoda nie powinna modyfikować wejściowych list.
+
+## Zbiór bazujący na tablicy skrótów `HashSet`
+
+1. Napisz metodę `findUniqueElements`, która przyjmuje generyczną listę (`List<T> list`) i zwraca `HashSet<T>`, który zawiera tylko unikalne elementy z tej listy. Metoda powinna skutecznie eliminować duplikaty.
+
+2. Napisz metodę `hasCommonElements`, która przyjmuje dwa generyczne zbiory (`HashSet<T> set1` i `HashSet<T> set2`) i zwraca `true`, jeśli oba zbiory mają przynajmniej jeden wspólny element, oraz `false` w przeciwnym przypadku.
+
+3. Napisz metodę `unionSets`, która przyjmuje dwie generyczne kolekcje typu `HashSet<T>` (`HashSet<T> set1` i `HashSet<T> set2`) i zwraca nowy zbiór (`HashSet<T>`), który jest zbiorem unii obu wejściowych zbiorów. Wynikowy zbiór powinien zawierać wszystkie elementy, które występują w `set1`, `set2`, lub w obu tych zbiorach.
+
+## `TreeSet`
+
+1. Napisz metodę `findElementsInRange`, która przyjmuje `TreeSet<T>` oraz dwie wartości graniczne `T lowerBound` i `T upperBound`. Metoda powinna zwracać `TreeSet<T>`, który zawiera wszystkie elementy z pierwotnego zbioru, które mieszczą się w przedziale między `lowerBound` a `upperBound` (włącznie z obiema granicami).
+
+2. Napisz metodę `removeMinMax`, która przyjmuje `TreeSet<T>` i modyfikuje go przez usunięcie najmniejszego i największego elementu. Metoda powinna zwracać parę (np. klasę `Pair` lub dwuelementową tablicę/listę) zawierającą usunięte wartości. Jeśli zbiór ma mniej niż dwa elementy, metoda powinna zwrócić odpowiednie wartości nullowe lub wskazywać na błąd.
+
+3. Napisz metodę `findClosestElement`, która przyjmuje `TreeSet<T>` i wartość `T target`. Metoda powinna zwracać element zbioru, który jest najbliżej wartości `target`. W przypadku, gdy dwa elementy są równie blisko, metoda może zwrócić dowolny z nich. Zakładamy, że typ `T` pozwala na porównywanie wartości (np. poprzez implementację interfejsu `Comparable<T>`).
+
+## `Queue`
+
+1. Napisz metodę `reverseQueue`, która przyjmuje generyczną kolejkę (`Queue<T> queue`) i odwraca kolejność jej elementów. Metoda powinna wykonywać operacje odwracania w miejscu, nie używając dodatkowych kolekcji.
+
+2. Napisz metodę `simulateSupermarketQueue`, która przyjmuje generyczną kolejkę (`Queue<Customer> customers`) i dodatnią liczbę całkowitą `n`, reprezentujący liczbę dostępnych kas. Klasa `Customer` zawiera czas obsługi klienta. Metoda powinna zwrócić całkowity czas potrzebny do obsłużenia wszystkich klientów w kolejce, przy założeniu, że każda kasa obsługuje jednego klienta na raz i wybiera następnego klienta z przodu kolejki, gdy tylko zostanie zwolniona.
+
+## `Deque`
+
+1. Napisz metodę `isSymmetric`, która przyjmuje generyczny Deque (`Deque<T> deque`) i zwraca `true`, jeśli elementy w Deque są ułożone symetrycznie (tj. kolejność elementów jest taka sama, gdy czytamy je od przodu do tyłu i od tyłu do przodu). W przeciwnym przypadku metoda zwraca `false`.
+
+2. Napisz metodę `removeEverySecondElement`, która przyjmuje generyczny Deque (`Deque<T> deque`) i usuwa z niego co drugi element, zaczynając od drugiego elementu w kolejności, w której elementy zostały dodane. Metoda powinna modyfikować oryginalny Deque, nie zwracając nic.
+
+3. Napisz metodę `swapEnds`, która przyjmuje generyczny Deque (`Deque<T> deque`) i zamienia miejscami pierwszy element z ostatnim. Jeśli Deque zawiera mniej niż dwa elementy, metoda nie powinna nic robić. Metoda powinna modyfikować oryginalny Deque, nie zwracając nic.
+
+## Kolejka priorytetowa `PriorityQueue`
+
+1. Napisz metodę `mergePriorityQueues`, która przyjmuje dwie generyczne PriorityQueues (`PriorityQueue<T> queue1` i `PriorityQueue<T> queue2`). Metoda powinna zwrócić nową PriorityQueue zawierającą wszystkie elementy z obu wejściowych kolejek. Zakładamy, że elementy w obu kolejnych mogą być porównywane między sobą.
+
+## `Map`
+
+1. Napisz metodę `reverseMap`, która przyjmuje generyczną mapę (`Map<K, V> map`) i zwraca nową mapę (`Map<V, K>`), gdzie każdy klucz staje się wartością, a każda wartość kluczem. Jeśli oryginalna mapa zawiera powtarzające się wartości, zachowaj tylko ostatnią parę klucz-wartość odwracając mapę.
+
+2. Napisz metodę `findKeysWithMaxValue`, która przyjmuje generyczną mapę (`Map<K, V> map`), gdzie wartości są porównywalne (implementują `Comparable<V>`). Metoda powinna zwracać listę wszystkich kluczy, które są powiązane z największą wartością w mapie.
+
+3. Napisz metodę `groupByValue`, która przyjmuje generyczną mapę (`Map<K, V> map`) i zwraca nową mapę (`Map<V, List<K>>`), gdzie każda wartość z oryginalnej mapy staje się kluczem w nowej mapie, a jej wartością jest lista kluczy, które były z nią powiązane w oryginalnej mapie.
+
+## `HashMap`
+
+1. Napisz metodę `countValueOccurrences`, która przyjmuje generyczną HashMap (`HashMap<K, V> map`) i zwraca nową HashMap (`HashMap<V, Integer>`), gdzie każdy klucz to wartość z oryginalnej mapy, a wartość to liczba wystąpień tej wartości w oryginalnej mapie.
+
+2. Napisz metodę `swapKeysAndValues`, która przyjmuje generyczną HashMap (`HashMap<K, V> map`) i zwraca nową HashMap (`HashMap<V, K>`), gdzie każdy klucz z oryginalnej mapy staje się wartością, a każda wartość kluczem. Zakładamy, że wszystkie wartości w oryginalnej mapie są unikalne.
+
+3. Napisz metodę `aggregateValuesByKey`, która przyjmuje generyczną HashMap (`HashMap<K, Integer> map`) oraz klucz (`K key`) i wartość (`Integer value`). Metoda powinna dodać wartość do obecnej wartości skojarzonej z kluczem. Jeśli klucz nie istnieje w mapie, powinien zostać dodany z podaną wartością. Metoda nie zwraca nic, modyfikując oryginalną mapę.
+
+4. Napisz metodę `compareMaps`, która przyjmuje dwie generyczne HashMap (`HashMap<K, V> map1` i `HashMap<K, V> map2`) i zwraca `true`, jeśli obie mapy mają dokładnie te same pary klucz-wartość, oraz `false` w przeciwnym przypadku. Metoda powinna porównywać zarówno klucze, jak i wartości.
+
+## `TreeMap`
+
+1. Napisz metodę `subMapInRange`, która przyjmuje generyczną TreeMap (`TreeMap<K, V> map`), a także dwie wartości kluczy `K startKey` i `K endKey`. Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, których klucze mieszczą się w zakresie od `startKey` do `endKey`, włącznie.
+
+2. Napisz metodę `reverseOrderMap`, która przyjmuje generyczną TreeMap (`TreeMap<K, V> map`). Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, ale z odwróconą kolejnością kluczy.
+
+3. Napisz metodę `calculateAverageValue`, która przyjmuje generyczną TreeMap (`TreeMap<K, Double> map`). Metoda powinna obliczać i zwracać średnią wartość wszystkich wartości (typu Double) przechowywanych w mapie. Zakładamy, że mapa nie jest pusta.
 
 ## `Vector`
 
