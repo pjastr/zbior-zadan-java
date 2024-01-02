@@ -16,7 +16,7 @@
 
 3. Zaimplementuj metodę `countElements(Iterable items, Object element)`, która zlicza ile razy dany element pojawił się w kolekcji implementującej interfejs Iterable. Metoda powinna porównywać elementy przy użyciu metody `equals`.
 
-## `ArrayList`
+## Lista tablicowa `ArrayList`
 
 1. Stwórz metodę `mergeLists`, która przyjmuje dwie generyczne `ArrayList<T>` i zwraca nową `ArrayList<T>`, będącą połączeniem elementów z obu list. Upewnij się, że kolejność elementów z oryginalnych list jest zachowana w wynikowej liście.
 
