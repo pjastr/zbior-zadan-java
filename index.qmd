@@ -54,6 +54,9 @@ Zmiany:
 **1.01.2024**
 - poprawki i uzupełnienia w różnych działach
 
+**3.01.2024**
+- poprawki i uzupełnienia w różnych działach
+
 ---
 nocite: |
   @*
