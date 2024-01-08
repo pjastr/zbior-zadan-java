@@ -296,17 +296,6 @@
     ]
   },
   {
-    "objectID": "kolekcje.html#interfejs-collection",
-    "href": "kolekcje.html#interfejs-collection",
-    "title": "26  Kolekcje",
-    "section": "",
-    "text": "Napisz statyczną metodę printUnique(Collection&lt;T&gt; items), która przyjmuje generyczny interfejs Collection jako argument i wyświetla na ekranie każdy unikalny element z tej kolekcji dokładnie raz.\nStwórz statyczną metodę countOccurrences(Collection&lt;T&gt; items, T element), która zwraca liczbę wystąpień danego elementu w podanej kolekcji. Funkcja powinna działać dla dowolnego typu obiektów przechowywanych w kolekcji.\nZaimplementuj metodę removeEveryOther(Collection&lt;T&gt; items), która usuwa co drugi element z przekazanej kolekcji. Metoda powinna modyfikować oryginalną kolekcję, nie tworząc jej kopii.",
-    "crumbs": [
-      "Programowanie obiektowe",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Kolekcje</span>"
-    ]
-  },
-  {
     "objectID": "kolekcje.html#interfejs-iterable",
     "href": "kolekcje.html#interfejs-iterable",
     "title": "26  Kolekcje",
@@ -421,7 +410,7 @@
     "href": "kolekcje.html#treemap",
     "title": "26  Kolekcje",
     "section": "26.12 TreeMap",
-    "text": "26.12 TreeMap\n\nNapisz metodę subMapInRange, która przyjmuje generyczną TreeMap (TreeMap&lt;K, V&gt; map), a także dwie wartości kluczy K startKey i K endKey. Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, których klucze mieszczą się w zakresie od startKey do endKey, włącznie.\nNapisz metodę reverseOrderMap, która przyjmuje generyczną TreeMap (TreeMap&lt;K, V&gt; map). Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, ale z odwróconą kolejnością kluczy.\nNapisz metodę calculateAverageValue, która przyjmuje generyczną TreeMap (TreeMap&lt;K, Double&gt; map). Metoda powinna obliczać i zwracać średnią wartość wszystkich wartości (typu Double) przechowywanych w mapie. Zakładamy, że mapa nie jest pusta.",
+    "text": "26.12 TreeMap\nL1. Napisz metodę subMapInRange, która przyjmuje generyczną TreeMap (TreeMap&lt;K, V&gt; map), a także dwie wartości kluczy K startKey i K endKey. Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, których klucze mieszczą się w zakresie od startKey do endKey, włącznie.\nL2. Napisz metodę reverseOrderMap, która przyjmuje generyczną TreeMap (TreeMap&lt;K, V&gt; map). Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, ale z odwróconą kolejnością kluczy.\nL3. Napisz metodę calculateAverageValue, która przyjmuje generyczną TreeMap (TreeMap&lt;K, Double&gt; map). Metoda powinna obliczać i zwracać średnią wartość wszystkich wartości (typu Double) przechowywanych w mapie. Zakładamy, że mapa nie jest pusta.",
     "crumbs": [
       "Programowanie obiektowe",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>Kolekcje</span>"
@@ -432,7 +421,7 @@
     "href": "kolekcje.html#vector",
     "title": "26  Kolekcje",
     "section": "26.13 Vector",
-    "text": "26.13 Vector\n\nStwórz funkcję concatenateVectors, która przyjmuje dwa obiekty Vector&lt;T&gt; i zwraca nowy Vector&lt;T&gt;, zawierający wszystkie elementy z pierwszego wektora, a po nich wszystkie elementy z drugiego wektora.\nNapisz metodę reverseVector, która przyjmuje obiekt Vector&lt;T&gt; i zwraca nowy Vector&lt;T&gt;, w którym kolejność elementów jest odwrócona względem oryginalnego wektora.\nZaimplementuj funkcję filterVector, która przyjmuje Vector&lt;T&gt; i interfejs funkcyjny Predicate&lt;T&gt;. Funkcja powinna zwracać nowy Vector&lt;T&gt;, zawierający tylko te elementy z oryginalnego wektora, które spełniają warunek zdefiniowany przez Predicate&lt;T&gt;.",
+    "text": "26.13 Vector\nM1. Stwórz funkcję concatenateVectors, która przyjmuje dwa obiekty Vector&lt;T&gt; i zwraca nowy Vector&lt;T&gt;, zawierający wszystkie elementy z pierwszego wektora, a po nich wszystkie elementy z drugiego wektora.\nM2. Napisz metodę reverseVector, która przyjmuje obiekt Vector&lt;T&gt; i zwraca nowy Vector&lt;T&gt;, w którym kolejność elementów jest odwrócona względem oryginalnego wektora.\nM3. Zaimplementuj funkcję filterVector, która przyjmuje Vector&lt;T&gt; i interfejs funkcyjny Predicate&lt;T&gt;. Funkcja powinna zwracać nowy Vector&lt;T&gt;, zawierający tylko te elementy z oryginalnego wektora, które spełniają warunek zdefiniowany przez Predicate&lt;T&gt;.",
     "crumbs": [
       "Programowanie obiektowe",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>Kolekcje</span>"

@@ -84,16 +84,16 @@ K4.  Napisz metodę `compareMaps`, która przyjmuje dwie generyczne HashMap (`Ha
 
 ## `TreeMap`
 
-1.  Napisz metodę `subMapInRange`, która przyjmuje generyczną TreeMap (`TreeMap<K, V> map`), a także dwie wartości kluczy `K startKey` i `K endKey`. Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, których klucze mieszczą się w zakresie od `startKey` do `endKey`, włącznie.
+L1.  Napisz metodę `subMapInRange`, która przyjmuje generyczną TreeMap (`TreeMap<K, V> map`), a także dwie wartości kluczy `K startKey` i `K endKey`. Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, których klucze mieszczą się w zakresie od `startKey` do `endKey`, włącznie.
 
-2.  Napisz metodę `reverseOrderMap`, która przyjmuje generyczną TreeMap (`TreeMap<K, V> map`). Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, ale z odwróconą kolejnością kluczy.
+L2.  Napisz metodę `reverseOrderMap`, która przyjmuje generyczną TreeMap (`TreeMap<K, V> map`). Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, ale z odwróconą kolejnością kluczy.
 
-3.  Napisz metodę `calculateAverageValue`, która przyjmuje generyczną TreeMap (`TreeMap<K, Double> map`). Metoda powinna obliczać i zwracać średnią wartość wszystkich wartości (typu Double) przechowywanych w mapie. Zakładamy, że mapa nie jest pusta.
+L3.  Napisz metodę `calculateAverageValue`, która przyjmuje generyczną TreeMap (`TreeMap<K, Double> map`). Metoda powinna obliczać i zwracać średnią wartość wszystkich wartości (typu Double) przechowywanych w mapie. Zakładamy, że mapa nie jest pusta.
 
 ## `Vector`
 
-1.  Stwórz funkcję `concatenateVectors`, która przyjmuje dwa obiekty `Vector<T>` i zwraca nowy `Vector<T>`, zawierający wszystkie elementy z pierwszego wektora, a po nich wszystkie elementy z drugiego wektora.
+M1.  Stwórz funkcję `concatenateVectors`, która przyjmuje dwa obiekty `Vector<T>` i zwraca nowy `Vector<T>`, zawierający wszystkie elementy z pierwszego wektora, a po nich wszystkie elementy z drugiego wektora.
 
-2.  Napisz metodę `reverseVector`, która przyjmuje obiekt `Vector<T>` i zwraca nowy `Vector<T>`, w którym kolejność elementów jest odwrócona względem oryginalnego wektora.
+M2.  Napisz metodę `reverseVector`, która przyjmuje obiekt `Vector<T>` i zwraca nowy `Vector<T>`, w którym kolejność elementów jest odwrócona względem oryginalnego wektora.
 
-3.  Zaimplementuj funkcję `filterVector`, która przyjmuje `Vector<T>` i interfejs funkcyjny `Predicate<T>`. Funkcja powinna zwracać nowy `Vector<T>`, zawierający tylko te elementy z oryginalnego wektora, które spełniają warunek zdefiniowany przez `Predicate<T>`.
+M3.  Zaimplementuj funkcję `filterVector`, która przyjmuje `Vector<T>` i interfejs funkcyjny `Predicate<T>`. Funkcja powinna zwracać nowy `Vector<T>`, zawierający tylko te elementy z oryginalnego wektora, które spełniają warunek zdefiniowany przez `Predicate<T>`.
