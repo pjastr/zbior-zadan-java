@@ -367,88 +367,66 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="interfejs-collection" class="level2" data-number="26.1">
 <h2 data-number="26.1" class="anchored" data-anchor-id="interfejs-collection"><span class="header-section-number">26.1</span> Interfejs <code>Collection</code></h2>
-<ol type="1">
-<li><p>Napisz statyczną metodę <code>printUnique(Collection&lt;T&gt; items)</code>, która przyjmuje generyczny interfejs Collection jako argument i wyświetla na ekranie każdy unikalny element z tej kolekcji dokładnie raz.</p></li>
-<li><p>Stwórz statyczną metodę <code>countOccurrences(Collection&lt;T&gt; items, T element)</code>, która zwraca liczbę wystąpień danego elementu w podanej kolekcji. Funkcja powinna działać dla dowolnego typu obiektów przechowywanych w kolekcji.</p></li>
-<li><p>Zaimplementuj metodę <code>removeEveryOther(Collection&lt;T&gt; items)</code>, która usuwa co drugi element z przekazanej kolekcji. Metoda powinna modyfikować oryginalną kolekcję, nie tworząc jej kopii.</p></li>
-</ol>
+<p>A1. Napisz statyczną metodę <code>printUnique(Collection&lt;T&gt; items)</code>, która przyjmuje generyczny interfejs Collection jako argument i wyświetla na ekranie każdy unikalny element z tej kolekcji dokładnie raz.</p>
+<p>A2. Stwórz statyczną metodę <code>countOccurrences(Collection&lt;T&gt; items, T element)</code>, która zwraca liczbę wystąpień danego elementu w podanej kolekcji. Funkcja powinna działać dla dowolnego typu obiektów przechowywanych w kolekcji.</p>
+<p>A3. Zaimplementuj metodę <code>removeEveryOther(Collection&lt;T&gt; items)</code>, która usuwa co drugi element z przekazanej kolekcji. Metoda powinna modyfikować oryginalną kolekcję, nie tworząc jej kopii.</p>
 </section>
 <section id="interfejs-iterable" class="level2" data-number="26.2">
 <h2 data-number="26.2" class="anchored" data-anchor-id="interfejs-iterable"><span class="header-section-number">26.2</span> Interfejs <code>Iterable</code></h2>
-<ol type="1">
-<li><p>Napisz metodę <code>reversePrint(Iterable items)</code>, która przyjmuje generyczny interfejs Iterable jako argument i wyświetla na ekranie elementy tej sekwencji w odwrotnej kolejności, niż zostały one przekazane.</p></li>
-<li><p>Stwórz funkcję <code>findMax(Iterable numbers)</code>, która przeszukuje kolekcję typu Iterable zawierającą liczby i zwraca największą liczbę. Zakładamy, że elementy kolekcji są obiektami klasy <code>Comparable</code>.</p></li>
-<li><p>Zaimplementuj metodę <code>countElements(Iterable items, Object element)</code>, która zlicza ile razy dany element pojawił się w kolekcji implementującej interfejs Iterable. Metoda powinna porównywać elementy przy użyciu metody <code>equals</code>.</p></li>
-</ol>
+<p>B1. Napisz metodę <code>reversePrint(Iterable items)</code>, która przyjmuje generyczny interfejs Iterable jako argument i wyświetla na ekranie elementy tej sekwencji w odwrotnej kolejności, niż zostały one przekazane.</p>
+<p>B2. Stwórz funkcję <code>findMax(Iterable numbers)</code>, która przeszukuje kolekcję typu Iterable zawierającą liczby i zwraca największą liczbę. Zakładamy, że elementy kolekcji są obiektami klasy <code>Comparable</code>.</p>
+<p>B3. Zaimplementuj metodę <code>countElements(Iterable items, Object element)</code>, która zlicza ile razy dany element pojawił się w kolekcji implementującej interfejs Iterable. Metoda powinna porównywać elementy przy użyciu metody <code>equals</code>.</p>
 </section>
 <section id="lista-tablicowa-arraylist" class="level2" data-number="26.3">
 <h2 data-number="26.3" class="anchored" data-anchor-id="lista-tablicowa-arraylist"><span class="header-section-number">26.3</span> Lista tablicowa <code>ArrayList</code></h2>
-<ol type="1">
-<li><p>Stwórz metodę <code>mergeLists</code>, która przyjmuje dwie generyczne <code>ArrayList&lt;T&gt;</code> i zwraca nową <code>ArrayList&lt;T&gt;</code>, będącą połączeniem elementów z obu list. Upewnij się, że kolejność elementów z oryginalnych list jest zachowana w wynikowej liście.</p></li>
-<li><p>Napisz funkcję <code>removeDuplicates</code>, która przyjmuje <code>ArrayList&lt;T&gt;</code> i zwraca nową listę, z której usunięto wszystkie duplikaty, pozostawiając tylko unikalne elementy. Kolejność zachowanych elementów powinna odpowiadać ich pierwszemu wystąpieniu na oryginalnej liście.</p></li>
-<li><p>Zaimplementuj metodę <code>countOccurrences</code>, która przyjmuje <code>ArrayList&lt;T&gt;</code> i element typu <code>T</code>, a następnie zwraca liczbę wystąpień tego elementu w podanej liście.</p></li>
-</ol>
+<p>C1. Stwórz metodę <code>mergeLists</code>, która przyjmuje dwie generyczne <code>ArrayList&lt;T&gt;</code> i zwraca nową <code>ArrayList&lt;T&gt;</code>, będącą połączeniem elementów z obu list. Upewnij się, że kolejność elementów z oryginalnych list jest zachowana w wynikowej liście.</p>
+<p>C2. Napisz funkcję <code>removeDuplicates</code>, która przyjmuje <code>ArrayList&lt;T&gt;</code> i zwraca nową listę, z której usunięto wszystkie duplikaty, pozostawiając tylko unikalne elementy. Kolejność zachowanych elementów powinna odpowiadać ich pierwszemu wystąpieniu na oryginalnej liście.</p>
+<p>C3. Zaimplementuj metodę <code>countOccurrences</code>, która przyjmuje <code>ArrayList&lt;T&gt;</code> i element typu <code>T</code>, a następnie zwraca liczbę wystąpień tego elementu w podanej liście.</p>
 </section>
 <section id="lista-powiązana-linkedlist" class="level2" data-number="26.4">
 <h2 data-number="26.4" class="anchored" data-anchor-id="lista-powiązana-linkedlist"><span class="header-section-number">26.4</span> Lista powiązana <code>LinkedList</code></h2>
-<ol type="1">
-<li><p>Napisz metodę <code>isPalindrome</code>, która przyjmuje generyczną listę powiązaną (<code>LinkedList&lt;T&gt; list</code>) i zwraca <code>true</code>, jeśli lista jest palindromem, a <code>false</code> w przeciwnym przypadku. Lista jest palindromem, gdy czytana od przodu i od tyłu jest taka sama. Metoda powinna być jak najbardziej wydajna.</p></li>
-<li><p>Napisz metodę <code>findCommonElements</code>, która przyjmuje dwie generyczne listy powiązane (<code>LinkedList&lt;T&gt; list1</code> i <code>LinkedList&lt;T&gt; list2</code>) i zwraca nową listę zawierającą elementy, które występują zarówno w <code>list1</code>, jak i <code>list2</code>. Elementy w zwróconej liście powinny być unikalne i nie muszą być posortowane. Metoda nie powinna modyfikować wejściowych list.</p></li>
-</ol>
+<p>D1. Napisz metodę <code>isPalindrome</code>, która przyjmuje generyczną listę powiązaną (<code>LinkedList&lt;T&gt; list</code>) i zwraca <code>true</code>, jeśli lista jest palindromem, a <code>false</code> w przeciwnym przypadku. Lista jest palindromem, gdy czytana od przodu i od tyłu jest taka sama. Metoda powinna być jak najbardziej wydajna.</p>
+<p>D2. Napisz metodę <code>findCommonElements</code>, która przyjmuje dwie generyczne listy powiązane (<code>LinkedList&lt;T&gt; list1</code> i <code>LinkedList&lt;T&gt; list2</code>) i zwraca nową listę zawierającą elementy, które występują zarówno w <code>list1</code>, jak i <code>list2</code>. Elementy w zwróconej liście powinny być unikalne i nie muszą być posortowane. Metoda nie powinna modyfikować wejściowych list.</p>
 </section>
 <section id="zbiór-bazujący-na-tablicy-skrótów-hashset" class="level2" data-number="26.5">
 <h2 data-number="26.5" class="anchored" data-anchor-id="zbiór-bazujący-na-tablicy-skrótów-hashset"><span class="header-section-number">26.5</span> Zbiór bazujący na tablicy skrótów <code>HashSet</code></h2>
-<ol type="1">
-<li><p>Napisz metodę <code>findUniqueElements</code>, która przyjmuje generyczną listę (<code>List&lt;T&gt; list</code>) i zwraca <code>HashSet&lt;T&gt;</code>, który zawiera tylko unikalne elementy z tej listy. Metoda powinna skutecznie eliminować duplikaty.</p></li>
-<li><p>Napisz metodę <code>hasCommonElements</code>, która przyjmuje dwa generyczne zbiory (<code>HashSet&lt;T&gt; set1</code> i <code>HashSet&lt;T&gt; set2</code>) i zwraca <code>true</code>, jeśli oba zbiory mają przynajmniej jeden wspólny element, oraz <code>false</code> w przeciwnym przypadku.</p></li>
-<li><p>Napisz metodę <code>unionSets</code>, która przyjmuje dwie generyczne kolekcje typu <code>HashSet&lt;T&gt;</code> (<code>HashSet&lt;T&gt; set1</code> i <code>HashSet&lt;T&gt; set2</code>) i zwraca nowy zbiór (<code>HashSet&lt;T&gt;</code>), który jest zbiorem unii obu wejściowych zbiorów. Wynikowy zbiór powinien zawierać wszystkie elementy, które występują w <code>set1</code>, <code>set2</code>, lub w obu tych zbiorach.</p></li>
-</ol>
+<p>E1. Napisz metodę <code>findUniqueElements</code>, która przyjmuje generyczną listę (<code>List&lt;T&gt; list</code>) i zwraca <code>HashSet&lt;T&gt;</code>, który zawiera tylko unikalne elementy z tej listy. Metoda powinna skutecznie eliminować duplikaty.</p>
+<p>E2. Napisz metodę <code>hasCommonElements</code>, która przyjmuje dwa generyczne zbiory (<code>HashSet&lt;T&gt; set1</code> i <code>HashSet&lt;T&gt; set2</code>) i zwraca <code>true</code>, jeśli oba zbiory mają przynajmniej jeden wspólny element, oraz <code>false</code> w przeciwnym przypadku.</p>
+<p>E3. Napisz metodę <code>unionSets</code>, która przyjmuje dwie generyczne kolekcje typu <code>HashSet&lt;T&gt;</code> (<code>HashSet&lt;T&gt; set1</code> i <code>HashSet&lt;T&gt; set2</code>) i zwraca nowy zbiór (<code>HashSet&lt;T&gt;</code>), który jest zbiorem unii obu wejściowych zbiorów. Wynikowy zbiór powinien zawierać wszystkie elementy, które występują w <code>set1</code>, <code>set2</code>, lub w obu tych zbiorach.</p>
 </section>
 <section id="treeset" class="level2" data-number="26.6">
 <h2 data-number="26.6" class="anchored" data-anchor-id="treeset"><span class="header-section-number">26.6</span> <code>TreeSet</code></h2>
-<ol type="1">
-<li><p>Napisz metodę <code>findElementsInRange</code>, która przyjmuje <code>TreeSet&lt;T&gt;</code> oraz dwie wartości graniczne <code>T lowerBound</code> i <code>T upperBound</code>. Metoda powinna zwracać <code>TreeSet&lt;T&gt;</code>, który zawiera wszystkie elementy z pierwotnego zbioru, które mieszczą się w przedziale między <code>lowerBound</code> a <code>upperBound</code> (włącznie z obiema granicami).</p></li>
-<li><p>Napisz metodę <code>removeMinMax</code>, która przyjmuje <code>TreeSet&lt;T&gt;</code> i modyfikuje go przez usunięcie najmniejszego i największego elementu. Metoda powinna zwracać parę (np. klasę <code>Pair</code> lub dwuelementową tablicę/listę) zawierającą usunięte wartości. Jeśli zbiór ma mniej niż dwa elementy, metoda powinna zwrócić odpowiednie wartości nullowe lub wskazywać na błąd.</p></li>
-<li><p>Napisz metodę <code>findClosestElement</code>, która przyjmuje <code>TreeSet&lt;T&gt;</code> i wartość <code>T target</code>. Metoda powinna zwracać element zbioru, który jest najbliżej wartości <code>target</code>. W przypadku, gdy dwa elementy są równie blisko, metoda może zwrócić dowolny z nich. Zakładamy, że typ <code>T</code> pozwala na porównywanie wartości (np. poprzez implementację interfejsu <code>Comparable&lt;T&gt;</code>).</p></li>
-</ol>
+<p>F1. Napisz metodę <code>findElementsInRange</code>, która przyjmuje <code>TreeSet&lt;T&gt;</code> oraz dwie wartości graniczne <code>T lowerBound</code> i <code>T upperBound</code>. Metoda powinna zwracać <code>TreeSet&lt;T&gt;</code>, który zawiera wszystkie elementy z pierwotnego zbioru, które mieszczą się w przedziale między <code>lowerBound</code> a <code>upperBound</code> (włącznie z obiema granicami).</p>
+<p>F2. Napisz metodę <code>removeMinMax</code>, która przyjmuje <code>TreeSet&lt;T&gt;</code> i modyfikuje go przez usunięcie najmniejszego i największego elementu. Metoda powinna zwracać parę (np. klasę <code>Pair</code> lub dwuelementową tablicę/listę) zawierającą usunięte wartości. Jeśli zbiór ma mniej niż dwa elementy, metoda powinna zwrócić odpowiednie wartości nullowe lub wskazywać na błąd.</p>
+<p>F3. Napisz metodę <code>findClosestElement</code>, która przyjmuje <code>TreeSet&lt;T&gt;</code> i wartość <code>T target</code>. Metoda powinna zwracać element zbioru, który jest najbliżej wartości <code>target</code>. W przypadku, gdy dwa elementy są równie blisko, metoda może zwrócić dowolny z nich. Zakładamy, że typ <code>T</code> pozwala na porównywanie wartości (np. poprzez implementację interfejsu <code>Comparable&lt;T&gt;</code>).</p>
 </section>
 <section id="queue" class="level2" data-number="26.7">
 <h2 data-number="26.7" class="anchored" data-anchor-id="queue"><span class="header-section-number">26.7</span> <code>Queue</code></h2>
-<ol type="1">
-<li><p>Napisz metodę <code>reverseQueue</code>, która przyjmuje generyczną kolejkę (<code>Queue&lt;T&gt; queue</code>) i odwraca kolejność jej elementów. Metoda powinna wykonywać operacje odwracania w miejscu, nie używając dodatkowych kolekcji.</p></li>
-<li><p>Napisz metodę <code>simulateSupermarketQueue</code>, która przyjmuje generyczną kolejkę (<code>Queue&lt;Customer&gt; customers</code>) i dodatnią liczbę całkowitą <code>n</code>, reprezentujący liczbę dostępnych kas. Klasa <code>Customer</code> zawiera czas obsługi klienta. Metoda powinna zwrócić całkowity czas potrzebny do obsłużenia wszystkich klientów w kolejce, przy założeniu, że każda kasa obsługuje jednego klienta na raz i wybiera następnego klienta z przodu kolejki, gdy tylko zostanie zwolniona.</p></li>
-</ol>
+<p>G1. Napisz metodę <code>reverseQueue</code>, która przyjmuje generyczną kolejkę (<code>Queue&lt;T&gt; queue</code>) i odwraca kolejność jej elementów. Metoda powinna wykonywać operacje odwracania w miejscu, nie używając dodatkowych kolekcji.</p>
+<p>G2. Napisz metodę <code>simulateSupermarketQueue</code>, która przyjmuje generyczną kolejkę (<code>Queue&lt;Customer&gt; customers</code>) i dodatnią liczbę całkowitą <code>n</code>, reprezentujący liczbę dostępnych kas. Klasa <code>Customer</code> zawiera czas obsługi klienta. Metoda powinna zwrócić całkowity czas potrzebny do obsłużenia wszystkich klientów w kolejce, przy założeniu, że każda kasa obsługuje jednego klienta na raz i wybiera następnego klienta z przodu kolejki, gdy tylko zostanie zwolniona.</p>
 </section>
 <section id="deque" class="level2" data-number="26.8">
 <h2 data-number="26.8" class="anchored" data-anchor-id="deque"><span class="header-section-number">26.8</span> <code>Deque</code></h2>
-<ol type="1">
-<li><p>Napisz metodę <code>isSymmetric</code>, która przyjmuje generyczny Deque (<code>Deque&lt;T&gt; deque</code>) i zwraca <code>true</code>, jeśli elementy w Deque są ułożone symetrycznie (tj. kolejność elementów jest taka sama, gdy czytamy je od przodu do tyłu i od tyłu do przodu). W przeciwnym przypadku metoda zwraca <code>false</code>.</p></li>
-<li><p>Napisz metodę <code>removeEverySecondElement</code>, która przyjmuje generyczny Deque (<code>Deque&lt;T&gt; deque</code>) i usuwa z niego co drugi element, zaczynając od drugiego elementu w kolejności, w której elementy zostały dodane. Metoda powinna modyfikować oryginalny Deque, nie zwracając nic.</p></li>
-<li><p>Napisz metodę <code>swapEnds</code>, która przyjmuje generyczny Deque (<code>Deque&lt;T&gt; deque</code>) i zamienia miejscami pierwszy element z ostatnim. Jeśli Deque zawiera mniej niż dwa elementy, metoda nie powinna nic robić. Metoda powinna modyfikować oryginalny Deque, nie zwracając nic.</p></li>
-</ol>
+<p>H1. Napisz metodę <code>isSymmetric</code>, która przyjmuje generyczny Deque (<code>Deque&lt;T&gt; deque</code>) i zwraca <code>true</code>, jeśli elementy w Deque są ułożone symetrycznie (tj. kolejność elementów jest taka sama, gdy czytamy je od przodu do tyłu i od tyłu do przodu). W przeciwnym przypadku metoda zwraca <code>false</code>.</p>
+<p>H2. Napisz metodę <code>removeEverySecondElement</code>, która przyjmuje generyczny Deque (<code>Deque&lt;T&gt; deque</code>) i usuwa z niego co drugi element, zaczynając od drugiego elementu w kolejności, w której elementy zostały dodane. Metoda powinna modyfikować oryginalny Deque, nie zwracając nic.</p>
+<p>H3. Napisz metodę <code>swapEnds</code>, która przyjmuje generyczny Deque (<code>Deque&lt;T&gt; deque</code>) i zamienia miejscami pierwszy element z ostatnim. Jeśli Deque zawiera mniej niż dwa elementy, metoda nie powinna nic robić. Metoda powinna modyfikować oryginalny Deque, nie zwracając nic.</p>
 </section>
 <section id="kolejka-priorytetowa-priorityqueue" class="level2" data-number="26.9">
 <h2 data-number="26.9" class="anchored" data-anchor-id="kolejka-priorytetowa-priorityqueue"><span class="header-section-number">26.9</span> Kolejka priorytetowa <code>PriorityQueue</code></h2>
-<ol type="1">
-<li>Napisz metodę <code>mergePriorityQueues</code>, która przyjmuje dwie generyczne PriorityQueues (<code>PriorityQueue&lt;T&gt; queue1</code> i <code>PriorityQueue&lt;T&gt; queue2</code>). Metoda powinna zwrócić nową PriorityQueue zawierającą wszystkie elementy z obu wejściowych kolejek. Zakładamy, że elementy w obu kolejnych mogą być porównywane między sobą.</li>
-</ol>
+<p>I1. Napisz metodę <code>mergePriorityQueues</code>, która przyjmuje dwie generyczne PriorityQueues (<code>PriorityQueue&lt;T&gt; queue1</code> i <code>PriorityQueue&lt;T&gt; queue2</code>). Metoda powinna zwrócić nową PriorityQueue zawierającą wszystkie elementy z obu wejściowych kolejek. Zakładamy, że elementy w obu kolejnych mogą być porównywane między sobą.</p>
 </section>
 <section id="map" class="level2" data-number="26.10">
 <h2 data-number="26.10" class="anchored" data-anchor-id="map"><span class="header-section-number">26.10</span> <code>Map</code></h2>
-<ol type="1">
-<li><p>Napisz metodę <code>reverseMap</code>, która przyjmuje generyczną mapę (<code>Map&lt;K, V&gt; map</code>) i zwraca nową mapę (<code>Map&lt;V, K&gt;</code>), gdzie każdy klucz staje się wartością, a każda wartość kluczem. Jeśli oryginalna mapa zawiera powtarzające się wartości, zachowaj tylko ostatnią parę klucz-wartość odwracając mapę.</p></li>
-<li><p>Napisz metodę <code>findKeysWithMaxValue</code>, która przyjmuje generyczną mapę (<code>Map&lt;K, V&gt; map</code>), gdzie wartości są porównywalne (implementują <code>Comparable&lt;V&gt;</code>). Metoda powinna zwracać listę wszystkich kluczy, które są powiązane z największą wartością w mapie.</p></li>
-<li><p>Napisz metodę <code>groupByValue</code>, która przyjmuje generyczną mapę (<code>Map&lt;K, V&gt; map</code>) i zwraca nową mapę (<code>Map&lt;V, List&lt;K&gt;&gt;</code>), gdzie każda wartość z oryginalnej mapy staje się kluczem w nowej mapie, a jej wartością jest lista kluczy, które były z nią powiązane w oryginalnej mapie.</p></li>
-</ol>
+<p>J1. Napisz metodę <code>reverseMap</code>, która przyjmuje generyczną mapę (<code>Map&lt;K, V&gt; map</code>) i zwraca nową mapę (<code>Map&lt;V, K&gt;</code>), gdzie każdy klucz staje się wartością, a każda wartość kluczem. Jeśli oryginalna mapa zawiera powtarzające się wartości, zachowaj tylko ostatnią parę klucz-wartość odwracając mapę.</p>
+<p>J2. Napisz metodę <code>findKeysWithMaxValue</code>, która przyjmuje generyczną mapę (<code>Map&lt;K, V&gt; map</code>), gdzie wartości są porównywalne (implementują <code>Comparable&lt;V&gt;</code>). Metoda powinna zwracać listę wszystkich kluczy, które są powiązane z największą wartością w mapie.</p>
+<p>J3. Napisz metodę <code>groupByValue</code>, która przyjmuje generyczną mapę (<code>Map&lt;K, V&gt; map</code>) i zwraca nową mapę (<code>Map&lt;V, List&lt;K&gt;&gt;</code>), gdzie każda wartość z oryginalnej mapy staje się kluczem w nowej mapie, a jej wartością jest lista kluczy, które były z nią powiązane w oryginalnej mapie.</p>
 </section>
 <section id="hashmap" class="level2" data-number="26.11">
 <h2 data-number="26.11" class="anchored" data-anchor-id="hashmap"><span class="header-section-number">26.11</span> <code>HashMap</code></h2>
-<ol type="1">
-<li><p>Napisz metodę <code>countValueOccurrences</code>, która przyjmuje generyczną HashMap (<code>HashMap&lt;K, V&gt; map</code>) i zwraca nową HashMap (<code>HashMap&lt;V, Integer&gt;</code>), gdzie każdy klucz to wartość z oryginalnej mapy, a wartość to liczba wystąpień tej wartości w oryginalnej mapie.</p></li>
-<li><p>Napisz metodę <code>swapKeysAndValues</code>, która przyjmuje generyczną HashMap (<code>HashMap&lt;K, V&gt; map</code>) i zwraca nową HashMap (<code>HashMap&lt;V, K&gt;</code>), gdzie każdy klucz z oryginalnej mapy staje się wartością, a każda wartość kluczem. Zakładamy, że wszystkie wartości w oryginalnej mapie są unikalne.</p></li>
-<li><p>Napisz metodę <code>aggregateValuesByKey</code>, która przyjmuje generyczną HashMap (<code>HashMap&lt;K, Integer&gt; map</code>) oraz klucz (<code>K key</code>) i wartość (<code>Integer value</code>). Metoda powinna dodać wartość do obecnej wartości skojarzonej z kluczem. Jeśli klucz nie istnieje w mapie, powinien zostać dodany z podaną wartością. Metoda nie zwraca nic, modyfikując oryginalną mapę.</p></li>
-<li><p>Napisz metodę <code>compareMaps</code>, która przyjmuje dwie generyczne HashMap (<code>HashMap&lt;K, V&gt; map1</code> i <code>HashMap&lt;K, V&gt; map2</code>) i zwraca <code>true</code>, jeśli obie mapy mają dokładnie te same pary klucz-wartość, oraz <code>false</code> w przeciwnym przypadku. Metoda powinna porównywać zarówno klucze, jak i wartości.</p></li>
-</ol>
+<p>K1. Napisz metodę <code>countValueOccurrences</code>, która przyjmuje generyczną HashMap (<code>HashMap&lt;K, V&gt; map</code>) i zwraca nową HashMap (<code>HashMap&lt;V, Integer&gt;</code>), gdzie każdy klucz to wartość z oryginalnej mapy, a wartość to liczba wystąpień tej wartości w oryginalnej mapie.</p>
+<p>K2. Napisz metodę <code>swapKeysAndValues</code>, która przyjmuje generyczną HashMap (<code>HashMap&lt;K, V&gt; map</code>) i zwraca nową HashMap (<code>HashMap&lt;V, K&gt;</code>), gdzie każdy klucz z oryginalnej mapy staje się wartością, a każda wartość kluczem. Zakładamy, że wszystkie wartości w oryginalnej mapie są unikalne.</p>
+<p>K3. Napisz metodę <code>aggregateValuesByKey</code>, która przyjmuje generyczną HashMap (<code>HashMap&lt;K, Integer&gt; map</code>) oraz klucz (<code>K key</code>) i wartość (<code>Integer value</code>). Metoda powinna dodać wartość do obecnej wartości skojarzonej z kluczem. Jeśli klucz nie istnieje w mapie, powinien zostać dodany z podaną wartością. Metoda nie zwraca nic, modyfikując oryginalną mapę.</p>
+<p>K4. Napisz metodę <code>compareMaps</code>, która przyjmuje dwie generyczne HashMap (<code>HashMap&lt;K, V&gt; map1</code> i <code>HashMap&lt;K, V&gt; map2</code>) i zwraca <code>true</code>, jeśli obie mapy mają dokładnie te same pary klucz-wartość, oraz <code>false</code> w przeciwnym przypadku. Metoda powinna porównywać zarówno klucze, jak i wartości.</p>
 </section>
 <section id="treemap" class="level2" data-number="26.12">
 <h2 data-number="26.12" class="anchored" data-anchor-id="treemap"><span class="header-section-number">26.12</span> <code>TreeMap</code></h2>
