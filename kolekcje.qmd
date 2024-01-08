@@ -2,11 +2,11 @@
 
 ## Interfejs `Collection`
 
-1. Napisz metodę `printUnique(Collection items)`, która przyjmuje generyczny interfejs Collection jako argument i wyświetla na ekranie każdy unikalny element z tej kolekcji dokładnie raz.
+1. Napisz statyczną metodę `printUnique(Collection<T> items)`, która przyjmuje generyczny interfejs Collection jako argument i wyświetla na ekranie każdy unikalny element z tej kolekcji dokładnie raz.
 
-2. Stwórz funkcję `countOccurrences(Collection items, Object element)`, która zwraca liczbę wystąpień danego elementu w podanej kolekcji. Funkcja powinna działać dla dowolnego typu obiektów przechowywanych w kolekcji.
+2. Stwórz statyczną metodę  `countOccurrences(Collection<T> items, T element)`, która zwraca liczbę wystąpień danego elementu w podanej kolekcji. Funkcja powinna działać dla dowolnego typu obiektów przechowywanych w kolekcji.
 
-3. Zaimplementuj metodę `removeEveryOther(Collection items)`, która usuwa co drugi element z przekazanej kolekcji. Metoda powinna modyfikować oryginalną kolekcję, nie tworząc jej kopii.
+3. Zaimplementuj metodę `removeEveryOther(Collection<T> items)`, która usuwa co drugi element z przekazanej kolekcji. Metoda powinna modyfikować oryginalną kolekcję, nie tworząc jej kopii.
 
 ## Interfejs `Iterable`
 
