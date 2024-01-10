@@ -60,6 +60,9 @@ Zmiany:
 **8.01.2024**
 - poprawki i uzupełnienia w różnych działach
 
+**10.01.2024**
+- poprawki i uzupełnienia w różnych działach
+
 ---
 nocite: |
   @*
