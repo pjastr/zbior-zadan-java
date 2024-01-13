@@ -88,6 +88,8 @@ L1.  Napisz metodę `subMapInRange`, która przyjmuje generyczną TreeMap (`Tree
 
 L2.  Napisz metodę `reverseOrderMap`, która przyjmuje generyczną TreeMap (`TreeMap<K, V> map`). Metoda powinna zwrócić nową TreeMap, która zawiera wszystkie pary klucz-wartość z oryginalnej mapy, ale z odwróconą kolejnością kluczy.
 
+*Wskazówka: wykorzystaj `Collections.reverseOrder()`.*
+
 L3.  Napisz metodę `calculateAverageValue`, która przyjmuje generyczną TreeMap (`TreeMap<K, Double> map`). Metoda powinna obliczać i zwracać średnią wartość wszystkich wartości (typu Double) przechowywanych w mapie. Zakładamy, że mapa nie jest pusta.
 
 ## `Vector`
