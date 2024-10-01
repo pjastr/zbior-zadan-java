@@ -2,69 +2,8 @@
 
 Tu będzie zbiór zadań z programowania w języku Java. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć dydaktycznych realizowanych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie.
 
-Rozwiązania wybranych zadań dostępne są [tutaj](https://github.com/pjastr/java-rozw2023).
 
-Zmiany:
-
-**10.10.2023**
-- uzupełniono zadania dot tablic, list tablicowych, napisów
-
-**11.10.2023**
-- drobne poprawki w zadaniach dot. metod
-
-**16.10.2023**
-- dodano przypisy do wybranych "problematycznych" sformułowań niektórych zadań.
-
-**17.10.2023**
-- poprawka przypisu, poprawa niektórych zadań
-
-**24.10.2023**
-- poprawki zadań dot. klas, obiektów i modyfikatorów dostępu
-
-**29.10.2023**
-- zmiana nazw na angielski w części dot. modyfikatorów dostępu, konstruktora, pól i metod statycznych, dziedziczenia; dodano sekcję "Metody `toString` i `equals`" oraz Pakiety
-
-**10.11.2023**
-- dodano logo
-
-**11.11.2023**
-- zmiana nazw na angielski w części dot. rekordów
-
-**12.11.2023**
-- uzupełnienie w sposób jawny o metodę `hasCode`, zmiana nazw na angielski w części dot. dziedziczenia, złożonych pół w klasie, klas abstrakcyjnych
-
-**19.11.2023**
-- dodanie kilku zadań dot. dziedziczenia
-
-**3.12.2023**
-- poprawki w `final` i złożonych polach w klasie
-
-**10.12.2023**
-- poprawki i uzupełnienia w interfejsach
-
-**17.12.2023**
-- uzupełnienie w części dot. interfejsów, kopiowania i wyjątków
-
-**18.12.2023**
-- dodanie zadań dot. programowania generycznego, kolekcji
-
-**28.12.2023**
-- dodanie zadań dot. programowania generycznego, kolekcji, interfejsów
-
-**1.01.2024**
-- poprawki i uzupełnienia w różnych działach
-
-**3.01.2024**
-- poprawki i uzupełnienia w różnych działach
-
-**8.01.2024**
-- poprawki i uzupełnienia w różnych działach
-
-**10.01.2024**
-- poprawki i uzupełnienia w różnych działach
-
-**13.01.2024**
-- poprawki i uzupełnienia w różnych działach
+Wersja z 2023 roku [pdf](/data/zbior2023.pdf) i [rozwiązania](https://github.com/pjastr/java-rozw2023).
 
 ---
 nocite: |
