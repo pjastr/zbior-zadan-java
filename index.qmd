@@ -2,6 +2,10 @@
 
 Tu będzie zbiór zadań z programowania w języku Java. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć dydaktycznych realizowanych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie.
 
+Zmiany:
+
+* 1.10.2024 - poprawki we wprowadzeniu.
+
 
 Wersja z 2023 roku [pdf](/data/zbior2023.pdf) i [rozwiązania](https://github.com/pjastr/java-rozw2023).
 

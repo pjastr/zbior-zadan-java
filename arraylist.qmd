@@ -10,9 +10,7 @@
 
 5. Napisz statyczną metodę `average`, która przyjmuje listę tablicową liczb zmiennoprzecinkowych jako argument i zwraca średnią arytmetyczną wszystkich liczb. Jeżeli lista tablicowa jest pusta, zwróć 0. Stwórz przypadek testowy.
 
-6. Napisz statyczną metodę `reverseArray`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca nową listę tablicową, ale z odwróconym porządkiem elementów. Na przykład, dla [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.[^3]
-
-[^3]: Stara wersja polecenia: Napisz statyczną metodę `reverseArray`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca tę samą listę tablicową, ale z odwróconym porządkiem elementów. Na przykład, dla [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.
+6. Napisz statyczną metodę `reverseArray`, która przyjmuje listę tablicową liczb całkowitych jako argument i zwraca nową listę tablicową, ale z odwróconym porządkiem elementów. Na przykład, dla [1, 2, 3, 4, 5], funkcja powinna zwrócić [5, 4, 3, 2, 1]. Stwórz przypadek testowy.
 
 7. Napisz statyczną metodę `reverseArray`, która przyjmuje listę tablicową liczb całkowitych jako argument. Metoda odwraca porządek elementów w liście tablicowej i powinna być procedurą. Na przykład, dla [1, 2, 3, 4, 5], funkcja powinna zmienić listę tablicową na [5, 4, 3, 2, 1]. Stwórz przypadek testowy.
 

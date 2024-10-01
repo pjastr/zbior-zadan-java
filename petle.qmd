@@ -12,21 +12,23 @@
 
 6.  Napisz program, który sprawdzi, czy podana liczba jest liczbą pierwszą. Liczba powinna być wprowadzona przez użytkownika.
 
-7.  Napisz program, który oblicza sumę cyfr dowolnej wprowadzonej liczby. Program powinien akceptować liczbę jako input od użytkownika.
+7.  Napisz program, który wczyta od użytkownika ciąg 10 liczb całkowitych, a następnie wyświetli największą i najmniejszą z nich.
 
-8.  Napisz program, który generuje i wyświetla pierwsze 10 elementów szeregu geometrycznego o zadanym pierwszym elemencie i ilorazie. Parametry szeregu powinny być wprowadzane przez użytkownika.
+8.  Napisz program, który oblicza sumę cyfr dowolnej wprowadzonej liczby. Program powinien akceptować liczbę jako input od użytkownika.
 
-9.  Stwórz program, który przyjmie od użytkownika liczbę całkowitą i zwróci tę liczbę w odwrotnej kolejności. Na przykład, dla liczby 12345, wynik powinien wynosić 54321. Możesz ograniczyć program tylko do liczb dodatnich.
+9.  Napisz program, który generuje i wyświetla pierwsze 10 elementów szeregu geometrycznego o zadanym pierwszym elemencie i ilorazie. Parametry szeregu powinny być wprowadzane przez użytkownika.
 
-10. Napisz program, który obliczy sumę kwadratów liczb od 1 do n, gdzie n jest liczbą wprowadzoną przez użytkownika.
+10. Stwórz program, który przyjmie od użytkownika liczbę całkowitą i zwróci tę liczbę w odwrotnej kolejności. Na przykład, dla liczby 12345, wynik powinien wynosić 54321. Możesz ograniczyć program tylko do liczb dodatnich.
 
-11. Napisz program, który znajdzie i wyświetli wszystkie liczby doskonałe mniejsze od 10 000. Liczba doskonała to taka, której suma dzielników (bez niej samej) jest równa jej wartości. Na przykład, 6 jest liczbą doskonałą, ponieważ $1 + 2 + 3 = 6$.
+11. Napisz program, który obliczy sumę kwadratów liczb od 1 do n, gdzie n jest liczbą wprowadzoną przez użytkownika.
 
-12. Napisz program, który znajdzie wszystkie liczby Amstronga mniejsze od 10 000. Liczba Amstronga to taka, której suma jej cyfr podniesionych do potęgi równiej liczbie cyfr w tej liczbie, jest równa samej liczbie. Na przykład 153 jest liczbą Amstronga, ponieważ $1^3 + 5^3 + 3^3 = 153$.
+12. Napisz program, który znajdzie i wyświetli wszystkie liczby doskonałe mniejsze od 10 000. Liczba doskonała to taka, której suma dzielników (bez niej samej) jest równa jej wartości. Na przykład, 6 jest liczbą doskonałą, ponieważ $1 + 2 + 3 = 6$.
 
-13. Napisz program, który dla dwóch podanych liczb obliczy ich najmniejszą wspólną wielokrotność (NWW). Użytkownik powinien podać dwie liczby jako dane wejściowe.
+13. Napisz program, który znajdzie wszystkie liczby Amstronga mniejsze od 10 000. Liczba Amstronga to taka, której suma jej cyfr podniesionych do potęgi równiej liczbie cyfr w tej liczbie, jest równa samej liczbie. Na przykład 153 jest liczbą Amstronga, ponieważ $1^3 + 5^3 + 3^3 = 153$.
 
-14. Napisz program pobierający z klawiatury liczbę całkowitą dodatnią. Następnie narysuj odpowiedni trójkąt np. dla 5:
+14. Napisz program, który dla dwóch podanych liczb obliczy ich najmniejszą wspólną wielokrotność (NWW). Użytkownik powinien podać dwie liczby jako dane wejściowe.
+
+15. Napisz program pobierający z klawiatury liczbę całkowitą dodatnią. Następnie narysuj odpowiedni trójkąt np. dla 5:
 
 ```         
 1
