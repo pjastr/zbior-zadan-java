@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.53">
+<meta name="generator" content="quarto-1.6.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,11 +37,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-3a01e2046221230fdceeea94b1ec5d67.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-a4a11d514c7d463668e07712114998e6.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3f830ddbd5e8c050dfb9025028eb15e9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
@@ -351,7 +351,17 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Zdefiniuj abstrakcyjną klasę <code>WorkTool</code> z polami <code>name</code> typu <code>String</code> oraz <code>productionYear</code> typu <code>int</code>. Dodaj metodę abstrakcyjną <code>use()</code>, która będzie symulować użycie narzędzia. Następnie zdefiniuj klasy <code>Hammer</code>, <code>Screwdriver</code> i <code>Saw</code>, które dziedziczą po klasie <code>WorkTool</code> i implementują metodę <code>use()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
 <li><p>Zdefiniuj abstrakcyjną klasę <code>ComputerGraphic</code> z polami <code>width</code>, <code>height</code> typu <code>int</code> oraz <code>fileName</code> typu <code>String</code>. Dodaj abstrakcyjne metody <code>loadFile()</code> i <code>saveFile()</code>. Następnie zdefiniuj klasy <code>Bitmap</code> i <code>Vector</code>, które dziedziczą po klasie <code>ComputerGraphic</code> i implementują metody <code>loadFile()</code> oraz <code>saveFile()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
 <li><p>Zdefiniuj abstrakcyjną klasę <code>ElectronicDevice</code> z polami <code>manufacturer</code> typu <code>String</code>, <code>model</code> typu <code>String</code> oraz <code>productionYear</code> typu <code>int</code>. Dodaj abstrakcyjne metody <code>turnOn()</code> i <code>turnOff()</code>. Następnie zdefiniuj klasy <code>Smartphone</code>, <code>Television</code> i <code>Laptop</code>, które dziedziczą po klasie <code>ElectronicDevice</code> i implementują metody <code>turnOn()</code> oraz <code>turnOff()</code>. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.</p></li>
+<li><p>W jednym projekcie wykonaj czynności:</p></li>
 </ol>
+<p>A. Stwórz abstrakcyjną klasę <code>Product</code> zawierającą publiczną abstrakcyjną metodę <code>getPrice()</code>, która nie przyjmuje argumentów i zwraca <code>double</code>. Klasę umieść w pakiecie <code>store</code>.</p>
+<p>B. Utwórz dwie klasy pochodne od <code>Product</code>: <code>Book</code> i <code>Clothing</code>. W obu klasach nadpisz metodę <code>getPrice()</code>. Dla <code>Book</code> niech zwraca cenę 29.99, a dla <code>Clothing</code> niech zwraca cenę 59.99.</p>
+<p>C. W klasie <code>TestProduct</code> w pakiecie <code>store</code> utwórz tablicę typu <code>Product</code> i zainicjuj ją 5 instancjami <code>Book</code> i <code>Clothing</code>. Iteruj po tablicy wywołując metodę <code>getPrice()</code> dla każdego produktu (wyświetl ceny na standardowym wyjściu).</p>
+<ol start="5" type="1">
+<li>W jednym projekcie wykonaj czynności:</li>
+</ol>
+<p>A. Stwórz abstrakcyjną klasę <code>Game</code> zawierającą publiczną abstrakcyjną metodę <code>getRating()</code>, która nie przyjmuje argumentów i zwraca <code>double</code>. Klasę umieść w pakiecie <code>entertainment</code>.</p>
+<p>B. Utwórz dwie klasy pochodne od <code>Game</code>: <code>StrategyGame</code> i <code>AdventureGame</code>. W obu klasach nadpisz metodę <code>getRating()</code>. Dla <code>StrategyGame</code> niech zwraca ocenę 8.5, a dla <code>AdventureGame</code> niech zwraca ocenę 7.3.</p>
+<p>C. W klasie <code>TestGame</code> w pakiecie <code>entertainment</code> utwórz listę tabllicową typu <code>Game</code> i zainicjalizuj ją 5 instancjami <code>StrategyGame</code> i <code>AdventureGame</code>. Iteruj po liście tablicowej wywołując metodę <code>getRating()</code> dla każdej gry (wyświetl oceny na standardowym wyjściu).</p>
 
 
 

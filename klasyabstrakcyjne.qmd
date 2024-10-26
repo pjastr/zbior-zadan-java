@@ -5,3 +5,21 @@
 2.  Zdefiniuj abstrakcyjną klasę `ComputerGraphic` z polami `width`, `height` typu `int` oraz `fileName` typu `String`. Dodaj abstrakcyjne metody `loadFile()` i `saveFile()`. Następnie zdefiniuj klasy `Bitmap` i `Vector`, które dziedziczą po klasie `ComputerGraphic` i implementują metody `loadFile()` oraz `saveFile()`. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.
 
 3. Zdefiniuj abstrakcyjną klasę `ElectronicDevice` z polami `manufacturer` typu `String`, `model` typu `String` oraz `productionYear` typu `int`. Dodaj abstrakcyjne metody `turnOn()` i `turnOff()`. Następnie zdefiniuj klasy `Smartphone`, `Television` i `Laptop`, które dziedziczą po klasie `ElectronicDevice` i implementują metody `turnOn()` oraz `turnOff()`. Stwórz listę tablicową odpowiednich 5 obiektów i wywołaj dla nich napisaną metodę.
+
+4. W jednym projekcie wykonaj czynności:
+
+A. Stwórz abstrakcyjną klasę `Product` zawierającą publiczną abstrakcyjną metodę `getPrice()`, która nie przyjmuje argumentów i zwraca `double`. Klasę umieść w pakiecie `store`.
+
+B. Utwórz dwie klasy pochodne od `Product`: `Book` i `Clothing`. W obu klasach nadpisz metodę `getPrice()`. Dla `Book` niech zwraca cenę 29.99, a dla `Clothing` niech zwraca cenę 59.99.
+
+C. W klasie `TestProduct` w pakiecie `store` utwórz tablicę typu `Product` i zainicjuj ją 5 instancjami `Book` i `Clothing`. Iteruj po tablicy wywołując metodę `getPrice()` dla każdego produktu (wyświetl ceny na standardowym wyjściu).
+
+5. W jednym projekcie wykonaj czynności:
+
+
+A. Stwórz abstrakcyjną klasę `Game` zawierającą publiczną abstrakcyjną metodę `getRating()`, która nie przyjmuje argumentów i zwraca `double`. Klasę umieść w pakiecie `entertainment`.
+
+B. Utwórz dwie klasy pochodne od `Game`: `StrategyGame` i `AdventureGame`. W obu klasach nadpisz metodę `getRating()`. Dla `StrategyGame` niech zwraca ocenę 8.5, a dla `AdventureGame` niech zwraca ocenę 7.3.
+
+C. W klasie `TestGame` w pakiecie `entertainment` utwórz listę tabllicową typu `Game` i zainicjalizuj ją 5 instancjami `StrategyGame` i `AdventureGame`. Iteruj po liście tablicowej wywołując metodę `getRating()` dla każdej gry (wyświetl oceny na standardowym wyjściu).
+
