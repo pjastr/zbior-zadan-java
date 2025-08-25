@@ -32,3 +32,17 @@ $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 Stwórz przypadek testowy dla metody. 
 
 10. Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita $n$. Metoda zwraca 1 jeśli $n$ jest liczbą składającą się z samych jedynek w zapisie dziesiętnym oraz zwraca 0 w przeciwnym wypadku. Stwórz przypadek testowy dla metody. 
+
+11. Napisz statyczną rekurencyjną metodę `quadSeq`, która dla otrzymanej w argumencie nieujemnej liczby całkowitej $n$ zwraca wartość elementu o indeksie $n$ ciągu zdefiniowanego w następujący sposób:
+$$v_0=1$$
+$$v_{n} = \begin{cases} 
+v_{n-1} + n, & \text{jeśli } n \text{ jest podzielne przez 4} \\
+v_{n-1} \cdot 2, & \text{jeśli } n \text{ daje resztę 1 z dzielenia przez 4} \\
+v_{n-1}^2 - 1, & \text{jeśli } n \text{ daje resztę 2 z dzielenia przez 4} \\
+\lceil \frac{v_{n-1}}{3} \rceil, & \text{jeśli } n \text{ daje resztę 3 z dzielenia przez 4}
+\end{cases}$$
+gdzie $\lceil x \rceil$ oznacza funkcję sufit (najmniejsza liczba całkowita nie mniejsza od $x$). W rozwiązaniu nie korzystać ze wbudowanych funkcji matematycznych. Stwórz przypadek testowy dla funkcji.
+
+| n | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|---|
+| $v_n$ | 1 | 2 | 3 | 1 | 5 | 10 | 99 |

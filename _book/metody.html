@@ -564,8 +564,40 @@ window.Quarto = {
 </ol>
 <p>Stwórz przypadek testowy dla metody.</p>
 <ol start="10" type="1">
-<li>Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Metoda zwraca 1 jeśli <span class="math inline">\(n\)</span> jest liczbą składającą się z samych jedynek w zapisie dziesiętnym oraz zwraca 0 w przeciwnym wypadku. Stwórz przypadek testowy dla metody.</li>
+<li><p>Napisz statyczną metodę, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Metoda zwraca 1 jeśli <span class="math inline">\(n\)</span> jest liczbą składającą się z samych jedynek w zapisie dziesiętnym oraz zwraca 0 w przeciwnym wypadku. Stwórz przypadek testowy dla metody.</p></li>
+<li><p>Napisz statyczną rekurencyjną metodę <code>quadSeq</code>, która dla otrzymanej w argumencie nieujemnej liczby całkowitej <span class="math inline">\(n\)</span> zwraca wartość elementu o indeksie <span class="math inline">\(n\)</span> ciągu zdefiniowanego w następujący sposób: <span class="math display">\[v_0=1\]</span> <span class="math display">\[v_{n} = \begin{cases}
+v_{n-1} + n, &amp; \text{jeśli } n \text{ jest podzielne przez 4} \\
+v_{n-1} \cdot 2, &amp; \text{jeśli } n \text{ daje resztę 1 z dzielenia przez 4} \\
+v_{n-1}^2 - 1, &amp; \text{jeśli } n \text{ daje resztę 2 z dzielenia przez 4} \\
+\lceil \frac{v_{n-1}}{3} \rceil, &amp; \text{jeśli } n \text{ daje resztę 3 z dzielenia przez 4}
+\end{cases}\]</span> gdzie <span class="math inline">\(\lceil x \rceil\)</span> oznacza funkcję sufit (najmniejsza liczba całkowita nie mniejsza od <span class="math inline">\(x\)</span>). W rozwiązaniu nie korzystać ze wbudowanych funkcji matematycznych. Stwórz przypadek testowy dla funkcji.</p></li>
 </ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>n</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(v_n\)</span></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+<td>10</td>
+<td>99</td>
+</tr>
+</tbody>
+</table>
 
 
 

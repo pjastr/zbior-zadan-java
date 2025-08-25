@@ -65,3 +65,7 @@ c)  $(8,3,-2,-7,-12,\ldots )$
 23. Napisz program, który ze standardowego wejścia pobiera liczbę naturalną $a$ a następnie wypisuje na standardowym wyjściu ile z cyfr liczby $a$ jest równe 7.
 
 24. Napisać program, który wczyta z wejścia liczby całkowite aż do napotkania liczby ujemnej, a następnie wyświetla największy oraz najmniejszy element z wczytanych liczb (z pominięciem ostatniej, ujemnej liczby).
+
+25. Napisz program, który prosi użytkownika o wprowadzenie dodatniej liczby całkowitej `n`, a następnie oblicza i wyświetla największą liczbę naturalną `k`, taką że $k!$ (silnia) nie przekracza `n`. Zadanie należy rozwiązać bez tablic, napisów, wbudowanych funkcji matematycznych. Nie twórz samodzielnie też własnych funkcji.
+
+Przykład: dla `n=25` powinno być wyświetlone 4 (bo $4!=24 \leqslant 25$, ale $5!=120 > 25$), zaś dla `n=120` powinno być wyświetlone 5.
